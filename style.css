@@ -225,3 +225,11 @@ a.card{display:block;color:inherit}
 .modules{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .modules span{font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:#d6d3e6}
 @media (max-width:520px){.db{grid-template-columns:1fr}.db-side{display:none}.clean{grid-template-columns:1fr;justify-items:center}.window{width:94%}}
+
+/* logo */
+.hero{padding-top:48px}
+.hero-logo{width:220px;height:220px;margin:0 auto 8px;filter:drop-shadow(0 20px 50px #a855f766);animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px) rotate(-1.5deg)}}
+.final-logo{width:140px;height:140px;filter:drop-shadow(0 16px 40px #a855f766)}
+.brand img{filter:drop-shadow(0 2px 8px #a855f755)}
+@media (max-width:520px){.hero-logo{width:160px;height:160px}}
