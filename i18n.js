@@ -105,12 +105,86 @@
     if (select) select.value = lang;
     const flag = document.querySelector('.lang-flag');
     if (flag) flag.textContent = FLAGS[lang];
+    syncMenu(lang);
+  }
+
+  // No desktop, a lista nativa do macOS abre por cima do campo e "pula" para cima.
+  // Por isso o desktop usa uma lista própria que desce abaixo do botão; o celular segue com a nativa.
+  let syncMenu = () => {};
+
+  function setupDesktopMenu(select) {
+    const picker = select.closest('.lang-picker');
+    if (!picker) return;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'lang-button';
+    button.setAttribute('aria-haspopup', 'listbox');
+    button.setAttribute('aria-expanded', 'false');
+    button.innerHTML = '<span class="lang-button-text"></span>'
+      + '<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>';
+    const menu = document.createElement('ul');
+    menu.className = 'lang-menu';
+    menu.setAttribute('role', 'listbox');
+    const items = [...select.options].map((option) => {
+      const item = document.createElement('li');
+      item.setAttribute('role', 'option');
+      item.tabIndex = -1;
+      item.dataset.value = option.value;
+      item.textContent = option.textContent;
+      menu.append(item);
+      return item;
+    });
+    picker.append(button, menu);
+
+    const isOpen = () => picker.classList.contains('open');
+    const close = (focusButton) => {
+      picker.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+      if (focusButton) button.focus();
+    };
+    const open = () => {
+      picker.classList.add('open');
+      button.setAttribute('aria-expanded', 'true');
+      (items.find((i) => i.getAttribute('aria-selected') === 'true') || items[0]).focus();
+    };
+    const choose = (value) => {
+      if (select.value !== value) {
+        select.value = value;
+        select.dispatchEvent(new Event('change'));
+      }
+      close(true);
+    };
+
+    button.addEventListener('click', () => (isOpen() ? close(false) : open()));
+    items.forEach((item) => item.addEventListener('click', () => choose(item.dataset.value)));
+    menu.addEventListener('keydown', (event) => {
+      const index = items.indexOf(document.activeElement);
+      if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+        event.preventDefault();
+        const step = event.key === 'ArrowDown' ? 1 : -1;
+        items[(index + step + items.length) % items.length].focus();
+      } else if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        if (index >= 0) choose(items[index].dataset.value);
+      } else if (event.key === 'Escape' || event.key === 'Tab') {
+        close(event.key === 'Escape');
+      }
+    });
+    document.addEventListener('click', (event) => { if (isOpen() && !picker.contains(event.target)) close(false); });
+
+    syncMenu = (lang) => {
+      const current = items.find((i) => i.dataset.value === lang);
+      button.querySelector('.lang-button-text').textContent = current ? current.textContent : '';
+      button.setAttribute('aria-label', select.getAttribute('aria-label') || '');
+      items.forEach((i) => i.setAttribute('aria-selected', String(i === current)));
+    };
   }
 
   function init() {
+    const select = document.querySelector('.lang-select');
+    if (select) setupDesktopMenu(select);
     collect();
     apply(detect());
-    const select = document.querySelector('.lang-select');
     if (!select) return;
     select.addEventListener('change', () => {
       const lang = select.value;
