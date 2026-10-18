@@ -224,3 +224,5 @@ a.card{display:block;color:inherit}
 .shot-sub.tall-shot{width:56%}
 /* Neorar: a grade é mais baixa, então precisa de menos espaço abaixo */
 #neorar .shots.stacked{padding-bottom:20%}
+/* Rubbish Notes: a aba de temas um pouco maior */
+#rubbishnotes .shot-sub.narrow-shot{width:34%}
