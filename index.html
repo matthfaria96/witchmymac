@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>witchmymac — apps gratuitos para Mac</title>
+<meta name="description" content="BunnyGrid, WormLink, MacDash e Sirena: aplicativos gratuitos para macOS, sem anúncios e sem rastreamento. Baixe direto do witchmymac.com.">
+<meta property="og:title" content="witchmymac — apps gratuitos para Mac">
+<meta property="og:description" content="Apps nativos para macOS, 100% gratuitos. BunnyGrid, WormLink, MacDash e Sirena.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://witchmymac.com">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="assets/icons/witch.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="witchmymac">
+      <img src="assets/icons/witch.svg" alt="" width="30" height="30">
+      <span>witch<b>my</b>mac</span>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a href="#apps">Apps</a>
+      <a href="#privacidade">Privacidade</a>
+      <a href="#instalar">Instalar</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero container">
+    <p class="eyebrow">Apps nativos para macOS · 100% gratuitos</p>
+    <h1>Todos os seus apps de Mac,<br><span class="grad">em um só lugar.</span></h1>
+    <p class="lead">Ferramentas leves e bonitas que fazem o seu Mac trabalhar do seu jeito. Sem assinatura, sem anúncios, sem rastreamento. Baixe, arraste para Aplicativos e pronto.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#apps">Ver os apps</a>
+      <a class="btn btn-ghost" href="https://github.com/matthfaria96" target="_blank" rel="noopener">Código no GitHub</a>
+    </div>
+    <ul class="trust">
+      <li><span>✦</span> Gratuito para sempre</li>
+      <li><span>✦</span> Sem telemetria</li>
+      <li><span>✦</span> Apple Silicon &amp; Intel</li>
+      <li><span>✦</span> Feito por um dev indie</li>
+    </ul>
+    <div class="dock" aria-hidden="true">
+      <img src="assets/icons/bunnygrid.svg" alt="" class="dock-icon">
+      <img src="assets/icons/wormlink.svg" alt="" class="dock-icon">
+      <img src="assets/icons/macdash.svg" alt="" class="dock-icon">
+      <img src="assets/icons/sirena.svg" alt="" class="dock-icon">
+    </div>
+  </section>
+
+  <!-- APPS -->
+  <section id="apps" class="section container">
+    <div class="section-head">
+      <h2>Os apps</h2>
+      <p>Cada um resolve uma coisa só, e resolve bem. Escolha o que precisa.</p>
+    </div>
+    <div class="grid apps-grid">
+      <article class="card app" data-app="bunnygrid">
+        <img src="assets/icons/bunnygrid.svg" alt="Ícone do BunnyGrid" class="app-icon">
+        <h3>BunnyGrid</h3>
+        <p class="tag">Organização de janelas</p>
+        <p>Encaixe janelas em grades com atalhos rápidos. Metades, terços, cantos e layouts salvos, sem precisar arrastar nada pela tela.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary btn-sm" href="https://github.com/matthfaria96/BunnyGrid/releases/latest">Baixar .dmg</a>
+          <a class="btn btn-link btn-sm" href="https://github.com/matthfaria96/BunnyGrid">Código</a>
+        </div>
+        <p class="req">macOS 13+ · Universal</p>
+      </article>
+
+      <article class="card app" data-app="wormlink">
+        <img src="assets/icons/wormlink.svg" alt="Ícone do WormLink" class="app-icon">
+        <h3>WormLink</h3>
+        <p class="tag">Links e atalhos</p>
+        <p>Abra o link certo no app certo. Regras por domínio, perfis de navegador e limpeza automática de parâmetros de rastreamento.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary btn-sm" href="https://github.com/matthfaria96/WormLink/releases/latest">Baixar .dmg</a>
+          <a class="btn btn-link btn-sm" href="https://github.com/matthfaria96/WormLink">Código</a>
+        </div>
+        <p class="req">macOS 13+ · Universal</p>
+      </article>
+
+      <article class="card app" data-app="macdash">
+        <img src="assets/icons/macdash.svg" alt="Ícone do MacDash" class="app-icon">
+        <h3>MacDash</h3>
+        <p class="tag">Painel do sistema</p>
+        <p>CPU, memória, disco, rede e bateria em um painel limpo na barra de menus. Veja o que está pesando no Mac em um olhar.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary btn-sm" href="https://github.com/matthfaria96/MacDash/releases/latest">Baixar .dmg</a>
+          <a class="btn btn-link btn-sm" href="https://github.com/matthfaria96/MacDash">Código</a>
+        </div>
+        <p class="req">macOS 13+ · Universal</p>
+      </article>
+
+      <article class="card app" data-app="sirena">
+        <img src="assets/icons/sirena.svg" alt="Ícone do Sirena" class="app-icon">
+        <h3>Sirena</h3>
+        <p class="tag">Alertas e notificações</p>
+        <p>Alertas que você realmente nota. Lembretes, timers e avisos de sistema com som, cor e foco, do jeito que você configurar.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary btn-sm" href="https://github.com/matthfaria96/Sirena/releases/latest">Baixar .dmg</a>
+          <a class="btn btn-link btn-sm" href="https://github.com/matthfaria96/Sirena">Código</a>
+        </div>
+        <p class="req">macOS 13+ · Universal</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FEATURE GROUPS (estilo GOG Galaxy) -->
+  <section class="section container features">
+    <div class="feature-row">
+      <div class="feature-text">
+        <p class="eyebrow">Seu Mac</p>
+        <h2>Leve de verdade.</h2>
+        <p>Apps nativos em Swift, sem Electron, sem processos de fundo pesados. Abrem em um instante e somem quando você fecha.</p>
+        <ul class="bullets">
+          <li><b>Nativo</b> Escritos em Swift e SwiftUI, seguindo o visual do macOS.</li>
+          <li><b>Pequeno</b> Cada app pesa poucos megabytes.</li>
+          <li><b>Rápido</b> Sem telas de carregamento, sem login.</li>
+        </ul>
+      </div>
+      <div class="feature-art art-a" aria-hidden="true">
+        <div class="window"><div class="titlebar"><i></i><i></i><i></i></div>
+          <div class="grid-demo"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-row reverse" id="privacidade">
+      <div class="feature-text">
+        <p class="eyebrow">Sua privacidade</p>
+        <h2>Sem espionagem.</h2>
+        <p>Nenhum app do witchmymac envia dados para lugar nenhum. Não existe conta, não existe análise de uso, não existe servidor.</p>
+        <ul class="bullets">
+          <li><b>Zero telemetria</b> Nada é coletado, nem anonimamente.</li>
+          <li><b>Zero compartilhamento</b> Não há terceiros envolvidos.</li>
+          <li><b>Seus dados são seus</b> Tudo fica no seu Mac, em arquivos que você pode apagar.</li>
+        </ul>
+      </div>
+      <div class="feature-art art-b" aria-hidden="true">
+        <div class="shield"><img src="assets/icons/witch.svg" alt="" width="72" height="72"></div>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-text">
+        <p class="eyebrow">Sempre grátis</p>
+        <h2>Sem pegadinha.</h2>
+        <p>Não há versão "Pro", teste de 7 dias nem recursos bloqueados. Se o app existe, ele é inteiro e é seu.</p>
+        <ul class="bullets">
+          <li><b>Código aberto</b> Leia, compile e contribua no GitHub.</li>
+          <li><b>Atualizações</b> Novas versões sempre nas Releases de cada repositório.</li>
+          <li><b>Apoio</b> Se quiser retribuir, uma estrela no GitHub já ajuda.</li>
+        </ul>
+      </div>
+      <div class="feature-art art-c" aria-hidden="true">
+        <div class="price"><span class="strike">R$ 49,90/mês</span><strong>R$ 0</strong><small>para sempre</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALAR -->
+  <section id="instalar" class="section container">
+    <div class="section-head">
+      <h2>Ok, quero. Por onde começo?</h2>
+      <p>Três passos, trinta segundos.</p>
+    </div>
+    <ol class="steps">
+      <li><span>1</span><h3>Baixe o .dmg</h3><p>Clique em "Baixar" no app que quiser. O arquivo vem direto das Releases do GitHub.</p></li>
+      <li><span>2</span><h3>Arraste para Aplicativos</h3><p>Abra o .dmg e arraste o ícone para a pasta Aplicativos.</p></li>
+      <li><span>3</span><h3>Abra e use</h3><p>Na primeira vez, clique com o botão direito e escolha "Abrir" para confirmar.</p></li>
+    </ol>
+    <div class="specs">
+      <div><small>Sistema</small><strong>macOS 13 Ventura ou mais novo</strong></div>
+      <div><small>Chips</small><strong>Apple Silicon e Intel</strong></div>
+      <div><small>Preço</small><strong>Gratuito</strong></div>
+      <div><small>Licença</small><strong>Código aberto</strong></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section container narrow">
+    <div class="section-head">
+      <h2>Espera, e quanto a…</h2>
+    </div>
+    <details class="faq-item" open>
+      <summary>É mesmo de graça? Qual é o truque?</summary>
+      <p>Nenhum truque. Os apps são projetos pessoais que eu uso todo dia e decidi compartilhar. Não há versão paga, assinatura nem anúncios.</p>
+    </details>
+    <details class="faq-item">
+      <summary>É seguro instalar?</summary>
+      <p>O código fonte é público no GitHub e você pode compilar por conta própria. Os apps não pedem permissões além do que precisam para funcionar.</p>
+    </details>
+    <details class="faq-item">
+      <summary>O macOS disse que o app "não pôde ser verificado". E agora?</summary>
+      <p>Isso acontece em apps distribuídos fora da App Store. Clique com o botão direito no app, escolha "Abrir" e confirme. Você só precisa fazer isso uma vez.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Como recebo atualizações?</summary>
+      <p>Cada app avisa quando há uma versão nova. Você também pode acompanhar a página de Releases de cada repositório no GitHub.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Encontrei um bug ou tenho uma ideia.</summary>
+      <p>Abra uma issue no repositório do app no GitHub. Toda sugestão é bem-vinda.</p>
+    </details>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section container final-cta">
+    <img src="assets/icons/witch.svg" alt="" width="56" height="56">
+    <h2>Faça mágica com o seu Mac.</h2>
+    <p>Quatro apps, zero custo. Escolha o seu.</p>
+    <a class="btn btn-primary" href="#apps">Ver os apps</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand"><img src="assets/icons/witch.svg" alt="" width="22" height="22"><span>witch<b>my</b>mac</span></div>
+    <nav aria-label="Rodapé">
+      <a href="#apps">Apps</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:matth.faria96@gmail.com">Contato</a>
+    </nav>
+    <p>© <span id="year"></span> witchmymac. Apple, Mac e macOS são marcas da Apple Inc.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
