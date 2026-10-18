@@ -210,3 +210,6 @@ a.card{display:block;color:inherit}
 
 /* seis apps: 3 por linha no desktop */
 @media (min-width:861px){.apps-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.shot-sub.wide-shot{width:64%}
+/* MacDash: a segunda foto fica abaixo da principal, sem cobrir o conteúdo dela */
+.shots.stacked{padding-bottom:29%}
