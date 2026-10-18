@@ -219,3 +219,8 @@ a.card{display:block;color:inherit}
 .shots.menu-focus .shot-main{width:58%;z-index:2}
 .shots.menu-focus .shot-sub{top:14%;bottom:auto;right:0;width:62%;z-index:1;opacity:.92}
 @media (max-width:520px){.shots.menu-focus .shot-main{width:70%}.shots.menu-focus .shot-sub{width:56%}}
+/* BunnyGrid: modal alto abaixo da foto principal */
+.shots.stacked-tall{padding-bottom:37%}
+.shot-sub.tall-shot{width:56%}
+/* Neorar: a grade é mais baixa, então precisa de menos espaço abaixo */
+#neorar .shots.stacked{padding-bottom:20%}
