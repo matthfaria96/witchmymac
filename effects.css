@@ -62,36 +62,15 @@ html{scroll-padding-top:84px}
 .hero.live .btn-primary::after{animation:ring 2.8s var(--ease-out) infinite}
 @keyframes ring{0%{opacity:.7;transform:scale(1)}70%,100%{opacity:0;transform:scale(1.18,1.45)}}
 
-/* ---------- Ícones do topo: todos com a mesma moldura de vidro ---------- */
+/* ---------- Ícones do topo ----------
+   A borda de vidro está na própria imagem de cada ícone (assets/icons). Aqui só há movimento. */
 .dock{background:rgba(255,255,255,.035);border-color:var(--glass-edge);box-shadow:0 30px 60px -30px #000,inset 0 1px 0 rgba(255,255,255,.08)}
-.dock-item{display:grid;place-items:center;width:96px;height:96px;border-radius:26px;isolation:isolate;
-  background:linear-gradient(150deg,rgba(255,255,255,.16),rgba(255,255,255,.03) 45%,rgba(255,255,255,.07));
-  border:1px solid rgba(255,255,255,.16);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -10px 18px rgba(0,0,0,.28),0 14px 28px -14px rgba(0,0,0,.9);
-  transition:transform .45s var(--ease-spring),box-shadow .3s,border-color .3s}
-.dock-item::before{content:"";position:absolute;inset:0;border-radius:inherit;z-index:2;pointer-events:none;
-  background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.38) 50%,transparent 60%) no-repeat;
-  background-size:300% 100%;background-position:120% 0;transition:background-position .9s var(--ease-out)}
-.dock-item:hover{transform:translateY(-10px) scale(1.08);border-color:rgba(255,255,255,.3);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -10px 18px rgba(0,0,0,.25),0 24px 40px -16px rgba(0,0,0,.9),0 0 30px -6px rgba(168,85,247,.55)}
-.dock-item:hover::before{background-position:-20% 0}
-.dock-item .dock-icon,.dock-item:hover .dock-icon{width:74px;height:74px;transform:none;filter:drop-shadow(0 6px 10px rgba(0,0,0,.5))}
-.dock-item .dock-icon.icon-full,.dock-item:hover .dock-icon.icon-full{transform:scale(.84)}
-/* entrada em cascata ao abrir o site */
+.dock-item .dock-icon{transition:transform .45s var(--ease-spring),filter .3s}
+.dock-item:hover .dock-icon{transform:translateY(-10px) scale(1.12);filter:drop-shadow(0 14px 22px rgba(0,0,0,.6)) drop-shadow(0 0 18px rgba(168,85,247,.45))}
 .dock-item{animation:dockIn .8s var(--ease-spring) backwards}
 .dock-item:nth-child(2){animation-delay:.06s}.dock-item:nth-child(3){animation-delay:.12s}
 .dock-item:nth-child(4){animation-delay:.18s}.dock-item:nth-child(5){animation-delay:.24s}.dock-item:nth-child(6){animation-delay:.3s}
 @keyframes dockIn{from{opacity:0;transform:translateY(24px) scale(.8)}}
-@media (max-width:860px){
-  .dock-item{width:clamp(42px,12.5vw,64px);height:clamp(42px,12.5vw,64px);border-radius:clamp(12px,3.6vw,18px)}
-  .dock-item .dock-icon,.dock-item:hover .dock-icon{width:78%;height:78%}
-  .dock-item:hover{transform:translateY(-4px) scale(1.05)}
-}
-
-/* ícones dos cartões e títulos com o mesmo acabamento de vidro */
-.app-icon,.app-title img{border-radius:22%;background:linear-gradient(150deg,rgba(255,255,255,.14),rgba(255,255,255,.03));
-  padding:6px;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 10px 22px -12px rgba(0,0,0,.9);border:1px solid rgba(255,255,255,.12)}
-.app-icon.icon-full,.app-title img.icon-full{transform:none;padding:9px}
 
 /* ---------- Cartões: foco de luz que segue o mouse ---------- */
 .card.reveal.in{transition:opacity .6s,transform .45s var(--ease-spring),border-color .3s}
