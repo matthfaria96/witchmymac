@@ -1,3 +1,24 @@
+// Links de download de cada app. Quando publicar um .dmg, cole a URL aqui.
+// Deixe null para o botão aparecer como "Em breve".
+const DOWNLOADS = {
+  bunnygrid: null,
+  wormlink: null,
+  macdash: null,
+  sirena: null,
+};
+
+document.querySelectorAll('[data-download]').forEach(btn => {
+  const url = DOWNLOADS[btn.dataset.download];
+  if (url) {
+    btn.href = url;
+  } else {
+    btn.textContent = 'Em breve';
+    btn.classList.add('soon');
+    btn.setAttribute('aria-disabled', 'true');
+    btn.removeAttribute('href');
+  }
+});
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const toggle = document.querySelector('.menu-toggle');
