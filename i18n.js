@@ -3,6 +3,7 @@
 (() => {
   const LANGS = ['pt', 'en', 'es'];
   const HTML_LANG = { pt: 'pt-BR', en: 'en', es: 'es' };
+  const FLAGS = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
   const STORAGE_KEY = 'witchmymac-lang';
   const STRINGS = window.WITCH_STRINGS || {};
   const TRANSLATED_ATTRS = ['alt', 'aria-label'];
@@ -67,7 +68,7 @@
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
       acceptNode: (node) => {
         const parent = node.parentElement;
-        if (!parent || parent.closest('script, style, .lang-select')) return NodeFilter.FILTER_REJECT;
+        if (!parent || parent.closest('script, style, .lang-picker')) return NodeFilter.FILTER_REJECT;
         return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
       },
     });
@@ -102,6 +103,8 @@
     document.documentElement.lang = HTML_LANG[lang];
     const select = document.querySelector('.lang-select');
     if (select) select.value = lang;
+    const flag = document.querySelector('.lang-flag');
+    if (flag) flag.textContent = FLAGS[lang];
   }
 
   function init() {
