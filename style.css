@@ -203,3 +203,10 @@ a.card{display:block;color:inherit}
 .apps-grid{grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr))}
 @media (max-width:860px){.feature-row{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:520px){.app-title .eyebrow{letter-spacing:.06em;font-size:12px}}
+
+/* módulos do Sirena */
+.modules{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.modules span{font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:#d6d3e6}
+
+/* seis apps: 3 por linha no desktop */
+@media (min-width:861px){.apps-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
