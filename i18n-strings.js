@@ -1,0 +1,312 @@
+// Traduções do site. A chave é o texto original em português, como aparece no index.html;
+// o valor é [inglês, espanhol]. Textos iguais nos três idiomas (nomes de apps, GitHub, FAQ) não precisam estar aqui.
+window.WITCH_STRINGS = Object.freeze({
+  'witchmymac · apps gratuitos para Mac': ['witchmymac · free apps for Mac', 'witchmymac · apps gratis para Mac'],
+  'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid e Wormlink: seis apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.': [
+    'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid and Wormlink: six free, native macOS apps with no ads and no tracking.',
+    'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid y Wormlink: seis apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
+  'Principal': ['Main', 'Principal'],
+  'Privacidade': ['Privacy', 'Privacidad'],
+  'Instalar': ['Install', 'Instalar'],
+  'Abrir menu': ['Open menu', 'Abrir menú'],
+  'Idioma': ['Language', 'Idioma'],
+
+  // Topo
+  'Apps nativos para macOS · 100% gratuitos': ['Native macOS apps · 100% free', 'Apps nativas para macOS · 100% gratis'],
+  'Feitiços úteis': ['Handy spells', 'Hechizos útiles'],
+  'para o seu Mac.': ['for your Mac.', 'para tu Mac.'],
+  'Seis apps nativos em Swift: um canivete suíço para a barra de menus, um limpador, um compactador de arquivos, um bloco de notas, um cliente de bancos de dados e um cliente de servidores. Sem assinatura, sem anúncios, sem rastreamento.': [
+    'Six native apps built in Swift: a Swiss army knife for the menu bar, a cleaner, an archive manager, a notepad, a database client and a server client. No subscription, no ads, no tracking.',
+    'Seis apps nativas en Swift: una navaja suiza para la barra de menús, un limpiador, un compresor de archivos, un bloc de notas, un cliente de bases de datos y un cliente de servidores. Sin suscripción, sin anuncios, sin rastreo.'],
+  'Ver os apps': ['See the apps', 'Ver las apps'],
+  'Como instalar': ['How to install', 'Cómo instalar'],
+  'Gratuito para sempre': ['Free forever', 'Gratis para siempre'],
+  'Sem telemetria': ['No telemetry', 'Sin telemetría'],
+  'Apple Silicon e Intel': ['Apple Silicon and Intel', 'Apple Silicon e Intel'],
+  'Feito por um dev indie': ['Made by an indie dev', 'Hecho por un dev indie'],
+
+  // Cartões
+  'Os apps': ['The apps', 'Las apps'],
+  'Cada um substitui uma ferramenta paga. Todos são seus, de graça.': ['Each one replaces a paid tool. All of them are yours, for free.', 'Cada una reemplaza una herramienta de pago. Todas son tuyas, gratis.'],
+  'Utilidades na barra de menus': ['Menu bar utilities', 'Utilidades en la barra de menús'],
+  'Mais de uma dúzia de ferramentas em um ícone: janelas, área de transferência, mixer, Pomodoro e mais.': [
+    'More than a dozen tools in one icon: windows, clipboard, mixer, Pomodoro and more.',
+    'Más de una docena de herramientas en un ícono: ventanas, portapapeles, mezclador, Pomodoro y más.'],
+  'Conhecer →': ['Learn more →', 'Conocer →'],
+  'Limpeza e manutenção': ['Cleanup and maintenance', 'Limpieza y mantenimiento'],
+  'Libere espaço, desinstale apps por completo, ache duplicados e confira a segurança do Mac.': [
+    'Free up space, fully uninstall apps, find duplicates and check your Mac’s security.',
+    'Libera espacio, desinstala apps por completo, encuentra duplicados y revisa la seguridad de tu Mac.'],
+  'Arquivos compactados': ['Archives', 'Archivos comprimidos'],
+  'Abra, extraia e crie RAR, ZIP, 7Z, TAR e mais, numa janela só, no estilo do WinRAR.': [
+    'Open, extract and create RAR, ZIP, 7Z, TAR and more in a single window, WinRAR style.',
+    'Abre, extrae y crea RAR, ZIP, 7Z, TAR y más en una sola ventana, al estilo de WinRAR.'],
+  'Notas em texto puro': ['Plain-text notes', 'Notas en texto plano'],
+  'Cada nota é um arquivo .txt de verdade, salvo sozinho enquanto você digita.': [
+    'Every note is a real .txt file, saved on its own as you type.',
+    'Cada nota es un archivo .txt de verdad, guardado solo mientras escribes.'],
+  'Cliente de bancos de dados': ['Database client', 'Cliente de bases de datos'],
+  'SQLite, PostgreSQL, MySQL, SQL Server, MongoDB e Redis em um app só, com grid rápido e editor de SQL.': [
+    'SQLite, PostgreSQL, MySQL, SQL Server, MongoDB and Redis in one app, with a fast grid and a SQL editor.',
+    'SQLite, PostgreSQL, MySQL, SQL Server, MongoDB y Redis en una sola app, con una grilla rápida y un editor de SQL.'],
+  'Cliente de arquivos remotos': ['Remote file client', 'Cliente de archivos remotos'],
+  'SFTP, FTP, WebDAV, S3, SMB e nuvens em dois painéis. Conecte, explore e transfira.': [
+    'SFTP, FTP, WebDAV, S3, SMB and cloud storage in two panes. Connect, browse and transfer.',
+    'SFTP, FTP, WebDAV, S3, SMB y nubes en dos paneles. Conecta, explora y transfiere.'],
+
+  // Sirena
+  'Sua barra de menus': ['Your menu bar', 'Tu barra de menús'],
+  'Um ícone na barra de menus fazendo o trabalho de uma dúzia de apps pagos. Ligue só os módulos que você usa.': [
+    'One menu bar icon doing the job of a dozen paid apps. Turn on only the modules you use.',
+    'Un ícono en la barra de menús que hace el trabajo de una docena de apps de pago. Activa solo los módulos que usas.'],
+  '📋 Histórico': ['📋 History', '📋 Historial'],
+  '📌 Fixar janela': ['📌 Pin window', '📌 Fijar ventana'],
+  '🔍 Capturar texto': ['🔍 Capture text', '🔍 Capturar texto'],
+  '📸 Captura de tela': ['📸 Screenshot', '📸 Captura de pantalla'],
+  '🍅 Pomodoro': ['🍅 Pomodoro', '🍅 Pomodoro'],
+  '🎨 Seletor de cores': ['🎨 Color picker', '🎨 Selector de colores'],
+  '✏️ Desenho livre': ['✏️ Freehand drawing', '✏️ Dibujo libre'],
+  '🪞 Espiar câmera': ['🪞 Camera peek', '🪞 Espiar cámara'],
+  '☕ Não desligar tela': ['☕ Keep screen awake', '☕ No apagar pantalla'],
+  '🎚️ Mixer de som': ['🎚️ Sound mixer', '🎚️ Mezclador de sonido'],
+  '🪟 Janela e Dock': ['🪟 Windows and Dock', '🪟 Ventanas y Dock'],
+  '🙈 Ícones ocultos': ['🙈 Hidden icons', '🙈 Íconos ocultos'],
+  '🗂️ Prateleira': ['🗂️ Shelf', '🗂️ Estante'],
+  '🏝️ Ilha Dinâmica': ['🏝️ Dynamic Island', '🏝️ Isla Dinámica'],
+  'Copie tudo, ache tudo': ['Copy everything, find everything', 'Copia todo, encuentra todo'],
+  'Histórico do que você copia e texto capturado de qualquer imagem ou vídeo.': [
+    'A history of everything you copy, plus text captured from any image or video.',
+    'Historial de todo lo que copias y texto capturado de cualquier imagen o video.'],
+  'Som por app': ['Sound per app', 'Sonido por app'],
+  'Volume de cada app, para onde cada um toca e o microfone.': [
+    'The volume of each app, where each one plays, and the microphone.',
+    'El volumen de cada app, dónde suena cada una y el micrófono.'],
+  'O notch ganha vida': ['The notch comes alive', 'El notch cobra vida'],
+  'Música, calendário, timer e controles rápidos ao redor da câmera.': [
+    'Music, calendar, timer and quick controls around the camera.',
+    'Música, calendario, temporizador y controles rápidos alrededor de la cámara.'],
+  'Baixar Sirena': ['Download Sirena', 'Descargar Sirena'],
+  'Código fonte': ['Source code', 'Código fuente'],
+  'macOS 26 Tahoe ou mais novo · Apple Silicon e Intel': ['macOS 26 Tahoe or later · Apple Silicon and Intel', 'macOS 26 Tahoe o posterior · Apple Silicon e Intel'],
+  'Tela de boas-vindas do Sirena com os atalhos': ['Sirena welcome screen with its shortcuts', 'Pantalla de bienvenida de Sirena con sus atajos'],
+  'Menu do Sirena aberto a partir do ícone na barra de menus': ['Sirena menu opened from its menu bar icon', 'Menú de Sirena abierto desde su ícono en la barra de menús'],
+
+  // MacDash
+  'Seu Mac em ordem': ['Your Mac in order', 'Tu Mac en orden'],
+  'Limpeza e manutenção sem medo. Toda verificação termina numa tela de revisão, e nada é removido sem a sua aprovação.': [
+    'Worry-free cleanup and maintenance. Every scan ends on a review screen, and nothing is removed without your approval.',
+    'Limpieza y mantenimiento sin miedo. Cada análisis termina en una pantalla de revisión, y nada se elimina sin tu aprobación.'],
+  'Cuidado inteligente': ['Smart Care', 'Cuidado inteligente'],
+  'Uma varredura que junta lixo do sistema, caches, Lixeiras e arquivos do Mail.': [
+    'One scan that covers system junk, caches, Trash bins and Mail files.',
+    'Un análisis que reúne basura del sistema, cachés, papeleras y archivos de Mail.'],
+  'Limpeza avançada': ['Advanced cleanup', 'Limpieza avanzada'],
+  'Arquivos grandes, restos de apps, máquinas virtuais e caches do Xcode, Homebrew, Node e Docker.': [
+    'Large files, app leftovers, virtual machines and Xcode, Homebrew, Node and Docker caches.',
+    'Archivos grandes, restos de apps, máquinas virtuales y cachés de Xcode, Homebrew, Node y Docker.'],
+  'Aplicativos': ['Applications', 'Aplicaciones'],
+  'Desinstale por completo, controle itens de início e atualize seus apps.': [
+    'Uninstall completely, manage login items and update your apps.',
+    'Desinstala por completo, controla los elementos de inicio y actualiza tus apps.'],
+  'Proteção e antivírus': ['Protection and antivirus', 'Protección y antivirus'],
+  'Permissões de apps, verificações de segurança, Wi-Fi e extensões de navegador.': [
+    'App permissions, security checks, Wi-Fi and browser extensions.',
+    'Permisos de apps, verificaciones de seguridad, Wi-Fi y extensiones del navegador.'],
+  'Espaço e duplicados': ['Space and duplicates', 'Espacio y duplicados'],
+  'Lente de espaço, arquivos duplicados, fotos semelhantes e monitor de processos.': [
+    'Space Lens, duplicate files, similar photos and a process monitor.',
+    'Lente de espacio, archivos duplicados, fotos similares y monitor de procesos.'],
+  'Baixar MacDash': ['Download MacDash', 'Descargar MacDash'],
+  'macOS 13 Ventura ou mais novo · Apple Silicon e Intel': ['macOS 13 Ventura or later · Apple Silicon and Intel', 'macOS 13 Ventura o posterior · Apple Silicon e Intel'],
+  'Cuidado inteligente do MacDash': ['MacDash Smart Care', 'Cuidado inteligente de MacDash'],
+  'Antivírus do MacDash': ['MacDash antivirus', 'Antivirus de MacDash'],
+
+  // Neorar
+  'Seus arquivos compactados': ['Your archives', 'Tus archivos comprimidos'],
+  'Um gerenciador de arquivos compactados no estilo do WinRAR. Uma janela só, que começa em Downloads, entra nos arquivos compactados e age sobre o que você selecionar.': [
+    'A WinRAR-style archive manager. A single window that starts in Downloads, opens archives and acts on whatever you select.',
+    'Un gestor de archivos comprimidos al estilo de WinRAR. Una sola ventana que empieza en Descargas, entra en los archivos comprimidos y actúa sobre lo que selecciones.'],
+  'Extrai de tudo': ['Extracts everything', 'Extrae de todo'],
+  'RAR 1.5 a 7 com senha e volumes, ZIP com AES, 7Z, TAR, ISO, DMG, CAB, MSI e outros.': [
+    'RAR 1.5 to 7 with passwords and volumes, ZIP with AES, 7Z, TAR, ISO, DMG, CAB, MSI and more.',
+    'RAR 1.5 a 7 con contraseña y volúmenes, ZIP con AES, 7Z, TAR, ISO, DMG, CAB, MSI y otros.'],
+  'Comprime do seu jeito': ['Compress your way', 'Comprime a tu manera'],
+  '7Z, ZIP com AES-256 e TAR, com senha, partes e sem o lixo do macOS.': [
+    '7Z, ZIP with AES-256 and TAR, with passwords, split parts and none of the macOS clutter.',
+    '7Z, ZIP con AES-256 y TAR, con contraseña, partes y sin la basura de macOS.'],
+  'Dentro do arquivo': ['Inside the archive', 'Dentro del archivo'],
+  'Navegue, busque, espie com Quick Look e extraia só o que precisa.': [
+    'Browse, search, peek with Quick Look and extract only what you need.',
+    'Navega, busca, echa un vistazo con Quick Look y extrae solo lo que necesitas.'],
+  'Testar e reparar': ['Test and repair', 'Probar y reparar'],
+  'Confira a integridade e recupere arquivos RAR e ZIP danificados.': [
+    'Check integrity and recover damaged RAR and ZIP files.',
+    'Comprueba la integridad y recupera archivos RAR y ZIP dañados.'],
+  'Direto do Finder': ['Right from Finder', 'Directo desde el Finder'],
+  'Extrair e comprimir no clique direito, em cinco idiomas.': [
+    'Extract and compress from the right-click menu, in five languages.',
+    'Extraer y comprimir con el clic derecho, en cinco idiomas.'],
+  'Baixar Neorar': ['Download Neorar', 'Descargar Neorar'],
+  'Neorar mostrando o conteúdo de um arquivo 7Z': ['Neorar showing the contents of a 7Z archive', 'Neorar mostrando el contenido de un archivo 7Z'],
+  'Neorar em grade dentro de um ZIP com comentário': ['Neorar in grid view inside a ZIP with a comment', 'Neorar en cuadrícula dentro de un ZIP con comentario'],
+
+  // Rubbish Notes
+  'Suas ideias': ['Your ideas', 'Tus ideas'],
+  'Um bloco de notas em texto puro. Cada nota é um arquivo .txt de verdade, salvo um instante depois que você para de digitar. Cole qualquer coisa e só as palavras chegam.': [
+    'A plain-text notepad. Every note is a real .txt file, saved a moment after you stop typing. Paste anything and only the words arrive.',
+    'Un bloc de notas en texto plano. Cada nota es un archivo .txt de verdad, guardado un instante después de que dejas de escribir. Pega lo que sea y solo llegan las palabras.'],
+  'Seus arquivos, sempre': ['Your files, always', 'Tus archivos, siempre'],
+  'Notas em .txt que você abre em qualquer app, e edições de fora aparecem na hora.': [
+    '.txt notes you can open in any app, and outside edits show up right away.',
+    'Notas en .txt que abres en cualquier app, y los cambios hechos fuera aparecen al instante.'],
+  'Entrada, Arquivo e Lixo': ['Inbox, Archive and Trash', 'Entrada, Archivo y Papelera'],
+  'Organize, fixe e desfaça com ⌘Z. O título vem da primeira linha.': [
+    'Organize, pin and undo with ⌘Z. The title comes from the first line.',
+    'Organiza, fija y deshaz con ⌘Z. El título sale de la primera línea.'],
+  'Seguro por padrão': ['Secure by default', 'Seguro por defecto'],
+  'App Sandbox e nenhum acesso à rede. Nada sai do seu Mac.': [
+    'App Sandbox and no network access. Nothing leaves your Mac.',
+    'App Sandbox y ningún acceso a la red. Nada sale de tu Mac.'],
+  'Do seu jeito': ['Your way', 'A tu manera'],
+  'Liquid Glass, temas como Dracula, Nord e Tokyo Night, modo claro e escuro e um ícone vermelho alternativo.': [
+    'Liquid Glass, themes like Dracula, Nord and Tokyo Night, light and dark mode, and an alternate red icon.',
+    'Liquid Glass, temas como Dracula, Nord y Tokyo Night, modo claro y oscuro y un ícono rojo alternativo.'],
+  'Seis idiomas': ['Six languages', 'Seis idiomas'],
+  'Português, inglês, espanhol, francês, alemão e italiano.': [
+    'Portuguese, English, Spanish, French, German and Italian.',
+    'Portugués, inglés, español, francés, alemán e italiano.'],
+  'Baixar Rubbish Notes': ['Download Rubbish Notes', 'Descargar Rubbish Notes'],
+  'Rubbish Notes com uma nota aberta': ['Rubbish Notes with a note open', 'Rubbish Notes con una nota abierta'],
+  'Aba de temas do Rubbish Notes com Dracula, Nord, Monokai e outros': ['Rubbish Notes themes tab with Dracula, Nord, Monokai and more', 'Pestaña de temas de Rubbish Notes con Dracula, Nord, Monokai y otros'],
+
+  // BunnyGrid
+  'Seus bancos de dados': ['Your databases', 'Tus bases de datos'],
+  'Um cliente de bancos de dados nativo, leve e rápido. Veja a árvore de objetos, abra tabelas num grid paginado e escreva SQL com realce de sintaxe e autocompletar.': [
+    'A native, light and fast database client. Browse the object tree, open tables in a paged grid and write SQL with syntax highlighting and autocomplete.',
+    'Un cliente de bases de datos nativo, ligero y rápido. Mira el árbol de objetos, abre tablas en una grilla paginada y escribe SQL con resaltado de sintaxis y autocompletado.'],
+  'Sete bancos, um app': ['Seven databases, one app', 'Siete bases, una app'],
+  'SQLite, PostgreSQL, MySQL, MariaDB, SQL Server e Azure SQL, MongoDB e Redis.': [
+    'SQLite, PostgreSQL, MySQL, MariaDB, SQL Server and Azure SQL, MongoDB and Redis.',
+    'SQLite, PostgreSQL, MySQL, MariaDB, SQL Server y Azure SQL, MongoDB y Redis.'],
+  'Editar como planilha': ['Edit like a spreadsheet', 'Edita como una hoja de cálculo'],
+  'Grid com edição de células, Form View, duplicar linhas e transações.': [
+    'A grid with cell editing, Form View, row duplication and transactions.',
+    'Grilla con edición de celdas, Form View, duplicar filas y transacciones.'],
+  'Ferramentas de verdade': ['Real tools', 'Herramientas de verdad'],
+  'Design de tabelas, diagrama ER, plano de consulta, backup, automação e BI.': [
+    'Table design, ER diagrams, query plans, backup, automation and BI.',
+    'Diseño de tablas, diagrama ER, plan de consulta, respaldo, automatización y BI.'],
+  'Conexões seguras': ['Secure connections', 'Conexiones seguras'],
+  'SSL e túnel SSH, com senhas guardadas nas Chaves do macOS.': [
+    'SSL and SSH tunnels, with passwords stored in the macOS Keychain.',
+    'SSL y túnel SSH, con contraseñas guardadas en el Llavero de macOS.'],
+  'Assistente de IA opcional': ['Optional AI assistant', 'Asistente de IA opcional'],
+  'Use sua própria chave da Claude ou da OpenAI para escrever e explicar consultas.': [
+    'Use your own Claude or OpenAI key to write and explain queries.',
+    'Usa tu propia clave de Claude o de OpenAI para escribir y explicar consultas.'],
+  'Baixar BunnyGrid': ['Download BunnyGrid', 'Descargar BunnyGrid'],
+  'macOS 14 Sonoma ou mais novo · Apple Silicon e Intel': ['macOS 14 Sonoma or later · Apple Silicon and Intel', 'macOS 14 Sonoma o posterior · Apple Silicon e Intel'],
+  'BunnyGrid mostrando uma tabela de clientes': ['BunnyGrid showing a customers table', 'BunnyGrid mostrando una tabla de clientes'],
+  'Janela de nova conexão do BunnyGrid com os tipos de banco': ['BunnyGrid new connection window with database types', 'Ventana de nueva conexión de BunnyGrid con los tipos de base'],
+
+  // Wormlink
+  'Seus servidores': ['Your servers', 'Tus servidores'],
+  'Conecte. Explore. Transfira. Um cliente de arquivos remotos em dois painéis, com o visual Liquid Glass do macOS 26 e software livre sob a GPL-3.': [
+    'Connect. Browse. Transfer. A two-pane remote file client with the Liquid Glass look of macOS 26, free software under the GPL-3.',
+    'Conecta. Explora. Transfiere. Un cliente de archivos remotos de dos paneles, con el aspecto Liquid Glass de macOS 26 y software libre bajo la GPL-3.'],
+  'Todos os protocolos': ['Every protocol', 'Todos los protocolos'],
+  'SFTP, FTP e FTPS, WebDAV, S3 e compatíveis, SMB, Azure, Swift e Backblaze B2.': [
+    'SFTP, FTP and FTPS, WebDAV, S3 and compatibles, SMB, Azure, Swift and Backblaze B2.',
+    'SFTP, FTP y FTPS, WebDAV, S3 y compatibles, SMB, Azure, Swift y Backblaze B2.'],
+  'Suas nuvens': ['Your clouds', 'Tus nubes'],
+  'Dropbox, Google Drive, OneDrive, SharePoint e Box no mesmo lugar.': [
+    'Dropbox, Google Drive, OneDrive, SharePoint and Box in one place.',
+    'Dropbox, Google Drive, OneDrive, SharePoint y Box en un solo lugar.'],
+  'Transferências sem susto': ['Worry-free transfers', 'Transferencias sin sustos'],
+  'Fila, retomada, sincronização com prévia e arrastar direto do Finder.': [
+    'Queue, resume, sync with preview and drag straight from Finder.',
+    'Cola, reanudación, sincronización con vista previa y arrastrar directo desde el Finder.'],
+  'Montar no Finder': ['Mount in Finder', 'Montar en el Finder'],
+  'O Wormlink Disk mostra seus servidores como discos no Finder.': [
+    'Wormlink Disk shows your servers as disks in Finder.',
+    'Wormlink Disk muestra tus servidores como discos en el Finder.'],
+  'Para quem vive no terminal': ['For terminal lovers', 'Para quien vive en la terminal'],
+  'Chaves SSH, ProxyJump, linha de comando e AppleScript.': [
+    'SSH keys, ProxyJump, command line and AppleScript.',
+    'Claves SSH, ProxyJump, línea de comandos y AppleScript.'],
+  'Baixar Wormlink': ['Download Wormlink', 'Descargar Wormlink'],
+  'Wormlink com a pasta Downloads e a lista de servidores': ['Wormlink with the Downloads folder and the server list', 'Wormlink con la carpeta Descargas y la lista de servidores'],
+
+  // Privacidade
+  'Sua privacidade': ['Your privacy', 'Tu privacidad'],
+  'Sem espionagem.': ['No snooping.', 'Sin espionaje.'],
+  'Nenhum app do witchmymac coleta dados de uso. Eles só se conectam aonde você mandar.': [
+    'No witchmymac app collects usage data. They only connect where you tell them to.',
+    'Ninguna app de witchmymac recopila datos de uso. Solo se conectan a donde tú les indiques.'],
+  'Zero telemetria': ['Zero telemetry', 'Cero telemetría'],
+  'Sem análise de uso, sem rastreadores, sem conta.': ['No usage analytics, no trackers, no account.', 'Sin análisis de uso, sin rastreadores, sin cuenta.'],
+  'Suas senhas no seu Mac': ['Your passwords stay on your Mac', 'Tus contraseñas en tu Mac'],
+  'Credenciais ficam nas Chaves do macOS.': ['Credentials live in the macOS Keychain.', 'Las credenciales quedan en el Llavero de macOS.'],
+  'Sem pegadinha': ['No catch', 'Sin trampa'],
+  'Sem versão Pro, sem teste de 7 dias, sem recursos bloqueados.': ['No Pro version, no 7-day trial, no locked features.', 'Sin versión Pro, sin prueba de 7 días, sin funciones bloqueadas.'],
+  'R$ 49,90/mês': ['$9.99/month', 'US$ 9,99/mes'],
+  'R$ 0': ['$0', 'US$ 0'],
+  'para sempre, nos seis apps': ['forever, across all six apps', 'para siempre, en las seis apps'],
+
+  // Instalar
+  'Ok, quero. Por onde começo?': ['OK, I’m in. Where do I start?', 'Ok, lo quiero. ¿Por dónde empiezo?'],
+  'Três passos, trinta segundos.': ['Three steps, thirty seconds.', 'Tres pasos, treinta segundos.'],
+  'Baixe o .dmg': ['Download the .dmg', 'Descarga el .dmg'],
+  'Clique em "Baixar" no app que quiser. O arquivo vem direto do GitHub.': [
+    'Click “Download” on the app you want. The file comes straight from GitHub.',
+    'Haz clic en “Descargar” en la app que quieras. El archivo viene directo de GitHub.'],
+  'Arraste para Aplicativos': ['Drag to Applications', 'Arrastra a Aplicaciones'],
+  'Abra o .dmg e arraste o ícone para a pasta Aplicativos.': [
+    'Open the .dmg and drag the icon into the Applications folder.',
+    'Abre el .dmg y arrastra el ícono a la carpeta Aplicaciones.'],
+  'Abra e use': ['Open and use it', 'Abre y usa'],
+  'Na primeira vez, clique com o botão direito no app e escolha "Abrir" para confirmar.': [
+    'The first time, right-click the app and choose “Open” to confirm.',
+    'La primera vez, haz clic derecho en la app y elige “Abrir” para confirmar.'],
+
+  // FAQ
+  'Espera, e quanto a…': ['Wait, what about…', 'Espera, ¿y qué hay de…'],
+  'É mesmo de graça? Qual é o truque?': ['Is it really free? What’s the catch?', '¿De verdad es gratis? ¿Cuál es la trampa?'],
+  'Nenhum truque. São apps que eu uso todo dia e decidi compartilhar. Não há versão paga, assinatura nem anúncios.': [
+    'No catch. These are apps I use every day and decided to share. There’s no paid version, subscription or ads.',
+    'Ninguna trampa. Son apps que uso todos los días y decidí compartir. No hay versión de pago, suscripción ni anuncios.'],
+  'O macOS disse que o app "não pôde ser verificado". E agora?': [
+    'macOS says the app “can’t be verified”. Now what?',
+    'macOS dice que la app “no se pudo verificar”. ¿Y ahora?'],
+  'Isso acontece com apps distribuídos fora da App Store. Clique com o botão direito no app, escolha "Abrir" e confirme. Se não aparecer a opção, vá em Ajustes do Sistema, Privacidade e Segurança, e clique em "Abrir Mesmo Assim".': [
+    'That happens with apps distributed outside the App Store. Right-click the app, choose “Open” and confirm. If the option doesn’t show up, go to System Settings, Privacy & Security, and click “Open Anyway”.',
+    'Eso pasa con apps distribuidas fuera de la App Store. Haz clic derecho en la app, elige “Abrir” y confirma. Si no aparece la opción, ve a Ajustes del Sistema, Privacidad y Seguridad, y haz clic en “Abrir igualmente”.'],
+  'O MacDash pode apagar algo importante?': ['Can MacDash delete something important?', '¿MacDash puede borrar algo importante?'],
+  'Não sem você ver. Toda verificação termina numa tela de revisão, e nada é removido sem a sua aprovação.': [
+    'Not without you seeing it. Every scan ends on a review screen, and nothing is removed without your approval.',
+    'No sin que lo veas. Cada análisis termina en una pantalla de revisión, y nada se elimina sin tu aprobación.'],
+  'O assistente de IA do BunnyGrid envia meus dados?': ['Does BunnyGrid’s AI assistant send my data?', '¿El asistente de IA de BunnyGrid envía mis datos?'],
+  'Só se você ligar. Ele é opcional e usa a sua própria chave da Claude ou da OpenAI. Sem chave configurada, nada sai do seu Mac.': [
+    'Only if you turn it on. It’s optional and uses your own Claude or OpenAI key. With no key set, nothing leaves your Mac.',
+    'Solo si lo activas. Es opcional y usa tu propia clave de Claude o de OpenAI. Sin clave configurada, nada sale de tu Mac.'],
+  'Por que alguns apps pedem macOS 26?': ['Why do some apps require macOS 26?', '¿Por qué algunas apps piden macOS 26?'],
+  'O Sirena, o Neorar, o Rubbish Notes e o Wormlink usam o Liquid Glass e outras APIs que só existem a partir do macOS 26 Tahoe.': [
+    'Sirena, Neorar, Rubbish Notes and Wormlink use Liquid Glass and other APIs that only exist starting with macOS 26 Tahoe.',
+    'Sirena, Neorar, Rubbish Notes y Wormlink usan Liquid Glass y otras APIs que solo existen a partir de macOS 26 Tahoe.'],
+  'Encontrei um bug ou tenho uma ideia.': ['I found a bug or have an idea.', 'Encontré un error o tengo una idea.'],
+  'Abra uma issue no GitHub do app ou mande um e-mail pelo link de contato no rodapé. Toda sugestão é bem-vinda.': [
+    'Open an issue on the app’s GitHub or send an email through the contact link in the footer. Every suggestion is welcome.',
+    'Abre un issue en el GitHub de la app o envía un correo desde el enlace de contacto en el pie de página. Toda sugerencia es bienvenida.'],
+
+  // Final e rodapé
+  'Faça mágica com o seu Mac.': ['Work some magic on your Mac.', 'Haz magia con tu Mac.'],
+  'Seis apps, zero custo. Escolha o seu.': ['Six apps, zero cost. Pick yours.', 'Seis apps, cero costo. Elige la tuya.'],
+  'Imagem ampliada': ['Enlarged image', 'Imagen ampliada'],
+  'Fechar': ['Close', 'Cerrar'],
+  'Rodapé': ['Footer', 'Pie de página'],
+  'Contato': ['Contact', 'Contacto'],
+  'witchmymac. Apple, Mac e macOS são marcas da Apple Inc.': [
+    'witchmymac. Apple, Mac and macOS are trademarks of Apple Inc.',
+    'witchmymac. Apple, Mac y macOS son marcas de Apple Inc.'],
+  'Em breve': ['Coming soon', 'Próximamente'],
+});
