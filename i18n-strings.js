@@ -7,7 +7,7 @@ window.WITCH_STRINGS = Object.freeze({
     'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid y Wormlink: seis apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
   'Principal': ['Main', 'Principal'],
   'Privacidade': ['Privacy', 'Privacidad'],
-  'Instalar': ['Install', 'Instalar'],
+  'Como Instalar?': ['How to Install?', '¿Cómo instalar?'],
   'Abrir menu': ['Open menu', 'Abrir menú'],
   'Idioma': ['Language', 'Idioma'],
 
