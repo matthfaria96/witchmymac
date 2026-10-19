@@ -41,10 +41,6 @@ window.WITCH_STRINGS = Object.freeze({
   'Abra, extraia e crie RAR, ZIP, 7Z, TAR e mais, numa janela só, no estilo do WinRAR.': [
     'Open, extract and create RAR, ZIP, 7Z, TAR and more in a single window, WinRAR style.',
     'Abre, extrae y crea RAR, ZIP, 7Z, TAR y más en una sola ventana, al estilo de WinRAR.'],
-  'Notas em texto puro': ['Plain-text notes', 'Notas en texto plano'],
-  'Cada nota é um arquivo .txt de verdade, salvo sozinho enquanto você digita.': [
-    'Every note is a real .txt file, saved on its own as you type.',
-    'Cada nota es un archivo .txt de verdad, guardado solo mientras escribes.'],
   'Cliente de bancos de dados': ['Database client', 'Cliente de bases de datos'],
   'SQLite, PostgreSQL, MySQL, SQL Server, MongoDB e Redis em um app só, com grid rápido e editor de SQL.': [
     'SQLite, PostgreSQL, MySQL, SQL Server, MongoDB and Redis in one app, with a fast grid and a SQL editor.',
@@ -150,34 +146,25 @@ window.WITCH_STRINGS = Object.freeze({
   'Neorar mostrando o conteúdo de um arquivo 7Z': ['Neorar showing the contents of a 7Z archive', 'Neorar mostrando el contenido de un archivo 7Z'],
   'Neorar em grade dentro de um ZIP com comentário': ['Neorar in grid view inside a ZIP with a comment', 'Neorar en cuadrícula dentro de un ZIP con comentario'],
 
-  // Rubbish Notes
-  'Suas ideias': ['Your ideas', 'Tus ideas'],
-  'Um bloco de notas em texto puro. Cada nota é um arquivo .txt de verdade, salvo um instante depois que você para de digitar. Cole qualquer coisa e só as palavras chegam.': [
-    'A plain-text notepad. Every note is a real .txt file, saved a moment after you stop typing. Paste anything and only the words arrive.',
-    'Un bloc de notas en texto plano. Cada nota es un archivo .txt de verdad, guardado un instante después de que dejas de escribir. Pega lo que sea y solo llegan las palabras.'],
-  'Seus arquivos, sempre': ['Your files, always', 'Tus archivos, siempre'],
-  'Notas em .txt que você abre em qualquer app, e edições de fora aparecem na hora.': [
-    '.txt notes you can open in any app, and outside edits show up right away.',
-    'Notas en .txt que abres en cualquier app, y los cambios hechos fuera aparecen al instante.'],
-  'Entrada, Arquivo e Lixo': ['Inbox, Archive and Trash', 'Entrada, Archivo y Papelera'],
-  'Organize, fixe e desfaça com ⌘Z. O título vem da primeira linha.': [
-    'Organize, pin and undo with ⌘Z. The title comes from the first line.',
-    'Organiza, fija y deshaz con ⌘Z. El título sale de la primera línea.'],
-  'Seguro por padrão': ['Secure by default', 'Seguro por defecto'],
-  'App Sandbox e nenhum acesso à rede. Nada sai do seu Mac.': [
-    'App Sandbox and no network access. Nothing leaves your Mac.',
-    'App Sandbox y ningún acceso a la red. Nada sale de tu Mac.'],
-  'Do seu jeito': ['Your way', 'A tu manera'],
-  'Liquid Glass, temas como Dracula, Nord e Tokyo Night, modo claro e escuro e um ícone vermelho alternativo.': [
-    'Liquid Glass, themes like Dracula, Nord and Tokyo Night, light and dark mode, and an alternate red icon.',
-    'Liquid Glass, temas como Dracula, Nord y Tokyo Night, modo claro y oscuro y un ícono rojo alternativo.'],
-  'Seis idiomas': ['Six languages', 'Seis idiomas'],
-  'Português, inglês, espanhol, francês, alemão e italiano.': [
-    'Portuguese, English, Spanish, French, German and Italian.',
-    'Portugués, inglés, español, francés, alemán e italiano.'],
   'Baixar Rubbish Notes': ['Download Rubbish Notes', 'Descargar Rubbish Notes'],
   'Rubbish Notes com uma nota aberta': ['Rubbish Notes with a note open', 'Rubbish Notes con una nota abierta'],
   'Aba de temas do Rubbish Notes com Dracula, Nord, Monokai e outros': ['Rubbish Notes themes tab with Dracula, Nord, Monokai and more', 'Pestaña de temas de Rubbish Notes con Dracula, Nord, Monokai y otros'],
+
+  // Rubbish Notes
+  'Notas para esvaziar a cabeça': ['Notes to clear your head', 'Notas para vaciar la cabeza'],
+  'Escreva e esqueça: tudo é salvo sozinho no seu Mac. Minimalista, com modo foco, temas e notas fixadas.': ['Write it down and let it go: everything saves itself on your Mac. Minimal, with focus mode, themes and pinned notes.', 'Escríbelo y olvídate: todo se guarda solo en tu Mac. Minimalista, con modo foco, temas y notas fijadas.'],
+  'Sua mente leve': ['A lighter mind', 'Tu mente ligera'],
+  'Tire as ideias da cabeça e siga em frente. O Rubbish Notes é um bloco de notas minimalista que salva tudo sozinho, no seu Mac, enquanto você digita. Sem botão de salvar, sem conta, sem nuvem: abriu, escreveu, pronto.': ['Get ideas out of your head and move on. Rubbish Notes is a minimal notepad that saves everything on its own, on your Mac, as you type. No save button, no account, no cloud: open it, write, done.', 'Saca las ideas de tu cabeza y sigue adelante. Rubbish Notes es un bloc de notas minimalista que lo guarda todo solo, en tu Mac, mientras escribes. Sin botón de guardar, sin cuenta, sin nube: abres, escribes, listo.'],
+  'Salva sozinho, sempre': ['Saves itself, always', 'Se guarda solo, siempre'],
+  'Cada palavra fica guardada um instante depois que você para de digitar, em arquivos .txt no seu Mac.': ['Every word is stored a moment after you stop typing, in .txt files on your Mac.', 'Cada palabra queda guardada un instante después de que dejas de escribir, en archivos .txt en tu Mac.'],
+  'Modo foco': ['Focus mode', 'Modo foco'],
+  'Esconda tudo e fique só com o texto. Nada disputa a sua atenção.': ['Hide everything and stay with just your words. Nothing competes for your attention.', 'Oculta todo y quédate solo con el texto. Nada compite por tu atención.'],
+  'Fixe o que importa, arquive o resto': ['Pin what matters, archive the rest', 'Fija lo importante, archiva el resto'],
+  'Notas fixadas ficam no topo, o que já passou vai para o Arquivo e tudo se desfaz com ⌘Z.': ['Pinned notes stay on top, what’s done goes to the Archive, and everything can be undone with ⌘Z.', 'Las notas fijadas quedan arriba, lo que ya pasó va al Archivo y todo se deshace con ⌘Z.'],
+  'Temas para o seu humor': ['Themes for your mood', 'Temas para tu estado de ánimo'],
+  'Dracula, Nord, Tokyo Night, Monokai e outros, com modo claro e escuro e um ícone vermelho alternativo.': ['Dracula, Nord, Tokyo Night, Monokai and more, with light and dark mode and an alternate red icon.', 'Dracula, Nord, Tokyo Night, Monokai y otros, con modo claro y oscuro y un ícono rojo alternativo.'],
+  'Só seu': ['Yours alone', 'Solo tuyo'],
+  'Sem conta, sem nuvem e sem acesso à rede. Suas notas nunca saem do seu Mac.': ['No account, no cloud and no network access. Your notes never leave your Mac.', 'Sin cuenta, sin nube y sin acceso a la red. Tus notas nunca salen de tu Mac.'],
 
   // BunnyGrid
   'Seus bancos de dados': ['Your databases', 'Tus bases de datos'],
