@@ -41,7 +41,7 @@
 
 | | App | What it does | Requires | Repository |
 |:---:|---|---|---|---|
-| <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Menu bar utilities: clipboard history, text capture, per-app sound mixer, a Dynamic Island in the notch and more | macOS 26+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
+| <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Menu bar utilities: clipboard history, text capture, per-app sound mixer, a Dynamic Island in the notch and more | macOS 15+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
 | <img src="assets/icons/macdash.png" width="64" alt="MacDash"> | **[MacDash](#macdash)** | Fearless cleanup and maintenance: nothing is removed without your approval | macOS 13+ | [matthfaria96/MacDash](https://github.com/matthfaria96/MacDash) |
 | <img src="assets/icons/neorar.png" width="64" alt="Neorar"> | **[Neorar](#neorar)** | WinRAR-style archive manager: RAR, ZIP, 7Z, TAR, ISO and more | macOS 26+ | [matthfaria96/Neorar](https://github.com/matthfaria96/Neorar) |
 | <img src="assets/icons/rubbishnotes.png" width="64" alt="Rubbish Notes"> | **[Rubbish Notes](#rubbish-notes)** | A minimalist notepad to clear your head, which saves everything on its own | macOS 26+ | [matthfaria96/rubbish-notes](https://github.com/matthfaria96/rubbish-notes) |
@@ -60,7 +60,7 @@ you use.
 
 📋 History · 📌 Pin window · 🔍 Capture text · 📸 Screenshot · 🍅 Pomodoro ·
 🎨 Color picker · ✏️ Freehand drawing · 🪞 Camera peek · ☕ Keep screen awake ·
-🎚️ Sound mixer · 🪟 Window and Dock · 🙈 Hidden icons · 🗂️ Shelf · 🏝️ Dynamic Island
+🖥️ Turn off display · 🎚️ Sound mixer · 🪟 Window and Dock · 🙈 Hidden icons · 🗂️ Shelf · 🏝️ Dynamic Island
 
 - **Copy everything, find everything.** A history of what you copy, plus text captured from any image or video.
 - **Sound per app.** Each app's volume, where each one plays, and the microphone.
@@ -70,7 +70,7 @@ you use.
   <img src="assets/shots/sirena-home.jpg" alt="Sirena's welcome screen with its shortcuts" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/Sirena/releases/latest"><b>Download Sirena</b></a> · <a href="https://github.com/matthfaria96/Sirena">Source code</a> · macOS 26 Tahoe or later</p>
+<p align="center"><a href="https://github.com/matthfaria96/Sirena/releases/latest"><b>Download Sirena</b></a> · <a href="https://github.com/matthfaria96/Sirena">Source code</a> · macOS 15 Sequoia or later</p>
 
 ---
 
@@ -215,7 +215,7 @@ xattr -dr com.apple.quarantine /Applications/Sirena.app
 
 | App | Minimum macOS | Processor |
 |---|---|---|
-| Sirena | 26 Tahoe | Apple Silicon and Intel |
+| Sirena | 15 Sequoia | Apple Silicon and Intel |
 | MacDash | 13 Ventura | Apple Silicon and Intel |
 | Neorar | 26 Tahoe | Apple Silicon and Intel |
 | Rubbish Notes | 26 Tahoe | Apple Silicon and Intel |
@@ -247,8 +247,9 @@ nothing leaves your Mac.
 <details>
 <summary><b>Why do some apps require macOS 26?</b></summary>
 
-Sirena, Neorar, Rubbish Notes and Wormlink use Liquid Glass and other APIs that only exist from
-macOS 26 Tahoe onward.
+Neorar, Rubbish Notes and Wormlink use Liquid Glass and other APIs that only exist from
+macOS 26 Tahoe onward. Sirena adapts: on macOS 15 Sequoia it swaps Liquid Glass for the
+system's classic translucent look.
 </details>
 
 <details>

@@ -64,6 +64,7 @@ window.WITCH_STRINGS = Object.freeze({
   '✏️ Desenho livre': ['✏️ Freehand drawing', '✏️ Dibujo libre'],
   '🪞 Espiar câmera': ['🪞 Camera peek', '🪞 Espiar cámara'],
   '☕ Não desligar tela': ['☕ Keep screen awake', '☕ No apagar pantalla'],
+  '🖥️ Desligar monitor': ['🖥️ Turn off display', '🖥️ Apagar monitor'],
   '🎚️ Mixer de som': ['🎚️ Sound mixer', '🎚️ Mezclador de sonido'],
   '🪟 Janela e Dock': ['🪟 Windows and Dock', '🪟 Ventanas y Dock'],
   '🙈 Ícones ocultos': ['🙈 Hidden icons', '🙈 Íconos ocultos'],
@@ -83,6 +84,7 @@ window.WITCH_STRINGS = Object.freeze({
     'Música, calendario, temporizador y controles rápidos alrededor de la cámara.'],
   'Baixar Sirena': ['Download Sirena', 'Descargar Sirena'],
   'Código fonte': ['Source code', 'Código fuente'],
+  'macOS 15 Sequoia ou mais novo · Apple Silicon e Intel': ['macOS 15 Sequoia or later · Apple Silicon and Intel', 'macOS 15 Sequoia o posterior · Apple Silicon e Intel'],
   'macOS 26 Tahoe ou mais novo · Apple Silicon e Intel': ['macOS 26 Tahoe or later · Apple Silicon and Intel', 'macOS 26 Tahoe o posterior · Apple Silicon e Intel'],
   'Tela de boas-vindas do Sirena com os atalhos': ['Sirena welcome screen with its shortcuts', 'Pantalla de bienvenida de Sirena con sus atajos'],
   'Menu do Sirena aberto a partir do ícone na barra de menus': ['Sirena menu opened from its menu bar icon', 'Menú de Sirena abierto desde su ícono en la barra de menús'],
@@ -271,9 +273,9 @@ window.WITCH_STRINGS = Object.freeze({
     'Only if you turn it on. It’s optional and uses your own Claude or OpenAI key. With no key set, nothing leaves your Mac.',
     'Solo si lo activas. Es opcional y usa tu propia clave de Claude o de OpenAI. Sin clave configurada, nada sale de tu Mac.'],
   'Por que alguns apps pedem macOS 26?': ['Why do some apps require macOS 26?', '¿Por qué algunas apps piden macOS 26?'],
-  'O Sirena, o Neorar, o Rubbish Notes e o Wormlink usam o Liquid Glass e outras APIs que só existem a partir do macOS 26 Tahoe.': [
-    'Sirena, Neorar, Rubbish Notes and Wormlink use Liquid Glass and other APIs that only exist starting with macOS 26 Tahoe.',
-    'Sirena, Neorar, Rubbish Notes y Wormlink usan Liquid Glass y otras APIs que solo existen a partir de macOS 26 Tahoe.'],
+  'O Neorar, o Rubbish Notes e o Wormlink usam o Liquid Glass e outras APIs que só existem a partir do macOS 26 Tahoe. O Sirena se adapta: no macOS 15 Sequoia ele troca o Liquid Glass pelo visual translúcido clássico do sistema.': [
+    'Neorar, Rubbish Notes and Wormlink use Liquid Glass and other APIs that only exist starting with macOS 26 Tahoe. Sirena adapts: on macOS 15 Sequoia it swaps Liquid Glass for the system’s classic translucent look.',
+    'Neorar, Rubbish Notes y Wormlink usan Liquid Glass y otras APIs que solo existen a partir de macOS 26 Tahoe. Sirena se adapta: en macOS 15 Sequoia cambia Liquid Glass por el aspecto translúcido clásico del sistema.'],
   'Encontrei um bug ou tenho uma ideia.': ['I found a bug or have an idea.', 'Encontré un error o tengo una idea.'],
   'Abra uma issue no GitHub do app ou mande um e-mail pelo link de contato no rodapé. Toda sugestão é bem-vinda.': [
     'Open an issue on the app’s GitHub or send an email through the contact link in the footer. Every suggestion is welcome.',

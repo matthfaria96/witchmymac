@@ -41,7 +41,7 @@
 
 | | App | O que faz | Requer | Repositório |
 |:---:|---|---|---|---|
-| <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Utilidades na barra de menus: histórico de cópias, captura de texto, mixer de som por app, Ilha Dinâmica no notch e mais | macOS 26+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
+| <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Utilidades na barra de menus: histórico de cópias, captura de texto, mixer de som por app, Ilha Dinâmica no notch e mais | macOS 15+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
 | <img src="assets/icons/macdash.png" width="64" alt="MacDash"> | **[MacDash](#macdash)** | Limpeza e manutenção sem medo: nada é removido sem a sua aprovação | macOS 13+ | [matthfaria96/MacDash](https://github.com/matthfaria96/MacDash) |
 | <img src="assets/icons/neorar.png" width="64" alt="Neorar"> | **[Neorar](#neorar)** | Gerenciador de arquivos compactados no estilo do WinRAR: RAR, ZIP, 7Z, TAR, ISO e outros | macOS 26+ | [matthfaria96/Neorar](https://github.com/matthfaria96/Neorar) |
 | <img src="assets/icons/rubbishnotes.png" width="64" alt="Rubbish Notes"> | **[Rubbish Notes](#rubbish-notes)** | Bloco de notas minimalista para esvaziar a cabeça, que salva tudo sozinho | macOS 26+ | [matthfaria96/rubbish-notes](https://github.com/matthfaria96/rubbish-notes) |
@@ -60,7 +60,7 @@ Ligue só os módulos que você usa.
 
 📋 Histórico · 📌 Fixar janela · 🔍 Capturar texto · 📸 Captura de tela · 🍅 Pomodoro ·
 🎨 Seletor de cores · ✏️ Desenho livre · 🪞 Espiar câmera · ☕ Não desligar tela ·
-🎚️ Mixer de som · 🪟 Janela e Dock · 🙈 Ícones ocultos · 🗂️ Prateleira · 🏝️ Ilha Dinâmica
+🖥️ Desligar monitor · 🎚️ Mixer de som · 🪟 Janela e Dock · 🙈 Ícones ocultos · 🗂️ Prateleira · 🏝️ Ilha Dinâmica
 
 - **Copie tudo, ache tudo.** Histórico do que você copia e texto capturado de qualquer imagem ou vídeo.
 - **Som por app.** Volume de cada app, para onde cada um toca e o microfone.
@@ -70,7 +70,7 @@ Ligue só os módulos que você usa.
   <img src="assets/shots/sirena-home.jpg" alt="Tela de boas-vindas do Sirena com os atalhos" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/Sirena/releases/latest"><b>Baixar Sirena</b></a> · <a href="https://github.com/matthfaria96/Sirena">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
+<p align="center"><a href="https://github.com/matthfaria96/Sirena/releases/latest"><b>Baixar Sirena</b></a> · <a href="https://github.com/matthfaria96/Sirena">Código fonte</a> · macOS 15 Sequoia ou mais novo</p>
 
 ---
 
@@ -215,7 +215,7 @@ xattr -dr com.apple.quarantine /Applications/Sirena.app
 
 | App | macOS mínimo | Processador |
 |---|---|---|
-| Sirena | 26 Tahoe | Apple Silicon e Intel |
+| Sirena | 15 Sequoia | Apple Silicon e Intel |
 | MacDash | 13 Ventura | Apple Silicon e Intel |
 | Neorar | 26 Tahoe | Apple Silicon e Intel |
 | Rubbish Notes | 26 Tahoe | Apple Silicon e Intel |
@@ -247,8 +247,9 @@ configurada, nada sai do seu Mac.
 <details>
 <summary><b>Por que alguns apps pedem macOS 26?</b></summary>
 
-O Sirena, o Neorar, o Rubbish Notes e o Wormlink usam o Liquid Glass e outras APIs que só existem
-a partir do macOS 26 Tahoe.
+O Neorar, o Rubbish Notes e o Wormlink usam o Liquid Glass e outras APIs que só existem
+a partir do macOS 26 Tahoe. O Sirena se adapta: no macOS 15 Sequoia ele troca o Liquid Glass
+pelo visual translúcido clássico do sistema.
 </details>
 
 <details>
