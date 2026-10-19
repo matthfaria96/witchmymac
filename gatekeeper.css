@@ -1,0 +1,162 @@
+/* Guia visual para liberar o app no macOS (Gatekeeper), no visual do macOS 26/27 com Liquid Glass. */
+.gk{margin-top:56px;padding:40px;border:1px solid var(--border);border-radius:28px;background:var(--surface)}
+.gk-head{text-align:center;max-width:680px;margin:0 auto 36px}
+.gk-head h3{font-size:clamp(22px,3vw,30px);letter-spacing:-.02em;line-height:1.2}
+.gk-head p:last-child{color:var(--muted);margin-top:10px}
+.gk-body{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:32px;align-items:start}
+
+/* passos */
+.gk-steps{list-style:none;display:flex;flex-direction:column;gap:8px}
+.gk-steps button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:32px 1fr;column-gap:12px;width:100%;padding:12px 14px;border-radius:14px;cursor:pointer;border:1px solid transparent;transition:background .2s,border-color .2s}
+.gk-steps button:hover{background:rgba(255,255,255,.04)}
+.gk-steps button:focus-visible{outline:2px solid var(--accent)}
+.gk-steps span{grid-row:span 2;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;border:1px solid var(--border);font-weight:700;font-size:14px;color:var(--muted);transition:background .2s,color .2s}
+.gk-steps b{font-size:15px}
+.gk-steps small{color:var(--muted);font-size:13px;line-height:1.45}
+.gk-steps [aria-selected=true]{background:rgba(255,255,255,.06);border-color:var(--border)}
+.gk-steps [aria-selected=true] span{background:var(--grad);border-color:transparent;color:#fff}
+.gk-steps .done span{color:var(--text);border-color:var(--accent)}
+
+/* palco: desenhado em 800x500 e escalado para caber */
+.gk-stage-wrap{min-width:0}
+.gk-stage{position:relative;width:100%;aspect-ratio:8/5;border-radius:16px;overflow:hidden;box-shadow:0 30px 80px -30px #000,0 0 0 1px rgba(255,255,255,.12)}
+.gk-screen{--s:1;position:absolute;left:0;top:0;width:800px;height:500px;transform:scale(var(--s));transform-origin:0 0;
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter",system-ui,sans-serif;font-size:13px;color:#fff;line-height:1.35;user-select:none;
+  background:
+    radial-gradient(60% 80% at 20% 110%,#ff8a3d 0,transparent 60%),
+    radial-gradient(70% 90% at 90% 100%,#d6338a 0,transparent 60%),
+    radial-gradient(80% 70% at 60% 0%,#2f4fd8 0,transparent 70%),
+    linear-gradient(160deg,#141b4d,#3b1a5c 55%,#7a2a55)}
+.gk-only{opacity:0;visibility:hidden;transition:opacity .35s,transform .35s,visibility .35s}
+.gk-only.on{opacity:1;visibility:visible}
+
+/* barra de menus */
+.mac-menubar{position:absolute;inset:0 0 auto;height:26px;display:flex;align-items:center;gap:18px;padding:0 16px;font-size:13px;
+  background:rgba(20,20,40,.18);backdrop-filter:blur(20px)}
+.mb-apple{display:grid;place-items:center;width:28px;height:22px;margin-left:-6px;border-radius:6px;transition:background .2s}
+.mb-apple svg{width:14px;height:17px}
+.gk-screen[data-scene="1"] .mb-apple{background:rgba(255,255,255,.22)}
+.mb-app{font-weight:700}
+.mb-right{margin-left:auto}
+
+/* menu Apple */
+.mac-menu{position:absolute;top:30px;left:8px;width:230px;padding:5px;border-radius:12px;font-size:13px;
+  background:rgba(40,40,52,.62);backdrop-filter:blur(30px) saturate(1.8);
+  box-shadow:inset 0 0 0 .5px rgba(255,255,255,.28),0 14px 40px rgba(0,0,0,.45);transform:translateY(-4px)}
+.mac-menu.on{transform:none}
+.mac-menu div{padding:3px 10px;border-radius:7px}
+.mac-menu .hl{background:#0a84ff}
+.mac-menu hr{border:0;height:1px;margin:5px 10px;background:rgba(255,255,255,.14)}
+
+/* alertas (Tahoe: alinhados à esquerda, vidro, botões em cápsula) */
+.mac-alert{position:absolute;left:50%;top:92px;width:310px;padding:20px 18px 16px;border-radius:26px;
+  background:rgba(46,46,56,.72);backdrop-filter:blur(40px) saturate(1.8);
+  box-shadow:inset 0 0 0 .5px rgba(255,255,255,.32),inset 0 1px 0 rgba(255,255,255,.18),0 24px 70px rgba(0,0,0,.55);
+  transform:translateX(-50%) scale(.94)}
+.mac-alert.on{transform:translateX(-50%)}
+.mac-alert.confirm{top:118px;z-index:3}
+.al-icon{position:relative;width:64px;height:64px;margin-bottom:12px}
+.al-icon img{width:64px;height:64px}
+.al-badge{position:absolute;right:-4px;bottom:-2px;display:grid;place-items:center;width:26px;height:24px;font-style:normal;font-weight:800;font-size:14px;color:#000;
+  background:#ffcc00;clip-path:polygon(50% 0,100% 100%,0 100%);padding-top:6px}
+.mac-alert strong{display:block;font-size:13.5px;font-weight:700;margin-bottom:6px}
+.mac-alert p{font-size:11.5px;color:rgba(255,255,255,.82)}
+.al-help{position:absolute;top:18px;right:18px;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;font-size:12px;font-weight:600;
+  background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.25)}
+.al-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+.al-buttons.stack{grid-template-columns:1fr}
+.al-btn{display:grid;place-items:center;height:28px;border-radius:999px;font-size:13px;font-weight:500;white-space:nowrap;
+  background:rgba(255,255,255,.14);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.2),inset 0 1px 0 rgba(255,255,255,.12)}
+.al-btn.primary{background:linear-gradient(#2b93ff,#0a7aff);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 2px 8px rgba(10,122,255,.35)}
+
+/* Ajustes do Sistema */
+.mac-settings{position:absolute;left:80px;top:44px;width:640px;height:380px;display:flex;border-radius:22px;overflow:hidden;
+  background:rgba(30,30,36,.94);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.22),0 30px 80px rgba(0,0,0,.55);transform:translateY(8px)}
+.mac-settings.on{transform:none}
+.gk-screen[data-scene="3"] .mac-settings{filter:brightness(.8)}
+.st-sidebar{width:212px;margin:8px 0 8px 8px;padding:12px 8px;border-radius:16px;
+  background:rgba(70,70,82,.45);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.14);overflow:hidden}
+.st-lights{display:flex;gap:8px;padding:0 4px 12px}
+.st-lights i{width:12px;height:12px;border-radius:50%;background:#ff5f57}
+.st-lights i:nth-child(2){background:#febc2e}.st-lights i:nth-child(3){background:#28c840}
+.st-search{display:flex;align-items:center;gap:6px;height:26px;padding:0 8px;border-radius:999px;color:rgba(255,255,255,.5);background:rgba(255,255,255,.08);margin-bottom:12px}
+.st-search svg{width:13px;height:13px}
+.st-account{display:flex;align-items:center;gap:8px;padding:2px 6px 10px}
+.st-avatar{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;font-style:normal;font-weight:700;background:linear-gradient(#a855f7,#ec4899)}
+.st-account b{display:block;font-size:12.5px}.st-account small{font-size:10.5px;color:rgba(255,255,255,.55)}
+.st-sidebar ul{list-style:none}
+.st-sidebar li{display:flex;align-items:center;gap:8px;height:26px;padding:0 6px;border-radius:8px;font-size:12.5px}
+.st-sidebar li.sp{margin-top:8px}
+.st-sidebar li.sel{background:#0a84ff}
+.ic{flex:none;display:grid;place-items:center;width:20px;height:20px;border-radius:6px}
+.ic svg{width:13px;height:13px}
+.ic.sm{width:22px;height:22px}
+.ic.blue{background:linear-gradient(#3e9bff,#0a6cff)}.ic.gray{background:linear-gradient(#9a9aa2,#6c6c74)}
+.ic.cyan{background:linear-gradient(#2b2b2b,#000);box-shadow:inset 0 0 0 .5px #666}.ic.black{background:linear-gradient(#3b3b40,#1d1d20)}
+.ic.red{background:linear-gradient(#ff5b5b,#e5303a)}
+.st-main{flex:1;display:flex;flex-direction:column;min-width:0}
+.st-toolbar{display:flex;align-items:center;gap:12px;height:52px;padding:0 18px;font-size:14px}
+.st-nav{display:flex;border-radius:999px;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.18)}
+.st-nav b{display:grid;place-items:center;width:28px;height:26px;font-size:17px;font-weight:400;color:rgba(255,255,255,.6)}
+.st-content{padding:2px 22px 0}
+.st-content h4{font-size:13px;font-weight:700;margin:16px 4px 8px}
+.st-group{border-radius:12px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.08)}
+.st-group.faded{opacity:.55}
+.st-row{display:flex;align-items:center;gap:10px;padding:9px 12px;font-size:12.5px}
+.st-row+.st-row{border-top:1px solid rgba(255,255,255,.07)}
+.st-row em{margin-left:auto;font-style:normal;color:rgba(255,255,255,.5)}
+.st-row.col{flex-direction:column;align-items:flex-start;gap:6px}
+.st-radio{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.85)}
+.st-radio i{width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.3)}
+.st-radio.on i{background:#0a84ff;box-shadow:inset 0 0 0 4px #0a84ff,inset 0 0 0 10px #fff}
+.st-row.blocked{justify-content:space-between;gap:16px}
+.st-row.blocked p{font-size:12px;color:rgba(255,255,255,.85)}
+.st-btn{flex:none;padding:4px 14px;border-radius:999px;font-size:12.5px;background:rgba(255,255,255,.16);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.25),inset 0 1px 0 rgba(255,255,255,.12)}
+
+/* pronto */
+.gk-done{position:absolute;left:50%;top:110px;width:320px;text-align:center;transform:translateX(-50%) scale(.9)}
+.gk-done.on{transform:translateX(-50%)}
+.gk-done img{width:120px;height:120px;margin:0 auto 14px;filter:drop-shadow(0 16px 30px rgba(0,0,0,.5))}
+.gk-done strong{display:block;font-size:24px;font-weight:700}
+.gk-done p{margin-top:6px;font-size:13px;color:rgba(255,255,255,.85)}
+.gk-screen[data-scene="4"] .gk-done img{animation:gk-pop .6s cubic-bezier(.3,1.6,.5,1)}
+
+/* Dock */
+.mac-dock{position:absolute;left:50%;bottom:8px;display:flex;gap:6px;padding:6px 8px;border-radius:22px;transform:translateX(-50%);
+  background:rgba(255,255,255,.14);backdrop-filter:blur(24px) saturate(1.6);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.35),inset 0 1px 0 rgba(255,255,255,.25)}
+.mac-dock img{width:42px;height:42px}
+.dock-sirena{position:relative}
+.dock-sirena i{position:absolute;left:50%;bottom:-4px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:rgba(255,255,255,.85);opacity:0}
+.gk-screen[data-scene="4"] .dock-sirena img{animation:gk-bounce .9s ease-out 2}
+.gk-screen[data-scene="4"] .dock-sirena i{opacity:1}
+
+/* alvo e cursor */
+.gk-target{position:relative;cursor:pointer}
+.gk-only.on .gk-target::after{content:"";position:absolute;inset:-5px;border-radius:999px;border:2px solid #ffd60a;animation:gk-ring 1.6s ease-out infinite;pointer-events:none}
+.mac-menu .gk-target::after{border-radius:10px!important}
+.gk-cursor{position:absolute;left:0;top:0;width:20px;height:26px;z-index:10;pointer-events:none;transition:transform .9s cubic-bezier(.45,.05,.25,1);filter:drop-shadow(0 2px 3px rgba(0,0,0,.4))}
+.gk-cursor svg{width:20px;height:26px}
+.gk-click{position:absolute;left:-10px;top:-10px;width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.6);opacity:0}
+.gk-cursor.clicking .gk-click{animation:gk-click .5s ease-out}
+
+/* controles */
+.gk-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}
+.gk-dots{display:flex;gap:6px}
+.gk-dots i{width:7px;height:7px;border-radius:50%;background:var(--border);transition:background .2s,width .2s}
+.gk-dots i.on{width:20px;border-radius:4px;background:var(--accent)}
+.gk-note{margin-top:28px;padding-top:22px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
+.gk-note b{color:var(--text)}
+
+@keyframes gk-ring{0%{opacity:.9;transform:scale(.96)}100%{opacity:0;transform:scale(1.18)}}
+@keyframes gk-click{0%{opacity:.8;transform:scale(.3)}100%{opacity:0;transform:scale(1.6)}}
+@keyframes gk-bounce{0%,100%{transform:none}30%{transform:translateY(-18px)}55%{transform:none}75%{transform:translateY(-6px)}}
+@keyframes gk-pop{0%{transform:scale(.4);opacity:0}100%{transform:none;opacity:1}}
+
+@media (max-width:860px){
+  .gk{padding:24px 16px}
+  .gk-body{grid-template-columns:minmax(0,1fr)}
+  .gk-stage-wrap{order:-1}
+  .gk-steps{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px;padding-bottom:4px}
+  .gk-steps li{flex:0 0 78%;scroll-snap-align:start}
+}
+@media (prefers-reduced-motion:reduce){.gk-cursor{transition:none}}
