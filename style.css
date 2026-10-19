@@ -252,7 +252,12 @@ a.card{display:block;color:inherit}
 html,body{overflow-x:hidden}
 @supports (overflow:clip){html,body{overflow-x:clip}}
 @media (max-width:860px){
-  .dock{width:auto;max-width:100%;gap:clamp(6px,2.4vw,12px);padding:10px clamp(10px,3vw,16px)}
-  .dock-icon{width:clamp(36px,11vw,52px);height:clamp(36px,11vw,52px)}
+  .dock{width:fit-content;max-width:100%;flex-wrap:wrap;gap:14px;padding:14px 18px}
+  .dock-icon{width:56px;height:56px}
   .dock-item::after{display:none}
+}
+/* telas estreitas: ícones em duas linhas de três, com tamanho confortável */
+@media (max-width:560px){
+  .dock{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;gap:18px 22px;padding:18px 22px;border-radius:24px}
+  .dock-icon{width:64px;height:64px}
 }
