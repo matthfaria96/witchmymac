@@ -6,203 +6,200 @@
 
 <h1 align="center">witchmymac</h1>
 
+<p align="center"><b>English</b> · <a href="README.pt-BR.md">Português</a></p>
+
 <p align="center">
-  <b>Feitiços úteis para o seu Mac.</b><br>
-  Seis apps nativos em Swift, 100% gratuitos: um canivete suíço para a barra de menus, um limpador,<br>
-  um compactador de arquivos, um bloco de notas, um cliente de bancos de dados e um cliente de servidores.
+  <b>Useful spells for your Mac.</b><br>
+  Six native Swift apps, 100% free: a Swiss Army knife for the menu bar, a cleaner,<br>
+  an archive manager, a notepad, a database client and a remote file client.
 </p>
 
 <p align="center">
-  <img alt="Swift nativo" src="https://img.shields.io/badge/Swift-nativo-F05138?style=flat-square&logo=swift&logoColor=white">
+  <img alt="Native Swift" src="https://img.shields.io/badge/Swift-native-F05138?style=flat-square&logo=swift&logoColor=white">
   <img alt="macOS" src="https://img.shields.io/badge/macOS-Apple%20Silicon%20%C2%B7%20Intel-26282e?style=flat-square&logo=apple">
-  <img alt="Grátis" src="https://img.shields.io/badge/pre%C3%A7o-gr%C3%A1tis-2ea44f?style=flat-square">
-  <img alt="Sem anúncios nem rastreamento" src="https://img.shields.io/badge/sem-an%C3%BAncios%20%C2%B7%20rastreamento-3a3a3a?style=flat-square">
+  <img alt="Free" src="https://img.shields.io/badge/price-free-2ea44f?style=flat-square">
+  <img alt="No ads, no tracking" src="https://img.shields.io/badge/no-ads%20%C2%B7%20tracking-3a3a3a?style=flat-square">
 </p>
 
 <p align="center">
   <a href="https://witchmymac.com/"><b>witchmymac.com</b></a> ·
-  <a href="#os-apps">Os apps</a> ·
-  <a href="#como-instalar-no-macos">Como instalar</a> ·
-  <a href="#perguntas-frequentes">Perguntas frequentes</a> ·
-  <a href="#sobre-este-repositório">Sobre este repositório</a>
+  <a href="#the-apps">The apps</a> ·
+  <a href="#installing-on-macos">How to install</a> ·
+  <a href="#faq">FAQ</a> ·
+  <a href="#about-this-repository">About this repository</a>
 </p>
 
 > [!NOTE]
-> **Sem assinatura, sem anúncios, sem rastreamento.** São apps que eu uso todo dia e decidi
-> compartilhar. Não existe versão paga. O código de cada um está aberto no GitHub.
+> **No subscription, no ads, no tracking.** These are apps I use every day and decided to share.
+> There is no paid version. Each one's source code is open on GitHub.
 
 <p align="center">
-  <img src="assets/og-image.png" alt="witchmymac: os seis apps gratuitos para Mac" width="900">
+  <img src="assets/og-image.png" alt="witchmymac: six free apps for Mac" width="900">
 </p>
 
-## Os apps
+## The apps
 
-| | App | O que faz | Requer | Repositório |
+| | App | What it does | Requires | Repository |
 |:---:|---|---|---|---|
-| <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Utilidades na barra de menus: histórico de cópias, captura de texto, mixer de som por app, Ilha Dinâmica no notch e mais | macOS 26+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
-| <img src="assets/icons/macdash.png" width="64" alt="MacDash"> | **[MacDash](#macdash)** | Limpeza e manutenção sem medo: nada é removido sem a sua aprovação | macOS 13+ | [matthfaria96/MacDash](https://github.com/matthfaria96/MacDash) |
-| <img src="assets/icons/neorar.png" width="64" alt="Neorar"> | **[Neorar](#neorar)** | Gerenciador de arquivos compactados no estilo do WinRAR: RAR, ZIP, 7Z, TAR, ISO e outros | macOS 26+ | [matthfaria96/Neorar](https://github.com/matthfaria96/Neorar) |
-| <img src="assets/icons/rubbishnotes.png" width="64" alt="Rubbish Notes"> | **[Rubbish Notes](#rubbish-notes)** | Bloco de notas minimalista para esvaziar a cabeça, que salva tudo sozinho | macOS 26+ | [matthfaria96/rubbish-notes](https://github.com/matthfaria96/rubbish-notes) |
-| <img src="assets/icons/bunnygrid.png" width="64" alt="BunnyGrid"> | **[BunnyGrid](#bunnygrid)** | Cliente de bancos de dados: SQLite, PostgreSQL, MySQL, SQL Server, MongoDB, Redis e mais | macOS 14+ | [matthfaria96/BunnyGrid](https://github.com/matthfaria96/BunnyGrid) |
-| <img src="assets/icons/wormlink.png" width="64" alt="Wormlink"> | **[Wormlink](#wormlink)** | Cliente de arquivos remotos em dois painéis: SFTP, FTP, S3, SMB, WebDAV e nuvens | macOS 26+ | [matthfaria96/Wormlink](https://github.com/matthfaria96/Wormlink) |
+| <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Menu bar utilities: clipboard history, text capture, per-app sound mixer, a Dynamic Island in the notch and more | macOS 26+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
+| <img src="assets/icons/macdash.png" width="64" alt="MacDash"> | **[MacDash](#macdash)** | Fearless cleanup and maintenance: nothing is removed without your approval | macOS 13+ | [matthfaria96/MacDash](https://github.com/matthfaria96/MacDash) |
+| <img src="assets/icons/neorar.png" width="64" alt="Neorar"> | **[Neorar](#neorar)** | WinRAR-style archive manager: RAR, ZIP, 7Z, TAR, ISO and more | macOS 26+ | [matthfaria96/Neorar](https://github.com/matthfaria96/Neorar) |
+| <img src="assets/icons/rubbishnotes.png" width="64" alt="Rubbish Notes"> | **[Rubbish Notes](#rubbish-notes)** | A minimalist notepad to clear your head, which saves everything on its own | macOS 26+ | [matthfaria96/rubbish-notes](https://github.com/matthfaria96/rubbish-notes) |
+| <img src="assets/icons/bunnygrid.png" width="64" alt="BunnyGrid"> | **[BunnyGrid](#bunnygrid)** | Database client: SQLite, PostgreSQL, MySQL, SQL Server, MongoDB, Redis and more | macOS 14+ | [matthfaria96/BunnyGrid](https://github.com/matthfaria96/BunnyGrid) |
+| <img src="assets/icons/wormlink.png" width="64" alt="Wormlink"> | **[Wormlink](#wormlink)** | Dual-pane remote file client: SFTP, FTP, S3, SMB, WebDAV and cloud drives | macOS 26+ | [matthfaria96/Wormlink](https://github.com/matthfaria96/Wormlink) |
 
-Todos rodam em Macs com Apple Silicon e Intel. O download de cada um é o `.dmg` do release mais
-recente no GitHub.
+All of them run on Apple Silicon and Intel Macs. Each download is the `.dmg` from the app's latest
+GitHub release.
 
 ---
 
 ### <img src="assets/icons/sirena.png" width="36" align="top" alt=""> Sirena
 
-**Sua barra de menus.** Um ícone na barra de menus fazendo o trabalho de uma dúzia de apps pagos.
-Ligue só os módulos que você usa.
+**Your menu bar.** One menu bar icon doing the job of a dozen paid apps. Turn on only the modules
+you use.
 
-📋 Histórico · 📌 Fixar janela · 🔍 Capturar texto · 📸 Captura de tela · 🍅 Pomodoro ·
-🎨 Seletor de cores · ✏️ Desenho livre · 🪞 Espiar câmera · ☕ Não desligar tela ·
-🎚️ Mixer de som · 🪟 Janela e Dock · 🙈 Ícones ocultos · 🗂️ Prateleira · 🏝️ Ilha Dinâmica
+📋 History · 📌 Pin window · 🔍 Capture text · 📸 Screenshot · 🍅 Pomodoro ·
+🎨 Color picker · ✏️ Freehand drawing · 🪞 Camera peek · ☕ Keep screen awake ·
+🎚️ Sound mixer · 🪟 Window and Dock · 🙈 Hidden icons · 🗂️ Shelf · 🏝️ Dynamic Island
 
-- **Copie tudo, ache tudo.** Histórico do que você copia e texto capturado de qualquer imagem ou vídeo.
-- **Som por app.** Volume de cada app, para onde cada um toca e o microfone.
-- **O notch ganha vida.** Música, calendário, timer e controles rápidos ao redor da câmera.
+- **Copy everything, find everything.** A history of what you copy, plus text captured from any image or video.
+- **Sound per app.** Each app's volume, where each one plays, and the microphone.
+- **The notch comes alive.** Music, calendar, timer and quick controls around the camera.
 
 <p align="center">
-  <img src="assets/shots/sirena-home.jpg" alt="Tela de boas-vindas do Sirena com os atalhos" width="560">
-  <img src="assets/shots/sirena-menu.jpg" alt="Menu do Sirena aberto a partir do ícone na barra de menus" width="300">
+  <img src="assets/shots/sirena-home.jpg" alt="Sirena's welcome screen with its shortcuts" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/Sirena/releases/latest"><b>Baixar Sirena</b></a> · <a href="https://github.com/matthfaria96/Sirena">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
+<p align="center"><a href="https://github.com/matthfaria96/Sirena/releases/latest"><b>Download Sirena</b></a> · <a href="https://github.com/matthfaria96/Sirena">Source code</a> · macOS 26 Tahoe or later</p>
 
 ---
 
 ### <img src="assets/icons/macdash.png" width="36" align="top" alt=""> MacDash
 
-**Seu Mac em ordem.** Limpeza e manutenção sem medo. Toda verificação termina numa tela de revisão,
-e nada é removido sem a sua aprovação.
+**Your Mac in order.** Cleanup and maintenance without fear. Every scan ends on a review screen,
+and nothing is removed without your approval.
 
-- **Cuidado inteligente.** Uma varredura que junta lixo do sistema, caches, Lixeiras e arquivos do Mail.
-- **Limpeza avançada.** Arquivos grandes, restos de apps, máquinas virtuais e caches do Xcode, Homebrew, Node e Docker.
-- **Aplicativos.** Desinstale por completo, controle itens de início e atualize seus apps.
-- **Proteção e antivírus.** Permissões de apps, verificações de segurança, Wi-Fi e extensões de navegador.
-- **Espaço e duplicados.** Lente de espaço, arquivos duplicados, fotos semelhantes e monitor de processos.
+- **Smart care.** One scan that gathers system junk, caches, Trash bins and Mail files.
+- **Advanced cleanup.** Large files, app leftovers, virtual machines and Xcode, Homebrew, Node and Docker caches.
+- **Applications.** Uninstall completely, manage login items and update your apps.
+- **Protection and antivirus.** App permissions, security checks, Wi-Fi and browser extensions.
+- **Space and duplicates.** Space lens, duplicate files, similar photos and a process monitor.
 
 <p align="center">
-  <img src="assets/shots/macdash-care.jpg" alt="Cuidado inteligente do MacDash" width="430">
-  <img src="assets/shots/macdash-antivirus.jpg" alt="Antivírus do MacDash" width="430">
+  <img src="assets/shots/macdash-care.jpg" alt="MacDash smart care" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/MacDash/releases/latest"><b>Baixar MacDash</b></a> · <a href="https://github.com/matthfaria96/MacDash">Código fonte</a> · macOS 13 Ventura ou mais novo</p>
+<p align="center"><a href="https://github.com/matthfaria96/MacDash/releases/latest"><b>Download MacDash</b></a> · <a href="https://github.com/matthfaria96/MacDash">Source code</a> · macOS 13 Ventura or later</p>
 
 ---
 
 ### <img src="assets/icons/neorar.png" width="36" align="top" alt=""> Neorar
 
-**Seus arquivos compactados.** Um gerenciador de arquivos compactados no estilo do WinRAR. Uma
-janela só, que começa em Downloads, entra nos arquivos compactados e age sobre o que você selecionar.
+**Your archives.** A WinRAR-style archive manager. A single window that starts in Downloads, opens
+archives and acts on whatever you select.
 
-- **Extrai de tudo.** RAR 1.5 a 7 com senha e volumes, ZIP com AES, 7Z, TAR, ISO, DMG, CAB, MSI e outros.
-- **Comprime do seu jeito.** 7Z, ZIP com AES-256 e TAR, com senha, partes e sem o lixo do macOS.
-- **Dentro do arquivo.** Navegue, busque, espie com Quick Look e extraia só o que precisa.
-- **Testar e reparar.** Confira a integridade e recupere arquivos RAR e ZIP danificados.
-- **Direto do Finder.** Extrair e comprimir no clique direito, em cinco idiomas.
+- **Extracts everything.** RAR 1.5 to 7 with passwords and volumes, ZIP with AES, 7Z, TAR, ISO, DMG, CAB, MSI and more.
+- **Compresses your way.** 7Z, ZIP with AES-256 and TAR, with passwords, split parts and no macOS junk files.
+- **Inside the archive.** Browse, search, preview with Quick Look and extract only what you need.
+- **Test and repair.** Check integrity and recover damaged RAR and ZIP files.
+- **Right from Finder.** Extract and compress from the right-click menu, in five languages.
 
 <p align="center">
-  <img src="assets/shots/neorar-archive.png" alt="Neorar mostrando o conteúdo de um arquivo 7Z" width="860"><br>
-  <img src="assets/shots/neorar-grid.png" alt="Neorar em grade dentro de um ZIP com comentário" width="860">
+  <img src="assets/shots/neorar-archive.png" alt="Neorar showing the contents of a 7Z archive" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/Neorar/releases/latest"><b>Baixar Neorar</b></a> · <a href="https://github.com/matthfaria96/Neorar">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
+<p align="center"><a href="https://github.com/matthfaria96/Neorar/releases/latest"><b>Download Neorar</b></a> · <a href="https://github.com/matthfaria96/Neorar">Source code</a> · macOS 26 Tahoe or later</p>
 
 ---
 
 ### <img src="assets/icons/rubbishnotes.png" width="36" align="top" alt=""> Rubbish Notes
 
-**Sua mente leve.** Tire as ideias da cabeça e siga em frente. Um bloco de notas minimalista que
-salva tudo sozinho, no seu Mac, enquanto você digita. Sem botão de salvar, sem conta, sem nuvem:
-abriu, escreveu, pronto.
+**A lighter mind.** Get ideas out of your head and move on. A minimalist notepad that saves
+everything on its own, on your Mac, as you type. No save button, no account, no cloud: open it,
+write, done.
 
-- **Salva sozinho, sempre.** Cada palavra fica guardada um instante depois que você para de digitar, em arquivos `.txt` no seu Mac.
-- **Modo foco.** Esconda tudo e fique só com o texto.
-- **Fixe o que importa, arquive o resto.** Notas fixadas ficam no topo, o que já passou vai para o Arquivo e tudo se desfaz com ⌘Z.
-- **Temas para o seu humor.** Dracula, Nord, Tokyo Night, Monokai e outros, com modo claro e escuro e um ícone vermelho alternativo.
-- **Só seu.** Sem conta, sem nuvem e sem acesso à rede. Suas notas nunca saem do seu Mac.
+- **Always saves on its own.** Every word is stored a moment after you stop typing, as `.txt` files on your Mac.
+- **Focus mode.** Hide everything and keep only the text.
+- **Pin what matters, archive the rest.** Pinned notes stay on top, old ones go to the Archive, and everything can be undone with ⌘Z.
+- **Themes for your mood.** Dracula, Nord, Tokyo Night, Monokai and more, with light and dark modes and an alternate red icon.
+- **Yours alone.** No account, no cloud and no network access. Your notes never leave your Mac.
 
 <p align="center">
-  <img src="assets/shots/rubbish-note.png" alt="Rubbish Notes com uma nota aberta" width="580">
-  <img src="assets/shots/rubbish-themes.png" alt="Aba de temas do Rubbish Notes" width="270">
+  <img src="assets/shots/rubbish-note.png" alt="Rubbish Notes with a note open" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/rubbish-notes/releases/latest"><b>Baixar Rubbish Notes</b></a> · <a href="https://github.com/matthfaria96/rubbish-notes">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
+<p align="center"><a href="https://github.com/matthfaria96/rubbish-notes/releases/latest"><b>Download Rubbish Notes</b></a> · <a href="https://github.com/matthfaria96/rubbish-notes">Source code</a> · macOS 26 Tahoe or later</p>
 
 ---
 
 ### <img src="assets/icons/bunnygrid.png" width="36" align="top" alt=""> BunnyGrid
 
-**Seus bancos de dados.** Um cliente de bancos de dados nativo, leve e rápido. Veja a árvore de
-objetos, abra tabelas num grid paginado e escreva SQL com realce de sintaxe e autocompletar.
+**Your databases.** A native, lightweight and fast database client. Browse the object tree, open
+tables in a paginated grid and write SQL with syntax highlighting and autocomplete.
 
-- **Sete bancos, um app.** SQLite, PostgreSQL, MySQL, MariaDB, SQL Server e Azure SQL, MongoDB e Redis.
-- **Editar como planilha.** Grid com edição de células, Form View, duplicar linhas e transações.
-- **Ferramentas de verdade.** Design de tabelas, diagrama ER, plano de consulta, backup, automação e BI.
-- **Conexões seguras.** SSL e túnel SSH, com senhas guardadas nas Chaves do macOS.
-- **Assistente de IA opcional.** Use sua própria chave da Claude ou da OpenAI para escrever e explicar consultas.
+- **Seven databases, one app.** SQLite, PostgreSQL, MySQL, MariaDB, SQL Server and Azure SQL, MongoDB and Redis.
+- **Edit like a spreadsheet.** Grid with cell editing, Form View, row duplication and transactions.
+- **Real tools.** Table design, ER diagrams, query plans, backup, automation and BI.
+- **Secure connections.** SSL and SSH tunnels, with passwords stored in the macOS Keychain.
+- **Optional AI assistant.** Use your own Claude or OpenAI key to write and explain queries.
 
 <p align="center">
-  <img src="assets/shots/bunnygrid-table.png" alt="BunnyGrid mostrando uma tabela de clientes" width="860"><br>
-  <img src="assets/shots/bunnygrid-newconn.png" alt="Janela de nova conexão do BunnyGrid com os tipos de banco" width="560">
+  <img src="assets/shots/bunnygrid-table.png" alt="BunnyGrid showing a customers table" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/BunnyGrid/releases/latest"><b>Baixar BunnyGrid</b></a> · <a href="https://github.com/matthfaria96/BunnyGrid">Código fonte</a> · macOS 14 Sonoma ou mais novo</p>
+<p align="center"><a href="https://github.com/matthfaria96/BunnyGrid/releases/latest"><b>Download BunnyGrid</b></a> · <a href="https://github.com/matthfaria96/BunnyGrid">Source code</a> · macOS 14 Sonoma or later</p>
 
 ---
 
 ### <img src="assets/icons/wormlink.png" width="36" align="top" alt=""> Wormlink
 
-**Seus servidores.** Conecte. Explore. Transfira. Um cliente de arquivos remotos em dois painéis,
-com o visual Liquid Glass do macOS 26 e software livre sob a GPL-3.
+**Your servers.** Connect. Explore. Transfer. A dual-pane remote file client with the macOS 26
+Liquid Glass look, free software under the GPL-3.
 
-- **Todos os protocolos.** SFTP, FTP e FTPS, WebDAV, S3 e compatíveis, SMB, Azure, Swift e Backblaze B2.
-- **Suas nuvens.** Dropbox, Google Drive, OneDrive, SharePoint e Box no mesmo lugar.
-- **Transferências sem susto.** Fila, retomada, sincronização com prévia e arrastar direto do Finder.
-- **Montar no Finder.** O Wormlink Disk mostra seus servidores como discos no Finder.
-- **Para quem vive no terminal.** Chaves SSH, ProxyJump, linha de comando e AppleScript.
+- **Every protocol.** SFTP, FTP and FTPS, WebDAV, S3 and compatibles, SMB, Azure, Swift and Backblaze B2.
+- **Your clouds.** Dropbox, Google Drive, OneDrive, SharePoint and Box in one place.
+- **Worry-free transfers.** Queue, resume, sync with preview, and drag straight from Finder.
+- **Mount in Finder.** Wormlink Disk shows your servers as disks in Finder.
+- **For terminal people.** SSH keys, ProxyJump, command line and AppleScript.
 
 <p align="center">
-  <img src="assets/shots/wormlink-main.png" alt="Wormlink com a pasta Downloads e a lista de servidores" width="860">
+  <img src="assets/shots/wormlink-main.png" alt="Wormlink with the Downloads folder and the server list" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/Wormlink/releases/latest"><b>Baixar Wormlink</b></a> · <a href="https://github.com/matthfaria96/Wormlink">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
+<p align="center"><a href="https://github.com/matthfaria96/Wormlink/releases/latest"><b>Download Wormlink</b></a> · <a href="https://github.com/matthfaria96/Wormlink">Source code</a> · macOS 26 Tahoe or later</p>
 
 ---
 
-## Como instalar no macOS
+## Installing on macOS
 
-Três passos, trinta segundos.
+Three steps, thirty seconds.
 
-1. **Baixe o `.dmg`.** Na [tabela de apps](#os-apps), abra o repositório do app e baixe o `.dmg`
-   do release mais recente (ou clique em **Baixar** em [witchmymac.com](https://witchmymac.com/)).
-2. **Arraste para Aplicativos.** Abra o `.dmg` e arraste o ícone do app para a pasta **Aplicativos**.
-3. **Abra e use.** Na primeira vez, o macOS pede uma confirmação. Veja abaixo como liberar.
+1. **Download the `.dmg`.** In the [apps table](#the-apps), open the app's repository and download
+   the `.dmg` from the latest release (or click **Download** on [witchmymac.com](https://witchmymac.com/)).
+2. **Drag it to Applications.** Open the `.dmg` and drag the app icon into the **Applications** folder.
+3. **Open it.** The first time, macOS asks you to confirm. See below how to allow it.
 
-### Primeira vez abrindo: o macOS vai bloquear o app. É normal.
+### First launch: macOS will block the app. That's normal.
 
-Os apps são gratuitos e não passam pela App Store, então o macOS pede que você confirme a origem
-uma vez. Depois disso o app abre direto, para sempre.
+The apps are free and don't go through the App Store, so macOS asks you to confirm where they came
+from once. After that the app opens normally, for good.
 
-| Passo | O que fazer |
+| Step | What to do |
 |:---:|---|
-| **1** | Abra o app. Aparece o aviso **"“App” não foi aberto"**. Clique em **OK**. Nunca em *Mover para o Lixo*. |
-| **2** | No menu da Apple (canto superior esquerdo), abra **Ajustes do Sistema…** |
-| **3** | Vá em **Privacidade e Segurança** e role até **Segurança**. Lá estará escrito *"“App” foi bloqueado para proteger o seu Mac"*. Clique em **Abrir Mesmo Assim**. |
-| **4** | Confirme clicando em **Abrir Mesmo Assim** de novo e use a sua senha ou o Touch ID. |
-| **5** | Pronto! O app abre. Das próximas vezes, é só abrir pela pasta Aplicativos ou pelo Spotlight. |
+| **1** | Open the app. The **"“App” Not Opened"** alert appears. Click **Done** (or **OK**). Never *Move to Trash*. |
+| **2** | From the Apple menu (top-left corner), open **System Settings…** |
+| **3** | Go to **Privacy & Security** and scroll down to **Security**. It will say *"“App” was blocked to protect your Mac"*. Click **Open Anyway**. |
+| **4** | Confirm by clicking **Open Anyway** again and enter your password or use Touch ID. |
+| **5** | Done! The app opens. From now on, just open it from Applications or Spotlight. |
 
 > [!TIP]
-> O site tem um [guia visual animado](https://witchmymac.com/#liberar) com cada uma dessas telas.
+> The website has an [animated visual guide](https://witchmymac.com/#liberar) showing each of these screens.
 
 <details>
-<summary><b>Prefere o Terminal?</b></summary>
+<summary><b>Prefer the Terminal?</b></summary>
 
-Depois de arrastar o app para Aplicativos, remova a marca de quarentena (troque `Sirena` pelo nome
-do app):
+After dragging the app into Applications, remove the quarantine flag (replace `Sirena` with the
+app's name):
 
 ```sh
 xattr -dr com.apple.quarantine /Applications/Sirena.app
@@ -211,65 +208,65 @@ xattr -dr com.apple.quarantine /Applications/Sirena.app
 </details>
 
 > [!NOTE]
-> **Por que isso acontece?** A Apple cobra US$ 99 por ano para "autenticar" apps. Como os apps são
-> gratuitos, o macOS pede que você confirme a origem uma única vez.
+> **Why does this happen?** Apple charges US$ 99 per year to "notarize" apps. Since these apps are
+> free, macOS asks you to confirm their origin once.
 
-### Requisitos
+### Requirements
 
-| App | macOS mínimo | Processador |
+| App | Minimum macOS | Processor |
 |---|---|---|
-| Sirena | 26 Tahoe | Apple Silicon e Intel |
-| MacDash | 13 Ventura | Apple Silicon e Intel |
-| Neorar | 26 Tahoe | Apple Silicon e Intel |
-| Rubbish Notes | 26 Tahoe | Apple Silicon e Intel |
-| BunnyGrid | 14 Sonoma | Apple Silicon e Intel |
-| Wormlink | 26 Tahoe | Apple Silicon e Intel |
+| Sirena | 26 Tahoe | Apple Silicon and Intel |
+| MacDash | 13 Ventura | Apple Silicon and Intel |
+| Neorar | 26 Tahoe | Apple Silicon and Intel |
+| Rubbish Notes | 26 Tahoe | Apple Silicon and Intel |
+| BunnyGrid | 14 Sonoma | Apple Silicon and Intel |
+| Wormlink | 26 Tahoe | Apple Silicon and Intel |
 
-## Perguntas frequentes
+## FAQ
 
 <details>
-<summary><b>É mesmo de graça? Qual é o truque?</b></summary>
+<summary><b>Is it really free? What's the catch?</b></summary>
 
-Nenhum truque. São apps que eu uso todo dia e decidi compartilhar. Não há versão paga, assinatura
-nem anúncios.
+No catch. These are apps I use every day and decided to share. There's no paid version,
+subscription or ads.
 </details>
 
 <details>
-<summary><b>O MacDash pode apagar algo importante?</b></summary>
+<summary><b>Can MacDash delete something important?</b></summary>
 
-Não sem você ver. Toda verificação termina numa tela de revisão, e nada é removido sem a sua aprovação.
+Not without you seeing it. Every scan ends on a review screen, and nothing is removed without your approval.
 </details>
 
 <details>
-<summary><b>O assistente de IA do BunnyGrid envia meus dados?</b></summary>
+<summary><b>Does BunnyGrid's AI assistant send my data anywhere?</b></summary>
 
-Só se você ligar. Ele é opcional e usa a sua própria chave da Claude ou da OpenAI. Sem chave
-configurada, nada sai do seu Mac.
+Only if you turn it on. It's optional and uses your own Claude or OpenAI key. With no key set up,
+nothing leaves your Mac.
 </details>
 
 <details>
-<summary><b>Por que alguns apps pedem macOS 26?</b></summary>
+<summary><b>Why do some apps require macOS 26?</b></summary>
 
-O Sirena, o Neorar, o Rubbish Notes e o Wormlink usam o Liquid Glass e outras APIs que só existem
-a partir do macOS 26 Tahoe.
+Sirena, Neorar, Rubbish Notes and Wormlink use Liquid Glass and other APIs that only exist from
+macOS 26 Tahoe onward.
 </details>
 
 <details>
-<summary><b>Encontrei um bug ou tenho uma ideia.</b></summary>
+<summary><b>I found a bug or have an idea.</b></summary>
 
-Abra uma issue no repositório do app (links na [tabela](#os-apps)). Toda sugestão é bem-vinda.
+Open an issue in the app's repository (links in the [table](#the-apps)). Every suggestion is welcome.
 </details>
 
-## Sobre este repositório
+## About this repository
 
-Este repositório é o site [witchmymac.com](https://witchmymac.com/): HTML, CSS e JavaScript puros,
-hospedado no GitHub Pages, em português, inglês e espanhol. Os botões de download buscam o `.dmg`
-do release mais recente de cada app (veja [apps.js](apps.js)).
+This repository is the [witchmymac.com](https://witchmymac.com/) website: plain HTML, CSS and
+JavaScript, hosted on GitHub Pages, in English, Portuguese and Spanish. The download buttons fetch
+the `.dmg` from each app's latest release (see [apps.js](apps.js)).
 
-Para rodar localmente:
+To run it locally:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-E abra <http://localhost:8000>.
+Then open <http://localhost:8000>.
