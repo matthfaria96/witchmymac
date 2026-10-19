@@ -11,6 +11,27 @@ function markUnavailable(link, label) {
   link.removeAttribute('href');
 }
 
+// Troca o link fixo pelo .dmg do release mais recente. Se a API do GitHub
+// falhar (limite de requisições, offline), fica o link de apps.js.
+async function latestDmgUrl(app) {
+  const res = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${app.repo}/releases/latest`);
+  if (!res.ok) throw new Error(`GitHub API ${res.status} para ${app.repo}`);
+  const release = await res.json();
+  const dmg = (release.assets || []).find((asset) => asset.name.endsWith('.dmg'));
+  if (!dmg) throw new Error(`Release sem .dmg em ${app.repo}`);
+  return dmg.browser_download_url;
+}
+
+function updateToLatestReleases() {
+  document.querySelectorAll('[data-download]').forEach((link) => {
+    const app = APPS[link.dataset.download];
+    if (!app || !app.published) return;
+    latestDmgUrl(app)
+      .then((url) => { link.href = url; })
+      .catch(() => { /* mantém o link de apps.js */ });
+  });
+}
+
 function applyAppLinks() {
   document.querySelectorAll('[data-download]').forEach((link) => {
     const app = APPS[link.dataset.download];
@@ -20,6 +41,7 @@ function applyAppLinks() {
       markUnavailable(link, 'Em breve');
     }
   });
+  updateToLatestReleases();
   document.querySelectorAll('[data-source]').forEach((link) => {
     const app = APPS[link.dataset.source];
     if (app && app.published) {

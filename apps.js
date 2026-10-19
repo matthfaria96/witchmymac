@@ -1,5 +1,6 @@
 // Releases de cada app no GitHub, na ordem de prioridade do site.
-// Para lançar uma versão nova, troque "tag" e "file".
+// O site busca sozinho o .dmg do release mais recente; "tag" e "file" são só o
+// link reserva caso a API do GitHub falhe.
 // "published: false" mostra o botão como "Em breve" até o repositório e o release estarem públicos.
 window.WITCH_APPS = Object.freeze({
   sirena:       Object.freeze({ repo: 'Sirena',        tag: 'v0.3.0',        file: 'Sirena-0.3.0.dmg',       published: true }),
