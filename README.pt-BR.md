@@ -44,10 +44,10 @@
 |:---:|---|---|---|---|
 | <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Utilidades na barra de menus: histórico de cópias, captura de texto, mixer de som por app, Ilha Dinâmica no notch e mais | macOS 15+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
 | <img src="assets/icons/macdash.png" width="64" alt="MacDash"> | **[MacDash](#macdash)** | Limpeza e manutenção sem medo: nada é removido sem a sua aprovação | macOS 13+ | [matthfaria96/MacDash](https://github.com/matthfaria96/MacDash) |
-| <img src="assets/icons/neorar.png" width="64" alt="Neorar"> | **[Neorar](#neorar)** | Gerenciador de arquivos compactados no estilo do WinRAR: RAR, ZIP, 7Z, TAR, ISO e outros | macOS 26+ | [matthfaria96/Neorar](https://github.com/matthfaria96/Neorar) |
+| <img src="assets/icons/neorar.png" width="64" alt="NeoRAR"> | **[NeoRAR](#neorar)** | Gerenciador de arquivos compactados no estilo do WinRAR: RAR, ZIP, 7Z, TAR, ISO e outros | macOS 26+ | [matthfaria96/Neorar](https://github.com/matthfaria96/Neorar) |
 | <img src="assets/icons/rubbishnotes.png" width="64" alt="Rubbish Notes"> | **[Rubbish Notes](#rubbish-notes)** | Bloco de notas minimalista para esvaziar a cabeça, que salva tudo sozinho | macOS 26+ | [matthfaria96/rubbish-notes](https://github.com/matthfaria96/rubbish-notes) |
 | <img src="assets/icons/bunnygrid.png" width="64" alt="BunnyGrid"> | **[BunnyGrid](#bunnygrid)** | Cliente de bancos de dados: SQLite, PostgreSQL, MySQL, SQL Server, MongoDB, Redis e mais | macOS 14+ | [matthfaria96/BunnyGrid](https://github.com/matthfaria96/BunnyGrid) |
-| <img src="assets/icons/wormlink.png" width="64" alt="Wormlink"> | **[Wormlink](#wormlink)** | Cliente de arquivos remotos em dois painéis: SFTP, FTP, S3, SMB, WebDAV e nuvens | macOS 26+ | [matthfaria96/Wormlink](https://github.com/matthfaria96/Wormlink) |
+| <img src="assets/icons/wormlink.png" width="64" alt="WormLink"> | **[WormLink](#wormlink)** | Cliente de arquivos remotos em dois painéis: SFTP, FTP, S3, SMB, WebDAV e nuvens | macOS 26+ | [matthfaria96/Wormlink](https://github.com/matthfaria96/Wormlink) |
 | <img src="assets/icons/bettercraft.png" width="64" alt="BetterCraft Launcher"> | **[BetterCraft Launcher](#bettercraft-launcher)** | O launcher dos apps Craft repensado: sem ruído visual, direto ao ponto e com ícones redesenhados | macOS 11+ | [matthfaria96/bettercraft-launcher](https://github.com/matthfaria96/bettercraft-launcher) |
 
 Todos rodam em Macs com Apple Silicon e Intel. O download de cada um é o `.dmg` do release mais
@@ -95,7 +95,7 @@ e nada é removido sem a sua aprovação.
 
 ---
 
-### <img src="assets/icons/neorar.png" width="36" align="top" alt=""> Neorar
+### <img src="assets/icons/neorar.png" width="36" align="top" alt=""> NeoRAR
 
 **Seus arquivos compactados.** Um gerenciador de arquivos compactados no estilo do WinRAR. Uma
 janela só, que começa em Downloads, entra nos arquivos compactados e age sobre o que você selecionar.
@@ -107,10 +107,10 @@ janela só, que começa em Downloads, entra nos arquivos compactados e age sobre
 - **Direto do Finder.** Extrair e comprimir no clique direito, em cinco idiomas.
 
 <p align="center">
-  <img src="assets/shots/neorar-archive.png" alt="Neorar mostrando o conteúdo de um arquivo 7Z" width="860">
+  <img src="assets/shots/neorar-archive.png" alt="NeoRAR mostrando o conteúdo de um arquivo 7Z" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/Neorar/releases/latest"><b>Baixar Neorar</b></a> · <a href="https://github.com/matthfaria96/Neorar">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
+<p align="center"><a href="https://github.com/matthfaria96/Neorar/releases/latest"><b>Baixar NeoRAR</b></a> · <a href="https://github.com/matthfaria96/Neorar">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
 
 ---
 
@@ -153,7 +153,7 @@ objetos, abra tabelas num grid paginado e escreva SQL com realce de sintaxe e au
 
 ---
 
-### <img src="assets/icons/wormlink.png" width="36" align="top" alt=""> Wormlink
+### <img src="assets/icons/wormlink.png" width="36" align="top" alt=""> WormLink
 
 **Seus servidores.** Conecte. Explore. Transfira. Um cliente de arquivos remotos em dois painéis,
 com o visual Liquid Glass do macOS 26 e software livre sob a GPL-3.
@@ -161,14 +161,14 @@ com o visual Liquid Glass do macOS 26 e software livre sob a GPL-3.
 - **Todos os protocolos.** SFTP, FTP e FTPS, WebDAV, S3 e compatíveis, SMB, Azure, Swift e Backblaze B2.
 - **Suas nuvens.** Dropbox, Google Drive, OneDrive, SharePoint e Box no mesmo lugar.
 - **Transferências sem susto.** Fila, retomada, sincronização com prévia e arrastar direto do Finder.
-- **Montar no Finder.** O Wormlink Disk mostra seus servidores como discos no Finder.
+- **Montar no Finder.** O WormLink Disk mostra seus servidores como discos no Finder.
 - **Para quem vive no terminal.** Chaves SSH, ProxyJump, linha de comando e AppleScript.
 
 <p align="center">
-  <img src="assets/shots/wormlink-main.png" alt="Wormlink com a pasta Downloads e a lista de servidores" width="860">
+  <img src="assets/shots/wormlink-main.png" alt="WormLink com a pasta Downloads e a lista de servidores" width="860">
 </p>
 
-<p align="center"><a href="https://github.com/matthfaria96/Wormlink/releases/latest"><b>Baixar Wormlink</b></a> · <a href="https://github.com/matthfaria96/Wormlink">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
+<p align="center"><a href="https://github.com/matthfaria96/Wormlink/releases/latest"><b>Baixar WormLink</b></a> · <a href="https://github.com/matthfaria96/Wormlink">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
 
 ### <img src="assets/icons/bettercraft.png" width="36" align="top" alt=""> BetterCraft Launcher
 
@@ -235,10 +235,10 @@ xattr -dr com.apple.quarantine /Applications/Sirena.app
 |---|---|---|
 | Sirena | 15 Sequoia | Apple Silicon e Intel |
 | MacDash | 13 Ventura | Apple Silicon e Intel |
-| Neorar | 26 Tahoe | Apple Silicon e Intel |
+| NeoRAR | 26 Tahoe | Apple Silicon e Intel |
 | Rubbish Notes | 26 Tahoe | Apple Silicon e Intel |
 | BunnyGrid | 14 Sonoma | Apple Silicon e Intel |
-| Wormlink | 26 Tahoe | Apple Silicon e Intel |
+| WormLink | 26 Tahoe | Apple Silicon e Intel |
 | BetterCraft Launcher | 11 Big Sur | Apple Silicon e Intel |
 
 ## Perguntas frequentes
@@ -266,7 +266,7 @@ configurada, nada sai do seu Mac.
 <details>
 <summary><b>Por que alguns apps pedem macOS 26?</b></summary>
 
-O Neorar, o Rubbish Notes e o Wormlink usam o Liquid Glass e outras APIs que só existem
+O NeoRAR, o Rubbish Notes e o WormLink usam o Liquid Glass e outras APIs que só existem
 a partir do macOS 26 Tahoe. O Sirena se adapta: no macOS 15 Sequoia ele troca o Liquid Glass
 pelo visual translúcido clássico do sistema.
 </details>

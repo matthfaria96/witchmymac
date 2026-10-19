@@ -2,9 +2,9 @@
 // o valor é [inglês, espanhol]. Textos iguais nos três idiomas (nomes de apps, GitHub, FAQ) não precisam estar aqui.
 window.WITCH_STRINGS = Object.freeze({
   'witchmymac · apps gratuitos para Mac': ['witchmymac · free apps for Mac', 'witchmymac · apps gratis para Mac'],
-  'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid, Wormlink e BetterCraft Launcher: sete apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.': [
-    'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid, Wormlink and BetterCraft Launcher: seven free, native macOS apps with no ads and no tracking.',
-    'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid, Wormlink y BetterCraft Launcher: siete apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
+  'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink e BetterCraft Launcher: sete apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.': [
+    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink and BetterCraft Launcher: seven free, native macOS apps with no ads and no tracking.',
+    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink y BetterCraft Launcher: siete apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
   'Principal': ['Main', 'Principal'],
   'Privacidade': ['Privacy', 'Privacidad'],
   'Como Instalar?': ['How to Install?', '¿Cómo instalar?'],
@@ -119,7 +119,7 @@ window.WITCH_STRINGS = Object.freeze({
   'Cuidado inteligente do MacDash': ['MacDash Smart Care', 'Cuidado inteligente de MacDash'],
   'Antivírus do MacDash': ['MacDash antivirus', 'Antivirus de MacDash'],
 
-  // Neorar
+  // NeoRAR
   'Seus arquivos compactados': ['Your archives', 'Tus archivos comprimidos'],
   'Um gerenciador de arquivos compactados no estilo do WinRAR. Uma janela só, que começa em Downloads, entra nos arquivos compactados e age sobre o que você selecionar.': [
     'A WinRAR-style archive manager. A single window that starts in Downloads, opens archives and acts on whatever you select.',
@@ -144,9 +144,9 @@ window.WITCH_STRINGS = Object.freeze({
   'Extrair e comprimir no clique direito, em cinco idiomas.': [
     'Extract and compress from the right-click menu, in five languages.',
     'Extraer y comprimir con el clic derecho, en cinco idiomas.'],
-  'Baixar Neorar': ['Download Neorar', 'Descargar Neorar'],
-  'Neorar mostrando o conteúdo de um arquivo 7Z': ['Neorar showing the contents of a 7Z archive', 'Neorar mostrando el contenido de un archivo 7Z'],
-  'Neorar em grade dentro de um ZIP com comentário': ['Neorar in grid view inside a ZIP with a comment', 'Neorar en cuadrícula dentro de un ZIP con comentario'],
+  'Baixar NeoRAR': ['Download NeoRAR', 'Descargar NeoRAR'],
+  'NeoRAR mostrando o conteúdo de um arquivo 7Z': ['NeoRAR showing the contents of a 7Z archive', 'NeoRAR mostrando el contenido de un archivo 7Z'],
+  'NeoRAR em grade dentro de um ZIP com comentário': ['NeoRAR in grid view inside a ZIP with a comment', 'NeoRAR en cuadrícula dentro de un ZIP con comentario'],
 
   'Baixar Rubbish Notes': ['Download Rubbish Notes', 'Descargar Rubbish Notes'],
   'Rubbish Notes com uma nota aberta': ['Rubbish Notes with a note open', 'Rubbish Notes con una nota abierta'],
@@ -198,7 +198,7 @@ window.WITCH_STRINGS = Object.freeze({
   'BunnyGrid mostrando uma tabela de clientes': ['BunnyGrid showing a customers table', 'BunnyGrid mostrando una tabla de clientes'],
   'Janela de nova conexão do BunnyGrid com os tipos de banco': ['BunnyGrid new connection window with database types', 'Ventana de nueva conexión de BunnyGrid con los tipos de base'],
 
-  // Wormlink
+  // WormLink
   'Seus servidores': ['Your servers', 'Tus servidores'],
   'Conecte. Explore. Transfira. Um cliente de arquivos remotos em dois painéis, com o visual Liquid Glass do macOS 26 e software livre sob a GPL-3.': [
     'Connect. Browse. Transfer. A two-pane remote file client with the Liquid Glass look of macOS 26, free software under the GPL-3.',
@@ -216,15 +216,15 @@ window.WITCH_STRINGS = Object.freeze({
     'Queue, resume, sync with preview and drag straight from Finder.',
     'Cola, reanudación, sincronización con vista previa y arrastrar directo desde el Finder.'],
   'Montar no Finder': ['Mount in Finder', 'Montar en el Finder'],
-  'O Wormlink Disk mostra seus servidores como discos no Finder.': [
-    'Wormlink Disk shows your servers as disks in Finder.',
-    'Wormlink Disk muestra tus servidores como discos en el Finder.'],
+  'O WormLink Disk mostra seus servidores como discos no Finder.': [
+    'WormLink Disk shows your servers as disks in Finder.',
+    'WormLink Disk muestra tus servidores como discos en el Finder.'],
   'Para quem vive no terminal': ['For terminal lovers', 'Para quien vive en la terminal'],
   'Chaves SSH, ProxyJump, linha de comando e AppleScript.': [
     'SSH keys, ProxyJump, command line and AppleScript.',
     'Claves SSH, ProxyJump, línea de comandos y AppleScript.'],
-  'Baixar Wormlink': ['Download Wormlink', 'Descargar Wormlink'],
-  'Wormlink com a pasta Downloads e a lista de servidores': ['Wormlink with the Downloads folder and the server list', 'Wormlink con la carpeta Descargas y la lista de servidores'],
+  'Baixar WormLink': ['Download WormLink', 'Descargar WormLink'],
+  'WormLink com a pasta Downloads e a lista de servidores': ['WormLink with the Downloads folder and the server list', 'WormLink con la carpeta Descargas y la lista de servidores'],
 
   // BetterCraft Launcher
   'Launcher dos apps Craft': ['Launcher for the Craft apps', 'Launcher de las apps Craft'],
@@ -306,9 +306,9 @@ window.WITCH_STRINGS = Object.freeze({
     'Only if you turn it on. It’s optional and uses your own Claude or OpenAI key. With no key set, nothing leaves your Mac.',
     'Solo si lo activas. Es opcional y usa tu propia clave de Claude o de OpenAI. Sin clave configurada, nada sale de tu Mac.'],
   'Por que alguns apps pedem macOS 26?': ['Why do some apps require macOS 26?', '¿Por qué algunas apps piden macOS 26?'],
-  'O Neorar, o Rubbish Notes e o Wormlink usam o Liquid Glass e outras APIs que só existem a partir do macOS 26 Tahoe. O Sirena se adapta: no macOS 15 Sequoia ele troca o Liquid Glass pelo visual translúcido clássico do sistema.': [
-    'Neorar, Rubbish Notes and Wormlink use Liquid Glass and other APIs that only exist starting with macOS 26 Tahoe. Sirena adapts: on macOS 15 Sequoia it swaps Liquid Glass for the system’s classic translucent look.',
-    'Neorar, Rubbish Notes y Wormlink usan Liquid Glass y otras APIs que solo existen a partir de macOS 26 Tahoe. Sirena se adapta: en macOS 15 Sequoia cambia Liquid Glass por el aspecto translúcido clásico del sistema.'],
+  'O NeoRAR, o Rubbish Notes e o WormLink usam o Liquid Glass e outras APIs que só existem a partir do macOS 26 Tahoe. O Sirena se adapta: no macOS 15 Sequoia ele troca o Liquid Glass pelo visual translúcido clássico do sistema.': [
+    'NeoRAR, Rubbish Notes and WormLink use Liquid Glass and other APIs that only exist starting with macOS 26 Tahoe. Sirena adapts: on macOS 15 Sequoia it swaps Liquid Glass for the system’s classic translucent look.',
+    'NeoRAR, Rubbish Notes y WormLink usan Liquid Glass y otras APIs que solo existen a partir de macOS 26 Tahoe. Sirena se adapta: en macOS 15 Sequoia cambia Liquid Glass por el aspecto translúcido clásico del sistema.'],
   'Encontrei um bug ou tenho uma ideia.': ['I found a bug or have an idea.', 'Encontré un error o tengo una idea.'],
   'Abra uma issue no GitHub do app ou mande um e-mail pelo link de contato no rodapé. Toda sugestão é bem-vinda.': [
     'Open an issue on the app’s GitHub or send an email through the contact link in the footer. Every suggestion is welcome.',
