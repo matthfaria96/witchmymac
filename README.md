@@ -10,8 +10,9 @@
 
 <p align="center">
   <b>Useful spells for your Mac.</b><br>
-  Six native Swift apps, 100% free: a Swiss Army knife for the menu bar, a cleaner,<br>
-  an archive manager, a notepad, a database client and a remote file client.
+  Seven native apps, 100% free: a Swiss Army knife for the menu bar, a cleaner,<br>
+  an archive manager, a notepad, a database client, a server client<br>
+  and a launcher for the Craft apps.
 </p>
 
 <p align="center">
@@ -34,7 +35,7 @@
 > There is no paid version. Each one's source code is open on GitHub.
 
 <p align="center">
-  <img src="assets/og-image.png" alt="witchmymac: six free apps for Mac" width="900">
+  <img src="assets/og-image.png" alt="witchmymac: free apps for Mac" width="900">
 </p>
 
 ## The apps
@@ -47,6 +48,7 @@
 | <img src="assets/icons/rubbishnotes.png" width="64" alt="Rubbish Notes"> | **[Rubbish Notes](#rubbish-notes)** | A minimalist notepad to clear your head, which saves everything on its own | macOS 26+ | [matthfaria96/rubbish-notes](https://github.com/matthfaria96/rubbish-notes) |
 | <img src="assets/icons/bunnygrid.png" width="64" alt="BunnyGrid"> | **[BunnyGrid](#bunnygrid)** | Database client: SQLite, PostgreSQL, MySQL, SQL Server, MongoDB, Redis and more | macOS 14+ | [matthfaria96/BunnyGrid](https://github.com/matthfaria96/BunnyGrid) |
 | <img src="assets/icons/wormlink.png" width="64" alt="Wormlink"> | **[Wormlink](#wormlink)** | Dual-pane remote file client: SFTP, FTP, S3, SMB, WebDAV and cloud drives | macOS 26+ | [matthfaria96/Wormlink](https://github.com/matthfaria96/Wormlink) |
+| <img src="assets/icons/bettercraft.png" width="64" alt="BetterCraft Launcher"> | **[BetterCraft Launcher](#bettercraft-launcher)** | The Craft apps launcher, rethought: no visual noise, straight to the point, with redesigned icons | macOS 11+ | [matthfaria96/bettercraft-launcher](https://github.com/matthfaria96/bettercraft-launcher) |
 
 All of them run on Apple Silicon and Intel Macs. Each download is the `.dmg` from the app's latest
 GitHub release.
@@ -168,6 +170,22 @@ Liquid Glass look, free software under the GPL-3.
 
 <p align="center"><a href="https://github.com/matthfaria96/Wormlink/releases/latest"><b>Download Wormlink</b></a> · <a href="https://github.com/matthfaria96/Wormlink">Source code</a> · macOS 26 Tahoe or later</p>
 
+### <img src="assets/icons/bettercraft.png" width="36" align="top" alt=""> BetterCraft Launcher
+
+**Your Craft apps.** The Craft App Suite launcher, rethought: no visual noise, straight to the point.
+A better take on the ArtCraft Launcher experience, with redesigned icons.
+
+- **No visual noise.** One row per app: icon, name, version and a button. No extra pages, notices or menus.
+- **Redesigned icons.** One click swaps the Craft apps’ icons in Finder, Launchpad and the Dock.
+- **Updates without surprises.** Checks for and installs new versions without losing the new icons.
+- **Always up to date.** Follows the original ArtCraft Launcher and brings in its improvements.
+
+<p align="center">
+  <img src="assets/shots/bettercraft-main.png" alt="BetterCraft Launcher with the list of installed Craft apps and the redesigned icons" width="760">
+</p>
+
+<p align="center"><a href="https://github.com/matthfaria96/bettercraft-launcher"><b>View on GitHub</b></a> · macOS 11 Big Sur or later · installed from source</p>
+
 ---
 
 ## Installing on macOS
@@ -221,6 +239,7 @@ xattr -dr com.apple.quarantine /Applications/Sirena.app
 | Rubbish Notes | 26 Tahoe | Apple Silicon and Intel |
 | BunnyGrid | 14 Sonoma | Apple Silicon and Intel |
 | Wormlink | 26 Tahoe | Apple Silicon and Intel |
+| BetterCraft Launcher | 11 Big Sur | Apple Silicon and Intel |
 
 ## FAQ
 

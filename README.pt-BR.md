@@ -10,8 +10,9 @@
 
 <p align="center">
   <b>Feitiços úteis para o seu Mac.</b><br>
-  Seis apps nativos em Swift, 100% gratuitos: um canivete suíço para a barra de menus, um limpador,<br>
-  um compactador de arquivos, um bloco de notas, um cliente de bancos de dados e um cliente de servidores.
+  Sete apps nativos, 100% gratuitos: um canivete suíço para a barra de menus, um limpador,<br>
+  um compactador de arquivos, um bloco de notas, um cliente de bancos de dados, um cliente de servidores<br>
+  e um launcher para os apps Craft.
 </p>
 
 <p align="center">
@@ -34,7 +35,7 @@
 > compartilhar. Não existe versão paga. O código de cada um está aberto no GitHub.
 
 <p align="center">
-  <img src="assets/og-image.png" alt="witchmymac: os seis apps gratuitos para Mac" width="900">
+  <img src="assets/og-image.png" alt="witchmymac: os apps gratuitos para Mac" width="900">
 </p>
 
 ## Os apps
@@ -47,9 +48,10 @@
 | <img src="assets/icons/rubbishnotes.png" width="64" alt="Rubbish Notes"> | **[Rubbish Notes](#rubbish-notes)** | Bloco de notas minimalista para esvaziar a cabeça, que salva tudo sozinho | macOS 26+ | [matthfaria96/rubbish-notes](https://github.com/matthfaria96/rubbish-notes) |
 | <img src="assets/icons/bunnygrid.png" width="64" alt="BunnyGrid"> | **[BunnyGrid](#bunnygrid)** | Cliente de bancos de dados: SQLite, PostgreSQL, MySQL, SQL Server, MongoDB, Redis e mais | macOS 14+ | [matthfaria96/BunnyGrid](https://github.com/matthfaria96/BunnyGrid) |
 | <img src="assets/icons/wormlink.png" width="64" alt="Wormlink"> | **[Wormlink](#wormlink)** | Cliente de arquivos remotos em dois painéis: SFTP, FTP, S3, SMB, WebDAV e nuvens | macOS 26+ | [matthfaria96/Wormlink](https://github.com/matthfaria96/Wormlink) |
+| <img src="assets/icons/bettercraft.png" width="64" alt="BetterCraft Launcher"> | **[BetterCraft Launcher](#bettercraft-launcher)** | O launcher dos apps Craft repensado: sem ruído visual, direto ao ponto e com ícones redesenhados | macOS 11+ | [matthfaria96/bettercraft-launcher](https://github.com/matthfaria96/bettercraft-launcher) |
 
 Todos rodam em Macs com Apple Silicon e Intel. O download de cada um é o `.dmg` do release mais
-recente no GitHub.
+recente no GitHub; o BetterCraft Launcher se instala a partir do código fonte.
 
 ---
 
@@ -168,6 +170,22 @@ com o visual Liquid Glass do macOS 26 e software livre sob a GPL-3.
 
 <p align="center"><a href="https://github.com/matthfaria96/Wormlink/releases/latest"><b>Baixar Wormlink</b></a> · <a href="https://github.com/matthfaria96/Wormlink">Código fonte</a> · macOS 26 Tahoe ou mais novo</p>
 
+### <img src="assets/icons/bettercraft.png" width="36" align="top" alt=""> BetterCraft Launcher
+
+**Seus apps Craft.** O launcher do Craft App Suite repensado: sem ruído visual e direto ao ponto.
+Uma versão melhorada da experiência do ArtCraft Launcher, com ícones redesenhados.
+
+- **Sem ruído visual.** Uma linha por app: ícone, nome, versão e um botão. Nada de páginas, avisos ou menus sobrando.
+- **Ícones redesenhados.** Um clique troca os ícones dos apps Craft no Finder, no Launchpad e no Dock.
+- **Atualizações sem surpresa.** Verifica e instala as versões novas sem perder os ícones novos.
+- **Sempre em dia.** Acompanha o ArtCraft Launcher original e traz as novidades dele.
+
+<p align="center">
+  <img src="assets/shots/bettercraft-main.png" alt="BetterCraft Launcher com a lista dos apps Craft instalados e os ícones redesenhados" width="760">
+</p>
+
+<p align="center"><a href="https://github.com/matthfaria96/bettercraft-launcher"><b>Ver no GitHub</b></a> · macOS 11 Big Sur ou mais novo · instalado a partir do código fonte</p>
+
 ---
 
 ## Como instalar no macOS
@@ -221,6 +239,7 @@ xattr -dr com.apple.quarantine /Applications/Sirena.app
 | Rubbish Notes | 26 Tahoe | Apple Silicon e Intel |
 | BunnyGrid | 14 Sonoma | Apple Silicon e Intel |
 | Wormlink | 26 Tahoe | Apple Silicon e Intel |
+| BetterCraft Launcher | 11 Big Sur | Apple Silicon e Intel |
 
 ## Perguntas frequentes
 

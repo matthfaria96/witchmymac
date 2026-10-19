@@ -2,9 +2,9 @@
 // o valor é [inglês, espanhol]. Textos iguais nos três idiomas (nomes de apps, GitHub, FAQ) não precisam estar aqui.
 window.WITCH_STRINGS = Object.freeze({
   'witchmymac · apps gratuitos para Mac': ['witchmymac · free apps for Mac', 'witchmymac · apps gratis para Mac'],
-  'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid e Wormlink: seis apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.': [
-    'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid and Wormlink: six free, native macOS apps with no ads and no tracking.',
-    'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid y Wormlink: seis apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
+  'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid, Wormlink e BetterCraft Launcher: sete apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.': [
+    'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid, Wormlink and BetterCraft Launcher: seven free, native macOS apps with no ads and no tracking.',
+    'Sirena, MacDash, Neorar, Rubbish Notes, BunnyGrid, Wormlink y BetterCraft Launcher: siete apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
   'Principal': ['Main', 'Principal'],
   'Privacidade': ['Privacy', 'Privacidad'],
   'Como Instalar?': ['How to Install?', '¿Cómo instalar?'],
@@ -15,9 +15,9 @@ window.WITCH_STRINGS = Object.freeze({
   'Apps nativos para macOS · 100% gratuitos': ['Native macOS apps · 100% free', 'Apps nativas para macOS · 100% gratis'],
   'Feitiços úteis': ['Handy spells', 'Hechizos útiles'],
   'para o seu Mac.': ['for your Mac.', 'para tu Mac.'],
-  'Seis apps nativos em Swift: um canivete suíço para a barra de menus, um limpador, um compactador de arquivos, um bloco de notas, um cliente de bancos de dados e um cliente de servidores. Sem assinatura, sem anúncios, sem rastreamento.': [
-    'Six native apps built in Swift: a Swiss army knife for the menu bar, a cleaner, an archive manager, a notepad, a database client and a server client. No subscription, no ads, no tracking.',
-    'Seis apps nativas en Swift: una navaja suiza para la barra de menús, un limpiador, un compresor de archivos, un bloc de notas, un cliente de bases de datos y un cliente de servidores. Sin suscripción, sin anuncios, sin rastreo.'],
+  'Sete apps nativos: um canivete suíço para a barra de menus, um limpador, um compactador de arquivos, um bloco de notas, um cliente de bancos de dados, um cliente de servidores e um launcher para os apps Craft. Sem assinatura, sem anúncios, sem rastreamento.': [
+    'Seven native apps: a Swiss army knife for the menu bar, a cleaner, an archive manager, a notepad, a database client, a server client and a launcher for the Craft apps. No subscription, no ads, no tracking.',
+    'Siete apps nativas: una navaja suiza para la barra de menús, un limpiador, un compresor de archivos, un bloc de notas, un cliente de bases de datos, un cliente de servidores y un launcher para las apps Craft. Sin suscripción, sin anuncios, sin rastreo.'],
   'Ver os apps': ['See the apps', 'Ver las apps'],
   'Como instalar': ['How to install', 'Cómo instalar'],
   'Gratuito para sempre': ['Free forever', 'Gratis para siempre'],
@@ -226,6 +226,39 @@ window.WITCH_STRINGS = Object.freeze({
   'Baixar Wormlink': ['Download Wormlink', 'Descargar Wormlink'],
   'Wormlink com a pasta Downloads e a lista de servidores': ['Wormlink with the Downloads folder and the server list', 'Wormlink con la carpeta Descargas y la lista de servidores'],
 
+  // BetterCraft Launcher
+  'Launcher dos apps Craft': ['Launcher for the Craft apps', 'Launcher de las apps Craft'],
+  'Instale, atualize e abra os apps Craft numa lista limpa, com ícones redesenhados.': [
+    'Install, update and open the Craft apps from one clean list, with redesigned icons.',
+    'Instala, actualiza y abre las apps Craft desde una lista limpia, con íconos rediseñados.'],
+  'Seus apps Craft': ['Your Craft apps', 'Tus apps Craft'],
+  'O launcher do Craft App Suite repensado: sem ruído visual e direto ao ponto. Uma versão melhorada da experiência do ArtCraft Launcher, com ícones redesenhados.': [
+    'The Craft App Suite launcher, rethought: no visual noise, straight to the point. A better take on the ArtCraft Launcher experience, with redesigned icons.',
+    'El launcher del Craft App Suite repensado: sin ruido visual y directo al grano. Una versión mejorada de la experiencia de ArtCraft Launcher, con íconos rediseñados.'],
+  'Sem ruído visual': ['No visual noise', 'Sin ruido visual'],
+  'Uma linha por app: ícone, nome, versão e um botão. Nada de páginas, avisos ou menus sobrando.': [
+    'One row per app: icon, name, version and a button. No extra pages, notices or menus.',
+    'Una fila por app: ícono, nombre, versión y un botón. Sin páginas, avisos ni menús de más.'],
+  'Ícones redesenhados': ['Redesigned icons', 'Íconos rediseñados'],
+  'Um clique troca os ícones dos apps Craft no Finder, no Launchpad e no Dock.': [
+    'One click swaps the Craft apps’ icons in Finder, Launchpad and the Dock.',
+    'Un clic cambia los íconos de las apps Craft en el Finder, el Launchpad y el Dock.'],
+  'Atualizações sem surpresa': ['Updates without surprises', 'Actualizaciones sin sorpresas'],
+  'Verifica e instala as versões novas sem perder os ícones novos.': [
+    'Checks for and installs new versions without losing the new icons.',
+    'Busca e instala las versiones nuevas sin perder los íconos nuevos.'],
+  'Sempre em dia': ['Always up to date', 'Siempre al día'],
+  'Acompanha o ArtCraft Launcher original e traz as novidades dele.': [
+    'Follows the original ArtCraft Launcher and brings in its improvements.',
+    'Sigue al ArtCraft Launcher original y trae sus novedades.'],
+  'Ver no GitHub': ['View on GitHub', 'Ver en GitHub'],
+  'macOS 11 Big Sur ou mais novo · instalado a partir do código fonte': [
+    'macOS 11 Big Sur or later · installed from source',
+    'macOS 11 Big Sur o posterior · se instala desde el código fuente'],
+  'BetterCraft Launcher com a lista dos apps Craft instalados e os ícones redesenhados': [
+    'BetterCraft Launcher with the list of installed Craft apps and the redesigned icons',
+    'BetterCraft Launcher con la lista de apps Craft instaladas y los íconos rediseñados'],
+
   // Privacidade
   'Sua privacidade': ['Your privacy', 'Tu privacidad'],
   'Sem espionagem.': ['No snooping.', 'Sin espionaje.'],
@@ -240,7 +273,7 @@ window.WITCH_STRINGS = Object.freeze({
   'Sem versão Pro, sem teste de 7 dias, sem recursos bloqueados.': ['No Pro version, no 7-day trial, no locked features.', 'Sin versión Pro, sin prueba de 7 días, sin funciones bloqueadas.'],
   'R$ 49,90/mês': ['$9.99/month', 'US$ 9,99/mes'],
   'R$ 0': ['$0', 'US$ 0'],
-  'para sempre, nos seis apps': ['forever, across all six apps', 'para siempre, en las seis apps'],
+  'para sempre, nos sete apps': ['forever, across all seven apps', 'para siempre, en las siete apps'],
 
   // Instalar
   'Ok, quero. Por onde começo?': ['OK, I’m in. Where do I start?', 'Ok, lo quiero. ¿Por dónde empiezo?'],
@@ -283,7 +316,7 @@ window.WITCH_STRINGS = Object.freeze({
 
   // Final e rodapé
   'Faça mágica com o seu Mac.': ['Work some magic on your Mac.', 'Haz magia con tu Mac.'],
-  'Seis apps, zero custo. Escolha o seu.': ['Six apps, zero cost. Pick yours.', 'Seis apps, cero costo. Elige la tuya.'],
+  'Sete apps, zero custo. Escolha o seu.': ['Seven apps, zero cost. Pick yours.', 'Siete apps, cero costo. Elige la tuya.'],
   'Imagem ampliada': ['Enlarged image', 'Imagen ampliada'],
   'Fechar': ['Close', 'Cerrar'],
   'Rodapé': ['Footer', 'Pie de página'],
