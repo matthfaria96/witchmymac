@@ -306,9 +306,9 @@ window.WITCH_STRINGS = Object.freeze({
     'Only if you turn it on. It’s optional and uses your own Claude or OpenAI key. With no key set, nothing leaves your Mac.',
     'Solo si lo activas. Es opcional y usa tu propia clave de Claude o de OpenAI. Sin clave configurada, nada sale de tu Mac.'],
   'Por que alguns apps pedem macOS 26?': ['Why do some apps require macOS 26?', '¿Por qué algunas apps piden macOS 26?'],
-  'O NeoRAR, o Rubbish Notes e o WormLink usam o Liquid Glass e outras APIs que só existem a partir do macOS 26 Tahoe. O Sirena se adapta: no macOS 15 Sequoia ele troca o Liquid Glass pelo visual translúcido clássico do sistema.': [
-    'NeoRAR, Rubbish Notes and WormLink use Liquid Glass and other APIs that only exist starting with macOS 26 Tahoe. Sirena adapts: on macOS 15 Sequoia it swaps Liquid Glass for the system’s classic translucent look.',
-    'NeoRAR, Rubbish Notes y WormLink usan Liquid Glass y otras APIs que solo existen a partir de macOS 26 Tahoe. Sirena se adapta: en macOS 15 Sequoia cambia Liquid Glass por el aspecto translúcido clásico del sistema.'],
+  'O NeoRAR e o WormLink usam o Liquid Glass e outras APIs que só existem a partir do macOS 26 Tahoe. O Sirena e o Rubbish Notes se adaptam: no macOS 15 Sequoia eles trocam o Liquid Glass pelo visual translúcido clássico do sistema.': [
+    'NeoRAR and WormLink use Liquid Glass and other APIs that only exist starting with macOS 26 Tahoe. Sirena and Rubbish Notes adapt: on macOS 15 Sequoia they swap Liquid Glass for the system’s classic translucent look.',
+    'NeoRAR y WormLink usan Liquid Glass y otras APIs que solo existen a partir de macOS 26 Tahoe. Sirena y Rubbish Notes se adaptan: en macOS 15 Sequoia cambian Liquid Glass por el aspecto translúcido clásico del sistema.'],
   'Encontrei um bug ou tenho uma ideia.': ['I found a bug or have an idea.', 'Encontré un error o tengo una idea.'],
   'Abra uma issue no GitHub do app ou mande um e-mail pelo link de contato no rodapé. Toda sugestão é bem-vinda.': [
     'Open an issue on the app’s GitHub or send an email through the contact link in the footer. Every suggestion is welcome.',
