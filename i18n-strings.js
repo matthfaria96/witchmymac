@@ -149,14 +149,21 @@ window.WITCH_STRINGS = Object.freeze({
   'NeoRAR em grade dentro de um ZIP com comentário': ['NeoRAR in grid view inside a ZIP with a comment', 'NeoRAR en cuadrícula dentro de un ZIP con comentario'],
 
   'Baixar Rubbish Notes': ['Download Rubbish Notes', 'Descargar Rubbish Notes'],
-  'Rubbish Notes com uma nota aberta': ['Rubbish Notes with a note open', 'Rubbish Notes con una nota abierta'],
+  'Rubbish Notes com uma nota aberta e seus blocos': ['Rubbish Notes with a note and its blocks open', 'Rubbish Notes con una nota y sus bloques abiertos'],
   'Aba de temas do Rubbish Notes com Dracula, Nord, Monokai e outros': ['Rubbish Notes themes tab with Dracula, Nord, Monokai and more', 'Pestaña de temas de Rubbish Notes con Dracula, Nord, Monokai y otros'],
+  'Aba de temas do Rubbish Notes com Papel, Menta, Flor, Meia-noite e outros': ['Rubbish Notes themes tab with Paper, Mint, Blossom, Midnight and more', 'Pestaña de temas de Rubbish Notes con Papel, Menta, Flor, Medianoche y otros'],
+  'Imagens na nota, fora do texto': ['Images in the note, out of the text', 'Imágenes en la nota, fuera del texto'],
+  'Cole ou arraste uma imagem e ela fica num cantinho do rodapé. Um clique abre a galeria em tela cheia.': ['Paste or drop an image and it waits in a corner of the footer. One click opens the full-window gallery.', 'Pega o arrastra una imagen y queda en una esquina del pie. Un clic abre la galería a pantalla completa.'],
+  'Blocos para textos longos': ['Blocks for long texts', 'Bloques para textos largos'],
+  'Roteiros, endereços, trechos para copiar: guarde em blocos separados dos seus rabiscos e copie com um clique.': ['Itineraries, addresses, snippets to copy: keep them in blocks apart from your scribbles and copy with one click.', 'Itinerarios, direcciones, fragmentos para copiar: guárdalos en bloques aparte de tus garabatos y cópialos con un clic.'],
+  'Temas que mudam tudo': ['Themes that change everything', 'Temas que lo cambian todo'],
+  'Papel, Menta, Flor, Meia-noite, Terminal e mais. O tema pinta a janela inteira, com barra lateral de vidro e opacidade ajustável.': ['Paper, Mint, Blossom, Midnight, Terminal and more. The theme colors the whole window, with a glass sidebar and adjustable opacity.', 'Papel, Menta, Flor, Medianoche, Terminal y más. El tema pinta toda la ventana, con barra lateral de cristal y opacidad ajustable.'],
 
   // Rubbish Notes
   'Notas para esvaziar a cabeça': ['Notes to clear your head', 'Notas para vaciar la cabeza'],
   'Escreva e esqueça: tudo é salvo sozinho no seu Mac. Minimalista, com modo foco, temas e notas fixadas.': ['Write it down and let it go: everything saves itself on your Mac. Minimal, with focus mode, themes and pinned notes.', 'Escríbelo y olvídate: todo se guarda solo en tu Mac. Minimalista, con modo foco, temas y notas fijadas.'],
   'Sua mente leve': ['A lighter mind', 'Tu mente ligera'],
-  'Tire as ideias da cabeça e siga em frente. O Rubbish Notes é um bloco de notas minimalista que salva tudo sozinho, no seu Mac, enquanto você digita. Sem botão de salvar, sem conta, sem nuvem: abriu, escreveu, pronto.': ['Get ideas out of your head and move on. Rubbish Notes is a minimal notepad that saves everything on its own, on your Mac, as you type. No save button, no account, no cloud: open it, write, done.', 'Saca las ideas de tu cabeza y sigue adelante. Rubbish Notes es un bloc de notas minimalista que lo guarda todo solo, en tu Mac, mientras escribes. Sin botón de guardar, sin cuenta, sin nube: abres, escribes, listo.'],
+  'Tire as ideias da cabeça e siga em frente. O Rubbish Notes é um bloco de notas minimalista que salva tudo sozinho, no seu Mac, enquanto você digita. Imagens e textos de apoio ficam guardados na própria nota, nos cantos, sem bagunçar o que você está escrevendo.': ['Get ideas out of your head and move on. Rubbish Notes is a minimal notepad that saves everything on its own, on your Mac, as you type. Images and reference texts live in the note itself, tucked in its corners, without cluttering what you are writing.', 'Saca las ideas de tu cabeza y sigue adelante. Rubbish Notes es un bloc de notas minimalista que lo guarda todo solo, en tu Mac, mientras escribes. Las imágenes y los textos de apoyo viven en la propia nota, en sus esquinas, sin desordenar lo que escribes.'],
   'Salva sozinho, sempre': ['Saves itself, always', 'Se guarda solo, siempre'],
   'Cada palavra fica guardada um instante depois que você para de digitar, em arquivos .txt no seu Mac.': ['Every word is stored a moment after you stop typing, in .txt files on your Mac.', 'Cada palabra queda guardada un instante después de que dejas de escribir, en archivos .txt en tu Mac.'],
   'Modo foco': ['Focus mode', 'Modo foco'],
