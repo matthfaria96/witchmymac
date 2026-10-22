@@ -2,9 +2,9 @@
 // o valor é [inglês, espanhol]. Textos iguais nos três idiomas (nomes de apps, GitHub, FAQ) não precisam estar aqui.
 window.WITCH_STRINGS = Object.freeze({
   'witchmymac · apps gratuitos para Mac': ['witchmymac · free apps for Mac', 'witchmymac · apps gratis para Mac'],
-  'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink e BetterCraft Launcher: sete apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.': [
-    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink and BetterCraft Launcher: seven free, native macOS apps with no ads and no tracking.',
-    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink y BetterCraft Launcher: siete apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
+  'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher e Santo Video Player: oito apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.': [
+    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher and Santo Video Player: eight free, native macOS apps with no ads and no tracking.',
+    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher y Santo Video Player: ocho apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
   'Principal': ['Main', 'Principal'],
   'Privacidade': ['Privacy', 'Privacidad'],
   'Como Instalar?': ['How to Install?', '¿Cómo instalar?'],
@@ -15,9 +15,9 @@ window.WITCH_STRINGS = Object.freeze({
   'Apps nativos para macOS · 100% gratuitos': ['Native macOS apps · 100% free', 'Apps nativas para macOS · 100% gratis'],
   'Feitiços úteis': ['Handy spells', 'Hechizos útiles'],
   'para o seu Mac.': ['for your Mac.', 'para tu Mac.'],
-  'Sete apps nativos: um canivete suíço para a barra de menus, um limpador, um compactador de arquivos, um bloco de notas, um cliente de bancos de dados, um cliente de servidores e um launcher para os apps Craft. Sem assinatura, sem anúncios, sem rastreamento.': [
-    'Seven native apps: a Swiss army knife for the menu bar, a cleaner, an archive manager, a notepad, a database client, a server client and a launcher for the Craft apps. No subscription, no ads, no tracking.',
-    'Siete apps nativas: una navaja suiza para la barra de menús, un limpiador, un compresor de archivos, un bloc de notas, un cliente de bases de datos, un cliente de servidores y un launcher para las apps Craft. Sin suscripción, sin anuncios, sin rastreo.'],
+  'Oito apps nativos: um canivete suíço para a barra de menus, um limpador, um compactador de arquivos, um bloco de notas, um cliente de bancos de dados, um cliente de servidores, um launcher para os apps Craft e um player de vídeo com cara de TV de tubo. Sem assinatura, sem anúncios, sem rastreamento.': [
+    'Eight native apps: a Swiss army knife for the menu bar, a cleaner, an archive manager, a notepad, a database client, a server client, a launcher for the Craft apps and a video player that looks like a tube TV. No subscription, no ads, no tracking.',
+    'Ocho apps nativas: una navaja suiza para la barra de menús, un limpiador, un compresor de archivos, un bloc de notas, un cliente de bases de datos, un cliente de servidores, un launcher para las apps Craft y un reproductor de video con aspecto de televisor de tubo. Sin suscripción, sin anuncios, sin rastreo.'],
   'Ver os apps': ['See the apps', 'Ver las apps'],
   'Como instalar': ['How to install', 'Cómo instalar'],
   'Gratuito para sempre': ['Free forever', 'Gratis para siempre'],
@@ -323,7 +323,47 @@ window.WITCH_STRINGS = Object.freeze({
 
   // Final e rodapé
   'Faça mágica com o seu Mac.': ['Work some magic on your Mac.', 'Haz magia con tu Mac.'],
-  'Sete apps, zero custo. Escolha o seu.': ['Seven apps, zero cost. Pick yours.', 'Siete apps, cero costo. Elige la tuya.'],
+  // Santo Video Player
+  'Player com cara de TV de tubo': ['A player that looks like a tube TV', 'Un reproductor con aspecto de televisor de tubo'],
+  'Séries, animes e filmes antigos numa TV de tubo de verdade, com scanlines, vidro curvo e gabinete. Abre quase qualquer vídeo.': [
+    'Old shows, anime and films on a real tube TV, with scanlines, curved glass and a cabinet. Opens almost any video.',
+    'Series, anime y películas antiguas en un televisor de tubo de verdad, con scanlines, vidrio curvo y gabinete. Abre casi cualquier video.'],
+  'Sua sessão da tarde': ['Your Saturday-morning screen', 'Tu sesión de la tarde'],
+  'Um player de vídeo que transforma a tela numa TV de tubo. Feito para maratonar séries antigas, animes, desenhos e filmes clássicos do jeito que eles foram feitos para ser vistos: com scanlines, brilho de fósforo, vidro curvo e o gabinete preto de uma TV de verdade em volta da imagem.': [
+    'A video player that turns your screen into a tube TV. Made for binge-watching old shows, anime, cartoons and classic films the way they were meant to be seen: with scanlines, phosphor glow, curved glass and the black cabinet of a real TV around the picture.',
+    'Un reproductor de video que convierte la pantalla en un televisor de tubo. Hecho para maratonear series antiguas, anime, dibujos animados y películas clásicas como fueron pensadas para verse: con scanlines, brillo de fósforo, vidrio curvo y el gabinete negro de un televisor de verdad alrededor de la imagen.'],
+  'TV com Gabinete': ['Cabinet TV', 'Televisor con gabinete'],
+  'Em vídeos 4:3, as faixas pretas viram o gabinete da TV, com alto-falante, botões e LED. Em 16:9 e no cinema, sobra só uma moldura fina que não rouba a imagem.': [
+    'In 4:3 videos the black bars become the TV cabinet, with speaker, knobs and LED. In 16:9 and cinema, only a thin bezel remains, so the picture keeps its size.',
+    'En videos 4:3, las barras negras se convierten en el gabinete del televisor, con altavoz, perillas y LED. En 16:9 y en cine queda solo un marco fino que no le quita espacio a la imagen.'],
+  'Efeito CRT de verdade': ['A real CRT effect', 'Un efecto CRT de verdad'],
+  'Scanlines, máscara de fósforo, curvatura, halo de luz e ruído de antena, em tempo real e só sobre o vídeo. São oito estilos prontos, da TV antiga ao monitor de estúdio, e dá para ajustar tudo.': [
+    'Scanlines, phosphor mask, curvature, light halo and antenna noise, in real time and only on the video. Eight ready-made styles, from a vintage TV to a studio monitor, and everything can be tuned.',
+    'Scanlines, máscara de fósforo, curvatura, halo de luz y ruido de antena, en tiempo real y solo sobre el video. Ocho estilos listos, del televisor antiguo al monitor de estudio, y todo se puede ajustar.'],
+  'Abre quase tudo': ['Opens almost anything', 'Abre casi todo'],
+  'MKV, MP4, AVI, WebM, MOV e mais, com H.264, HEVC, AV1 e VP9. Também abre pastas inteiras de episódios, playlists e links de vídeo.': [
+    'MKV, MP4, AVI, WebM, MOV and more, with H.264, HEVC, AV1 and VP9. It also opens whole folders of episodes, playlists and video links.',
+    'MKV, MP4, AVI, WebM, MOV y más, con H.264, HEVC, AV1 y VP9. También abre carpetas enteras de episodios, listas de reproducción y enlaces de video.'],
+  'Feito para vídeo antigo': ['Made for old video', 'Hecho para video antiguo'],
+  'Desentrelaça DVDs e gravações de TV e desenha uma scanline para cada linha do vídeo original, como numa TV da época.': [
+    'Deinterlaces DVDs and TV recordings and draws one scanline for each line of the original video, like a TV of the time.',
+    'Desentrelaza DVD y grabaciones de televisión y dibuja una scanline por cada línea del video original, como un televisor de la época.'],
+  'Legendas e dublagem': ['Subtitles and dubs', 'Subtítulos y doblaje'],
+  'Legendas embutidas ou em arquivo, com as cores e a posição originais, e escolha entre a faixa dublada e a original.': [
+    'Embedded or file subtitles, with their original colors and position, and a choice between the dubbed and the original audio track.',
+    'Subtítulos incrustados o en archivo, con sus colores y posición originales, y elección entre la pista doblada y la original.'],
+  'Para maratonar': ['Built for binge-watching', 'Para maratonear'],
+  'Continua de onde você parou, mostra miniaturas ao passar o mouse na barra, acelera até 3× e tem Picture in Picture e teclas de mídia.': [
+    'Resumes where you left off, shows thumbnails when you hover the timeline, speeds up to 3× and supports Picture in Picture and media keys.',
+    'Continúa donde lo dejaste, muestra miniaturas al pasar el ratón por la barra, acelera hasta 3× y tiene Picture in Picture y teclas multimedia.'],
+  'Baixar Santo Video Player': ['Download Santo Video Player', 'Descargar Santo Video Player'],
+  'Desenho do Superman de 1941 em 4:3 dentro da TV com Gabinete, com alto-falante, botões e LED nas laterais': [
+    'The 1941 Superman cartoon in 4:3 inside the Cabinet TV, with speaker, knobs and LED on the sides',
+    'El dibujo de Superman de 1941 en 4:3 dentro del televisor con gabinete, con altavoz, perillas y LED a los lados'],
+  'Filme Charade de 1963 em widescreen com moldura fina e o painel de efeitos CRT com prévias ao vivo': [
+    'The 1963 film Charade in widescreen with a thin bezel and the CRT effects panel with live previews',
+    'La película Charada de 1963 en pantalla ancha con marco fino y el panel de efectos CRT con vistas previas en vivo'],
+  'Oito apps, zero custo. Escolha o seu.': ['Eight apps, zero cost. Pick yours.', 'Ocho apps, cero costo. Elige la tuya.'],
   'Imagem ampliada': ['Enlarged image', 'Imagen ampliada'],
   'Fechar': ['Close', 'Cerrar'],
   'Rodapé': ['Footer', 'Pie de página'],

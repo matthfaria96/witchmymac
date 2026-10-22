@@ -9,4 +9,5 @@ window.WITCH_APPS = Object.freeze({
   rubbishnotes: Object.freeze({ repo: 'rubbish-notes', tag: 'v1.0.0',        file: 'RubbishNotes-1.0.0.dmg', published: true }),
   bunnygrid:    Object.freeze({ repo: 'BunnyGrid',     tag: 'v0.1.0',        file: 'BunnyGrid-0.1.0.dmg',    published: true }),
   wormlink:     Object.freeze({ repo: 'Wormlink',      tag: 'v0.1.0',        file: 'Wormlink-0.1.0.dmg',     published: true }),
+  santovideoplayer: Object.freeze({ repo: 'santo-video-player', tag: 'v2.0.0', file: 'SantoVideoPlayer-2.0.0.dmg', published: true }),
 });
