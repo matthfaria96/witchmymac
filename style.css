@@ -225,9 +225,10 @@ a.card{display:block;color:inherit}
 #rubbishnotes .shot-sub.narrow-shot{width:34%}
 /* MacDash: Antivírus mais alto, cobrindo mais a foto principal */
 #macdash .shots.stacked{padding-bottom:24%}
-/* ViewTube: o Music em janela estreita (retrato) no canto da tela do YouTube */
+/* ViewTube: o Music em janela estreita (retrato) no canto esquerdo; à direita ficam as recomendações */
 #viewtube .shots{padding-bottom:20%}
-#viewtube .shot-sub.narrow-shot{width:30%}
+#viewtube .shot-sub.narrow-shot{width:30%;right:auto;left:-5%}
+@media (max-width:860px){#viewtube .shot-sub.narrow-shot{left:0}}
 @media (max-width:520px){#viewtube .shot-sub.narrow-shot{width:36%}}
 
 /* seletor de idioma */
