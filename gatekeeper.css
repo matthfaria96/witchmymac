@@ -147,6 +147,36 @@
 .gk-note{margin-top:28px;padding-top:22px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
 .gk-note b{color:var(--text)}
 
+/* Jeito rápido: comando pronto para o Terminal (install-command.js) */
+.quick{max-width:760px;margin:0 auto 32px;padding:24px;border:1px solid color-mix(in srgb,var(--accent) 45%,var(--border));border-radius:20px;background:color-mix(in srgb,var(--accent) 7%,transparent)}
+.quick h4{font-size:18px;letter-spacing:-.01em;margin-bottom:10px}
+.quick-steps{color:var(--muted);font-size:15px;padding-left:20px;display:grid;gap:4px}
+.quick-row{display:flex;gap:10px;margin-top:16px;align-items:stretch}
+.quick-select{flex:none;font:inherit;font-size:14px;font-weight:600;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:0 14px;cursor:pointer}
+.quick-select option{background:var(--bg2)}
+.quick-note{margin-top:12px;color:var(--muted);font-size:13px}
+.cmd-box{flex:1;min-width:0;display:flex;align-items:center;gap:8px;padding:6px 6px 6px 14px;border:1px solid var(--border);border-radius:12px;background:#05040b}
+.cmd-text{flex:1;min-width:0;font:13px/1.5 ui-monospace,"SF Mono",Menlo,monospace;color:#e9d5ff;overflow-wrap:anywhere;user-select:all}
+.cmd-copy{flex:none;font:inherit;font-size:13px;font-weight:600;color:#fff;background:var(--grad);border:0;border-radius:9px;padding:8px 14px;cursor:pointer}
+.cmd-copy .cmd-done,.cmd-copy.done .cmd-idle{display:none}
+.cmd-copy.done .cmd-done{display:inline}
+.cmd-copy:focus-visible,.quick-select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.gk-or{display:flex;align-items:center;gap:14px;max-width:760px;margin:0 auto 28px;color:var(--muted);font-size:14px;text-align:center}
+.gk-or::before,.gk-or::after{content:"";flex:1;height:1px;background:var(--border)}
+.faq-cmd{display:inline-block;max-width:100%;overflow-x:auto;padding:6px 10px;border-radius:8px;background:#05040b;border:1px solid var(--border);font:13px/1.5 ui-monospace,"SF Mono",Menlo,monospace;color:#e9d5ff;overflow-wrap:anywhere;user-select:all}
+
+/* Cartão que aparece ao clicar em "Baixar" */
+.dl-sheet{position:fixed;right:20px;bottom:20px;z-index:60;width:min(440px,calc(100% - 32px));padding:22px;border:1px solid var(--border);border-radius:20px;background:rgba(18,15,32,.92);-webkit-backdrop-filter:blur(24px) saturate(1.5);backdrop-filter:blur(24px) saturate(1.5);box-shadow:0 30px 80px -20px #000;animation:dl-in .35s cubic-bezier(.2,.9,.3,1.2)}
+.dl-sheet[hidden]{display:none}
+.dl-sheet .eyebrow{margin-bottom:2px}
+.dl-app{font-size:20px;font-weight:700;letter-spacing:-.01em;margin-bottom:10px}
+.dl-sheet .quick-steps{font-size:14px;margin-bottom:12px}
+.dl-alt{margin-top:12px;color:var(--muted);font-size:13px}
+.dl-alt a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
+.dl-close{position:absolute;top:12px;right:12px;width:28px;height:28px;border-radius:50%;border:0;background:var(--surface);color:var(--muted);cursor:pointer;font-size:13px}
+.dl-close:hover{color:var(--text);background:rgba(255,255,255,.1)}
+@keyframes dl-in{from{opacity:0;transform:translateY(16px) scale(.97)}}
+
 @keyframes gk-ring{0%{opacity:.9;transform:scale(.96)}100%{opacity:0;transform:scale(1.18)}}
 @keyframes gk-click{0%{opacity:.8;transform:scale(.3)}100%{opacity:0;transform:scale(1.6)}}
 @keyframes gk-bounce{0%,100%{transform:none}30%{transform:translateY(-18px)}55%{transform:none}75%{transform:translateY(-6px)}}
@@ -154,9 +184,12 @@
 
 @media (max-width:860px){
   .gk{padding:24px 16px}
+  .quick{padding:18px}
+  .quick-row{flex-direction:column}
+  .quick-select{padding:10px 14px}
   .gk-body{grid-template-columns:minmax(0,1fr)}
   .gk-stage-wrap{order:-1}
   .gk-steps{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px;padding-bottom:4px}
   .gk-steps li{flex:0 0 78%;scroll-snap-align:start}
 }
-@media (prefers-reduced-motion:reduce){.gk-cursor{transition:none}}
+@media (prefers-reduced-motion:reduce){.gk-cursor{transition:none}.dl-sheet{animation:none}}

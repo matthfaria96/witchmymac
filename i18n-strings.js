@@ -293,7 +293,6 @@ window.WITCH_STRINGS = Object.freeze({
   'Abra o .dmg e arraste o ícone para a pasta Aplicativos.': [
     'Open the .dmg and drag the icon into the Applications folder.',
     'Abre el .dmg y arrastra el ícono a la carpeta Aplicaciones.'],
-  'Abra e use': ['Open and use it', 'Abre y usa'],
 
   // FAQ
   'Espera, e quanto a…': ['Wait, what about…', 'Espera, ¿y qué hay de…'],
@@ -404,6 +403,47 @@ window.WITCH_STRINGS = Object.freeze({
     'ViewTube in Music mode in a narrow window, with the album art on top and synced lyrics below',
     'ViewTube en modo Music en una ventana estrecha, con la portada del álbum arriba y la letra sincronizada abajo'],
   'Nove apps, zero custo. Escolha o seu.': ['Nine apps, zero cost. Pick yours.', 'Nueve apps, cero costo. Elige la tuya.'],
+  // Liberar o app: comando no Terminal (install-command.js)
+  'Libere e use': ['Allow it and use it', 'Permítela y úsala'],
+  'Na primeira vez, libere o app com um comando no Terminal ou pelos Ajustes do Sistema.': [
+    'The first time, allow the app with one Terminal command or from System Settings.',
+    'La primera vez, permite la app con un comando en la Terminal o desde Ajustes del Sistema.'],
+  'Veja abaixo como': ['See how below', 'Mira abajo cómo'],
+  'Os apps são gratuitos e não passam pela App Store, então o macOS pede que você libere cada um uma vez. Depois disso o app abre direto, para sempre.': [
+    'The apps are free and don’t go through the App Store, so macOS asks you to allow each one once. After that the app opens straight away, for good.',
+    'Las apps son gratuitas y no pasan por la App Store, así que macOS te pide permitir cada una una vez. Después la app se abre directamente, para siempre.'],
+  'Jeito rápido: um comando': ['The quick way: one command', 'La forma rápida: un comando'],
+  'Arraste o app para a pasta Aplicativos.': ['Drag the app to the Applications folder.', 'Arrastra la app a la carpeta Aplicaciones.'],
+  'Abra o Terminal: aperte ⌘ Espaço, digite Terminal e aperte Enter.': [
+    'Open Terminal: press ⌘ Space, type Terminal and press Enter.',
+    'Abre la Terminal: pulsa ⌘ Espacio, escribe Terminal y pulsa Enter.'],
+  'Escolha o app, copie o comando, cole no Terminal e aperte Enter. Pronto, o app já abre direto.': [
+    'Pick the app, copy the command, paste it into Terminal and press Enter. That’s it: the app now opens straight away.',
+    'Elige la app, copia el comando, pégalo en la Terminal y pulsa Enter. Listo: la app ya se abre directamente.'],
+  'Escolha o app': ['Choose the app', 'Elige la app'],
+  'Copiar': ['Copy', 'Copiar'],
+  'Copiado!': ['Copied!', '¡Copiado!'],
+  'O comando só tira daquele app a marca de "baixado da internet". Não pede senha e não muda nada no resto do Mac.': [
+    'The command only removes the "downloaded from the internet" mark from that app. It asks for no password and changes nothing else on your Mac.',
+    'El comando solo quita de esa app la marca de "descargado de internet". No pide contraseña y no cambia nada más en tu Mac.'],
+  'Prefere não usar o Terminal? Siga as telas abaixo.': ['Rather not use Terminal? Follow the screens below.', '¿Prefieres no usar la Terminal? Sigue las pantallas de abajo.'],
+  'É normal com apps de fora da App Store, e basta liberar uma vez. O jeito mais rápido é colar no Terminal este comando, com o nome do app no final:': [
+    'It’s normal for apps from outside the App Store, and you only need to allow it once. The quickest way is to paste this command into Terminal, with the app’s name at the end:',
+    'Es normal en apps de fuera de la App Store, y basta con permitirla una vez. La forma más rápida es pegar en la Terminal este comando, con el nombre de la app al final:'],
+  'Você não precisa digitar nada: ao clicar em "Baixar", o site mostra o comando pronto daquele app, com botão para copiar. Ele também está no': [
+    'You don’t need to type anything: when you click "Download", the site shows the ready-made command for that app, with a copy button. It’s also in the',
+    'No necesitas escribir nada: al hacer clic en "Descargar", el sitio muestra el comando listo de esa app, con un botón para copiar. También está en la'],
+  'guia de instalação': ['install guide', 'guía de instalación'],
+  'Prefere sem Terminal? Clique em "OK" no aviso (nunca em "Mover para o Lixo"), vá em Ajustes do Sistema, Privacidade e Segurança, e clique em "Abrir Mesmo Assim".': [
+    'Rather skip Terminal? Click "OK" on the warning (never "Move to Trash"), go to System Settings, Privacy & Security, and click "Open Anyway".',
+    '¿Prefieres sin Terminal? Haz clic en "OK" en el aviso (nunca en "Trasladar a la papelera"), ve a Ajustes del Sistema, Privacidad y seguridad, y haz clic en "Abrir igualmente".'],
+  'Download iniciado': ['Download started', 'Descarga iniciada'],
+  'Abra o .dmg e arraste o app para a pasta Aplicativos.': ['Open the .dmg and drag the app to the Applications folder.', 'Abre el .dmg y arrastra la app a la carpeta Aplicaciones.'],
+  'Abra o Terminal (⌘ Espaço, digite Terminal), cole este comando e aperte Enter:': [
+    'Open Terminal (⌘ Space, type Terminal), paste this command and press Enter:',
+    'Abre la Terminal (⌘ Espacio, escribe Terminal), pega este comando y pulsa Enter:'],
+  'Pronto: o app abre direto.': ['Done: the app opens straight away.', 'Listo: la app se abre directamente.'],
+  'Sem Terminal? Veja o passo a passo': ['No Terminal? See the step-by-step guide', '¿Sin Terminal? Mira el paso a paso'],
   'Imagem ampliada': ['Enlarged image', 'Imagen ampliada'],
   'Fechar': ['Close', 'Cerrar'],
   'Rodapé': ['Footer', 'Pie de página'],
@@ -414,14 +454,8 @@ window.WITCH_STRINGS = Object.freeze({
   'Em breve': ['Coming soon', 'Próximamente'],
 
   // Guia para liberar no macOS
-  'Na primeira vez, o macOS pede uma confirmação.': ['The first time, macOS asks you to confirm.', 'La primera vez, macOS te pide una confirmación.'],
-  'Veja abaixo como liberar': ['See below how to allow it', 'Mira abajo cómo permitirla'],
-  ', passo a passo.': [', step by step.', ', paso a paso.'],
-  'Isso acontece com apps distribuídos fora da App Store. Clique em "OK" (nunca em "Mover para o Lixo"), vá em Ajustes do Sistema, Privacidade e Segurança, role até "Segurança" e clique em "Abrir Mesmo Assim".': ['That happens with apps distributed outside the App Store. Click “Done” (never “Move to Trash”), go to System Settings, Privacy & Security, scroll down to “Security” and click “Open Anyway”.', 'Eso pasa con apps distribuidas fuera de la App Store. Haz clic en “Aceptar” (nunca en “Trasladar a la papelera”), ve a Ajustes del Sistema, Privacidad y seguridad, baja hasta “Seguridad” y haz clic en “Abrir igualmente”.'],
-  'Veja o guia visual': ['See the visual guide', 'Mira la guía visual'],
   'Primeira vez abrindo': ['Opening it for the first time', 'Abriéndola por primera vez'],
   'O macOS vai bloquear o app. É normal.': ['macOS will block the app. That’s normal.', 'macOS va a bloquear la app. Es normal.'],
-  'Os apps são gratuitos e não passam pela App Store, então o macOS pede que você confirme uma vez. Siga as telas abaixo: depois disso o app abre direto, para sempre.': ['The apps are free and don’t go through the App Store, so macOS asks you to confirm once. Follow the screens below: after that the app opens straight away, for good.', 'Las apps son gratis y no pasan por la App Store, así que macOS te pide confirmar una vez. Sigue las pantallas de abajo: después la app abre directo, para siempre.'],
   'Passos para liberar o app': ['Steps to allow the app', 'Pasos para permitir la app'],
   'Clique em OK': ['Click Done', 'Haz clic en Aceptar'],
   'O aviso aparece ao abrir o app. Não mova para o Lixo.': ['The warning shows up when you open the app. Don’t move it to the Trash.', 'El aviso aparece al abrir la app. No la traslades a la papelera.'],

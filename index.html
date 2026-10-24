@@ -19,7 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=202610242000">
 <link rel="stylesheet" href="effects.css?v=202610201330">
-<link rel="stylesheet" href="gatekeeper.css?v=202610190959">
+<link rel="stylesheet" href="gatekeeper.css?v=202610242100">
 </head>
 <body>
 <div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
@@ -376,15 +376,31 @@
     <ol class="steps">
       <li><span>1</span><h3>Baixe o .dmg</h3><p>Clique em "Baixar" no app que quiser. O arquivo vem direto do GitHub.</p></li>
       <li><span>2</span><h3>Arraste para Aplicativos</h3><p>Abra o .dmg e arraste o ícone para a pasta Aplicativos.</p></li>
-      <li><span>3</span><h3>Abra e use</h3><p>Na primeira vez, o macOS pede uma confirmação. <a href="#liberar">Veja abaixo como liberar</a>, passo a passo.</p></li>
+      <li><span>3</span><h3>Libere e use</h3><p>Na primeira vez, libere o app com um comando no Terminal ou pelos Ajustes do Sistema. <a href="#liberar">Veja abaixo como</a>.</p></li>
     </ol>
     <!-- LIBERAR NO MACOS (guia visual do Gatekeeper) -->
     <div class="gk" id="liberar">
       <div class="gk-head">
         <p class="eyebrow">Primeira vez abrindo</p>
         <h3>O macOS vai bloquear o app. É normal.</h3>
-        <p>Os apps são gratuitos e não passam pela App Store, então o macOS pede que você confirme uma vez. Siga as telas abaixo: depois disso o app abre direto, para sempre.</p>
+        <p>Os apps são gratuitos e não passam pela App Store, então o macOS pede que você libere cada um uma vez. Depois disso o app abre direto, para sempre.</p>
       </div>
+
+      <div class="quick">
+        <h4>Jeito rápido: um comando</h4>
+        <ol class="quick-steps">
+          <li>Arraste o app para a pasta Aplicativos.</li>
+          <li>Abra o Terminal: aperte ⌘ Espaço, digite Terminal e aperte Enter.</li>
+          <li>Escolha o app, copie o comando, cole no Terminal e aperte Enter. Pronto, o app já abre direto.</li>
+        </ol>
+        <div class="quick-row">
+          <select class="quick-select" aria-label="Escolha o app"></select>
+          <div class="cmd-box"><code class="cmd-text" data-no-i18n></code><button type="button" class="cmd-copy"><span class="cmd-idle">Copiar</span><span class="cmd-done">Copiado!</span></button></div>
+        </div>
+        <p class="quick-note">O comando só tira daquele app a marca de "baixado da internet". Não pede senha e não muda nada no resto do Mac.</p>
+      </div>
+
+      <p class="gk-or"><span>Prefere não usar o Terminal? Siga as telas abaixo.</span></p>
 
       <div class="gk-body">
         <ol class="gk-steps" role="tablist" aria-label="Passos para liberar o app">
@@ -533,7 +549,10 @@
     </details>
     <details class="faq-item">
       <summary>O macOS disse que o app "não pôde ser verificado". E agora?</summary>
-      <p>Isso acontece com apps distribuídos fora da App Store. Clique em "OK" (nunca em "Mover para o Lixo"), vá em Ajustes do Sistema, Privacidade e Segurança, role até "Segurança" e clique em "Abrir Mesmo Assim". <a href="#liberar">Veja o guia visual</a>.</p>
+      <p>É normal com apps de fora da App Store, e basta liberar uma vez. O jeito mais rápido é colar no Terminal este comando, com o nome do app no final:</p>
+      <p><code class="faq-cmd" data-no-i18n>xattr -dr com.apple.quarantine "/Applications/ViewTube.app"</code></p>
+      <p>Você não precisa digitar nada: ao clicar em "Baixar", o site mostra o comando pronto daquele app, com botão para copiar. Ele também está no <a href="#liberar">guia de instalação</a>.</p>
+      <p>Prefere sem Terminal? Clique em "OK" no aviso (nunca em "Mover para o Lixo"), vá em Ajustes do Sistema, Privacidade e Segurança, e clique em "Abrir Mesmo Assim".</p>
     </details>
     <details class="faq-item">
       <summary>O MacDash pode apagar algo importante?</summary>
@@ -562,6 +581,18 @@
   </section>
 </main>
 
+<aside class="dl-sheet" aria-live="polite" hidden>
+  <button type="button" class="dl-close" aria-label="Fechar">✕</button>
+  <p class="eyebrow">Download iniciado</p>
+  <p class="dl-app" data-no-i18n></p>
+  <ol class="quick-steps">
+    <li>Abra o .dmg e arraste o app para a pasta Aplicativos.</li>
+    <li>Abra o Terminal (⌘ Espaço, digite Terminal), cole este comando e aperte Enter:</li>
+  </ol>
+  <div class="cmd-box"><code class="cmd-text" data-no-i18n></code><button type="button" class="cmd-copy"><span class="cmd-idle">Copiar</span><span class="cmd-done">Copiado!</span></button></div>
+  <p class="dl-alt">Pronto: o app abre direto. <a href="#liberar">Sem Terminal? Veja o passo a passo</a>.</p>
+</aside>
+
 <dialog class="lightbox" aria-label="Imagem ampliada">
   <button class="lightbox-close" type="button" aria-label="Fechar">✕</button>
   <img alt="">
@@ -580,10 +611,11 @@
   </div>
 </footer>
 
-<script src="apps.js?v=202610242000"></script>
+<script src="apps.js?v=202610242100"></script>
+<script src="install-command.js?v=202610242100"></script>
 <script src="script.js?v=202610201330"></script>
-<script src="i18n-strings.js?v=202610242000"></script>
-<script src="i18n.js?v=202610201330"></script>
+<script src="i18n-strings.js?v=202610242100"></script>
+<script src="i18n.js?v=202610242100"></script>
 <script src="effects.js?v=202610201330"></script>
 <script src="gatekeeper.js?v=202610190959"></script>
 </body>

@@ -68,7 +68,8 @@
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
       acceptNode: (node) => {
         const parent = node.parentElement;
-        if (!parent || parent.closest('script, style, .lang-picker')) return NodeFilter.FILTER_REJECT;
+        // [data-no-i18n]: nomes de app e comandos que o script troca; não voltam ao texto original.
+        if (!parent || parent.closest('script, style, .lang-picker, [data-no-i18n]')) return NodeFilter.FILTER_REJECT;
         return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
       },
     });
