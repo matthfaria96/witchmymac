@@ -2,9 +2,9 @@
 // o valor é [inglês, espanhol]. Textos iguais nos três idiomas (nomes de apps, GitHub, FAQ) não precisam estar aqui.
 window.WITCH_STRINGS = Object.freeze({
   'witchmymac · apps gratuitos para Mac': ['witchmymac · free apps for Mac', 'witchmymac · apps gratis para Mac'],
-  'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher e Santo Video Player: oito apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.': [
-    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher and Santo Video Player: eight free, native macOS apps with no ads and no tracking.',
-    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher y Santo Video Player: ocho apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
+  'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player e ViewTube: nove apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.': [
+    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player and ViewTube: nine free, native macOS apps with no ads and no tracking.',
+    'Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player y ViewTube: nueve apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.'],
   'Principal': ['Main', 'Principal'],
   'Privacidade': ['Privacy', 'Privacidad'],
   'Como Instalar?': ['How to Install?', '¿Cómo instalar?'],
@@ -15,9 +15,9 @@ window.WITCH_STRINGS = Object.freeze({
   'Apps nativos para macOS · 100% gratuitos': ['Native macOS apps · 100% free', 'Apps nativas para macOS · 100% gratis'],
   'Feitiços úteis': ['Handy spells', 'Hechizos útiles'],
   'para o seu Mac.': ['for your Mac.', 'para tu Mac.'],
-  'Oito apps nativos: um canivete suíço para a barra de menus, um limpador, um compactador de arquivos, um bloco de notas, um cliente de bancos de dados, um cliente de servidores, um launcher para os apps Craft e um player de vídeo com cara de TV de tubo. Sem assinatura, sem anúncios, sem rastreamento.': [
-    'Eight native apps: a Swiss army knife for the menu bar, a cleaner, an archive manager, a notepad, a database client, a server client, a launcher for the Craft apps and a video player that looks like a tube TV. No subscription, no ads, no tracking.',
-    'Ocho apps nativas: una navaja suiza para la barra de menús, un limpiador, un compresor de archivos, un bloc de notas, un cliente de bases de datos, un cliente de servidores, un launcher para las apps Craft y un reproductor de video con aspecto de televisor de tubo. Sin suscripción, sin anuncios, sin rastreo.'],
+  'Nove apps nativos: um canivete suíço para a barra de menus, um limpador, um compactador de arquivos, um bloco de notas, um cliente de bancos de dados, um cliente de servidores, um launcher para os apps Craft, um player de vídeo com cara de TV de tubo e o YouTube com o YouTube Music num app só. Sem assinatura, sem anúncios, sem rastreamento.': [
+    'Nine native apps: a Swiss army knife for the menu bar, a cleaner, an archive manager, a notepad, a database client, a server client, a launcher for the Craft apps, a video player that looks like a tube TV and YouTube with YouTube Music in a single app. No subscription, no ads, no tracking.',
+    'Nueve apps nativas: una navaja suiza para la barra de menús, un limpiador, un compresor de archivos, un bloc de notas, un cliente de bases de datos, un cliente de servidores, un launcher para las apps Craft, un reproductor de video con aspecto de televisor de tubo y YouTube con YouTube Music en una sola app. Sin suscripción, sin anuncios, sin rastreo.'],
   'Ver os apps': ['See the apps', 'Ver las apps'],
   'Como instalar': ['How to install', 'Cómo instalar'],
   'Gratuito para sempre': ['Free forever', 'Gratis para siempre'],
@@ -363,7 +363,47 @@ window.WITCH_STRINGS = Object.freeze({
   'Filme Charade de 1963 em widescreen com moldura fina e o painel de efeitos CRT com prévias ao vivo': [
     'The 1963 film Charade in widescreen with a thin bezel and the CRT effects panel with live previews',
     'La película Charada de 1963 en pantalla ancha con marco fino y el panel de efectos CRT con vistas previas en vivo'],
-  'Oito apps, zero custo. Escolha o seu.': ['Eight apps, zero cost. Pick yours.', 'Ocho apps, cero costo. Elige la tuya.'],
+  // ViewTube
+  'YouTube e YouTube Music num app só': ['YouTube and YouTube Music in one app', 'YouTube y YouTube Music en una sola app'],
+  'Troque entre o YouTube e o Music sem perder a música, com letras sincronizadas, modo capa e um player limpo, sem anúncios.': [
+    'Switch between YouTube and Music without losing the song, with synced lyrics, cover mode and a clean, ad-free player.',
+    'Cambia entre YouTube y Music sin perder la canción, con letras sincronizadas, modo portada y un reproductor limpio, sin anuncios.'],
+  'Seu YouTube, sem distrações': ['Your YouTube, without distractions', 'Tu YouTube, sin distracciones'],
+  'O YouTube e o YouTube Music num app nativo e leve para o Mac. Um clique troca de modo e leva junto o que está tocando, no mesmo ponto. Sua conta do Google, suas playlists e suas recomendações continuam lá, numa interface limpa e sem anúncios.': [
+    'YouTube and YouTube Music in a light, native Mac app. One click switches modes and carries what is playing over, at the same point. Your Google account, playlists and recommendations are all there, in a clean, ad-free interface.',
+    'YouTube y YouTube Music en una app nativa y ligera para Mac. Un clic cambia de modo y se lleva lo que está sonando, en el mismo punto. Tu cuenta de Google, tus playlists y tus recomendaciones siguen ahí, en una interfaz limpia y sin anuncios.'],
+  'Troca de modo na mesma faixa': ['Switch modes, same track', 'Cambio de modo con la misma pista'],
+  'Do vídeo para a música e de volta no mesmo segundo, tocando ou pausado, com o player cheio ou recolhido.': [
+    'From video to music and back at the same second, playing or paused, with the player full or collapsed.',
+    'Del video a la música y de vuelta en el mismo segundo, sonando o en pausa, con el reproductor completo o contraído.'],
+  'YouTube Music do seu jeito': ['YouTube Music your way', 'YouTube Music a tu manera'],
+  'Um início feito com o seu gosto: mais ouvidas, sucessos dos seus artistas e sugestões. Letras sincronizadas com ajuste de tempo e o modo capa, que troca o vídeo pela capa do álbum.': [
+    'A home built around your taste: most played, hits from your artists and suggestions. Synced lyrics with timing adjustment, and cover mode, which swaps the video for the album art.',
+    'Un inicio hecho a tu gusto: lo más escuchado, éxitos de tus artistas y sugerencias. Letras sincronizadas con ajuste de tiempo y el modo portada, que cambia el video por la portada del álbum.'],
+  'Um player para os dois': ['One player for both', 'Un reproductor para los dos'],
+  'O mesmo cartão de controles no YouTube e no Music, com volume, qualidade de vídeo e intensidade do som iguais nos dois modos.': [
+    'The same control card in YouTube and Music, with volume, video quality and loudness shared by both modes.',
+    'La misma tarjeta de controles en YouTube y en Music, con volumen, calidad de video e intensidad del sonido iguales en los dos modos.'],
+  'Feito para janela estreita': ['Made for narrow windows', 'Hecho para ventanas estrechas'],
+  'Abaixo de 1024 px tudo se empilha: capa ou vídeo em cima, o “A seguir” num carrossel compacto e as abas embaixo. Na tela cheia, o modo retrato mostra a capa e a letra sobre um fundo desfocado.': [
+    'Below 1024 px everything stacks: artwork or video on top, “Up next” in a compact carousel and the tabs below. In fullscreen, portrait mode shows the artwork and the lyrics over a blurred background.',
+    'Por debajo de 1024 px todo se apila: portada o video arriba, “A continuación” en un carrusel compacto y las pestañas abajo. En pantalla completa, el modo retrato muestra la portada y la letra sobre un fondo desenfocado.'],
+  'Sem anúncios e sem enrolação': ['No ads, no filler', 'Sin anuncios y sin relleno'],
+  'Bloqueio de anúncios, SponsorBlock para pular patrocínios e uma interface sem promoções.': [
+    'Ad blocking, SponsorBlock to skip sponsor segments and an interface without promotions.',
+    'Bloqueo de anuncios, SponsorBlock para saltar patrocinios y una interfaz sin promociones.'],
+  'Integrado ao Mac': ['Built into your Mac', 'Integrado al Mac'],
+  'Mini player na barra de menus com capa e título, teclas de mídia, Central de Controle e vídeos que passam do navegador para o app e de volta.': [
+    'A menu bar mini player with artwork and title, media keys, Control Center, and videos that move from the browser to the app and back.',
+    'Mini reproductor en la barra de menús con portada y título, teclas multimedia, Centro de Control y videos que pasan del navegador a la app y de vuelta.'],
+  'Baixar ViewTube': ['Download ViewTube', 'Descargar ViewTube'],
+  'ViewTube no modo YouTube com o Big Buck Bunny, o cartão de controles sob o vídeo e as recomendações fixas à direita': [
+    'ViewTube in YouTube mode playing Big Buck Bunny, with the control card under the video and recommendations fixed on the right',
+    'ViewTube en modo YouTube con Big Buck Bunny, la tarjeta de controles bajo el video y las recomendaciones fijas a la derecha'],
+  'ViewTube no modo Music numa janela estreita, com a capa do álbum em cima e a letra sincronizada embaixo': [
+    'ViewTube in Music mode in a narrow window, with the album art on top and synced lyrics below',
+    'ViewTube en modo Music en una ventana estrecha, con la portada del álbum arriba y la letra sincronizada abajo'],
+  'Nove apps, zero custo. Escolha o seu.': ['Nine apps, zero cost. Pick yours.', 'Nueve apps, cero costo. Elige la tuya.'],
   'Imagem ampliada': ['Enlarged image', 'Imagen ampliada'],
   'Fechar': ['Close', 'Cerrar'],
   'Rodapé': ['Footer', 'Pie de página'],
