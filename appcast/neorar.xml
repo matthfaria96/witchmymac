@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>NeoRAR</title>
+    <link>https://witchmymac.com/appcast/neorar.xml</link>
+    <description>Atualizações do NeoRAR</description>
+    <language>pt-BR</language>
+    <item>
+      <title>Neorar 1.1.1</title>
+      <pubDate>Sun, 25 Oct 2026 12:38:50 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Atualizações dentro do app: Neorar › Verificar Atualizações… e o botão em Ajustes › Sobre. O app procura versões novas uma vez por dia e pergunta antes de instalar.</li>
+<li>Quem usa uma versão anterior precisa instalar esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Neorar/releases/download/v1.1.1/Neorar-1.1.1.dmg" length="6852064" type="application/octet-stream" sparkle:edSignature="cvB4GRzs/dhocDfYGb82PILTiAIcR0kx9/yv0rqrSPwwBxwHNFZ0I2eQ5Mkss57jzpi+qiTG3HR9NzIXNllABw=="/>
+    </item>
+  </channel>
+</rss>

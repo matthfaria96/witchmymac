@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>MacDash</title>
+    <link>https://witchmymac.com/appcast/macdash.xml</link>
+    <description>Atualizações do MacDash</description>
+    <language>pt-BR</language>
+    <item>
+      <title>MacDash 1.1.1</title>
+      <pubDate>Sun, 25 Oct 2026 12:43:16 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Atualizações dentro do app: MacDash › Verificar Atualizações… (Check for Updates…) e o botão em Ajustes › Sobre. O app procura versões novas uma vez por dia e pergunta antes de instalar.</li>
+<li>Quem usa uma versão anterior precisa instalar esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.1.1/MacDash-1.1.1.dmg" length="13801648" type="application/octet-stream" sparkle:edSignature="82biucEAwqaSaLoAy97M3n91FzIxeNZJmZfEl2/ylzROAImolLQZ6YOPI6V3OdN43MO6MDx0M3Ytkk2y7fflBg=="/>
+    </item>
+  </channel>
+</rss>

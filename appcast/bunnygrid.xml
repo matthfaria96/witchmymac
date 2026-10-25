@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>BunnyGrid</title>
+    <link>https://witchmymac.com/appcast/bunnygrid.xml</link>
+    <description>Atualizações do BunnyGrid</description>
+    <language>pt-BR</language>
+    <item>
+      <title>BunnyGrid 0.2.1</title>
+      <pubDate>Sun, 25 Oct 2026 12:35:09 +0000</pubDate>
+      <sparkle:version>144</sparkle:version>
+      <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Atualizações dentro do app: BunnyGrid › Verificar Atualizações… (Check for Updates…) e o botão em Ajustes › Sobre. O app também procura versões novas uma vez por dia e pergunta antes de instalar.</li>
+<li>Quem usa uma versão anterior precisa instalar esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/BunnyGrid/releases/download/v0.2.1/BunnyGrid-0.2.1.dmg" length="29719977" type="application/octet-stream" sparkle:edSignature="L/hJxg1Bpo0m54n7K73szq0QTZCmaXrrqGMP0sRx1Am3oURU+5/NrJmYs/iSusbJdTMbhZ3ChP7xrsEdw0npBw=="/>
+    </item>
+  </channel>
+</rss>
