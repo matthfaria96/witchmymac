@@ -1,24 +1,27 @@
-// Liberar o app na primeira vez. Dois caminhos, um por vez (seletor no topo do guia):
-// Terminal (padrão: um comando que tira a quarentena só daquele app) ou Ajustes (guia visual).
-// O site monta o comando com o nome certo do .app, no guia e no cartão que aparece ao clicar em "Baixar".
+// Instalar e liberar os apps. Três caminhos, um por vez (seletor no topo do guia):
+// - Pelo Terminal (padrão): uma linha roda o install.sh, que baixa do GitHub, confere e instala;
+// - Baixar + comando: depois de baixar o .dmg, um comando tira a quarentena só daquele app;
+// - Baixar + Ajustes: o guia visual (gatekeeper.js).
+// O site monta o comando certo para cada app, no guia e no cartão que aparece ao clicar em "Baixar".
 (() => {
   const APPS = window.WITCH_APPS || {};
+  const SITE = 'https://witchmymac.com';
   const installable = Object.entries(APPS).filter(([, app]) => app.published && app.app);
   const appName = (app) => app.app.replace(/\.app$/, '');
-  const commandFor = (app) => `xattr -dr com.apple.quarantine "/Applications/${app.app}"`;
+  const commandFor = (key, app, mode) => (mode === 'install'
+    ? `curl -fsSL ${SITE}/install.sh | bash -s ${key}`
+    : `xattr -dr com.apple.quarantine "/Applications/${app.app}"`);
 
   // Comando colorido; cada parte não quebra por dentro (a quebra fica entre elas).
-  function renderCommand(code, app) {
+  function renderCommand(code, key, app, mode) {
     const part = (cls, text) => Object.assign(document.createElement('span'), { className: cls, textContent: text });
-    code.replaceChildren(
-      part('t-prompt', '~ %'), ' ',
-      part('t-bin', 'xattr'), ' ',
-      part('t-flag', '-dr'), ' ',
-      part('t-attr', 'com.apple.quarantine'), ' ',
-      part('t-path', `"/Applications/${app.app}"`),
-      part('t-caret', ''),
-    );
-    code.dataset.command = commandFor(app);
+    const parts = mode === 'install'
+      ? [part('t-bin', 'curl'), ' ', part('t-flag', '-fsSL'), ' ', part('t-attr', `${SITE}/install.sh`), ' ',
+        part('t-flag', '|'), ' ', part('t-bin', 'bash'), ' ', part('t-flag', '-s'), ' ', part('t-path', key)]
+      : [part('t-bin', 'xattr'), ' ', part('t-flag', '-dr'), ' ', part('t-attr', 'com.apple.quarantine'), ' ',
+        part('t-path', `"/Applications/${app.app}"`)];
+    code.replaceChildren(part('t-prompt', '~ %'), ' ', ...parts, part('t-caret', ''));
+    code.dataset.command = commandFor(key, app, mode);
   }
 
   // Área de transferência moderna; sem ela (http, navegador antigo), seleção + execCommand.
@@ -37,7 +40,7 @@
     }
   }
 
-  // Uma janela de Terminal (.term): devolve a função que troca o app mostrado.
+  // Uma janela de Terminal (.term): devolve a função que troca o app e o tipo de comando mostrados.
   function setupTerm(term) {
     const code = term.querySelector('.term-cmd');
     const button = term.querySelector('.term-copy');
@@ -48,13 +51,18 @@
       clearTimeout(timer);
       timer = setTimeout(() => term.classList.remove('copied'), 1800);
     });
-    return (app) => { renderCommand(code, app); term.classList.remove('copied'); };
+    return (key, app, mode) => { renderCommand(code, key, app, mode); term.classList.remove('copied'); };
   }
+
+  // Guia: app escolhido + modo atual. Os dois primeiros modos usam a mesma janela de Terminal.
+  const guide = { key: null, mode: 'install', show: null };
+  const refresh = () => { if (guide.show && guide.key) guide.show(guide.key, APPS[guide.key], guide.mode); };
 
   function setupModes() {
     const root = document.querySelector('.gk');
     const tabs = [...(root?.querySelectorAll('.gk-switch [data-mode]') || [])];
     const panels = [...(root?.querySelectorAll('.gk-panel') || [])];
+    const variants = [...(root?.querySelectorAll('[data-for]') || [])];
     const toggle = root?.querySelector('.gk-switch');
     // A pílula acompanha o botão ativo (a largura muda com o idioma).
     const placePill = () => {
@@ -64,9 +72,13 @@
       toggle.style.setProperty('--sx', `${active.offsetLeft}px`);
     };
     const setMode = (mode) => {
+      const terminal = mode === 'install' || mode === 'unblock';
       tabs.forEach((tab) => tab.setAttribute('aria-selected', String(tab.dataset.mode === mode)));
-      panels.forEach((panel) => { panel.hidden = panel.dataset.panel !== mode; });
+      panels.forEach((panel) => { panel.hidden = panel.dataset.panel !== (terminal ? 'terminal' : mode); });
+      variants.forEach((el) => { el.hidden = el.dataset.for !== mode; });
       root?.setAttribute('data-mode', mode);
+      guide.mode = mode;
+      refresh();
       placePill();
     };
     if (toggle && 'ResizeObserver' in window) new ResizeObserver(placePill).observe(toggle);
@@ -74,14 +86,14 @@
     document.querySelectorAll('[data-install-mode]').forEach((link) => {
       link.addEventListener('click', () => setMode(link.dataset.installMode));
     });
-    setMode('terminal');
+    setMode('install');
   }
 
   function setupGuide() {
     const stage = document.querySelector('.term-stage');
     const picker = stage?.querySelector('.term-apps');
     if (!picker || !installable.length) return null;
-    const show = setupTerm(stage.querySelector('.term'));
+    guide.show = setupTerm(stage.querySelector('.term'));
     const buttons = installable.map(([key, app]) => {
       const button = document.createElement('button');
       button.type = 'button';
@@ -98,7 +110,8 @@
     const pick = (key) => {
       if (!APPS[key]) return;
       buttons.forEach((b) => b.setAttribute('aria-checked', String(b.dataset.app === key)));
-      show(APPS[key]);
+      guide.key = key;
+      refresh();
     };
     buttons.forEach((b) => b.addEventListener('click', () => pick(b.dataset.app)));
     picker.addEventListener('keydown', (event) => {
@@ -113,6 +126,7 @@
     return pick;
   }
 
+  // Cartão do download: o .dmg já está vindo, então o próximo passo é liberar (comando xattr).
   function setupDownloadSheet(pickInGuide) {
     const sheet = document.querySelector('.dl-sheet');
     if (!sheet) return;
@@ -124,16 +138,18 @@
     // O download segue normalmente; o cartão só aparece ao lado com o próximo passo.
     document.querySelectorAll('[data-download]').forEach((link) => {
       link.addEventListener('click', () => {
-        const app = APPS[link.dataset.download];
+        const key = link.dataset.download;
+        const app = APPS[key];
         if (!app || !app.published || !app.app) return;
         sheet.querySelector('.dl-app').textContent = appName(app);
-        show(app);
-        pickInGuide?.(link.dataset.download);
+        show(key, app, 'unblock');
+        pickInGuide?.(key);
         sheet.hidden = false;
       });
     });
   }
 
+  setupGuide();
   setupModes();
-  setupDownloadSheet(setupGuide());
+  setupDownloadSheet((key) => document.querySelector(`.term-app[data-app="${key}"]`)?.click());
 })();

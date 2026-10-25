@@ -19,7 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=202610242200">
 <link rel="stylesheet" href="effects.css?v=202610201330">
-<link rel="stylesheet" href="gatekeeper.css?v=202610242230">
+<link rel="stylesheet" href="gatekeeper.css?v=202610250600">
 </head>
 <body>
 <div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
@@ -372,31 +372,33 @@
   <section id="instalar" class="section container">
     <div class="section-head">
       <h2>Ok, quero. Por onde começo?</h2>
-      <p>Três passos, trinta segundos.</p>
+      <p>Três jeitos de instalar. Escolha o seu.</p>
     </div>
-    <ol class="steps">
-      <li><span>1</span><h3>Baixe o .dmg</h3><p>Clique em "Baixar" no app que quiser. O arquivo vem direto do GitHub.</p></li>
-      <li><span>2</span><h3>Arraste para Aplicativos</h3><p>Abra o .dmg e arraste o ícone para a pasta Aplicativos.</p></li>
-      <li><span>3</span><h3>Libere e use</h3><p>Na primeira vez, libere o app com um comando no Terminal ou pelos Ajustes do Sistema. <a href="#liberar">Veja abaixo como</a>.</p></li>
-    </ol>
     <!-- LIBERAR NO MACOS (guia visual do Gatekeeper) -->
     <div class="gk" id="liberar">
       <div class="gk-head">
-        <p class="eyebrow">Primeira vez abrindo</p>
-        <h3>O macOS vai bloquear o app. É normal.</h3>
-        <p>Os apps são gratuitos e não passam pela App Store, então o macOS pede que você libere cada um uma vez. Depois disso o app abre direto, para sempre.</p>
+        <p class="eyebrow">Escolha como instalar</p>
+        <h3>O mais rápido é uma linha no Terminal.</h3>
+        <p>Ela baixa a versão mais nova direto do GitHub, confere o arquivo e instala o app em Aplicativos, sem aviso do macOS. Se preferir baixar o .dmg, o macOS pede uma liberação na primeira vez, porque os apps são gratuitos e não passam pela App Store.</p>
       </div>
 
       <div class="gk-switch" role="tablist" aria-label="Como liberar o app">
-        <button type="button" role="tab" data-mode="terminal" aria-selected="true">Pelo Terminal <em>mais rápido</em></button>
-        <button type="button" role="tab" data-mode="manual" aria-selected="false">Pelos Ajustes</button>
+        <button type="button" role="tab" data-mode="install" aria-selected="true">Pelo Terminal <em>1 linha</em></button>
+        <button type="button" role="tab" data-mode="unblock" aria-selected="false">Baixar + comando</button>
+        <button type="button" role="tab" data-mode="manual" aria-selected="false">Baixar + Ajustes</button>
       </div>
 
       <div class="gk-panel term-panel" data-panel="terminal">
-        <ol class="term-steps">
-          <li><span>1</span><b>Escolha o app</b><small>Toque no ícone do app que você arrastou para Aplicativos.</small></li>
-          <li><span>2</span><b>Copie o comando</b><small>Ele já vem com o nome certo do app.</small></li>
+        <ol class="term-steps" data-for="install">
+          <li><span>1</span><b>Escolha o app</b><small>Toque no ícone do app que você quer.</small></li>
+          <li><span>2</span><b>Copie o comando</b><small>Ele já vem com o app certo.</small></li>
           <li><span>3</span><b>Cole no Terminal</b><small>Aperte ⌘ Espaço, digite Terminal, cole e aperte Enter.</small></li>
+          <li><span>4</span><b>Pronto!</b><small>O app abre sozinho. Para atualizar, rode a mesma linha de novo.</small></li>
+        </ol>
+        <ol class="term-steps" data-for="unblock" hidden>
+          <li><span>1</span><b>Baixe e arraste</b><small>Clique em "Baixar" no app, abra o .dmg e arraste o app para Aplicativos.</small></li>
+          <li><span>2</span><b>Escolha o app</b><small>Toque no ícone do app que você arrastou.</small></li>
+          <li><span>3</span><b>Cole no Terminal</b><small>Copie o comando, aperte ⌘ Espaço, digite Terminal, cole e aperte Enter.</small></li>
           <li><span>4</span><b>Pronto!</b><small>Abra o app normalmente. Sem avisos, para sempre.</small></li>
         </ol>
         <div class="term-stage">
@@ -409,7 +411,8 @@
               <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
             </div>
           </div>
-          <p class="term-note">O comando só tira daquele app a marca de "baixado da internet". Não pede senha e não muda nada no resto do Mac.</p>
+          <p class="term-note" data-for="install">O script é aberto (<a href="install.sh" target="_blank" rel="noopener">install.sh</a>): baixa só do GitHub do projeto e confere o SHA-256 do arquivo antes de instalar. Não pede senha.</p>
+          <p class="term-note" data-for="unblock" hidden>O comando só tira daquele app a marca de "baixado da internet". Não pede senha e não muda nada no resto do Mac.</p>
         </div>
       </div>
 
@@ -562,7 +565,8 @@
     </details>
     <details class="faq-item">
       <summary>O macOS disse que o app "não pôde ser verificado". E agora?</summary>
-      <p>É normal com apps de fora da App Store, e basta liberar uma vez. O jeito mais rápido é colar no Terminal este comando, com o nome do app no final:</p>
+      <p>Instalando pelo Terminal com a linha do <a href="#liberar">guia de instalação</a>, esse aviso nem aparece: o app chega sem a marca de "baixado da internet".</p>
+      <p>Se você baixou o .dmg, é normal com apps de fora da App Store, e basta liberar uma vez. O jeito mais rápido é colar no Terminal este comando, com o nome do app no final:</p>
       <p><code class="faq-cmd" data-no-i18n>xattr -dr com.apple.quarantine "/Applications/ViewTube.app"</code></p>
       <p>Você não precisa digitar nada: ao clicar em "Baixar", o site mostra o comando pronto daquele app, com botão para copiar. Ele também está no <a href="#liberar">guia de instalação</a>.</p>
       <p>Prefere sem Terminal? Clique em "OK" no aviso (nunca em "Mover para o Lixo"), vá em Ajustes do Sistema, Privacidade e Segurança, e clique em "Abrir Mesmo Assim".</p>
@@ -632,9 +636,9 @@
 </footer>
 
 <script src="apps.js?v=202610250500"></script>
-<script src="install-command.js?v=202610242230"></script>
+<script src="install-command.js?v=202610250600"></script>
 <script src="script.js?v=202610201330"></script>
-<script src="i18n-strings.js?v=202610250100"></script>
+<script src="i18n-strings.js?v=202610250600"></script>
 <script src="i18n.js?v=202610242100"></script>
 <script src="effects.js?v=202610201330"></script>
 <script src="gatekeeper.js?v=202610242200"></script>

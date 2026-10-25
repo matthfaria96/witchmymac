@@ -157,6 +157,8 @@
 .gk-switch [aria-selected=true]{color:#fff}
 .gk-switch [aria-selected=true] em{background:rgba(255,255,255,.22);color:#fff}
 .gk-panel[hidden]{display:none}
+.gk [data-for][hidden]{display:none !important}
+.term-note a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
 .gk-panel{animation:gk-panel-in .4s ease-out}
 @keyframes gk-panel-in{from{opacity:0;transform:translateY(8px)}}
 
@@ -236,9 +238,9 @@
   .term-stage{order:-1}
   .term-steps{gap:2px}
   .term-steps li{padding:8px 4px}
-  .term-apps{display:grid;grid-template-columns:repeat(4,56px);justify-content:center;gap:10px 14px}
+  .term-apps{display:grid;grid-template-columns:repeat(5,54px);justify-content:center;gap:10px 8px}
   .gk-switch{width:100%}
-  .gk-switch button{flex:1;justify-content:center;white-space:nowrap;padding:10px 12px;font-size:14px}
+  .gk-switch button{flex:1;justify-content:center;white-space:normal;text-align:center;line-height:1.15;padding:9px 8px;font-size:13px}
   .gk-switch em{display:none}
   .term-body{padding:16px 16px 6px}
   .term-cmd{font-size:12.5px}

@@ -282,15 +282,6 @@ window.WITCH_STRINGS = Object.freeze({
 
   // Instalar
   'Ok, quero. Por onde começo?': ['OK, I’m in. Where do I start?', 'Ok, lo quiero. ¿Por dónde empiezo?'],
-  'Três passos, trinta segundos.': ['Three steps, thirty seconds.', 'Tres pasos, treinta segundos.'],
-  'Baixe o .dmg': ['Download the .dmg', 'Descarga el .dmg'],
-  'Clique em "Baixar" no app que quiser. O arquivo vem direto do GitHub.': [
-    'Click “Download” on the app you want. The file comes straight from GitHub.',
-    'Haz clic en “Descargar” en la app que quieras. El archivo viene directo de GitHub.'],
-  'Arraste para Aplicativos': ['Drag to Applications', 'Arrastra a Aplicaciones'],
-  'Abra o .dmg e arraste o ícone para a pasta Aplicativos.': [
-    'Open the .dmg and drag the icon into the Applications folder.',
-    'Abre el .dmg y arrastra el ícono a la carpeta Aplicaciones.'],
 
   // FAQ
   'Espera, e quanto a…': ['Wait, what about…', 'Espera, ¿y qué hay de…'],
@@ -402,35 +393,48 @@ window.WITCH_STRINGS = Object.freeze({
     'ViewTube en modo Music en una ventana estrecha, con la portada del álbum arriba y la letra sincronizada abajo'],
   'Nove apps, zero custo. Escolha o seu.': ['Nine apps, zero cost. Pick yours.', 'Nueve apps, cero costo. Elige la tuya.'],
   // Liberar o app: comando no Terminal (install-command.js)
-  'Libere e use': ['Allow it and use it', 'Permítela y úsala'],
-  'Na primeira vez, libere o app com um comando no Terminal ou pelos Ajustes do Sistema.': [
-    'The first time, allow the app with one Terminal command or from System Settings.',
-    'La primera vez, permite la app con un comando en la Terminal o desde Ajustes del Sistema.'],
-  'Veja abaixo como': ['See how below', 'Mira abajo cómo'],
-  'Os apps são gratuitos e não passam pela App Store, então o macOS pede que você libere cada um uma vez. Depois disso o app abre direto, para sempre.': [
-    'The apps are free and don’t go through the App Store, so macOS asks you to allow each one once. After that the app opens straight away, for good.',
-    'Las apps son gratuitas y no pasan por la App Store, así que macOS te pide permitir cada una una vez. Después la app se abre directamente, para siempre.'],
   'Como liberar o app': ['How to allow the app', 'Cómo permitir la app'],
   'Pelo Terminal': ['With Terminal', 'Con la Terminal'],
-  'mais rápido': ['quickest', 'más rápido'],
-  'Pelos Ajustes': ['With System Settings', 'Con Ajustes'],
-  'Toque no ícone do app que você arrastou para Aplicativos.': ['Tap the icon of the app you dragged to Applications.', 'Toca el ícono de la app que arrastraste a Aplicaciones.'],
   'Copie o comando': ['Copy the command', 'Copia el comando'],
-  'Ele já vem com o nome certo do app.': ['It already has the right app name.', 'Ya viene con el nombre correcto de la app.'],
   'Cole no Terminal': ['Paste it into Terminal', 'Pégalo en la Terminal'],
   'Aperte ⌘ Espaço, digite Terminal, cole e aperte Enter.': ['Press ⌘ Space, type Terminal, paste and press Enter.', 'Pulsa ⌘ Espacio, escribe Terminal, pega y pulsa Enter.'],
   'Abra o app normalmente. Sem avisos, para sempre.': ['Open the app as usual. No warnings, for good.', 'Abre la app como siempre. Sin avisos, para siempre.'],
   'Cole no Terminal e aperte Enter ↩': ['Paste into Terminal and press Enter ↩', 'Pega en la Terminal y pulsa Enter ↩'],
   'Copiar comando': ['Copy command', 'Copiar comando'],
   'Copie o comando e cole no Terminal (⌘ Espaço, digite Terminal).': ['Copy the command and paste it into Terminal (⌘ Space, type Terminal).', 'Copia el comando y pégalo en la Terminal (⌘ Espacio, escribe Terminal).'],
+  // Instalar: três jeitos (install.sh, comando de liberação, Ajustes)
+  'Três jeitos de instalar. Escolha o seu.': ['Three ways to install. Pick yours.', 'Tres formas de instalar. Elige la tuya.'],
+  'Escolha como instalar': ['Choose how to install', 'Elige cómo instalar'],
+  'O mais rápido é uma linha no Terminal.': ['The quickest is one line in Terminal.', 'Lo más rápido es una línea en la Terminal.'],
+  'Ela baixa a versão mais nova direto do GitHub, confere o arquivo e instala o app em Aplicativos, sem aviso do macOS. Se preferir baixar o .dmg, o macOS pede uma liberação na primeira vez, porque os apps são gratuitos e não passam pela App Store.': [
+    'It downloads the latest version straight from GitHub, checks the file and installs the app in Applications, with no macOS warning. If you’d rather download the .dmg, macOS asks you to allow the app the first time, because the apps are free and don’t go through the App Store.',
+    'Descarga la versión más nueva directo de GitHub, verifica el archivo e instala la app en Aplicaciones, sin aviso de macOS. Si prefieres descargar el .dmg, macOS te pide permitirla la primera vez, porque las apps son gratuitas y no pasan por la App Store.'],
+  '1 linha': ['1 line', '1 línea'],
+  'Baixar + comando': ['Download + command', 'Descargar + comando'],
+  'Baixar + Ajustes': ['Download + Settings', 'Descargar + Ajustes'],
+  'Toque no ícone do app que você quer.': ['Tap the icon of the app you want.', 'Toca el ícono de la app que quieres.'],
+  'Ele já vem com o app certo.': ['It already has the right app.', 'Ya viene con la app correcta.'],
+  'O app abre sozinho. Para atualizar, rode a mesma linha de novo.': ['The app opens by itself. To update, run the same line again.', 'La app se abre sola. Para actualizar, ejecuta la misma línea otra vez.'],
+  'Baixe e arraste': ['Download and drag', 'Descarga y arrastra'],
+  'Clique em "Baixar" no app, abra o .dmg e arraste o app para Aplicativos.': ['Click "Download" on the app, open the .dmg and drag the app to Applications.', 'Haz clic en "Descargar" en la app, abre el .dmg y arrastra la app a Aplicaciones.'],
+  'Toque no ícone do app que você arrastou.': ['Tap the icon of the app you dragged.', 'Toca el ícono de la app que arrastraste.'],
+  'Copie o comando, aperte ⌘ Espaço, digite Terminal, cole e aperte Enter.': ['Copy the command, press ⌘ Space, type Terminal, paste and press Enter.', 'Copia el comando, pulsa ⌘ Espacio, escribe Terminal, pega y pulsa Enter.'],
+  'O script é aberto (': ['The script is open (', 'El script es abierto ('],
+  '): baixa só do GitHub do projeto e confere o SHA-256 do arquivo antes de instalar. Não pede senha.': [
+    '): it only downloads from the project’s GitHub and checks the file’s SHA-256 before installing. No password needed.',
+    '): solo descarga del GitHub del proyecto y verifica el SHA-256 del archivo antes de instalar. No pide contraseña.'],
+  'Instalando pelo Terminal com a linha do': ['If you install from Terminal with the line in the', 'Si instalas desde la Terminal con la línea de la'],
+  ', esse aviso nem aparece: o app chega sem a marca de "baixado da internet".': [
+    ', this warning never shows up: the app arrives without the "downloaded from the internet" mark.',
+    ', este aviso ni aparece: la app llega sin la marca de "descargado de internet".'],
+  'Se você baixou o .dmg, é normal com apps de fora da App Store, e basta liberar uma vez. O jeito mais rápido é colar no Terminal este comando, com o nome do app no final:': [
+    'If you downloaded the .dmg, it’s normal for apps from outside the App Store, and you only need to allow it once. The quickest way is to paste this command into Terminal, with the app’s name at the end:',
+    'Si descargaste el .dmg, es normal en apps de fuera de la App Store, y basta con permitirla una vez. La forma más rápida es pegar en la Terminal este comando, con el nombre de la app al final:'],
   'Escolha o app': ['Choose the app', 'Elige la app'],
   'Copiado!': ['Copied!', '¡Copiado!'],
   'O comando só tira daquele app a marca de "baixado da internet". Não pede senha e não muda nada no resto do Mac.': [
     'The command only removes the "downloaded from the internet" mark from that app. It asks for no password and changes nothing else on your Mac.',
     'El comando solo quita de esa app la marca de "descargado de internet". No pide contraseña y no cambia nada más en tu Mac.'],
-  'É normal com apps de fora da App Store, e basta liberar uma vez. O jeito mais rápido é colar no Terminal este comando, com o nome do app no final:': [
-    'It’s normal for apps from outside the App Store, and you only need to allow it once. The quickest way is to paste this command into Terminal, with the app’s name at the end:',
-    'Es normal en apps de fuera de la App Store, y basta con permitirla una vez. La forma más rápida es pegar en la Terminal este comando, con el nombre de la app al final:'],
   'Você não precisa digitar nada: ao clicar em "Baixar", o site mostra o comando pronto daquele app, com botão para copiar. Ele também está no': [
     'You don’t need to type anything: when you click "Download", the site shows the ready-made command for that app, with a copy button. It’s also in the',
     'No necesitas escribir nada: al hacer clic en "Descargar", el sitio muestra el comando listo de esa app, con un botón para copiar. También está en la'],
@@ -452,8 +456,6 @@ window.WITCH_STRINGS = Object.freeze({
   'Em breve': ['Coming soon', 'Próximamente'],
 
   // Guia para liberar no macOS
-  'Primeira vez abrindo': ['Opening it for the first time', 'Abriéndola por primera vez'],
-  'O macOS vai bloquear o app. É normal.': ['macOS will block the app. That’s normal.', 'macOS va a bloquear la app. Es normal.'],
   'Passos para liberar o app': ['Steps to allow the app', 'Pasos para permitir la app'],
   'Clique em OK': ['Click Done', 'Haz clic en Aceptar'],
   'O aviso aparece ao abrir o app. Não mova para o Lixo.': ['The warning shows up when you open the app. Don’t move it to the Trash.', 'El aviso aparece al abrir la app. No la traslades a la papelera.'],
