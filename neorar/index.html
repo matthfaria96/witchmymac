@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeoRAR · Arquivos compactados no Mac, no estilo do WinRAR</title>
+<meta name="description" content="NeoRAR abre, extrai e comprime RAR (com senha e em partes), 7Z, ZIP, TAR, ISO, DMG e dezenas de outros formatos numa janela só, e também testa, repara e edita arquivos compactados, direto do Finder. Gratuito.">
+<meta property="og:title" content="NeoRAR · witchmymac">
+<meta property="og:description" content="Extrai RAR, 7Z, ZIP e dezenas de formatos, comprime, testa e repara, direto do Finder. Gratuito.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://witchmymac.com/neorar/">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/neorar/list.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="../assets/icons/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=202610250700">
+<link rel="stylesheet" href="../effects.css?v=202610201330">
+<link rel="stylesheet" href="../gatekeeper.css?v=202610250600">
+<link rel="stylesheet" href="../app-page.css?v=202610271200">
+<link rel="stylesheet" href="page.css?v=202610271200">
+</head>
+<body class="app-page" data-app="neorar">
+<div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../" aria-label="witchmymac">
+      <img src="../assets/icons/logo-128.png" alt="" width="36" height="36">
+      <span>witch<b>my</b>mac</span>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a href="../#apps">Apps</a>
+      <a href="#instalar">Como Instalar?</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <div class="lang-picker">
+    <span class="lang-flag" aria-hidden="true">🇧🇷</span>
+    <select class="lang-select" aria-label="Idioma">
+      <option value="pt">🇧🇷 Português</option>
+      <option value="en">🇺🇸 English</option>
+      <option value="es">🇪🇸 Español</option>
+    </select>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></g></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- TOPO -->
+  <section class="wu-hero container">
+    <a class="ap-back" href="../#neorar">← Todos os apps</a>
+    <img src="../assets/icons/neorar.png?v=202610190240" alt="" class="ap-icon" width="112" height="112">
+    <p class="eyebrow">Seus arquivos compactados</p>
+    <h1>Neo<span>RAR</span></h1>
+    <p class="lead">Um gerenciador de arquivos compactados no estilo do WinRAR, feito para o Mac. Uma janela só, que começa em Downloads, entra nos arquivos compactados e age sobre o que você selecionar: extrair, comprimir, testar, reparar e editar.</p>
+    <div class="app-cta">
+      <a class="btn btn-primary" data-download="neorar" href="#">Baixar NeoRAR</a>
+      <a class="btn btn-link" data-source="neorar" href="#">Código fonte</a>
+    </div>
+    <p class="req"><span data-version="neorar" data-no-i18n></span> macOS 26 ou mais novo · Apple Silicon e Intel · Gratuito</p>
+
+    <div class="wu-stage">
+      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/neorar/list.jpg?v=202610271200" alt="Janela do NeoRAR na pasta Downloads, com a barra de ações e a lista de arquivos" width="1060" height="680"></button></figure>
+      <figure class="wu-float wu-float-compact" style="width:26%"><button class="shot" type="button"><img src="../assets/shots/neorar/crop-info.jpg?v=202610271200" alt="Informações de um arquivo 7Z: formato, arquivos, tamanhos e taxa de compressão" width="441" height="515"></button></figure>
+      <figure class="wu-float wu-float-tray" style="width:28%"><button class="shot" type="button"><img src="../assets/shots/neorar/crop-compress.jpg?v=202610271200" alt="Janela Comprimir com nome, destino, formato e nível de compressão" width="520" height="563"></button></figure>
+    </div>
+
+    <div class="wu-stats">
+      <div><b>5</b><span>formatos para criar, mais RAR</span></div>
+      <div><b>4</b><span>ações no menu do Finder</span></div>
+      <div><b>5</b><span>idiomas na interface</span></div>
+      <div><b>0</b><span>restos ao cancelar</span></div>
+    </div>
+  </section>
+
+  <!-- NAVEGAR -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Uma janela só</p>
+      <h2>Pastas e arquivos compactados no mesmo lugar.</h2>
+      <p>Navegue pelas pastas, entre num arquivo compactado com dois cliques e veja o que tem dentro, em lista ou ícones, sem extrair nada. A barra grande em cima age sobre a seleção.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Visualização">
+        <button type="button" role="tab" id="t-list" aria-controls="p-list">Lista</button>
+        <button type="button" role="tab" id="t-grid" aria-controls="p-grid">Ícones</button>
+        <button type="button" role="tab" id="t-inside" aria-controls="p-inside">Dentro do arquivo</button>
+        <button type="button" role="tab" id="t-photos" aria-controls="p-photos">Fotos num ZIP</button>
+        <button type="button" role="tab" id="t-light" aria-controls="p-light">Claro</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-list" aria-labelledby="t-list"><figure><button class="shot" type="button"><img src="../assets/shots/neorar/list.jpg?v=202610271200" alt="Pasta Downloads em lista, com tamanho, tipo e data" loading="lazy" width="1060" height="680"></button><figcaption class="wu-cap">Lista com colunas para ordenar, filtro e o caminho com botão de copiar.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-grid" aria-labelledby="t-grid" hidden><figure><button class="shot" type="button"><img src="../assets/shots/neorar/grid.jpg?v=202610271200" alt="Pasta Downloads em ícones" loading="lazy" width="1060" height="680"></button><figcaption class="wu-cap">Ícones, com miniaturas do Quick Look.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-inside" aria-labelledby="t-inside" hidden><figure><button class="shot" type="button"><img src="../assets/shots/neorar/browse-atlas.jpg?v=202610271200" alt="Conteúdo de um arquivo 7Z em árvore, com tamanho original e compactado" loading="lazy" width="1060" height="680"></button><figcaption class="wu-cap">Dentro do arquivo: árvore de pastas, tamanho original e compactado, busca e extração só do que você selecionar.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-photos" aria-labelledby="t-photos" hidden><figure><button class="shot" type="button"><img src="../assets/shots/neorar/browse-photos.jpg?v=202610271200" alt="Fotos dentro de um arquivo ZIP, em ícones" loading="lazy" width="1060" height="680"></button><figcaption class="wu-cap">Num ZIP, escolha a codificação dos nomes quando vierem embaralhados de outro sistema.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-light" aria-labelledby="t-light" hidden><figure><button class="shot" type="button"><img src="../assets/shots/neorar/light.jpg?v=202610271200" alt="NeoRAR no tema claro, com dois arquivos selecionados" loading="lazy" width="1060" height="680"></button><figcaption class="wu-cap">Tema do sistema, claro ou escuro, e ícones da barra coloridos ou em vidro.</figcaption></figure></div>
+    </div>
+    <p class="wu-cap">Capturas com arquivos fictícios de demonstração.</p>
+  </section>
+
+  <!-- EXTRAIR -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Extrair</p>
+        <h2>Abre de tudo. Até RAR com senha e em partes.</h2>
+        <p>RAR é lido pelo código oficial do UnRAR, dentro do próprio app. A extração acontece numa pasta oculta no destino e só aparece pronta: cancelar não deixa restos.</p>
+        <ul class="wu-list">
+          <li><b>RAR 1.5 a 7</b>: RAR5, sólido, senha, nomes criptografados e volumes .partN.rar e .rNN.</li>
+          <li><b>ZIP com AES</b>, 7Z, TAR.*, ISO, DMG, CAB, MSI, ARJ, LZH e outros.</li>
+          <li><b>Extrair aqui</b>, para uma pasta com o nome do arquivo ou para onde você escolher.</li>
+          <li><b>Conflitos</b> resolvidos com uma pergunta: substituir, manter os dois ou cancelar.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/neorar/settings-extraction.jpg?v=202610271200" alt="Ajustes de extração: destino, pasta com o nome do arquivo, datas e codificação de nomes em ZIP" loading="lazy" width="640" height="708"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- COMPRIMIR -->
+  <section class="section container wu-chapter">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Comprimir</p>
+        <h2>Do seu jeito, sem o lixo do macOS.</h2>
+        <p>7Z por padrão, ZIP com AES-256, TAR.GZ, TAR.XZ e TAR.BZ2. RAR também, com o rar licenciado da RARLAB.</p>
+        <ul class="wu-list">
+          <li><b>Avançado</b>: senha, nomes ocultos, dividir em partes, sólido e registro de recuperação.</li>
+          <li><b>Sem .DS_Store e __MACOSX</b> nos arquivos novos, se você quiser.</li>
+          <li><b>Editar um arquivo existente</b>: adicionar e apagar itens em 7Z, ZIP e TAR.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure style="max-width:520px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/neorar/crop-compress.jpg?v=202610271200" alt="Comprimir dois itens em 7Z, com o nível de compressão" loading="lazy" width="520" height="563"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- TESTAR E INFO -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Testar, reparar e informações</p>
+        <h2>Confira antes de confiar.</h2>
+        <p>Teste a integridade de um arquivo e veja o resultado numa janela. Se estiver danificado, o NeoRAR repara RAR e ZIP numa cópia "(reparado)", sem mexer no original.</p>
+        <ul class="wu-list">
+          <li><b>Informações</b>: formato, arquivos, pastas, tamanhos, taxa de compressão, partes e criptografia.</li>
+          <li><b>Comentários</b> de RAR e ZIP mostrados ao abrir.</li>
+          <li><b>Espiar</b> com o Quick Look, sem extrair.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/neorar/info.jpg?v=202610271200" alt="Informações de um arquivo 7Z sobre a janela principal" loading="lazy" width="1060" height="680"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- AJUSTES -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Ajustes</p>
+      <h2>Direto do Finder, do seu jeito.</h2>
+      <p>Ligue o menu do Finder para Extrair Aqui, Extrair para "Nome/", Extrair Para… e Comprimir no clique direito. Os Ajustes mostram o que falta ativar.</p>
+    </div>
+    <div class="wu-panels">
+      <figure><button class="shot" type="button"><img src="../assets/shots/neorar/settings-general.jpg?v=202610271200" alt="Ajustes gerais: menu do Finder, acesso a Downloads, tema, ícones e idioma" loading="lazy" width="640" height="708"></button><figcaption>Geral</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/neorar/settings-compression.jpg?v=202610271200" alt="Ajustes de compressão: formato e nível padrão, sólido e arquivos do macOS" loading="lazy" width="640" height="708"></button><figcaption>Compressão</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/neorar/settings-rar.jpg?v=202610271200" alt="Ajustes de RAR: instalar ou localizar o rar da RARLAB" loading="lazy" width="640" height="708"></button><figcaption>RAR</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/neorar/settings-about.jpg?v=202610271200" alt="Sobre o NeoRAR, com a versão e as licenças" loading="lazy" width="640" height="708"></button><figcaption>Sobre</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- MAIS -->
+  <section class="section container">
+    <div class="section-head"><h2>E mais um pouco</h2></div>
+    <div class="wu-more">
+      <article class="card"><h3>Rápido</h3><p>RAR extraído no próprio app, a cerca de 1,8 GB/s; a família TAR pela libarchive do macOS.</p></article>
+      <article class="card"><h3>Senhas seguras</h3><p>As senhas vão para o 7-Zip pela entrada padrão, não pela linha de comando.</p></article>
+      <article class="card"><h3>Desfazer</h3><p>Apagou sem querer? Os avisos trazem Mostrar e Desfazer.</p></article>
+      <article class="card"><h3>5 idiomas</h3><p>Português, inglês, espanhol, francês e alemão.</p></article>
+    </div>
+  </section>
+
+  <!-- INSTALAR -->
+  <section id="instalar" class="section container narrow ap-install">
+    <div class="section-head">
+      <h2>Instalar</h2>
+      <p>O jeito mais rápido é uma linha no Terminal: ela baixa a versão mais nova, confere o arquivo e instala, sem aviso do macOS.</p>
+    </div>
+    <div class="term" data-app="neorar" data-mode="install">
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+          <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+          <div class="term-foot">
+            <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+            <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+          </div>
+        </div>
+    <p class="ap-install-alt">Prefere baixar o .dmg? Arraste o app para Aplicativos e libere na primeira vez, com um comando ou pelos Ajustes do Sistema. <a href="../#liberar">Ver o guia completo</a>.</p>
+  </section>
+
+  <!-- FICHA -->
+  <section class="section container narrow">
+    <dl class="ap-facts">
+      <div><dt>Versão</dt><dd><span data-version="neorar" data-no-i18n>—</span> · <a data-releases="neorar" href="#">Novidades</a></dd></div>
+      <div><dt>Requer</dt><dd>macOS 26 ou mais novo</dd></div>
+      <div><dt>Processador</dt><dd>Apple Silicon e Intel</dd></div>
+      <div><dt>Licença</dt><dd>GPL-3.0, código aberto</dd></div>
+      <div><dt>Preço</dt><dd>Gratuito, sem anúncios e sem rastreamento</dd></div>
+      <div><dt>Aviso</dt><dd>Inspirado no WinRAR; não é afiliado à RARLAB. Criar RAR exige o rar da RARLAB, que tem licença própria.</dd></div>
+    </dl>
+  </section>
+</main>
+
+<aside class="dl-sheet" aria-live="polite" hidden>
+  <button type="button" class="dl-close" aria-label="Fechar">✕</button>
+  <p class="eyebrow">Download iniciado</p>
+  <p class="dl-app" data-no-i18n></p>
+  <ol class="dl-steps">
+    <li>Abra o .dmg e arraste o app para a pasta Aplicativos.</li>
+    <li>Copie o comando e cole no Terminal (⌘ Espaço, digite Terminal).</li>
+  </ol>
+  <div class="term">
+    <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+    <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+    <div class="term-foot">
+      <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+      <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+    </div>
+  </div>
+  <p class="dl-alt">Pronto: o app abre direto. <a href="../#liberar">Sem Terminal? Veja o passo a passo</a>.</p>
+</aside>
+
+<dialog class="lightbox" aria-label="Imagem ampliada">
+  <button class="lightbox-close" type="button" aria-label="Fechar">✕</button>
+  <img src="" alt="">
+</dialog>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand"><img src="../assets/icons/logo-128.png" alt="" width="28" height="28"><span>witch<b>my</b>mac</span></div>
+    <nav aria-label="Rodapé">
+      <a href="../#apps">Apps</a>
+      <a href="../#faq">FAQ</a>
+      <a href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:matth.faria96@gmail.com">Contato</a>
+    </nav>
+    <p>© <span id="year"></span> witchmymac. Apple, Mac e macOS são marcas da Apple Inc.</p>
+  </div>
+</footer>
+
+<script src="../apps.js?v=202610261400"></script>
+<script src="../install-command.js?v=202610250700"></script>
+<script src="../script.js?v=202610250700"></script>
+<script src="../i18n-strings.js?v=202610251400"></script>
+<script src="strings.js?v=202610271200"></script>
+<script src="page.js?v=202610271200"></script>
+<script src="../i18n.js?v=202610242100"></script>
+<script src="../effects.js?v=202610201330"></script>
+</body>
+</html>

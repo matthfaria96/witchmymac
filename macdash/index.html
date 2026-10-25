@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MacDash · Limpeza e manutenção do Mac sem medo</title>
+<meta name="description" content="MacDash limpa o lixo do sistema, caches, restos de apps e dados de desenvolvedor, desinstala apps por completo, procura malware e mostra para onde vai o espaço do disco. Nada é removido sem a sua aprovação. Gratuito.">
+<meta property="og:title" content="MacDash · witchmymac">
+<meta property="og:description" content="Limpeza, desinstalação, antivírus e espaço em disco, sempre com revisão antes de remover. Gratuito.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://witchmymac.com/macdash/">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/macdash/care-results.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="../assets/icons/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=202610250700">
+<link rel="stylesheet" href="../effects.css?v=202610201330">
+<link rel="stylesheet" href="../gatekeeper.css?v=202610250600">
+<link rel="stylesheet" href="../app-page.css?v=202610271200">
+<link rel="stylesheet" href="page.css?v=202610271200">
+</head>
+<body class="app-page" data-app="macdash">
+<div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../" aria-label="witchmymac">
+      <img src="../assets/icons/logo-128.png" alt="" width="36" height="36">
+      <span>witch<b>my</b>mac</span>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a href="../#apps">Apps</a>
+      <a href="#instalar">Como Instalar?</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <div class="lang-picker">
+    <span class="lang-flag" aria-hidden="true">🇧🇷</span>
+    <select class="lang-select" aria-label="Idioma">
+      <option value="pt">🇧🇷 Português</option>
+      <option value="en">🇺🇸 English</option>
+      <option value="es">🇪🇸 Español</option>
+    </select>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></g></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- TOPO -->
+  <section class="wu-hero container">
+    <a class="ap-back" href="../#macdash">← Todos os apps</a>
+    <img src="../assets/icons/macdash.png?v=202610190240" alt="" class="ap-icon" width="112" height="112">
+    <p class="eyebrow">Seu Mac em ordem</p>
+    <h1>Mac<span>Dash</span></h1>
+    <p class="lead">Limpeza e manutenção sem medo: lixo do sistema, caches, restos de apps, dados de desenvolvedor, antivírus, permissões e espaço em disco, num app só. Toda verificação termina numa tela de revisão, e nada é removido sem a sua aprovação.</p>
+    <div class="app-cta">
+      <a class="btn btn-primary" data-download="macdash" href="#">Baixar MacDash</a>
+      <a class="btn btn-link" data-source="macdash" href="#">Código fonte</a>
+    </div>
+    <p class="req"><span data-version="macdash" data-no-i18n></span> macOS 13 Ventura ou mais novo · Apple Silicon e Intel · Gratuito</p>
+
+    <div class="wu-stage">
+      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/macdash/home.jpg?v=202610271200" alt="Cuidado inteligente do MacDash: o que será verificado, o disco, CPU, memória e temperatura do Mac" width="1080" height="780"></button></figure>
+      <figure class="wu-float wu-float-tray" style="width:34%"><button class="shot" type="button"><img src="../assets/shots/macdash/processes.jpg?v=202610271200" alt="Processos: CPU, memória, temperatura e atividade do Mac" width="800" height="400"></button></figure>
+    </div>
+
+    <div class="wu-stats">
+      <div><b>9</b><span>ferramentas numa janela</span></div>
+      <div><b>8</b><span>áreas na limpeza avançada</span></div>
+      <div><b>13</b><span>idiomas na interface</span></div>
+      <div><b>0</b><span>itens removidos sem revisão</span></div>
+    </div>
+  </section>
+
+  <!-- CUIDADO INTELIGENTE -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Cuidado inteligente</p>
+      <h2>Um clique para achar o lixo. Você decide o que sai.</h2>
+      <p>Uma varredura junta lixo do sistema, caches, Lixeiras e arquivos do Mail. No fim, um plano de limpeza por categoria; abra qualquer uma para ver cada item antes de limpar.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Cuidado inteligente">
+        <button type="button" role="tab" id="t-plan" aria-controls="p-plan">Plano de limpeza</button>
+        <button type="button" role="tab" id="t-review" aria-controls="p-review">Revisão</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-plan" aria-labelledby="t-plan"><figure><button class="shot" type="button"><img src="../assets/shots/macdash/care-results.jpg?v=202610271200" alt="Resultado do Cuidado inteligente: espaço encontrado e cartões por categoria" loading="lazy" width="1080" height="780"></button><figcaption class="wu-cap">O plano de limpeza: quanto há em cada categoria e quanto está selecionado.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-review" aria-labelledby="t-review" hidden><figure><button class="shot" type="button"><img src="../assets/shots/macdash/care-review.jpg?v=202610271200" alt="Revisão do Cuidado inteligente: categorias à esquerda e os itens do cache à direita" loading="lazy" width="1080" height="780"></button><figcaption class="wu-cap">A revisão: categorias à esquerda, cada item à direita, marcado ou não.</figcaption></figure></div>
+    </div>
+    <div class="wu-pair" style="max-width:1040px;margin:36px auto 0">
+      <figure><button class="shot" type="button"><img src="../assets/shots/macdash/crop-health.jpg?v=202610271200" alt="Painel Meu Mac: uso do disco, CPU, memória e temperatura ao vivo" loading="lazy" width="725" height="272"></button><figcaption>O seu Mac ao vivo</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/macdash/crop-found.jpg?v=202610271200" alt="Espaço encontrado pelo Cuidado inteligente, por categoria" loading="lazy" width="742" height="244"></button><figcaption>Quanto dá para liberar</figcaption></figure>
+    </div>
+    <p class="wu-cap">Capturas com dados fictícios de demonstração.</p>
+  </section>
+
+  <!-- LIMPEZA AVANÇADA -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Limpeza avançada</p>
+      <h2>Arquivos grandes, restos de apps e dados de desenvolvedor.</h2>
+      <p>Escolha as áreas, verifique e revise. Máquinas virtuais e imagens do Docker ficam num grupo à parte: nada vem pré-selecionado e as máquinas vão para a Lixeira.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Limpeza avançada">
+        <button type="button" role="tab" id="t-areas" aria-controls="p-areas">Áreas</button>
+        <button type="button" role="tab" id="t-found" aria-controls="p-found">Encontrado</button>
+        <button type="button" role="tab" id="t-xcode" aria-controls="p-xcode">Revisão</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-areas" aria-labelledby="t-areas"><figure><button class="shot" type="button"><img src="../assets/shots/macdash/cleanup.jpg?v=202610271200" alt="Limpeza avançada antes de verificar: arquivos, desenvolvedor e máquinas virtuais" loading="lazy" width="1080" height="780"></button><figcaption class="wu-cap">Arquivos grandes, arquivos órfãos, apps sem uso, Xcode, Homebrew, Node, Docker e apps de IA locais.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-found" aria-labelledby="t-found" hidden><figure><button class="shot" type="button"><img src="../assets/shots/macdash/cleanup-results.jpg?v=202610271200" alt="Limpeza avançada depois de verificar, com o tamanho encontrado em cada área" loading="lazy" width="1080" height="780"></button><figcaption class="wu-cap">O tamanho de cada área, pronto para revisar.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-xcode" aria-labelledby="t-xcode" hidden><figure><button class="shot" type="button"><img src="../assets/shots/macdash/cleanup-review.jpg?v=202610271200" alt="Revisão da Limpeza avançada com os itens do Xcode" loading="lazy" width="1080" height="780"></button><figcaption class="wu-cap">Cada área com os seus itens, para marcar ou desmarcar antes de limpar.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <!-- APLICATIVOS E ANTIVÍRUS -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Aplicativos</p>
+        <h2>Desinstale de verdade.</h2>
+        <p>Escolha um app e o MacDash mostra todos os arquivos dele espalhados pelo sistema, para remover tudo junto. Pelo Finder também: clique com o botão direito num app e escolha desinstalar com o MacDash.</p>
+        <ul class="wu-list">
+          <li><b>Itens de início</b>: ligue e desligue o que abre com o Mac.</li>
+          <li><b>Atualizações</b> dos seus apps num lugar só.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/macdash/apps.jpg?v=202610271200" alt="Aplicativos: lista de apps com o tamanho de cada um, abas Desinstalar, Itens de início e Atualizações" loading="lazy" width="1080" height="780"></button></figure></div>
+    </div>
+  </section>
+
+  <section class="section container wu-chapter">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Antivírus</p>
+        <h2>Malware, adware e itens de início suspeitos.</h2>
+        <p>Uma verificação rápida olha Downloads, Application Support, agentes de inicialização e imagens de disco abertas. O que for encontrado espera a sua revisão: nada é movido sem aprovação.</p>
+        <ul class="wu-list">
+          <li><b>Quarentena</b> trancada, com restaurar e apagar, lista de confiáveis e histórico.</li>
+          <li><b>Verificação rápida automática</b>, diária ou semanal, se quiser.</li>
+          <li><b>Testar proteção</b> com o padrão de teste EICAR.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/macdash/antivirus.jpg?v=202610271200" alt="Antivírus: última verificação, itens para revisar, quarentena e regras" loading="lazy" width="1080" height="780"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- ESPAÇO -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Espaço</p>
+      <h2>Veja para onde vai o seu disco.</h2>
+      <p>Três ferramentas para achar o que ocupa espaço. Todas mostram antes de remover e mandam para a Lixeira.</p>
+    </div>
+    <div class="wu-skins">
+      <article class="wu-skin" style="--s:#f43f5e">
+        <button class="shot" type="button"><img src="../assets/shots/macdash/spacelens.jpg?v=202610271200" alt="Lente de espaço pronta para analisar o disco" loading="lazy" width="1080" height="780"></button>
+        <h3>Lente de espaço</h3>
+        <p>Um mapa do disco ou de uma pasta por tamanho. Entre nas pastas e escolha o que não precisa mais.</p>
+      </article>
+      <article class="wu-skin" style="--s:#2dd4bf">
+        <button class="shot" type="button"><img src="../assets/shots/macdash/duplicates.jpg?v=202610271200" alt="Arquivos duplicados pronto para analisar" loading="lazy" width="1080" height="780"></button>
+        <h3>Arquivos duplicados</h3>
+        <p>Compara tamanhos primeiro e depois confere byte a byte. Uma cópia de cada grupo fica sempre protegida.</p>
+      </article>
+      <article class="wu-skin" style="--s:#fbbf24">
+        <button class="shot" type="button"><img src="../assets/shots/macdash/photos.jpg?v=202610271200" alt="Fotos semelhantes pronto para analisar" loading="lazy" width="1080" height="780"></button>
+        <h3>Fotos semelhantes</h3>
+        <p>Miniaturas locais comparadas por estrutura e cor, até 500 fotos por análise. Nada é enviado.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- AJUSTES -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Proteção e ajustes</p>
+        <h2>Permissões claras, conferidas ao vivo.</h2>
+        <p>Os Ajustes mostram cada permissão que o MacDash usa, para que serve e se está liberada, lida do macOS na hora.</p>
+        <ul class="wu-list">
+          <li><b>Proteção</b>: permissões dos apps, verificações de segurança, redes Wi‑Fi e extensões de navegador.</li>
+          <li><b>Processos</b>: CPU, memória, temperatura e o que cada app aberto está usando.</li>
+          <li><b>Barra de menus</b>: um monitor do sistema ao lado do relógio, se você quiser.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/macdash/settings.jpg?v=202610271200" alt="Ajustes do MacDash: permissões com o status de cada uma" loading="lazy" width="1080" height="560"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- MAIS -->
+  <section class="section container">
+    <div class="section-head"><h2>E mais um pouco</h2></div>
+    <div class="wu-more">
+      <article class="card"><h3>Verificação agendada</h3><p>De hora em hora a mensal, com aviso quando termina.</p></article>
+      <article class="card"><h3>Assistente</h3><p>Sugestões do que fazer em seguida, num painel no canto da janela.</p></article>
+      <article class="card"><h3>13 idiomas</h3><p>Português, inglês, espanhol, francês, alemão, japonês, chinês e mais.</p></article>
+      <article class="card"><h3>Atualizações no app</h3><p>O MacDash avisa quando sai uma versão nova.</p></article>
+    </div>
+  </section>
+
+  <!-- INSTALAR -->
+  <section id="instalar" class="section container narrow ap-install">
+    <div class="section-head">
+      <h2>Instalar</h2>
+      <p>O jeito mais rápido é uma linha no Terminal: ela baixa a versão mais nova, confere o arquivo e instala, sem aviso do macOS.</p>
+    </div>
+    <div class="term" data-app="macdash" data-mode="install">
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+          <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+          <div class="term-foot">
+            <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+            <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+          </div>
+        </div>
+    <p class="ap-install-alt">Prefere baixar o .dmg? Arraste o app para Aplicativos e libere na primeira vez, com um comando ou pelos Ajustes do Sistema. <a href="../#liberar">Ver o guia completo</a>.</p>
+  </section>
+
+  <!-- FICHA -->
+  <section class="section container narrow">
+    <dl class="ap-facts">
+      <div><dt>Versão</dt><dd><span data-version="macdash" data-no-i18n>—</span> · <a data-releases="macdash" href="#">Novidades</a></dd></div>
+      <div><dt>Requer</dt><dd>macOS 13 Ventura ou mais novo</dd></div>
+      <div><dt>Processador</dt><dd>Apple Silicon e Intel</dd></div>
+      <div><dt>Licença</dt><dd>AGPL-3.0, código aberto</dd></div>
+      <div><dt>Preço</dt><dd>Gratuito, sem anúncios e sem rastreamento</dd></div>
+      <div><dt>Aviso</dt><dd>Baseado no PureMac (MIT). Não é afiliado a outros apps de limpeza citados.</dd></div>
+    </dl>
+  </section>
+</main>
+
+<aside class="dl-sheet" aria-live="polite" hidden>
+  <button type="button" class="dl-close" aria-label="Fechar">✕</button>
+  <p class="eyebrow">Download iniciado</p>
+  <p class="dl-app" data-no-i18n></p>
+  <ol class="dl-steps">
+    <li>Abra o .dmg e arraste o app para a pasta Aplicativos.</li>
+    <li>Copie o comando e cole no Terminal (⌘ Espaço, digite Terminal).</li>
+  </ol>
+  <div class="term">
+    <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+    <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+    <div class="term-foot">
+      <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+      <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+    </div>
+  </div>
+  <p class="dl-alt">Pronto: o app abre direto. <a href="../#liberar">Sem Terminal? Veja o passo a passo</a>.</p>
+</aside>
+
+<dialog class="lightbox" aria-label="Imagem ampliada">
+  <button class="lightbox-close" type="button" aria-label="Fechar">✕</button>
+  <img src="" alt="">
+</dialog>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand"><img src="../assets/icons/logo-128.png" alt="" width="28" height="28"><span>witch<b>my</b>mac</span></div>
+    <nav aria-label="Rodapé">
+      <a href="../#apps">Apps</a>
+      <a href="../#faq">FAQ</a>
+      <a href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:matth.faria96@gmail.com">Contato</a>
+    </nav>
+    <p>© <span id="year"></span> witchmymac. Apple, Mac e macOS são marcas da Apple Inc.</p>
+  </div>
+</footer>
+
+<script src="../apps.js?v=202610261400"></script>
+<script src="../install-command.js?v=202610250700"></script>
+<script src="../script.js?v=202610250700"></script>
+<script src="../i18n-strings.js?v=202610251400"></script>
+<script src="strings.js?v=202610271200"></script>
+<script src="page.js?v=202610271200"></script>
+<script src="../i18n.js?v=202610242100"></script>
+<script src="../effects.js?v=202610201330"></script>
+</body>
+</html>
