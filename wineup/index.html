@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wineup Player · Player de música para Mac com alma de clássico</title>
+<meta name="description" content="Wineup Player toca a sua coleção de músicas no Mac com visor de 7 segmentos, equalizador de 10 bandas, letras sincronizadas, skins para a janela inteira, visual Glass e um gerenciador de metadados com prévia e desfazer. Gratuito.">
+<meta property="og:title" content="Wineup Player · witchmymac">
+<meta property="og:description" content="Player de música para Mac com alma de clássico: visor LCD, equalizador, letras, skins e metadados. Gratuito.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://witchmymac.com/wineup/">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/wineup/glass-full.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="../assets/icons/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=202610250700">
+<link rel="stylesheet" href="../effects.css?v=202610201330">
+<link rel="stylesheet" href="../gatekeeper.css?v=202610250600">
+<link rel="stylesheet" href="../app-page.css?v=202610250700">
+<link rel="stylesheet" href="page.css?v=202610260700">
+</head>
+<body class="app-page" data-app="wineup">
+<div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../" aria-label="witchmymac">
+      <img src="../assets/icons/logo-128.png" alt="" width="36" height="36">
+      <span>witch<b>my</b>mac</span>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a href="../#apps">Apps</a>
+      <a href="#instalar">Como Instalar?</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <div class="lang-picker">
+    <span class="lang-flag" aria-hidden="true">🇧🇷</span>
+    <select class="lang-select" aria-label="Idioma">
+      <option value="pt">🇧🇷 Português</option>
+      <option value="en">🇺🇸 English</option>
+      <option value="es">🇪🇸 Español</option>
+    </select>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></g></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- TOPO -->
+  <section class="wu-hero container">
+    <a class="ap-back" href="../#wineup">← Todos os apps</a>
+    <img src="../assets/icons/wineup.png?v=202610250900" alt="" class="ap-icon" width="112" height="112">
+    <p class="eyebrow">Player de música para Mac</p>
+    <h1>Wineup <span>Player</span></h1>
+    <p class="lead">A sua coleção de músicas com alma de player clássico e acabamento de Mac moderno: visor de 7 segmentos, equalizador de 10 bandas, letras sincronizadas, skins para a janela inteira e um gerenciador de metadados que conserta tudo com prévia e desfazer.</p>
+    <div class="app-cta">
+      <a class="btn btn-primary" data-download="wineup" href="#">Baixar Wineup</a>
+      <a class="btn btn-link" data-source="wineup" href="#">Código fonte</a>
+    </div>
+    <p class="req"><span data-version="wineup" data-no-i18n></span> macOS 14 Sonoma ou mais novo · Apple Silicon e Intel · Gratuito</p>
+
+    <div class="wu-stage">
+      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/wineup/glass-full.jpg?v=202610260700" alt="Wineup Player no visual Glass, layout Completo: lista de músicas, player com visor LCD, equalizador, capa e letra sincronizada" width="1380" height="916"></button></figure>
+      <figure class="wu-float wu-float-compact"><button class="shot" type="button"><img src="../assets/shots/wineup/glass-compact.jpg?v=202610260700" alt="Wineup Player no layout Compacto, em uma coluna" width="470" height="980"></button></figure>
+      <figure class="wu-float wu-float-tray"><button class="shot" type="button"><img src="../assets/shots/wineup/tray.jpg?v=202610260700" alt="Player do Wineup na barra de menus, com capa, controles e a fila" width="340" height="590"></button></figure>
+    </div>
+
+    <div class="wu-stats">
+      <div><b>10</b><span>bandas no equalizador</span></div>
+      <div><b>6</b><span>skins prontas, mais as suas</span></div>
+      <div><b>17</b><span>idiomas na interface</span></div>
+      <div><b>0</b><span>anúncios ou rastreamento</span></div>
+    </div>
+  </section>
+
+  <!-- VISUAL -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Visual</p>
+      <h2>Glass por padrão. Escuro ou claro, se preferir.</h2>
+      <p>O Glass é o visual da Apple: vidro, transparência e o vinho do Wineup ao fundo. Quem prefere o simples escolhe o Sem skin, escuro ou claro. A essência fica igual em todos: visor LCD, medidor e equalizador.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Visual">
+        <button type="button" role="tab" id="t-glass" aria-controls="p-glass">Glass</button>
+        <button type="button" role="tab" id="t-dark" aria-controls="p-dark">Sem skin escuro</button>
+        <button type="button" role="tab" id="t-light" aria-controls="p-light">Sem skin claro</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-glass" aria-labelledby="t-glass"><figure><button class="shot" type="button"><img src="../assets/shots/wineup/glass-full-neon.jpg?v=202610260700" alt="Visual Glass com a janela transparente" loading="lazy" width="1380" height="916"></button><figcaption class="wu-cap">Glass: painéis de vidro e janela transparente, que deixa ver o que está atrás dela.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-dark" aria-labelledby="t-dark" hidden><figure><button class="shot" type="button"><img src="../assets/shots/wineup/dark-full.jpg?v=202610260700" alt="Visual Sem skin escuro" loading="lazy" width="1380" height="916"></button><figcaption class="wu-cap">Sem skin escuro: o visual simples de sempre, sóbrio e sem distrações.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-light" aria-labelledby="t-light" hidden><figure><button class="shot" type="button"><img src="../assets/shots/wineup/light-full.jpg?v=202610260700" alt="Visual Sem skin claro" loading="lazy" width="1380" height="916"></button><figcaption class="wu-cap">Sem skin claro: o mesmo visual em claro, com o visor e o medidor em tons escuros.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <!-- LAYOUTS -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Layouts</p>
+      <h2>Do tamanho da sua tela.</h2>
+      <p>Três arranjos de painéis, trocados com ⌘1, ⌘2 e ⌘3. Arraste um painel pelo título para mudá-lo de lugar.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Layouts">
+        <button type="button" role="tab" id="t-full" aria-controls="p-full">Completo</button>
+        <button type="button" role="tab" id="t-std" aria-controls="p-std">Padrão</button>
+        <button type="button" role="tab" id="t-compact" aria-controls="p-compact">Compacto</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-full" aria-labelledby="t-full"><figure><button class="shot" type="button"><img src="../assets/shots/wineup/visual-aurora.jpg?v=202610260700" alt="Layout Completo com a letra sincronizada ao lado e a Aurora no quadro da capa" loading="lazy" width="1380" height="916"></button><figcaption class="wu-cap">Completo: lista, player, FX, capa e a letra inteira ao lado.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-std" aria-labelledby="t-std" hidden><figure style="max-width:820px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/wineup/glass-standard.jpg?v=202610260700" alt="Layout Padrão: lista à esquerda; player, equalizador e capa à direita" loading="lazy" width="1000" height="916"></button><figcaption class="wu-cap">Padrão: lista à esquerda; player, equalizador e capa à direita.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-compact" aria-labelledby="t-compact" hidden>
+        <div class="wu-narrow-row">
+          <figure><button class="shot" type="button"><img src="../assets/shots/wineup/glass-compact.jpg?v=202610260700" alt="Compacto no visual Glass" loading="lazy" width="470" height="980"></button><figcaption>Glass</figcaption></figure>
+          <figure><button class="shot" type="button"><img src="../assets/shots/wineup/light-compact.jpg?v=202610260700" alt="Compacto no Sem skin claro" loading="lazy" width="470" height="980"></button><figcaption>Sem skin claro</figcaption></figure>
+          <figure><button class="shot" type="button"><img src="../assets/shots/wineup/skin-retro-compact.jpg?v=202610260700" alt="Compacto com a skin Retro" loading="lazy" width="470" height="980"></button><figcaption>Skin Retro</figcaption></figure>
+        </div>
+        <p class="wu-cap">Compacto: player, FX e lista numa coluna. No topo, a busca vira um ícone que se abre na barra inteira.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAYER -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Player e som</p>
+        <h2>O visor que você lembra, com som de hoje.</h2>
+        <p>Tempo em LCD de 7 segmentos, medidor de nível com as barras amarelas e vermelhas no fim e a forma de onda real da música. Por baixo, o áudio é tratado com cuidado.</p>
+        <ul class="wu-list">
+          <li><b>Equalizador de 10 bandas</b> com pré-amplificação, presets suaves e limitador de pico para não distorcer.</li>
+          <li><b>Correção de Som</b> (EBU R128): todas as músicas no mesmo volume, medidas no próprio Mac, sem alterar os arquivos.</li>
+          <li><b>ReplayGain</b>, velocidade sem mudar o tom e balanço esquerda/direita.</li>
+          <li><b>FLAC, MP3, AAC, ALAC, WAV, AIFF, Ogg, Opus</b> e outros, arquivos CUE e reprodução sem pausa entre faixas.</li>
+          <li><b>Teclas de mídia</b>, Central de Controle e os atalhos clássicos Z X C V B.</li>
+        </ul>
+      </div>
+      <div class="wu-media wu-pair">
+        <figure><button class="shot" type="button"><img src="../assets/shots/wineup/crop-player.jpg?v=202610260700" alt="Player e equalizador no visual Glass" loading="lazy" width="390" height="446"></button><figcaption>Glass</figcaption></figure>
+        <figure><button class="shot" type="button"><img src="../assets/shots/wineup/crop-skin-player.jpg?v=202610260700" alt="Player e equalizador com a skin Musical" loading="lazy" width="390" height="446"></button><figcaption>Skin Musical</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- LETRAS -->
+  <section class="section container wu-chapter">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Letras</p>
+        <h2>Cante junto, linha por linha.</h2>
+        <p>A linha que está tocando acende e a letra rola sozinha, em letras grandes e sem quebrar as frases. Dá para aumentar ou diminuir o texto no próprio painel.</p>
+        <ul class="wu-list">
+          <li><b>Arquivos .lrc e letras embutidas</b>, com destaque sincronizado.</li>
+          <li><b>Editor de sincronia</b> nos Metadados, com ajustes finos de ±0,25 s.</li>
+          <li><b>Busca online opcional</b>, só com a sua permissão, que pode salvar o .lrc ao lado da música.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure style="max-width:430px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/wineup/crop-lyrics.jpg?v=202610260700" alt="Painel de letra com a linha atual destacada" loading="lazy" width="430" height="600"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- SKINS -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Skins personalizados</p>
+      <h2>Seis skins com arte própria. E os seus.</h2>
+      <p>Cada skin veste a janela inteira: fundo, molduras, botões, fontes, visor e uma animação sutil que reage à música. Toda a arte dos skins embutidos é original, feita para o Wineup.</p>
+    </div>
+    <div class="wu-skins">
+      <article class="wu-skin" style="--s:#c98a3a">
+        <button class="shot" type="button"><img src="../assets/shots/wineup/skin-radio-retro.jpg?v=202610260700" alt="Wineup Player com a skin Musical" loading="lazy" width="1000" height="916"></button>
+        <h3>Musical</h3>
+        <p>Som de carro dos anos 80: painel de nogueira, alumínio escovado e teclas com aro cromado.</p>
+      </article>
+      <article class="wu-skin" style="--s:#8a7fb0">
+        <button class="shot" type="button"><img src="../assets/shots/wineup/skin-classico.jpg?v=202610260700" alt="Wineup Player com a skin Retro" loading="lazy" width="1000" height="916"></button>
+        <h3>Retro</h3>
+        <p>O player clássico de 1998: metal cinza-arroxeado em bisel e tiras douradas estriadas.</p>
+      </article>
+      <article class="wu-skin" style="--s:#4caf50">
+        <button class="shot" type="button"><img src="../assets/shots/wineup/skin-pixelart-16bit.jpg?v=202610260700" alt="Wineup Player com a skin PixelArt 16bit" loading="lazy" width="1000" height="916"></button>
+        <h3>PixelArt 16bit</h3>
+        <p>Aventura em pixel art de 16 bits: masmorra de tijolos verdes e botões dourados.</p>
+      </article>
+      <article class="wu-skin" style="--s:#7cdc3c">
+        <button class="shot" type="button"><img src="../assets/shots/wineup/skin-scifi.jpg?v=202610260700" alt="Wineup Player com a skin Sci-Fi" loading="lazy" width="1000" height="916"></button>
+        <h3>Sci-Fi</h3>
+        <p>Tecnologia alienígena em preto, verde e metal, com carcaça militar e grade.</p>
+      </article>
+      <article class="wu-skin" style="--s:#ff3fa4">
+        <button class="shot" type="button"><img src="../assets/shots/wineup/skin-neon-gotico.jpg?v=202610260700" alt="Wineup Player com a skin Neon Gótico" loading="lazy" width="1000" height="916"></button>
+        <h3>Neon Gótico</h3>
+        <p>Preto e rosa choque, scanlines e pixels, com uma garota chibi de fones.</p>
+      </article>
+      <article class="wu-skin" style="--s:#9b5cff">
+        <button class="shot" type="button"><img src="../assets/shots/wineup/skin-emoboy.jpg?v=202610260700" alt="Wineup Player com a skin Emoboy" loading="lazy" width="1000" height="916"></button>
+        <h3>Emoboy</h3>
+        <p>Gótico e cyberpunk: metal preto corroído em violeta, parafusos e telas em grade.</p>
+      </article>
+    </div>
+    <div class="wu-split wu-editor">
+      <div class="wu-copy">
+        <h2>Crie o seu em minutos.</h2>
+        <p>Comece de qualquer imagem: o Wineup tira as cores dela e monta o skin. No editor, ajuste arte, animação, cores e créditos, e compartilhe como arquivo .wineupskin.</p>
+        <ul class="wu-list">
+          <li><b>Criar a partir de uma imagem</b> ou duplicar um skin oficial.</li>
+          <li><b>Importar e exportar</b> arquivos .wineupskin com um clique duplo.</li>
+          <li><b>Desfazer e refazer</b> enquanto edita.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/wineup/skins-editor.jpg?v=202610260700" alt="Janela de Skins com a lista de skins oficiais e o editor" loading="lazy" width="900" height="748"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- BIBLIOTECA -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Biblioteca</p>
+      <h2>Sua música, do jeito que você procura.</h2>
+      <p>Navegue por pasta, música, álbum, artista, estilo ou playlist, com voltar e avançar, favoritos de pastas e uma barra de endereço que mostra onde você está. Lista, lista detalhada ou grade de capas.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Exibição da biblioteca">
+        <button type="button" role="tab" id="t-albums" aria-controls="p-albums">Álbuns</button>
+        <button type="button" role="tab" id="t-songs" aria-controls="p-songs">Músicas</button>
+        <button type="button" role="tab" id="t-artists" aria-controls="p-artists">Artistas</button>
+        <button type="button" role="tab" id="t-genres" aria-controls="p-genres">Estilos</button>
+        <button type="button" role="tab" id="t-playlists" aria-controls="p-playlists">Playlists e cores</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-albums" aria-labelledby="t-albums"><figure style="max-width:820px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/wineup/view-albums-grid.jpg?v=202610260700" alt="Álbuns em grade de capas, com o álbum virtual Singles" loading="lazy" width="1000" height="916"></button><figcaption class="wu-cap">Álbuns em grade. Faixas soltas viram o álbum virtual "Singles", sem regravar nenhuma tag.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-songs" aria-labelledby="t-songs" hidden><figure style="max-width:820px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/wineup/view-songs-detailed.jpg?v=202610260700" alt="Todas as músicas na lista detalhada, com capa, artista e álbum" loading="lazy" width="1000" height="916"></button><figcaption class="wu-cap">Lista detalhada: capa, artista e álbum em cada linha. A busca (⌘F) acha tudo e ignora acentos.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-artists" aria-labelledby="t-artists" hidden><figure style="max-width:820px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/wineup/view-artists-grid.jpg?v=202610260700" alt="Artistas em grade" loading="lazy" width="1000" height="916"></button><figcaption class="wu-cap">Artistas, cada um com a sua página: lançamentos, Reproduzir tudo e Embaralhar.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-genres" aria-labelledby="t-genres" hidden><figure style="max-width:820px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/wineup/view-genres-grid.jpg?v=202610260700" alt="Estilos musicais em grade" loading="lazy" width="1000" height="916"></button><figcaption class="wu-cap">Estilos, com "Sem categoria" para o que não tem gênero.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-playlists" aria-labelledby="t-playlists" hidden><figure style="max-width:820px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/wineup/view-playlists.jpg?v=202610260700" alt="Playlists e playlists automáticas por tag de cor" loading="lazy" width="1000" height="916"></button><figcaption class="wu-cap">Playlists suas, importação e exportação de M3U e playlists automáticas para cada tag de cor.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <!-- CAPA E VISUAIS -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Quadro da capa</p>
+      <h2>Capa, arte ou uma cena viva.</h2>
+      <p>O quadro mostra a capa da música, a arte do skin ou uma cena animada desenhada pelo próprio app. Também dá para apontar uma pasta com os seus vídeos e criar categorias.</p>
+    </div>
+    <div class="wu-tiles">
+      <figure class="wu-tile"><button class="shot" type="button"><img src="../assets/shots/wineup/tile-cover.jpg?v=202610260700" alt="Capa da música" loading="lazy" width="356" height="356"></button><figcaption>Capa da música<span>Embutida ou da pasta</span></figcaption></figure>
+      <figure class="wu-tile"><button class="shot" type="button"><img src="../assets/shots/wineup/tile-aurora.jpg?v=202610260700" alt="Cena Aurora na Noruega" loading="lazy" width="356" height="356"></button><figcaption>Aurora<span>Cena animada</span></figcaption></figure>
+      <figure class="wu-tile"><button class="shot" type="button"><img src="../assets/shots/wineup/tile-universe.jpg?v=202610260700" alt="Cena Galáxia" loading="lazy" width="356" height="356"></button><figcaption>Galáxia<span>Cena animada</span></figcaption></figure>
+      <figure class="wu-tile"><button class="shot" type="button"><img src="../assets/shots/wineup/tile-city.jpg?v=202610260700" alt="Cena Cidade à noite" loading="lazy" width="356" height="356"></button><figcaption>Cidade à noite<span>Cena animada</span></figcaption></figure>
+      <figure class="wu-tile"><button class="shot" type="button"><img src="../assets/shots/wineup/tile-skinart.jpg?v=202610260700" alt="Arte do skin Sci-Fi" loading="lazy" width="340" height="340"></button><figcaption>Arte do skin<span>Sci-Fi</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- METADADOS -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Metadados</p>
+      <h2>Tags, capas e letras em ordem. Sem medo.</h2>
+      <p>Uma tabela com todos os seus arquivos e o que falta em cada um. O Wineup busca os dados, mostra a prévia com o nível de confiança e só grava quando você manda, com backup e histórico para desfazer.</p>
+    </div>
+    <figure class="wu-media"><button class="shot" type="button"><img src="../assets/shots/wineup/metadata.jpg?v=202610260700" alt="Janela de Metadados com o editor da música selecionada e a tabela de arquivos" loading="lazy" width="1240" height="760"></button></figure>
+    <ul class="wu-list" style="max-width:860px;margin:32px auto 0;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px">
+      <li><b>Corrigir tudo</b> busca tags, capas e letras das músicas com problemas.</li>
+      <li><b>Busca de álbum</b> no MusicBrainz, com faixas e arquivos lado a lado.</li>
+      <li><b>Capas</b> do Cover Art Archive e do iTunes, embutidas ou na pasta.</li>
+      <li><b>Letras em lote</b> e editor de sincronia.</li>
+      <li><b>Duplicadas</b> comparadas antes de qualquer decisão.</li>
+      <li><b>Histórico</b>: toda gravação pode ser desfeita (⌘Z).</li>
+    </ul>
+  </section>
+
+  <!-- BARRA DE MENUS -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Barra de menus</p>
+        <h2>Feche a janela. A música continua.</h2>
+        <p>Com ⌥⌘M, o Wineup sai da frente e vira um player pequeno ao lado do relógio, com o nome da música, capa, progresso, controles, volume e o que vem a seguir.</p>
+        <ul class="wu-list">
+          <li><b>Um clique no ícone</b> abre o player; o botão Abrir o Wineup traz a janela de volta.</li>
+          <li><b>Ícone que reage</b>: onda quando toca, nota quando pausa.</li>
+        </ul>
+      </div>
+      <div class="wu-media">
+        <div class="wu-menubar">
+          <div class="wu-bar" aria-hidden="true">
+            <span class="wu-dim" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 13.2a1.3 1.3 0 1 0 0-2.6 1.3 1.3 0 0 0 0 2.6ZM3.2 8.4a6.8 6.8 0 0 1 9.6 0l-1.1 1.1a5.2 5.2 0 0 0-7.4 0ZM.9 6.1a10 10 0 0 1 14.2 0L14 7.2a8.4 8.4 0 0 0-12 0Z" fill="currentColor"/></svg></span>
+            <span class="wu-item"><svg viewBox="0 0 16 16"><g fill="currentColor"><rect x="1" y="6" width="2" height="4" rx="1"/><rect x="4.5" y="3.5" width="2" height="9" rx="1"/><rect x="8" y="1.5" width="2" height="13" rx="1"/><rect x="11.5" y="4.5" width="2" height="7" rx="1"/></g></svg><span data-no-i18n>Céu de Neon</span></span>
+            <span class="wu-dim" data-no-i18n>21:40</span>
+          </div>
+          <figure class="wu-pop"><button class="shot" type="button"><img src="../assets/shots/wineup/tray.jpg?v=202610260700" alt="Player do Wineup aberto na barra de menus" loading="lazy" width="340" height="590"></button></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AJUSTES -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Ajustes</p>
+      <h2>Tudo à mão, em um só lugar.</h2>
+      <p>Os Ajustes (⌘,) repetem o que a tela principal oferece: idioma, layout, tema, animação, quadro da capa, equalizador, Correção de Som e ReplayGain. E cada botão da janela explica o que faz quando você para o mouse em cima.</p>
+    </div>
+    <div class="wu-settings">
+      <figure><button class="shot" type="button"><img src="../assets/shots/wineup/settings-general.jpg?v=202610260700" alt="Ajustes, aba Geral: idioma, layout, tema e animação" loading="lazy" width="640" height="628"></button><figcaption class="wu-cap">Geral</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/wineup/settings-sound.jpg?v=202610260700" alt="Ajustes, aba Som: Correção de Som, equalizador e ReplayGain" loading="lazy" width="640" height="628"></button><figcaption class="wu-cap">Som</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- MAIS -->
+  <section class="section container">
+    <div class="section-head"><h2>E mais um pouco</h2></div>
+    <div class="wu-more">
+      <article class="card"><h3>17 idiomas</h3><p>Português, inglês, espanhol, japonês, coreano, chinês e mais, escolhidos nos Ajustes.</p></article>
+      <article class="card"><h3>Sessão restaurada</h3><p>Ao reabrir, a fila e a música voltam de onde pararam.</p></article>
+      <article class="card"><h3>Seu perfil vai junto</h3><p>Playlists, tags de cor, preferências e presets exportados para um arquivo e importados em outro Mac.</p></article>
+      <article class="card"><h3>Privado de verdade</h3><p>Sem conta, sem telemetria. Consultas online só com a sua permissão.</p></article>
+    </div>
+  </section>
+
+  <!-- INSTALAR -->
+  <section id="instalar" class="section container narrow ap-install">
+    <div class="section-head">
+      <h2>Instalar</h2>
+      <p>O jeito mais rápido é uma linha no Terminal: ela baixa a versão mais nova, confere o arquivo e instala, sem aviso do macOS.</p>
+    </div>
+    <div class="term" data-app="wineup" data-mode="install">
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+          <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+          <div class="term-foot">
+            <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+            <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+          </div>
+        </div>
+    <p class="ap-install-alt">Prefere baixar o .dmg? Arraste o app para Aplicativos e libere na primeira vez, com um comando ou pelos Ajustes do Sistema. <a href="../#liberar">Ver o guia completo</a>.</p>
+  </section>
+
+  <!-- FICHA -->
+  <section class="section container narrow">
+    <dl class="ap-facts">
+      <div><dt>Versão</dt><dd><span data-version="wineup" data-no-i18n>—</span> · <a data-releases="wineup" href="#">Novidades</a></dd></div>
+      <div><dt>Requer</dt><dd>macOS 14 Sonoma ou mais novo</dd></div>
+      <div><dt>Processador</dt><dd>Apple Silicon e Intel</dd></div>
+      <div><dt>Licença</dt><dd>GPL-3.0, código aberto</dd></div>
+      <div><dt>Preço</dt><dd>Gratuito, sem anúncios e sem rastreamento</dd></div>
+      <div><dt>Aviso</dt><dd>Inspirado nos players clássicos; não é afiliado ao Winamp.</dd></div>
+    </dl>
+  </section>
+</main>
+
+<aside class="dl-sheet" aria-live="polite" hidden>
+  <button type="button" class="dl-close" aria-label="Fechar">✕</button>
+  <p class="eyebrow">Download iniciado</p>
+  <p class="dl-app" data-no-i18n></p>
+  <ol class="dl-steps">
+    <li>Abra o .dmg e arraste o app para a pasta Aplicativos.</li>
+    <li>Copie o comando e cole no Terminal (⌘ Espaço, digite Terminal).</li>
+  </ol>
+  <div class="term">
+    <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+    <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+    <div class="term-foot">
+      <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+      <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+    </div>
+  </div>
+  <p class="dl-alt">Pronto: o app abre direto. <a href="../#liberar">Sem Terminal? Veja o passo a passo</a>.</p>
+</aside>
+
+<dialog class="lightbox" aria-label="Imagem ampliada">
+  <button class="lightbox-close" type="button" aria-label="Fechar">✕</button>
+  <img src="" alt="">
+</dialog>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand"><img src="../assets/icons/logo-128.png" alt="" width="28" height="28"><span>witch<b>my</b>mac</span></div>
+    <nav aria-label="Rodapé">
+      <a href="../#apps">Apps</a>
+      <a href="../#faq">FAQ</a>
+      <a href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:matth.faria96@gmail.com">Contato</a>
+    </nav>
+    <p>© <span id="year"></span> witchmymac. Apple, Mac e macOS são marcas da Apple Inc.</p>
+  </div>
+</footer>
+
+<script src="../apps.js?v=202610260540"></script>
+<script src="../install-command.js?v=202610250700"></script>
+<script src="../script.js?v=202610250700"></script>
+<script src="../i18n-strings.js?v=202610251400"></script>
+<script src="strings.js?v=202610260700"></script>
+<script src="page.js?v=202610260700"></script>
+<script src="../i18n.js?v=202610242100"></script>
+<script src="../effects.js?v=202610201330"></script>
+</body>
+</html>

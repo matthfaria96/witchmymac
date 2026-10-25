@@ -478,7 +478,7 @@ window.WITCH_STRINGS = Object.freeze({
   'Sua biblioteca, seu jeito': ['Your library, your way', 'Tu biblioteca, a tu manera'],
   'Pastas, álbuns, artistas, estilos, playlists, tags de cor e 17 idiomas.': ['Folders, albums, artists, genres, playlists, color tags and 17 languages.', 'Carpetas, álbumes, artistas, géneros, playlists, etiquetas de color y 17 idiomas.'],
   'Baixar Wineup': ['Download Wineup', 'Descargar Wineup'],
-  'Wineup Player na versão completa, sem skin: lista, player com visor, equalizador, capa e letra sincronizada': ['Wineup Player in the full version, no skin: list, player with display, equalizer, cover and synced lyrics', 'Wineup Player en la versión completa, sin skin: lista, reproductor con pantalla, ecualizador, portada y letra sincronizada'],
+  'Wineup Player no visual Glass, layout Completo: lista, player com visor, equalizador, capa e letra sincronizada': ['Wineup Player in the Glass look, Full layout: list, player with display, equalizer, cover and synced lyrics', 'Wineup Player con el aspecto Glass, diseño Completo: lista, reproductor con pantalla, ecualizador, portada y letra sincronizada'],
   'Wineup Player na versão compacta com a skin Retro: player, equalizador e lista numa coluna': ['Wineup Player in the compact version with the Retro skin: player, equalizer and list in one column', 'Wineup Player en la versión compacta con la skin Retro: reproductor, ecualizador y lista en una columna'],
   'Escolha o app': ['Choose the app', 'Elige la app'],
   'Copiado!': ['Copied!', '¡Copiado!'],
