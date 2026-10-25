@@ -24,11 +24,12 @@ repo_for() {
     bettercraft) echo "bettercraft-launcher" ;;
     santovideoplayer|santo) echo "santo-video-player" ;;
     viewtube) echo "viewtube-mac" ;;
+    hypervideo) echo "hypervideo-converter" ;;
     *) return 1 ;;
   esac
 }
 
-APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube"
+APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo"
 
 say() { printf '\033[1;35m==>\033[0m %s\n' "$*"; }
 fail() { printf '\033[1;31mError:\033[0m %s\n' "$*" >&2; exit 1; }
