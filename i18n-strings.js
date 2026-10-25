@@ -258,10 +258,8 @@ window.WITCH_STRINGS = Object.freeze({
   'Acompanha o ArtCraft Launcher original e traz as novidades dele.': [
     'Follows the original ArtCraft Launcher and brings in its improvements.',
     'Sigue al ArtCraft Launcher original y trae sus novedades.'],
-  'Ver no GitHub': ['View on GitHub', 'Ver en GitHub'],
-  'macOS 11 Big Sur ou mais novo · instalado a partir do código fonte': [
-    'macOS 11 Big Sur or later · installed from source',
-    'macOS 11 Big Sur o posterior · se instala desde el código fuente'],
+  'Baixar BetterCraft': ['Download BetterCraft', 'Descargar BetterCraft'],
+  'macOS 11 Big Sur ou mais novo · Apple Silicon e Intel': ['macOS 11 Big Sur or later · Apple Silicon and Intel', 'macOS 11 Big Sur o posterior · Apple Silicon e Intel'],
   'BetterCraft Launcher com a lista dos apps Craft instalados e os ícones redesenhados': [
     'BetterCraft Launcher with the list of installed Craft apps and the redesigned icons',
     'BetterCraft Launcher con la lista de apps Craft instaladas y los íconos rediseñados'],
