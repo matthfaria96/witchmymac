@@ -6,6 +6,22 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.5.3</title>
+      <pubDate>Sun, 25 Oct 2026 03:27:56 +0000</pubDate>
+      <sparkle:version>116</sparkle:version>
+      <sparkle:shortVersionString>0.5.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+      <h2>Sirena 0.5.3</h2>
+      <ul>
+        <li>Correção importante: remover ou trocar a permissão de Acessibilidade com o Sirena aberto não trava mais o Mac. O Sirena desliga os atalhos e gestos na hora e religa sozinho quando a permissão volta.</li>
+        <li>Boas-vindas mais simples: só Acessibilidade e Gravação de Tela (por último, porque o macOS pede para reabrir). Câmera, microfone, Bluetooth e Calendário são pedidos quando você usar o recurso.</li>
+        <li>Sobre e Verificar Atualizações agora ficam numa aba própria.</li>
+      </ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.5.3/Sirena-0.5.3.dmg" length="29259732" type="application/octet-stream" sparkle:edSignature="Crcwro0sJCYxvhL2IPU036L2y17ycLpjkSwVEW3n8Fa2Dun99xRegR+4ug9tKN2C7U0VKmfYlhUFoydvWRgiBw=="/>
+    </item>
+    <item>
       <title>Sirena 0.5.2</title>
       <pubDate>Sun, 25 Oct 2026 02:53:42 +0000</pubDate>
       <sparkle:version>115</sparkle:version>
