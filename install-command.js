@@ -56,7 +56,18 @@
 
   // Guia: app escolhido + modo atual. Os dois primeiros modos usam a mesma janela de Terminal.
   const guide = { key: null, mode: 'install', show: null };
-  const refresh = () => { if (guide.show && guide.key) guide.show(guide.key, APPS[guide.key], guide.mode); };
+  const refresh = () => {
+    if (guide.show && guide.key) guide.show(guide.key, APPS[guide.key], guide.mode);
+    // Dica discreta no fim do guia dos Ajustes: o mesmo app, aprovado por comando.
+    const tip = document.querySelector('.gk-tip-cmd');
+    if (tip && guide.key) tip.textContent = commandFor(guide.key, APPS[guide.key], 'unblock');
+  };
+  document.querySelector('.gk-tip-cmd')?.addEventListener('click', async (event) => {
+    const tip = event.currentTarget;
+    if (!(await copyText(tip.textContent))) return;
+    tip.classList.add('copied');
+    setTimeout(() => tip.classList.remove('copied'), 1400);
+  });
 
   function setupModes() {
     const root = document.querySelector('.gk');

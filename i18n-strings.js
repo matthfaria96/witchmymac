@@ -403,22 +403,17 @@ window.WITCH_STRINGS = Object.freeze({
   'Copiar comando': ['Copy command', 'Copiar comando'],
   'Copie o comando e cole no Terminal (⌘ Espaço, digite Terminal).': ['Copy the command and paste it into Terminal (⌘ Space, type Terminal).', 'Copia el comando y pégalo en la Terminal (⌘ Espacio, escribe Terminal).'],
   // Instalar: três jeitos (install.sh, comando de liberação, Ajustes)
-  'Três jeitos de instalar. Escolha o seu.': ['Three ways to install. Pick yours.', 'Tres formas de instalar. Elige la tuya.'],
+  'Dois jeitos de instalar. Escolha o seu.': ['Two ways to install. Pick yours.', 'Dos formas de instalar. Elige la tuya.'],
   'Escolha como instalar': ['Choose how to install', 'Elige cómo instalar'],
   'O mais rápido é uma linha no Terminal.': ['The quickest is one line in Terminal.', 'Lo más rápido es una línea en la Terminal.'],
   'Ela baixa a versão mais nova direto do GitHub, confere o arquivo e instala o app em Aplicativos, sem aviso do macOS. Se preferir baixar o .dmg, o macOS pede uma liberação na primeira vez, porque os apps são gratuitos e não passam pela App Store.': [
     'It downloads the latest version straight from GitHub, checks the file and installs the app in Applications, with no macOS warning. If you’d rather download the .dmg, macOS asks you to allow the app the first time, because the apps are free and don’t go through the App Store.',
     'Descarga la versión más nueva directo de GitHub, verifica el archivo e instala la app en Aplicaciones, sin aviso de macOS. Si prefieres descargar el .dmg, macOS te pide permitirla la primera vez, porque las apps son gratuitas y no pasan por la App Store.'],
   '1 linha': ['1 line', '1 línea'],
-  'Baixar + comando': ['Download + command', 'Descargar + comando'],
   'Baixar + Ajustes': ['Download + Settings', 'Descargar + Ajustes'],
   'Toque no ícone do app que você quer.': ['Tap the icon of the app you want.', 'Toca el ícono de la app que quieres.'],
   'Ele já vem com o app certo.': ['It already has the right app.', 'Ya viene con la app correcta.'],
   'O app abre sozinho. Para atualizar, rode a mesma linha de novo.': ['The app opens by itself. To update, run the same line again.', 'La app se abre sola. Para actualizar, ejecuta la misma línea otra vez.'],
-  'Baixe e arraste': ['Download and drag', 'Descarga y arrastra'],
-  'Clique em "Baixar" no app, abra o .dmg e arraste o app para Aplicativos.': ['Click "Download" on the app, open the .dmg and drag the app to Applications.', 'Haz clic en "Descargar" en la app, abre el .dmg y arrastra la app a Aplicaciones.'],
-  'Toque no ícone do app que você arrastou.': ['Tap the icon of the app you dragged.', 'Toca el ícono de la app que arrastraste.'],
-  'Copie o comando, aperte ⌘ Espaço, digite Terminal, cole e aperte Enter.': ['Copy the command, press ⌘ Space, type Terminal, paste and press Enter.', 'Copia el comando, pulsa ⌘ Espacio, escribe Terminal, pega y pulsa Enter.'],
   'O script é aberto (': ['The script is open (', 'El script es abierto ('],
   '): baixa só do GitHub do projeto e confere o SHA-256 do arquivo antes de instalar. Não pede senha.': [
     '): it only downloads from the project’s GitHub and checks the file’s SHA-256 before installing. No password needed.',
@@ -431,6 +426,8 @@ window.WITCH_STRINGS = Object.freeze({
     'If you downloaded the .dmg, it’s normal for apps from outside the App Store, and you only need to allow it once. The quickest way is to paste this command into Terminal, with the app’s name at the end:',
     'Si descargaste el .dmg, es normal en apps de fuera de la App Store, y basta con permitirla una vez. La forma más rápida es pegar en la Terminal este comando, con el nombre de la app al final:'],
   'Saiba mais': ['Learn more', 'Saber más'],
+  'Dica: em vez de ir aos Ajustes, dá para aprovar com um comando no Terminal:': ['Tip: instead of going to Settings, you can allow it with a command in Terminal:', 'Consejo: en lugar de ir a Ajustes, puedes permitirla con un comando en la Terminal:'],
+  'Clique para copiar': ['Click to copy', 'Haz clic para copiar'],
   'Escolha o app': ['Choose the app', 'Elige la app'],
   'Copiado!': ['Copied!', '¡Copiado!'],
   'O comando só tira daquele app a marca de "baixado da internet". Não pede senha e não muda nada no resto do Mac.': [

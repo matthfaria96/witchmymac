@@ -144,6 +144,10 @@
 .gk-dots{display:flex;gap:6px}
 .gk-dots i{width:7px;height:7px;border-radius:50%;background:var(--border);transition:background .2s,width .2s}
 .gk-dots i.on{width:20px;border-radius:4px;background:var(--accent)}
+.gk-tip{margin:18px auto 0;max-width:760px;text-align:center;font-size:12.5px;color:var(--muted);line-height:1.7}
+.gk-tip-cmd{display:inline-block;padding:1px 8px;border-radius:6px;background:rgba(255,255,255,.06);border:1px solid var(--border);font:12px/1.6 ui-monospace,"SF Mono",Menlo,monospace;color:#d8b4fe;cursor:copy;overflow-wrap:anywhere;transition:background .15s,color .15s}
+.gk-tip-cmd:hover{background:rgba(255,255,255,.1)}
+.gk-tip-cmd.copied{color:#4ade80;border-color:rgba(74,222,128,.4)}
 .gk-note{margin-top:28px;padding-top:22px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
 .gk-note b{color:var(--text)}
 
