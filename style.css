@@ -77,7 +77,7 @@ h2{font-size:clamp(28px,4vw,44px);letter-spacing:-.025em;line-height:1.1;font-we
 .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
 .card::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 200px at 50% -20%,var(--c,#a855f7) 0,transparent 70%);opacity:.18;pointer-events:none}
 .card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.18)}
-[data-app=neorar]{--c:#f59e0b}[data-app=rubbishnotes]{--c:#60a5fa}[data-app=bunnygrid]{--c:#ef4444}[data-app=wormlink]{--c:#84cc16}[data-app=macdash]{--c:#d946ef}[data-app=sirena]{--c:#8b5cf6}[data-app=bettercraft]{--c:#3b82f6}[data-app=santovideoplayer]{--c:#f97316}[data-app=viewtube]{--c:#f0213d}
+[data-app=neorar]{--c:#f59e0b}[data-app=rubbishnotes]{--c:#60a5fa}[data-app=bunnygrid]{--c:#ef4444}[data-app=wormlink]{--c:#84cc16}[data-app=macdash]{--c:#d946ef}[data-app=sirena]{--c:#8b5cf6}[data-app=bettercraft]{--c:#3b82f6}[data-app=santovideoplayer]{--c:#f97316}[data-app=viewtube]{--c:#f0213d}[data-app=hypervideo]{--c:#ffb52e}[data-app=wineup]{--c:#e8742a}[data-app=hyperimage]{--c:#2e7cf6}
 .app-icon{width:76px;height:76px;margin-bottom:18px;filter:drop-shadow(0 10px 24px #0008)}
 .card h3{font-size:22px;letter-spacing:-.02em}
 .tag{font-size:13px;color:var(--c,var(--accent));font-weight:600;margin:4px 0 12px}
