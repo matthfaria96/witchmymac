@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Santo Video Player</title>
+    <link>https://witchmymac.com/appcast/santovideoplayer.xml</link>
+    <description>Atualizações do Santo Video Player</description>
+    <language>pt-BR</language>
+    <item>
+      <title>Santo Video Player 2.0.1</title>
+      <pubDate>Sun, 25 Oct 2026 12:33:44 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li><strong>Atualizações dentro do app:</strong> novo item "Verificar Atualizações…" no menu Santo Video Player e na aba Sobre dos Ajustes. O app também verifica sozinho uma vez por dia e pergunta antes de instalar.</li>
+<li>Quem está numa versão anterior precisa instalar esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/santo-video-player/releases/download/v2.0.1/SantoVideoPlayer-2.0.1.dmg" length="35001382" type="application/octet-stream" sparkle:edSignature="fo10uBwWUM2DOUEZ5SW7FwweD21+ZQY507eoNTx9qWDkph8yQFj/dr7SVDVfD2/JkVicI03kxs4hHYwjI2BUDw=="/>
+    </item>
+  </channel>
+</rss>

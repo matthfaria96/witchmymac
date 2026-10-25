@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ViewTube</title>
+    <link>https://witchmymac.com/appcast/viewtube.xml</link>
+    <description>Atualizações do ViewTube</description>
+    <language>pt-BR</language>
+    <item>
+      <title>ViewTube 1.0.6</title>
+      <pubDate>Sun, 25 Oct 2026 12:36:11 +0000</pubDate>
+      <sparkle:version>14</sparkle:version>
+      <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li><strong>Atualizações dentro do app:</strong> novo item "Verificar Atualizações…" no menu ViewTube e no Sobre. O app também verifica sozinho uma vez por dia e pergunta antes de instalar.</li>
+<li>Quem está numa versão anterior precisa instalar esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/viewtube-mac/releases/download/v1.0.6/ViewTube-1.0.6.dmg" length="3915854" type="application/octet-stream" sparkle:edSignature="X7PwU6SS2YfXmKV0x2SjEF9gzb/JxSOkxT3FsM9ilxdnGLWUhi+IXPBE2mGiIablGWv2nM3f9XPRS1nHLWgWBQ=="/>
+    </item>
+  </channel>
+</rss>
