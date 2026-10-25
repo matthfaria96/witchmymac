@@ -11,5 +11,5 @@ window.WITCH_APPS = Object.freeze({
   bunnygrid:    Object.freeze({ repo: 'BunnyGrid',     tag: 'v0.1.0',        file: 'BunnyGrid-0.1.0.dmg',    published: true, app: 'BunnyGrid.app' }),
   wormlink:     Object.freeze({ repo: 'Wormlink',      tag: 'v0.1.0',        file: 'Wormlink-0.1.0.dmg',     published: true, app: 'Wormlink.app' }),
   santovideoplayer: Object.freeze({ repo: 'santo-video-player', tag: 'v2.0.0', file: 'SantoVideoPlayer-2.0.0.dmg', published: true, app: 'Santo Video Player.app' }),
-  viewtube:     Object.freeze({ repo: 'viewtube-mac',  tag: 'v1.0.1',        file: 'ViewTube-1.0.1.dmg',     published: true, app: 'ViewTube.app' }),
+  viewtube:     Object.freeze({ repo: 'viewtube-mac',  tag: 'v1.0.2',        file: 'ViewTube-1.0.2.dmg',     published: true, app: 'ViewTube.app' }),
 });
