@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>HyperImage Converter</title>
+    <link>https://witchmymac.com/appcast/hyperimage.xml</link>
+    <description>Atualizações do HyperImage Converter</description>
+    <language>pt-BR</language>
+    <item>
+      <title>HyperImage Converter 1.0.1</title>
+      <pubDate>Sun, 25 Oct 2026 12:41:18 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul><li>Novo: Verificar Atualizações… no menu HyperImage Converter e na janela Sobre. O app procura novas versões uma vez por dia e instala com um clique.</li><li>Quem está na 1.0.0 precisa instalar esta versão uma vez à mão; as próximas chegam pelo próprio app.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/hyperimage-converter/releases/download/v1.0.1/HyperImage-1.0.1.dmg" length="88403894" type="application/octet-stream" sparkle:edSignature="DD0gxEpUcMMIS6wWFOeeGRw3BkSz/JEsCBIB7JsdkNDUM3VrFu7gPVYytkt6f/3EPbJEOC23S2dJ7TnZ1ngWDQ=="/>
+    </item>
+  </channel>
+</rss>

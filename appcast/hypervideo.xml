@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>HyperVideo Converter</title>
+    <link>https://witchmymac.com/appcast/hypervideo.xml</link>
+    <description>Atualizações do HyperVideo Converter</description>
+    <language>pt-BR</language>
+    <item>
+      <title>HyperVideo Converter 1.0.1</title>
+      <pubDate>Sun, 25 Oct 2026 12:35:41 +0000</pubDate>
+      <sparkle:version>268</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul><li>Novo: Verificar Atualizações… no menu HyperVideo Converter e em Ajustes → Sobre. O app procura novas versões uma vez por dia e instala com um clique.</li><li>Quem está na 1.0.0 precisa instalar esta versão uma vez à mão; as próximas chegam pelo próprio app.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/hypervideo-converter/releases/download/v1.0.1/HyperVideo-1.0.1.dmg" length="90437319" type="application/octet-stream" sparkle:edSignature="e1vfxw2E57LHN3dPPO/ZPQdjo+OQ2WT5R8Vj0Z85lMYSZYERH7LJzF/GZCLPdpn0QkhfEKCCCYC15EAqjiypBg=="/>
+    </item>
+  </channel>
+</rss>

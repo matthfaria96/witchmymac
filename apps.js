@@ -13,7 +13,7 @@ window.WITCH_APPS = Object.freeze({
   bettercraft:  Object.freeze({ repo: 'bettercraft-launcher', tag: 'v0.6.2', file: 'BetterCraftLauncher-0.6.2.dmg', published: true, app: 'BetterCraft Launcher.app' }),
   santovideoplayer: Object.freeze({ repo: 'santo-video-player', tag: 'v2.0.1', file: 'SantoVideoPlayer-2.0.1.dmg', published: true, app: 'Santo Video Player.app' }),
   viewtube:     Object.freeze({ repo: 'viewtube-mac',  tag: 'v1.0.6',        file: 'ViewTube-1.0.6.dmg',     published: true, app: 'ViewTube.app' }),
-  hypervideo:   Object.freeze({ repo: 'hypervideo-converter', tag: 'v1.0.0', file: 'HyperVideo-1.0.0.dmg', published: true, app: 'HyperVideo Converter.app' }),
-  hyperimage:   Object.freeze({ repo: 'hyperimage-converter', tag: 'v1.0.0', file: 'HyperImage-1.0.0.dmg', published: true, app: 'HyperImage Converter.app' }),
+  hypervideo:   Object.freeze({ repo: 'hypervideo-converter', tag: 'v1.0.1', file: 'HyperVideo-1.0.1.dmg', published: true, app: 'HyperVideo Converter.app' }),
+  hyperimage:   Object.freeze({ repo: 'hyperimage-converter', tag: 'v1.0.1', file: 'HyperImage-1.0.1.dmg', published: true, app: 'HyperImage Converter.app' }),
   wineup:       Object.freeze({ repo: 'wineup-player', tag: 'v1.1.1',      file: 'WineupPlayer-1.1.1.dmg', published: true, app: 'Wineup Player.app' }),
 });
