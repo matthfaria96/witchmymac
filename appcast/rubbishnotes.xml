@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Rubbish Notes</title>
+    <link>https://witchmymac.com/appcast/rubbishnotes.xml</link>
+    <description>Atualizações do Rubbish Notes</description>
+    <language>pt-BR</language>
+    <item>
+      <title>Rubbish Notes 1.1.1</title>
+      <pubDate>Sun, 25 Oct 2026 12:34:03 +0000</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Atualizações dentro do app: <b>Verificar Atualizações…</b> no menu Rubbish Notes e em Ajustes › Sobre. O app também verifica sozinho uma vez por dia e pergunta antes de instalar.</li>
+<li>Quem está numa versão anterior precisa instalar esta versão à mão uma única vez; as próximas chegam pelo próprio app.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/rubbish-notes/releases/download/v1.1.1/RubbishNotes-1.1.1.dmg" length="9624050" type="application/octet-stream" sparkle:edSignature="ETM9pYHQixcmQMtiQZupY2HEqn2UWyTKZvFip8exE3GFG8Z0vv7KDjuZteRu5+s0b9FtBlBMPOYHkgawMwcnAQ=="/>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>BetterCraft Launcher</title>
+    <link>https://witchmymac.com/appcast/bettercraft.xml</link>
+    <description>Atualizações do BetterCraft Launcher</description>
+    <language>pt-BR</language>
+    <item>
+      <title>BetterCraft Launcher 0.6.3</title>
+      <pubDate>Sun, 25 Oct 2026 12:48:40 +0000</pubDate>
+      <sparkle:version>0.6.3</sparkle:version>
+      <sparkle:shortVersionString>0.6.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Atualizações do próprio launcher dentro do app: <b>Verificar atualizações do launcher…</b> no ícone da barra de menus. O launcher também verifica sozinho uma vez por dia e pergunta antes de instalar.</li>
+<li>Quem está numa versão anterior precisa instalar esta versão à mão uma única vez; as próximas chegam pelo próprio app.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/bettercraft-launcher/releases/download/v0.6.3/BetterCraftLauncher-0.6.3.dmg" length="48553389" type="application/octet-stream" sparkle:edSignature="C4ZcJvnsy2l28sc5vS/ggHicfd2/ZYXJlxXvRfMJK75ZFJcxxy5EAoByaV7hrA5KC6VYOHDJmjt0m7aotVf/BQ=="/>
+    </item>
+  </channel>
+</rss>
