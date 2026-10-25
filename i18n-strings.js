@@ -430,6 +430,7 @@ window.WITCH_STRINGS = Object.freeze({
   'Se você baixou o .dmg, é normal com apps de fora da App Store, e basta liberar uma vez. O jeito mais rápido é colar no Terminal este comando, com o nome do app no final:': [
     'If you downloaded the .dmg, it’s normal for apps from outside the App Store, and you only need to allow it once. The quickest way is to paste this command into Terminal, with the app’s name at the end:',
     'Si descargaste el .dmg, es normal en apps de fuera de la App Store, y basta con permitirla una vez. La forma más rápida es pegar en la Terminal este comando, con el nombre de la app al final:'],
+  'Saiba mais': ['Learn more', 'Saber más'],
   'Escolha o app': ['Choose the app', 'Elige la app'],
   'Copiado!': ['Copied!', '¡Copiado!'],
   'O comando só tira daquele app a marca de "baixado da internet". Não pede senha e não muda nada no resto do Mac.': [

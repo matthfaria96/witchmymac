@@ -149,6 +149,26 @@
     });
   }
 
+  // Páginas de app: janelas de Terminal fixas (`.term[data-app][data-mode]`), versão e link de novidades.
+  function setupAppPage() {
+    document.querySelectorAll('.term[data-app][data-mode]').forEach((term) => {
+      const app = APPS[term.dataset.app];
+      if (app?.published) setupTerm(term)(term.dataset.app, app, term.dataset.mode);
+    });
+    document.querySelectorAll('[data-version]').forEach((el) => {
+      const app = APPS[el.dataset.version];
+      if (app?.tag) el.textContent = app.tag.replace(/^[^0-9]*/, '');
+    });
+    document.querySelectorAll('[data-releases]').forEach((link) => {
+      const app = APPS[link.dataset.releases];
+      if (!app) return;
+      link.href = `https://github.com/matthfaria96/${app.repo}/releases`;
+      link.target = '_blank';
+      link.rel = 'noopener';
+    });
+  }
+
+  setupAppPage();
   setupGuide();
   setupModes();
   setupDownloadSheet((key) => document.querySelector(`.term-app[data-app="${key}"]`)?.click());
