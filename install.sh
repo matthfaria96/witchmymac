@@ -25,11 +25,13 @@ repo_for() {
     santovideoplayer|santo) echo "santo-video-player" ;;
     viewtube) echo "viewtube-mac" ;;
     hypervideo) echo "hypervideo-converter" ;;
+    hyperimage) echo "hyperimage-converter" ;;
+    wineup) echo "wineup-player" ;;
     *) return 1 ;;
   esac
 }
 
-APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo"
+APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo hyperimage wineup"
 
 say() { printf '\033[1;35m==>\033[0m %s\n' "$*"; }
 fail() { printf '\033[1;31mError:\033[0m %s\n' "$*" >&2; exit 1; }
