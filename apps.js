@@ -15,5 +15,5 @@ window.WITCH_APPS = Object.freeze({
   viewtube:     Object.freeze({ repo: 'viewtube-mac',  tag: 'v1.0.5',        file: 'ViewTube-1.0.5.dmg',     published: true, app: 'ViewTube.app' }),
   hypervideo:   Object.freeze({ repo: 'hypervideo-converter', tag: 'v1.0.0', file: 'HyperVideo-1.0.0.dmg', published: true, app: 'HyperVideo Converter.app' }),
   hyperimage:   Object.freeze({ repo: 'hyperimage-converter', tag: 'v1.0.0', file: 'HyperImage-1.0.0.dmg', published: true, app: 'HyperImage Converter.app' }),
-  wineup:       Object.freeze({ repo: 'wineup-player', tag: 'v1.1.0',      file: 'WineupPlayer-1.1.0.dmg', published: true, app: 'Wineup Player.app' }),
+  wineup:       Object.freeze({ repo: 'wineup-player', tag: 'v1.1.1',      file: 'WineupPlayer-1.1.1.dmg', published: true, app: 'Wineup Player.app' }),
 });

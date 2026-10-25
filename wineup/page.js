@@ -21,6 +21,7 @@
         tabs[next].focus();
       });
     });
-    select(0);
+    // data-default: aba que abre selecionada (índice, começa em 0).
+    select(Number(set.dataset.default) || 0);
   });
 })();

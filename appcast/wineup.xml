@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Wineup Player</title>
+    <link>https://witchmymac.com/appcast/wineup.xml</link>
+    <description>Atualizações do Wineup Player</description>
+    <language>pt-BR</language>
+    <item>
+      <title>Wineup Player 1.1.1</title>
+      <pubDate>Sun, 25 Oct 2026 06:23:31 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Atualizações dentro do app: Wineup Player › Verificar Atualizações… e o botão em Ajustes › Sobre. O app também confere sozinho uma vez por dia.</li>
+<li>A categoria de vídeo "Cidades", que estava vazia, não aparece mais.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/wineup-player/releases/download/v1.1.1/WineupPlayer-1.1.1.dmg" length="30975372" type="application/octet-stream" sparkle:edSignature="qfrzOcZprm2afj8/Bk80YSu8ojDt9rdQbocAdapuRMzSIZvWGBRd/+HOU2y45+zUkOl9lvElKVUTmgCtHAkjAA=="/>
+    </item>
+  </channel>
+</rss>
