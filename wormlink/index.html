@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WormLink · Cliente de arquivos remotos para Mac</title>
+<meta name="description" content="WormLink é um cliente de arquivos remotos para Mac em dois painéis, com Liquid Glass: SFTP, FTP e FTPS, WebDAV, S3, SMB, Azure, Swift, Backblaze B2, Dropbox, Google Drive, OneDrive, SharePoint e Box. Gratuito e de código aberto.">
+<meta property="og:title" content="WormLink · witchmymac">
+<meta property="og:description" content="Conecte. Explore. Transfira. Cliente de arquivos remotos em dois painéis para Mac. Gratuito.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://witchmymac.com/wormlink/">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/wormlink/local.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="../assets/icons/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=202610250700">
+<link rel="stylesheet" href="../effects.css?v=202610201330">
+<link rel="stylesheet" href="../gatekeeper.css?v=202610250600">
+<link rel="stylesheet" href="../app-page.css?v=202610250700">
+<link rel="stylesheet" href="page.css?v=202610261500">
+</head>
+<body class="app-page" data-app="wormlink">
+<div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../" aria-label="witchmymac">
+      <img src="../assets/icons/logo-128.png" alt="" width="36" height="36">
+      <span>witch<b>my</b>mac</span>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a href="../#apps">Apps</a>
+      <a href="#instalar">Como Instalar?</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <div class="lang-picker">
+    <span class="lang-flag" aria-hidden="true">🇧🇷</span>
+    <select class="lang-select" aria-label="Idioma">
+      <option value="pt">🇧🇷 Português</option>
+      <option value="en">🇺🇸 English</option>
+      <option value="es">🇪🇸 Español</option>
+    </select>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></g></svg></button>
+  </div>
+</header>
+
+<main id="top">
+<!-- TOPO -->
+  <section class="wu-hero container">
+    <a class="ap-back" href="../#wormlink">← Todos os apps</a>
+    <img src="../assets/icons/wormlink.png?v=202610190240" alt="" class="ap-icon" width="112" height="112">
+    <p class="eyebrow">Cliente de arquivos remotos para Mac</p>
+    <h1>Worm<span>Link</span></h1>
+    <p class="lead">Conecte. Explore. Transfira. Seus servidores e nuvens em dois painéis lado a lado, com o visual Liquid Glass do macOS 26: arraste de um lado para o outro, ou direto do Finder.</p>
+    <div class="app-cta">
+      <a class="btn btn-primary" data-download="wormlink" href="#">Baixar WormLink</a>
+      <a class="btn btn-link" data-source="wormlink" href="#">Código fonte</a>
+    </div>
+    <p class="req"><span data-version="wormlink" data-no-i18n></span> macOS 26 Tahoe ou mais novo · Apple Silicon e Intel · Gratuito</p>
+
+    <div class="wu-stage">
+      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/wormlink/local.jpg?v=202610261500" alt="WormLink com duas pastas do Mac lado a lado, prontas para transferir" width="1060" height="700"></button></figure>
+      <figure class="wu-float wu-float-compact" style="width:26%"><button class="shot" type="button"><img src="../assets/shots/wormlink/crop-editor.jpg?v=202610261500" alt="Editor de servidor com protocolo, endereço, usuário e caminhos" width="530" height="650"></button></figure>
+    </div>
+
+    <div class="wu-stats">
+      <div><b>15</b><span>protocolos e nuvens</span></div>
+      <div><b>4</b><span>modos de visualização</span></div>
+      <div><b>2</b><span>painéis lado a lado</span></div>
+      <div><b>0</b><span>anúncios ou rastreamento</span></div>
+    </div>
+  </section>
+
+  <!-- DOIS PAINÉIS -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Dois painéis</p>
+      <h2>Mac de um lado, servidor do outro.</h2>
+      <p>Cada lado mostra o seu Mac, um servidor ou a lista de servidores. Arraste arquivos entre eles, abra abas com ⌘T ou fique com um painel só (⌘\).</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Painéis">
+        <button type="button" role="tab" id="t-servers" aria-controls="p-servers">Servidores</button>
+        <button type="button" role="tab" id="t-grid" aria-controls="p-grid">Cartões</button>
+        <button type="button" role="tab" id="t-local" aria-controls="p-local">Dois lados</button>
+        <button type="button" role="tab" id="t-single" aria-controls="p-single">Um painel</button>
+        <button type="button" role="tab" id="t-editor" aria-controls="p-editor">Editor de servidor</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-servers" aria-labelledby="t-servers"><figure><button class="shot" type="button"><img src="../assets/shots/wormlink/main.jpg?v=202610261500" alt="Lista de servidores com ícone, nome e endereço, e as coleções" loading="lazy" width="1060" height="700"></button><figcaption class="wu-cap">Servidores com ícone e cor, coleções, histórico e Bonjour para achar os da rede local.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-grid" aria-labelledby="t-grid" hidden><figure><button class="shot" type="button"><img src="../assets/shots/wormlink/grid.jpg?v=202610261500" alt="Servidores em cartões grandes" loading="lazy" width="1060" height="700"></button><figcaption class="wu-cap">Os mesmos servidores em cartões.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-local" aria-labelledby="t-local" hidden><figure><button class="shot" type="button"><img src="../assets/shots/wormlink/local.jpg?v=202610261500" alt="Duas pastas lado a lado, prontas para transferir" loading="lazy" width="1060" height="700"></button><figcaption class="wu-cap">Dois lados com pastas, prontos para copiar de um para o outro.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-single" aria-labelledby="t-single" hidden><figure><button class="shot" type="button"><img src="../assets/shots/wormlink/single.jpg?v=202610261500" alt="Um painel só, em colunas" loading="lazy" width="1060" height="700"></button><figcaption class="wu-cap">Um painel só, quando você precisa de espaço.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-editor" aria-labelledby="t-editor" hidden><figure><button class="shot" type="button"><img src="../assets/shots/wormlink/editor.jpg?v=202610261500" alt="Editor de servidor aberto no painel da direita" loading="lazy" width="1060" height="700"></button><figcaption class="wu-cap">O editor de servidor abre no próprio painel, sem janelas extras.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <!-- PROTOCOLOS -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Protocolos</p>
+        <h2>Todos os seus servidores, num lugar.</h2>
+        <p>Salve cada servidor com nome, ícone e cor, ou conecte na hora com o Quick Connect: cole um endereço e pronto.</p>
+        <ul class="wu-list">
+          <li><b>SFTP, FTP e FTPS, WebDAV e SMB</b>, com chaves SSH, agente SSH e ProxyJump.</li>
+          <li><b>S3 e compatíveis</b>, Azure, OpenStack Swift e Backblaze B2.</li>
+          <li><b>Dropbox, Google Drive, OneDrive, SharePoint e Box</b> com login OAuth.</li>
+          <li><b>Senhas nas Chaves</b> do macOS, e importação do Cyberduck, Transmit, FileZilla e WinSCP.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure style="max-width:460px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/wormlink/crop-quick.jpg?v=202610261500" alt="Quick Connect com URL, protocolo, endereço, usuário e caminho remoto" loading="lazy" width="529" height="650"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- VISUALIZAÇÃO -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Visualização</p>
+      <h2>Lista, colunas ou galeria.</h2>
+      <p>Lista com subpastas que se abrem, ícones, colunas com prévia e galeria com miniaturas, trocados com ⌘1 a ⌘4. Espaço abre o Quick Look.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Visualização">
+        <button type="button" role="tab" id="t-columns" aria-controls="p-columns">Colunas</button>
+        <button type="button" role="tab" id="t-gallery" aria-controls="p-gallery">Galeria</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-columns" aria-labelledby="t-columns"><figure><button class="shot" type="button"><img src="../assets/shots/wormlink/columns.jpg?v=202610261500" alt="Modo colunas com a prévia de README.md" loading="lazy" width="1060" height="700"></button><figcaption class="wu-cap">Colunas, com a prévia e os detalhes do arquivo selecionado.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-gallery" aria-labelledby="t-gallery" hidden><figure><button class="shot" type="button"><img src="../assets/shots/wormlink/gallery.jpg?v=202610261500" alt="Modo galeria com uma foto em destaque e as miniaturas embaixo" loading="lazy" width="1060" height="700"></button><figcaption class="wu-cap">Galeria, com a imagem grande e as miniaturas embaixo.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <!-- SINCRONIZAR -->
+  <section class="section container wu-chapter">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Transferências</p>
+        <h2>Transferir sem susto.</h2>
+        <p>Fila com progresso, velocidade e tempo restante, retomada de onde parou e uma pergunta quando o arquivo já existe. Para manter duas pastas iguais, a sincronização mostra a prévia das mudanças antes de tocar em qualquer arquivo.</p>
+        <ul class="wu-list">
+          <li><b>Sincronizar</b> por tamanho e data, com regras para ignorar arquivos.</li>
+          <li><b>Envio seguro</b>: nome temporário até o fim e verificação por checksum.</li>
+          <li><b>Limite de velocidade</b> e de transferências simultâneas.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/wormlink/sync.jpg?v=202610261500" alt="Folha de sincronização com origem, destino e opções de comparação" loading="lazy" width="1060" height="700"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- AJUSTES -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Ajustes</p>
+      <h2>Chaves, nuvens e transferências do seu jeito.</h2>
+      <p>Gere e importe chaves SSH, cadastre os apps das nuvens, faça backup dos servidores e sincronize a lista pelo iCloud Drive.</p>
+    </div>
+    <div class="wu-settings" style="grid-template-columns:repeat(3,minmax(0,1fr));max-width:1100px;align-items:start">
+      <figure><button class="shot" type="button"><img src="../assets/shots/wormlink/settings-transfers.jpg?v=202610261500" alt="Ajustes de transferências: simultâneas, velocidade e segurança" loading="lazy" width="520" height="703"></button><figcaption class="wu-cap">Transferências</figcaption><span style="display:block;height:24px"></span><button class="shot" type="button"><img src="../assets/shots/wormlink/settings-general.jpg?v=202610261500" alt="Ajustes gerais: arquivos ocultos, clique duplo, notificações e linha de comando" loading="lazy" width="520" height="323"></button><figcaption class="wu-cap">Geral</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/wormlink/settings-keys.jpg?v=202610261500" alt="Chaves SSH em ~/.ssh com tipo e impressão digital" loading="lazy" width="520" height="385"></button><figcaption class="wu-cap">Chaves SSH</figcaption><span style="display:block;height:24px"></span><button class="shot" type="button"><img src="../assets/shots/wormlink/settings-servers.jpg?v=202610261500" alt="Ajustes de servidores: importar, backup, Bonjour e iCloud" loading="lazy" width="520" height="404"></button><figcaption class="wu-cap">Servidores</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/wormlink/settings-clouds.jpg?v=202610261500" alt="Ajustes de nuvens: Dropbox, Google Drive e Box" loading="lazy" width="520" height="648"></button><figcaption class="wu-cap">Nuvens</figcaption><span style="display:block;height:24px"></span><button class="shot" type="button"><img src="../assets/shots/wormlink/settings-about.jpg?v=202610261500" alt="Sobre o WormLink, com a versão e os links" loading="lazy" width="520" height="450"></button><figcaption class="wu-cap">Sobre</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- MAIS -->
+  <section class="section container">
+    <div class="section-head"><h2>E mais um pouco</h2></div>
+    <div class="wu-more">
+      <article class="card"><h3>WormLink Disk</h3><p>Seus servidores como discos no Finder, com uma extensão do sistema.</p></article>
+      <article class="card"><h3>Cofres Cryptomator</h3><p>Abra e crie cofres criptografados em qualquer protocolo.</p></article>
+      <article class="card"><h3>Terminal e AppleScript</h3><p>O comando wormlink, ações do Atalhos e AppleScript.</p></article>
+      <article class="card"><h3>Editor embutido</h3><p>Edite arquivos remotos no app ou no seu editor, com reenvio ao salvar.</p></article>
+    </div>
+  </section>
+
+  <!-- INSTALAR -->
+  <section id="instalar" class="section container narrow ap-install">
+    <div class="section-head">
+      <h2>Instalar</h2>
+      <p>O jeito mais rápido é uma linha no Terminal: ela baixa a versão mais nova, confere o arquivo e instala, sem aviso do macOS.</p>
+    </div>
+    <div class="term" data-app="wormlink" data-mode="install">
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+          <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+          <div class="term-foot">
+            <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+            <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+          </div>
+        </div>
+    <p class="ap-install-alt">Prefere baixar o .dmg? Arraste o app para Aplicativos e libere na primeira vez, com um comando ou pelos Ajustes do Sistema. <a href="../#liberar">Ver o guia completo</a>.</p>
+  </section>
+
+  <!-- FICHA -->
+  <section class="section container narrow">
+<dl class="ap-facts">
+      <div><dt>Versão</dt><dd><span data-version="wormlink" data-no-i18n>—</span> · <a data-releases="wormlink" href="#">Novidades</a></dd></div>
+      <div><dt>Requer</dt><dd>macOS 26 Tahoe ou mais novo</dd></div>
+      <div><dt>Processador</dt><dd>Apple Silicon e Intel</dd></div>
+      <div><dt>Idioma</dt><dd>Português e inglês</dd></div>
+      <div><dt>Licença</dt><dd>GPL-3.0, código aberto</dd></div>
+      <div><dt>Preço</dt><dd>Gratuito, sem anúncios e sem rastreamento</dd></div>
+    </dl>
+  </section>
+</main>
+
+<aside class="dl-sheet" aria-live="polite" hidden>
+  <button type="button" class="dl-close" aria-label="Fechar">✕</button>
+  <p class="eyebrow">Download iniciado</p>
+  <p class="dl-app" data-no-i18n></p>
+  <ol class="dl-steps">
+    <li>Abra o .dmg e arraste o app para a pasta Aplicativos.</li>
+    <li>Copie o comando e cole no Terminal (⌘ Espaço, digite Terminal).</li>
+  </ol>
+  <div class="term">
+    <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+    <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+    <div class="term-foot">
+      <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+      <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+    </div>
+  </div>
+  <p class="dl-alt">Pronto: o app abre direto. <a href="../#liberar">Sem Terminal? Veja o passo a passo</a>.</p>
+</aside>
+
+<dialog class="lightbox" aria-label="Imagem ampliada">
+  <button class="lightbox-close" type="button" aria-label="Fechar">✕</button>
+  <img src="" alt="">
+</dialog>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand"><img src="../assets/icons/logo-128.png" alt="" width="28" height="28"><span>witch<b>my</b>mac</span></div>
+    <nav aria-label="Rodapé">
+      <a href="../#apps">Apps</a>
+      <a href="../#faq">FAQ</a>
+      <a href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:matth.faria96@gmail.com">Contato</a>
+    </nav>
+    <p>© <span id="year"></span> witchmymac. Apple, Mac e macOS são marcas da Apple Inc.</p>
+  </div>
+</footer>
+
+<script src="../apps.js?v=202610261400"></script>
+<script src="../install-command.js?v=202610250700"></script>
+<script src="../script.js?v=202610250700"></script>
+<script src="../i18n-strings.js?v=202610251400"></script>
+<script src="strings.js?v=202610261500"></script>
+<script src="page.js?v=202610261500"></script>
+<script src="../i18n.js?v=202610242100"></script>
+<script src="../effects.js?v=202610201330"></script>
+</body>
+</html>
