@@ -6,18 +6,24 @@
     <description>Atualizações do ViewTube</description>
     <language>pt-BR</language>
     <item>
-      <title>ViewTube 1.0.6</title>
-      <pubDate>Sun, 25 Oct 2026 12:36:11 +0000</pubDate>
-      <sparkle:version>14</sparkle:version>
-      <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+      <title>ViewTube 1.0.7</title>
+      <pubDate>Mon, 26 Oct 2026 07:12:44 +0000</pubDate>
+      <sparkle:version>19</sparkle:version>
+      <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li><strong>Atualizações dentro do app:</strong> novo item "Verificar Atualizações…" no menu ViewTube e no Sobre. O app também verifica sozinho uma vez por dia e pergunta antes de instalar.</li>
-<li>Quem está numa versão anterior precisa instalar esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+<li><strong>Player dentro do vídeo:</strong> o cartão de controles agora fica sobre o próprio vídeo, no YouTube e no Music. Aparece ao passar o mouse e some sozinho depois de 3 s; os controles nativos do YouTube saem fora da tela cheia.</li>
+<li><strong>Zoom na tela cheia:</strong> o retrato na tela cheia amplia o vídeo widescreen até preencher o monitor (3,2× numa tela 9:16, 1× numa 16:9), com um menu de vidro − / + que aparece ao mexer o mouse e um controle de 1× a 4× nos Ajustes.</li>
+<li><strong>Compartilhar no Music:</strong> botão de compartilhar ao lado do "Salvar", que abre o compartilhamento do próprio YouTube Music. Os botões de tela cheia e de mini player do topo do player saíram (o cartão já tem os seus).</li>
+<li><strong>Novos esqueletos de carregamento:</strong> cada bloco cinza fica exatamente onde o conteúdo aparece (vídeo, cartão dentro do vídeo, canal, abas, sugestões, fila e letra do Music, início do Music, janela estreita e teatro), com brilho suave e uma troca limpa para a página, sem pulo.</li>
+<li><strong>Chat ao vivo escondido na tela cheia</strong> (pode ser desligado nos Ajustes).</li>
+<li><strong>Retorno ao clicar:</strong> um cartão de carregamento fica no centro até o vídeo começar de verdade.</li>
+<li><strong>Playlists:</strong> abrir uma playlist não recolhe mais o player, e clicar num vídeo com o player recolhido abre o vídeo em tela cheia.</li>
+<li><strong>Ajustes e Sobre em inglês</strong> para quem usa o macOS em inglês; em português, nada muda.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/viewtube-mac/releases/download/v1.0.6/ViewTube-1.0.6.dmg" length="3915854" type="application/octet-stream" sparkle:edSignature="X7PwU6SS2YfXmKV0x2SjEF9gzb/JxSOkxT3FsM9ilxdnGLWUhi+IXPBE2mGiIablGWv2nM3f9XPRS1nHLWgWBQ=="/>
+      <enclosure url="https://github.com/matthfaria96/viewtube-mac/releases/download/v1.0.7/ViewTube-1.0.7.dmg" length="3872099" type="application/octet-stream" sparkle:edSignature="JXwIz9M9VasKSzC4uDc3fE+QcjEbEzQQN7+HUkc/KcG8YjiqhdLZDgc111lxu82GD0mowSUPKqNO+M8UASU7AQ=="/>
     </item>
   </channel>
 </rss>
