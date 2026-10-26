@@ -6,6 +6,20 @@
     <description>Atualizações do Rubbish Notes</description>
     <language>pt-BR</language>
     <item>
+      <title>Rubbish Notes 1.1.2</title>
+      <pubDate>Mon, 26 Oct 2026 12:59:10 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Blocos de anotação em tela maior: o novo botão ↖↘ no cabeçalho do bloco abre o bloco grande, por cima da nota, com tudo o que ele já fazia (editar, mudar o nome, copiar, exportar e apagar).</li>
+<li>Para fechar, use Esc, o botão ↘↖ ou clique fora do bloco.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/rubbish-notes/releases/download/v1.1.2/RubbishNotes-1.1.2.dmg" length="9694806" type="application/octet-stream" sparkle:edSignature="00Qn6rgfNFBHkjLES+lZAoBhlmdJfD2IllKG309g09s0J20H25uLlsnI6Kx2hnsaqTcoQxlRXK1MeOzkHlszCA=="/>
+    </item>
+    <item>
       <title>Rubbish Notes 1.1.1</title>
       <pubDate>Sun, 25 Oct 2026 12:34:03 +0000</pubDate>
       <sparkle:version>6</sparkle:version>

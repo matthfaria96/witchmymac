@@ -11,7 +11,7 @@ window.WITCH_APPS = Object.freeze({
   hypervideo:   Object.freeze({ repo: 'hypervideo-converter', tag: 'v1.0.1', file: 'HyperVideo-1.0.1.dmg', published: true, app: 'HyperVideo Converter.app' }),
   neorar:       Object.freeze({ repo: 'Neorar',        tag: 'v1.1.1',        file: 'Neorar-1.1.1.dmg',       published: true, app: 'Neorar.app' }),
   sirena:       Object.freeze({ repo: 'Sirena',        tag: 'v0.5.3',        file: 'Sirena-0.5.3.dmg',       published: true, app: 'Sirena.app' }),
-  rubbishnotes: Object.freeze({ repo: 'rubbish-notes', tag: 'v1.1.1',        file: 'RubbishNotes-1.1.1.dmg', published: true, app: 'Rubbish Notes.app' }),
+  rubbishnotes: Object.freeze({ repo: 'rubbish-notes', tag: 'v1.1.2',        file: 'RubbishNotes-1.1.2.dmg', published: true, app: 'Rubbish Notes.app' }),
   wineup:       Object.freeze({ repo: 'wineup-player', tag: 'v1.1.1',      file: 'WineupPlayer-1.1.1.dmg', published: true, app: 'Wineup Player.app' }),
   santovideoplayer: Object.freeze({ repo: 'santo-video-player', tag: 'v2.0.1', file: 'SantoVideoPlayer-2.0.1.dmg', published: true, app: 'Santo Video Player.app' }),
   wormlink:     Object.freeze({ repo: 'Wormlink',      tag: 'v0.2.1',        file: 'Wormlink-0.2.1.dmg',     published: true, app: 'Wormlink.app' }),
