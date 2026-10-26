@@ -6,24 +6,18 @@
     <description>Atualizações do ViewTube</description>
     <language>pt-BR</language>
     <item>
-      <title>ViewTube 1.0.7</title>
-      <pubDate>Mon, 26 Oct 2026 07:12:44 +0000</pubDate>
-      <sparkle:version>19</sparkle:version>
-      <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
+      <title>ViewTube 1.0.8</title>
+      <pubDate>Mon, 26 Oct 2026 12:06:21 +0000</pubDate>
+      <sparkle:version>21</sparkle:version>
+      <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li><strong>Player dentro do vídeo:</strong> o cartão de controles agora fica sobre o próprio vídeo, no YouTube e no Music. Aparece ao passar o mouse e some sozinho depois de 3 s; os controles nativos do YouTube saem fora da tela cheia.</li>
-<li><strong>Zoom na tela cheia:</strong> o retrato na tela cheia amplia o vídeo widescreen até preencher o monitor (3,2× numa tela 9:16, 1× numa 16:9), com um menu de vidro − / + que aparece ao mexer o mouse e um controle de 1× a 4× nos Ajustes.</li>
-<li><strong>Compartilhar no Music:</strong> botão de compartilhar ao lado do "Salvar", que abre o compartilhamento do próprio YouTube Music. Os botões de tela cheia e de mini player do topo do player saíram (o cartão já tem os seus).</li>
-<li><strong>Novos esqueletos de carregamento:</strong> cada bloco cinza fica exatamente onde o conteúdo aparece (vídeo, cartão dentro do vídeo, canal, abas, sugestões, fila e letra do Music, início do Music, janela estreita e teatro), com brilho suave e uma troca limpa para a página, sem pulo.</li>
-<li><strong>Chat ao vivo escondido na tela cheia</strong> (pode ser desligado nos Ajustes).</li>
-<li><strong>Retorno ao clicar:</strong> um cartão de carregamento fica no centro até o vídeo começar de verdade.</li>
-<li><strong>Playlists:</strong> abrir uma playlist não recolhe mais o player, e clicar num vídeo com o player recolhido abre o vídeo em tela cheia.</li>
-<li><strong>Ajustes e Sobre em inglês</strong> para quem usa o macOS em inglês; em português, nada muda.</li>
+<li><strong>Music com a barra nova do YouTube Music:</strong> o YouTube Music está testando uma barra de player nova com parte dos usuários. Com ela, a barra do site aparecia por baixo da página do player e o botão rosa de abrir/recolher sumia. Agora o app funciona igual com as duas barras: barra escondida, botão rosa no lugar, cartão de controles, próxima/anterior, aleatório, repetir, compartilhar, letra, velocidade e teclas de mídia.</li>
+<li><strong>Mini player da barra de menus:</strong> com a barra de menus cheia (o item do ViewTube escondido), o painel agora abre no canto de cima da tela principal, em vez de fora da tela.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/viewtube-mac/releases/download/v1.0.7/ViewTube-1.0.7.dmg" length="3872099" type="application/octet-stream" sparkle:edSignature="JXwIz9M9VasKSzC4uDc3fE+QcjEbEzQQN7+HUkc/KcG8YjiqhdLZDgc111lxu82GD0mowSUPKqNO+M8UASU7AQ=="/>
+      <enclosure url="https://github.com/matthfaria96/viewtube-mac/releases/download/v1.0.8/ViewTube-1.0.8.dmg" length="3876226" type="application/octet-stream" sparkle:edSignature="9RyrjlPZJt1l13XoIEce4VgBzcS6fltH7evtwCEpSu82lt/+Yf/fsI2ZXTtAB6kI0v3kvfgLAlPuYbQ4qaHABA=="/>
     </item>
   </channel>
 </rss>
