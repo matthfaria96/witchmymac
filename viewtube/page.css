@@ -141,3 +141,42 @@ figure{margin:0}
 .vt-more{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media (max-width:960px){.vt-more{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.vt-more{grid-template-columns:minmax(0,1fr)}}
+
+/* 2ª versão: palco com a tela imersiva, velocidade, letras, tela cheia, mini player e ajustes */
+.vt-stage{max-width:980px;padding:0 120px 60px}
+.vt-stage .wu-main{max-width:740px;margin:0 auto}
+.vt-float-speed{left:0;top:70px;width:36%}
+.vt-float-mini{right:0;bottom:20px;width:30%}
+.vt-stage .wu-float .shot{border-radius:12px}
+.wu-copy code{font-size:.92em;padding:1px 6px;border-radius:6px;background:rgba(255,255,255,.08);color:#ffd2dc}
+.wu-copy > p.vt-note{margin-top:16px;font-size:13px;line-height:1.5;color:var(--muted)}
+.vt-speed figure .shot{border-radius:14px}
+.vt-pills{display:flex;justify-content:center;gap:14px;margin-top:22px}
+.vt-pills img{width:120px;height:auto;border-radius:12px;box-shadow:0 14px 34px -14px #000,0 0 0 1px #ffffff14}
+.vt-pills img:nth-child(3){box-shadow:0 0 0 1px #f0213d88,0 0 28px -4px #f0213d99}
+.vt-lyrics{display:grid;grid-template-columns:minmax(0,730fr) minmax(0,335fr);gap:16px;align-items:start}
+.vt-lyrics .shot{border-radius:12px}
+.vt-lyrics-col{margin-top:40px}
+.vt-immersive{max-width:860px;margin:0 auto;position:relative}
+.vt-immersive::before{content:"";position:absolute;inset:-8% -12%;z-index:-1;background:radial-gradient(closest-side,#c8901f33,#f0213d1a 60%,transparent)}
+.vt-immersive .shot{width:100%;border-radius:16px;box-shadow:0 50px 120px -40px #000,0 0 0 1px #ffffff14}
+.vt-imm-notes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;max-width:960px;margin:40px auto 0}
+.vt-imm-notes .shot{width:100%;border-radius:14px;box-shadow:0 24px 60px -24px #000}
+.vt-imm-notes .wu-list{margin-top:0}
+.vt-mini{max-width:380px;margin:0 auto}
+.vt-mini .shot{width:100%;border-radius:18px}
+.vt-set{display:grid;grid-template-columns:minmax(0,566fr) minmax(0,400fr);gap:40px;align-items:center;max-width:980px;margin:0 auto}
+.vt-set figure .shot{width:100%;border-radius:12px;box-shadow:0 40px 90px -36px #000}
+.vt-set-text{color:#d6d3e6;font-size:17px;line-height:1.7}
+@media (max-width:960px){
+  .vt-stage{padding:0 0 24px}
+  .vt-imm-notes,.vt-set{grid-template-columns:minmax(0,1fr);gap:24px}
+  .vt-set figure{max-width:566px;margin:0 auto}
+}
+@media (max-width:640px){
+  .vt-lyrics{grid-template-columns:minmax(0,1fr)}
+  .vt-lyrics-col{margin-top:0;max-width:300px;margin-inline:auto}
+  .vt-pills img{width:88px}
+}
+.vt-mini .shot,.vt-set figure .shot{background:none;border:0;box-shadow:none;padding:0}
+.vt-switch{margin-bottom:34px}

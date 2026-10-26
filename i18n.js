@@ -1,12 +1,14 @@
-// Idiomas do site: português (padrão, o próprio HTML), inglês e espanhol.
+// Idiomas do site: português (padrão, o próprio HTML), inglês, espanhol e russo.
+// Cada tradução em WITCH_STRINGS é [inglês, espanhol, russo]; sem a tradução pedida, cai no inglês.
 // Escolha: ?lang= na URL > escolha salva no seletor > país pelo fuso horário > idioma do navegador > inglês.
 (() => {
-  const LANGS = ['pt', 'en', 'es'];
-  const HTML_LANG = { pt: 'pt-BR', en: 'en', es: 'es' };
-  const FLAGS = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
+  const LANGS = ['pt', 'en', 'es', 'ru'];
+  const HTML_LANG = { pt: 'pt-BR', en: 'en', es: 'es', ru: 'ru' };
+  const COLUMN = { en: 0, es: 1, ru: 2 };
+  const FLAGS = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸', ru: '🇷🇺' };
   const STORAGE_KEY = 'witchmymac-lang';
   const STRINGS = window.WITCH_STRINGS || {};
-  const TRANSLATED_ATTRS = ['alt', 'aria-label'];
+  const TRANSLATED_ATTRS = ['alt', 'aria-label', 'title'];
 
   // Fusos de países de língua portuguesa e espanhola. Qualquer outro fuso não decide sozinho.
   const PT_ZONES = new Set([
@@ -27,6 +29,15 @@
     'America/Guatemala', 'Pacific/Easter',
   ]);
 
+  // Fusos da Rússia: quem está lá abre o site em russo.
+  const RU_ZONES = new Set([
+    'Europe/Moscow', 'Europe/Kaliningrad', 'Europe/Samara', 'Europe/Volgograd', 'Europe/Saratov', 'Europe/Ulyanovsk',
+    'Europe/Astrakhan', 'Europe/Kirov', 'Asia/Yekaterinburg', 'Asia/Omsk', 'Asia/Novosibirsk', 'Asia/Barnaul',
+    'Asia/Tomsk', 'Asia/Novokuznetsk', 'Asia/Krasnoyarsk', 'Asia/Irkutsk', 'Asia/Chita', 'Asia/Yakutsk',
+    'Asia/Khandyga', 'Asia/Vladivostok', 'Asia/Ust-Nera', 'Asia/Magadan', 'Asia/Sakhalin', 'Asia/Srednekolymsk',
+    'Asia/Kamchatka', 'Asia/Anadyr',
+  ]);
+
   const isLang = (value) => LANGS.includes(value);
 
   function readSaved() {
@@ -42,6 +53,7 @@
     try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch { return null; }
     if (PT_ZONES.has(zone)) return 'pt';
     if (ES_ZONES.has(zone) || zone.startsWith('America/Argentina/')) return 'es';
+    if (RU_ZONES.has(zone)) return 'ru';
     return null;
   }
 
@@ -50,6 +62,7 @@
     if (!first) return 'pt';
     if (first.startsWith('pt')) return 'pt';
     if (first.startsWith('es')) return 'es';
+    if (first.startsWith('ru')) return 'ru';
     return 'en';
   }
 
@@ -91,7 +104,7 @@
     const key = text.trim();
     const entry = STRINGS[key];
     if (!entry) return text;
-    const value = entry[lang === 'en' ? 0 : 1];
+    const value = entry[COLUMN[lang]] || entry[0];
     const lead = text.match(/^\s*/)[0];
     const trail = text.match(/\s*$/)[0];
     return lead + value + trail;

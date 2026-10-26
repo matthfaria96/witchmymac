@@ -144,3 +144,16 @@ figure{margin:0}
 .bc-rows .shot{border-radius:6px}
 .bc-settings{max-width:1100px}
 .wu-float-compact{width:24%}
+
+/* O que você ganha: os apps do Craft App Suite por área */
+.bc-suite{display:grid;gap:36px;margin-top:8px}
+.bc-group h3{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.bc-apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.bc-app{display:grid;grid-template-columns:60px minmax(0,1fr);gap:16px;align-items:start;padding:18px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);transition:transform .25s,border-color .25s}
+.bc-app:hover{transform:translateY(-4px);border-color:#3b82f666}
+.bc-app img{width:60px;height:60px}
+.bc-app b{display:block;font-size:17px;letter-spacing:-.01em;margin-bottom:4px}
+.bc-app p{font-size:14px;color:var(--muted);line-height:1.5;margin:0}
+.bc-alt{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:600;color:#93c5fd;background:#3b82f61f;border:1px solid #3b82f640;border-radius:999px;padding:3px 10px}
+.bc-note{max-width:760px;margin:28px auto 0;font-size:13px}
+@media (prefers-reduced-motion:reduce){.bc-app{transition:none}}

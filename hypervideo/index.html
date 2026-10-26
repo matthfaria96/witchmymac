@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HyperVideo Converter · Conversor de vídeo nativo para Mac</title>
-<meta name="description" content="HyperVideo Converter converte vídeos em lote no Mac com os codificadores de hardware da Apple: H.264, HEVC e ProRes, as configurações do HandBrake num painel lateral, compressão por tamanho e ampliação com IA. Tudo roda no Mac. Gratuito.">
+<title>HyperVideo Converter · Converta vídeos para MP4, MOV, MKV e mais no Mac</title>
+<meta name="description" content="HyperVideo Converter converte vídeos em lote para MP4, MOV, M4V, MKV ou só o áudio em M4A, com H.264, HEVC e ProRes nos codificadores de hardware do Mac. Também comprime por tamanho e amplia com IA. Tudo roda no Mac. Gratuito.">
 <meta property="og:title" content="HyperVideo Converter · witchmymac">
-<meta property="og:description" content="Conversor de vídeo nativo para Mac: codificação por hardware, ajustes do HandBrake, compressão por tamanho e AI Upscale. Gratuito.">
+<meta property="og:description" content="Converta vídeos em lote para MP4, MOV, M4V, MKV ou M4A no hardware do Mac. Comprime por tamanho e amplia com IA. Gratuito.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://witchmymac.com/hypervideo/">
 <meta property="og:image" content="https://witchmymac.com/assets/shots/hypervideo/main.jpg">
@@ -17,11 +17,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=202610250700">
+<link rel="stylesheet" href="../style.css?v=202610271200">
 <link rel="stylesheet" href="../effects.css?v=202610201330">
 <link rel="stylesheet" href="../gatekeeper.css?v=202610250600">
 <link rel="stylesheet" href="../app-page.css?v=202610250700">
-<link rel="stylesheet" href="page.css?v=202610261500">
+<link rel="stylesheet" href="page.css?v=202610271200">
 </head>
 <body class="app-page" data-app="hypervideo">
 <div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
@@ -43,6 +43,7 @@
       <option value="pt">🇧🇷 Português</option>
       <option value="en">🇺🇸 English</option>
       <option value="es">🇪🇸 Español</option>
+      <option value="ru">🇷🇺 Русский</option>
     </select>
     </div>
     <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
@@ -55,9 +56,9 @@
   <section class="wu-hero container">
     <a class="ap-back" href="../#hypervideo">← Todos os apps</a>
     <img src="../assets/icons/hypervideo.png?v=202610250900" alt="" class="ap-icon" width="112" height="112">
-    <p class="eyebrow">Conversor de vídeo para Mac</p>
+    <p class="eyebrow">Converta vídeos para outros formatos</p>
     <h1>HyperVideo <span data-no-i18n>Converter</span></h1>
-    <p class="lead">Converta vídeos em lote com os codificadores de hardware do próprio Mac. As configurações do HandBrake ficam à vista num painel lateral, a compressão cabe no limite do Discord ou do WhatsApp e a IA amplia vídeos antigos, mostrando antes o tamanho e o tempo. Nada é enviado: tudo roda no Mac.</p>
+    <p class="lead">Arraste os vídeos, escolha o formato de saída e converta o lote inteiro de uma vez: MP4, MOV, M4V, MKV ou só o áudio em M4A, com H.264, HEVC ou ProRes nos codificadores de hardware do Mac. Depois vêm os extras: comprimir para caber no Discord ou no WhatsApp e ampliar vídeos antigos com IA. Tudo roda no Mac, nada é enviado.</p>
     <div class="app-cta">
       <a class="btn btn-primary" data-download="hypervideo" href="#">Baixar HyperVideo</a>
       <a class="btn btn-link" data-source="hypervideo" href="#">Código fonte</a>
@@ -66,15 +67,72 @@
 
     <div class="wu-stage">
       <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/hypervideo/main.jpg?v=202610261500" alt="HyperVideo Converter com sete vídeos da NASA na lista e o painel de conversão à direita" width="1280" height="800"></button></figure>
-      <figure class="wu-float wu-float-compact"><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-upscale.jpg?v=202610261500" alt="Painel do AI Upscale com a prévia do resultado e os modelos de IA" width="400" height="800"></button></figure>
-      <figure class="wu-float wu-float-tray"><button class="shot" type="button"><img src="../assets/shots/hypervideo/crop-prediction.jpg?v=202610261500" alt="Cartão de prévia do resultado do AI Upscale com a nova resolução, o tamanho e o tempo" width="374" height="274"></button></figure>
+      <figure class="wu-float wu-float-compact"><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-summary.jpg?v=202610261500" alt="Aba Resumo com o formato de saída MP4 escolhido" width="400" height="800"></button></figure>
     </div>
 
     <div class="wu-stats">
-      <div><b>3</b><span>modos: Converter, Comprimir e AI Upscale</span></div>
-      <div><b>8</b><span>abas de ajustes do HandBrake</span></div>
+      <div><b>5</b><span>formatos de saída: MP4, MOV, M4V, MKV e M4A</span></div>
+      <div><b>4</b><span>conversões ao mesmo tempo, no máximo</span></div>
       <div><b>4×</b><span>de ampliação com IA</span></div>
       <div><b>0</b><span>arquivos enviados para a nuvem</span></div>
+    </div>
+  </section>
+
+  <!-- CONVERTER -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Converter</p>
+      <h2>Seus vídeos, no formato que você precisa.</h2>
+      <p>O trabalho principal do HyperVideo é trocar o formato: de MOV para MP4, de MP4 para MKV, de vídeo para só áudio. Ele lê o que o macOS sabe abrir e grava em cinco formatos, escolhendo o codec e a qualidade para você ou deixando tudo nas suas mãos.</p>
+    </div>
+    <div class="fmt">
+      <div class="fmt-col">
+        <h3>Entrada</h3>
+        <div class="fmt-chips" data-no-i18n><span>MOV</span><span>MP4</span><span>M4V</span></div>
+        <p class="fmt-note">E tudo o que o macOS consegue abrir, como os vídeos do iPhone e de muitas câmeras. Arraste arquivos ou pastas inteiras.</p>
+      </div>
+      <div class="fmt-arrow" aria-hidden="true">→</div>
+      <div class="fmt-col out">
+        <h3>Saída</h3>
+        <div class="fmt-chips"><span data-no-i18n>MP4</span><span data-no-i18n>MOV</span><span data-no-i18n>M4V</span><span data-no-i18n>MKV</span><span><span data-no-i18n>M4A</span> <small>só áudio</small></span></div>
+        <p class="fmt-note">MP4 e M4V para tocar em qualquer lugar, MOV para edição, MKV para players como VLC e IINA, M4A para ficar só com o som.</p>
+      </div>
+    </div>
+    <div class="fmt-extra">
+      <div><b>Vídeo</b><p>H.264, HEVC, HEVC 10 bits com HDR, Apple ProRes (422, 422 HQ, 422 LT, 422 Proxy e 4444) ou passthrough, sem recodificar.</p></div>
+      <div><b>Áudio</b><p>AAC, HE-AAC, Apple Lossless ou passthrough, em mono, estéreo ou 5.1.</p></div>
+      <div><b>Legendas</b><p>Faixas de texto copiadas com o idioma; arquivos SRT e WebVTT ao lado do vídeo entram sozinhos.</p></div>
+    </div>
+
+    <div class="wu-split wu-convert">
+      <div class="wu-copy">
+        <h2>Três passos, o lote inteiro.</h2>
+        <ol class="wu-steps">
+          <li><b>Solte os vídeos</b> ou pastas inteiras em qualquer lugar da janela, ou use Abrir com no Finder.</li>
+          <li><b>Escolha o formato</b> na aba Resumo, ou uma predefinição pronta: uso geral, 4K e HDR, aparelhos Apple, web, produção em ProRes ou remux.</li>
+          <li><b>Clique em Converter</b>: a barra embaixo mostra a pasta de destino e o tamanho antes → depois de todo o lote.</li>
+        </ol>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/main.jpg?v=202610261500" alt="Sete vídeos em MOV e MP4 na lista, prontos para converter para MP4, com o tamanho de saída estimado de cada um" loading="lazy" width="1280" height="800"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- HARDWARE -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Rápido</p>
+        <h2>Converte no hardware do próprio Mac.</h2>
+        <p>O HyperVideo usa o AVFoundation e o VideoToolbox da Apple, então H.264, HEVC e ProRes rodam nos codificadores de hardware do Mac. Os filtros passam pela GPU com o Core Image.</p>
+        <ul class="wu-list">
+          <li><b>HEVC de 10 bits</b> mantém vídeos HDR10 e HLG em HDR.</li>
+          <li><b>Apple ProRes</b> 422, 422 HQ e 4444, ou passthrough sem recodificar.</li>
+          <li><b>MKV</b> gerado por um muxer Matroska próprio, em Swift, sem FFmpeg.</li>
+          <li><b>Qualidade constante ou taxa média</b>, prioridade de velocidade, B-frames e intervalo de quadros-chave.</li>
+          <li><b>Predefinições do HandBrake</b> podem ser importadas; o que não tem equivalente vai para a opção mais próxima, com aviso.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure style="max-width:420px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-video.jpg?v=202610261500" alt="Aba Vídeo com o codificador, a taxa de quadros e a qualidade" loading="lazy" width="400" height="800"></button></figure></div>
     </div>
   </section>
 
@@ -95,54 +153,6 @@
       <div class="wu-panel" role="tabpanel" id="p-compress" aria-labelledby="t-compress" hidden><figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/compress.jpg?v=202610261500" alt="Modo Comprimir com o limite de 25 MB por vídeo" loading="lazy" width="1080" height="800"></button><figcaption class="wu-cap">Comprimir: só as escolhas do dia a dia, por qualidade ou por tamanho máximo.</figcaption></figure></div>
       <div class="wu-panel" role="tabpanel" id="p-upscale" aria-labelledby="t-upscale" hidden><figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/upscale.jpg?v=202610261500" alt="Modo AI Upscale com a prévia do resultado: resolução, tamanho e tempo" loading="lazy" width="1080" height="800"></button><figcaption class="wu-cap">AI Upscale: escala, modelo, peso do arquivo e codec, com a prévia do resultado antes de começar.</figcaption></figure></div>
     </div>
-  </section>
-
-  <!-- AJUSTES -->
-  <section class="section container wu-chapter">
-    <div class="section-head">
-      <p class="wu-kicker">Ajustes do HandBrake</p>
-      <h2>Todas as opções, à vista.</h2>
-      <p>Resumo, Dimensões, Filtros, Vídeo, Áudio, Legendas, Capítulos e Tags ficam no painel, sem janela escondida. Recorte, faixas, nomes de capítulos e o corte valem por vídeo; o resto pode valer para a lista inteira.</p>
-    </div>
-    <div class="wu-panels">
-      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-summary.jpg?v=202610261500" alt="Aba Resumo: formato, otimização para web e metadados" loading="lazy" width="400" height="800"></button><figcaption>Resumo<span>MP4, M4V, MOV, MKV ou só áudio</span></figcaption></figure>
-      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-dimensions.jpg?v=202610261500" alt="Aba Dimensões: girar, espelhar, recortar e limitar a resolução" loading="lazy" width="400" height="800"></button><figcaption>Dimensões<span>Girar, recortar, limitar a resolução</span></figcaption></figure>
-      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-filters.jpg?v=202610261500" alt="Aba Filtros: desentrelaçar, reduzir ruído, nitidez e cores" loading="lazy" width="400" height="800"></button><figcaption>Filtros<span>Desentrelaçar, ruído, nitidez</span></figcaption></figure>
-      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-video.jpg?v=202610261500" alt="Aba Vídeo: codificador, taxa de quadros e qualidade" loading="lazy" width="400" height="800"></button><figcaption>Vídeo<span>H.264, HEVC, ProRes, passthrough</span></figcaption></figure>
-      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-audio.jpg?v=202610261500" alt="Aba Áudio: faixas, idiomas e passthrough" loading="lazy" width="400" height="800"></button><figcaption>Áudio<span>AAC, HE-AAC, Apple Lossless</span></figcaption></figure>
-      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-subtitles.jpg?v=202610261500" alt="Aba Legendas: faixas, idiomas e legenda gravada na imagem" loading="lazy" width="400" height="800"></button><figcaption>Legendas<span>SRT e WebVTT ao lado do vídeo</span></figcaption></figure>
-      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-chapters.jpg?v=202610261500" alt="Aba Capítulos com três capítulos com nome" loading="lazy" width="400" height="800"></button><figcaption>Capítulos<span>Nomes editáveis, CSV</span></figcaption></figure>
-      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-tags.jpg?v=202610261500" alt="Aba Tags: título, artistas, data e descrição" loading="lazy" width="400" height="800"></button><figcaption>Tags<span>Título, elenco, data, gênero</span></figcaption></figure>
-    </div>
-  </section>
-
-  <!-- HARDWARE -->
-  <section class="section container wu-chapter">
-    <div class="wu-split">
-      <div class="wu-copy">
-        <p class="wu-kicker">Codificação por hardware</p>
-        <h2>O Mac inteiro trabalhando a seu favor.</h2>
-        <p>O HyperVideo usa o AVFoundation e o VideoToolbox da Apple, então H.264, HEVC e ProRes rodam nos codificadores de hardware do Mac. Os filtros passam pela GPU com o Core Image.</p>
-        <ul class="wu-list">
-          <li><b>HEVC de 10 bits</b> mantém vídeos HDR10 e HLG em HDR.</li>
-          <li><b>Apple ProRes</b> 422, 422 HQ e 4444, ou passthrough sem recodificar.</li>
-          <li><b>MKV</b> gerado por um muxer Matroska próprio, em Swift, sem FFmpeg.</li>
-          <li><b>Qualidade constante ou taxa média</b>, prioridade de velocidade, B-frames e intervalo de quadros-chave.</li>
-          <li><b>Predefinições do HandBrake</b> podem ser importadas; o que não tem equivalente vai para a opção mais próxima, com aviso.</li>
-        </ul>
-      </div>
-      <div class="wu-media"><figure style="max-width:420px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-video.jpg?v=202610261500" alt="Aba Vídeo com o codificador, a taxa de quadros e a qualidade" loading="lazy" width="400" height="800"></button></figure></div>
-    </div>
-  </section>
-
-  <!-- PRÉVIA -->
-  <section class="section container wu-chapter">
-    <div class="section-head">
-      <p class="wu-kicker">Prévia</p>
-      <h2>Veja antes de converter o lote inteiro.</h2>
-      <p>A Prévia converte de verdade um trecho de 2 segundos com os ajustes atuais e mostra o mesmo quadro antes e depois, com um divisor que você arrasta, mais o tamanho projetado a partir do trecho.</p>
-    </div>
-    <figure class="wu-media" style="max-width:960px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/hypervideo/preview.jpg?v=202610261500" alt="Janela de Prévia com o divisor antes e depois no lançamento do Artemis I" loading="lazy" width="760" height="640"></button></figure>
   </section>
 
   <!-- COMPRIMIR -->
@@ -176,6 +186,35 @@
       <li><b>Peso do arquivo</b> Leve, Equilibrado ou Alta qualidade, em HEVC ou H.264.</li>
       <li><b>O áudio é copiado</b> como está, sem recodificar.</li>
     </ul>
+  </section>
+
+  <!-- PRÉVIA -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Prévia</p>
+      <h2>Veja antes de converter o lote inteiro.</h2>
+      <p>A Prévia converte de verdade um trecho de 2 segundos com os ajustes atuais e mostra o mesmo quadro antes e depois, com um divisor que você arrasta, mais o tamanho projetado a partir do trecho.</p>
+    </div>
+    <figure class="wu-media" style="max-width:960px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/hypervideo/preview.jpg?v=202610261500" alt="Janela de Prévia com o divisor antes e depois no lançamento do Artemis I" loading="lazy" width="760" height="640"></button></figure>
+  </section>
+
+  <!-- AJUSTES -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Ajustes do HandBrake</p>
+      <h2>Todas as opções, à vista.</h2>
+      <p>Resumo, Dimensões, Filtros, Vídeo, Áudio, Legendas, Capítulos e Tags ficam no painel, sem janela escondida. Recorte, faixas, nomes de capítulos e o corte valem por vídeo; o resto pode valer para a lista inteira.</p>
+    </div>
+    <div class="wu-panels">
+      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-summary.jpg?v=202610261500" alt="Aba Resumo: formato, otimização para web e metadados" loading="lazy" width="400" height="800"></button><figcaption>Resumo<span>MP4, M4V, MOV, MKV ou só áudio</span></figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-dimensions.jpg?v=202610261500" alt="Aba Dimensões: girar, espelhar, recortar e limitar a resolução" loading="lazy" width="400" height="800"></button><figcaption>Dimensões<span>Girar, recortar, limitar a resolução</span></figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-filters.jpg?v=202610261500" alt="Aba Filtros: desentrelaçar, reduzir ruído, nitidez e cores" loading="lazy" width="400" height="800"></button><figcaption>Filtros<span>Desentrelaçar, ruído, nitidez</span></figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-video.jpg?v=202610261500" alt="Aba Vídeo: codificador, taxa de quadros e qualidade" loading="lazy" width="400" height="800"></button><figcaption>Vídeo<span>H.264, HEVC, ProRes, passthrough</span></figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-audio.jpg?v=202610261500" alt="Aba Áudio: faixas, idiomas e passthrough" loading="lazy" width="400" height="800"></button><figcaption>Áudio<span>AAC, HE-AAC, Apple Lossless</span></figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-subtitles.jpg?v=202610261500" alt="Aba Legendas: faixas, idiomas e legenda gravada na imagem" loading="lazy" width="400" height="800"></button><figcaption>Legendas<span>SRT e WebVTT ao lado do vídeo</span></figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-chapters.jpg?v=202610261500" alt="Aba Capítulos com três capítulos com nome" loading="lazy" width="400" height="800"></button><figcaption>Capítulos<span>Nomes editáveis, CSV</span></figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/hypervideo/panel-tags.jpg?v=202610261500" alt="Aba Tags: título, artistas, data e descrição" loading="lazy" width="400" height="800"></button><figcaption>Tags<span>Título, elenco, data, gênero</span></figcaption></figure>
+    </div>
   </section>
 
   <!-- FILA E HISTÓRICO -->
@@ -293,13 +332,13 @@
   </div>
 </footer>
 
-<script src="../apps.js?v=202610261400"></script>
+<script src="../apps.js?v=202610271200"></script>
 <script src="../install-command.js?v=202610250700"></script>
-<script src="../script.js?v=202610250700"></script>
-<script src="../i18n-strings.js?v=202610251400"></script>
-<script src="strings.js?v=202610261500"></script>
-<script src="page.js?v=202610261500"></script>
-<script src="../i18n.js?v=202610242100"></script>
+<script src="../script.js?v=202610271200"></script>
+<script src="../i18n-strings.js?v=202610271200"></script>
+<script src="strings.js?v=202610271200"></script>
+<script src="page.js?v=202610271200"></script>
+<script src="../i18n.js?v=202610271200"></script>
 <script src="../effects.js?v=202610201330"></script>
 </body>
 </html>

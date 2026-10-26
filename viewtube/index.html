@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ViewTube · YouTube e YouTube Music num app só para Mac</title>
-<meta name="description" content="ViewTube junta o YouTube e o YouTube Music num app nativo e leve para o Mac: troca de modo sem perder a música, letras sincronizadas, player limpo e sem anúncios. Gratuito.">
+<meta name="description" content="ViewTube junta o YouTube e o YouTube Music num app nativo para o Mac: velocidade até 3× em todo vídeo e música, letras sincronizadas até na tela cheia, troca de modo sem perder a faixa e sem anúncios. Gratuito.">
 <meta property="og:title" content="ViewTube · witchmymac">
 <meta property="og:description" content="YouTube e YouTube Music num app nativo para Mac: troca de modo na mesma faixa, letras sincronizadas e sem anúncios. Gratuito.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://witchmymac.com/viewtube/">
-<meta property="og:image" content="https://witchmymac.com/assets/shots/viewtube/youtube-watch.jpg">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/viewtube/immersive.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0a14">
 <link rel="icon" href="../assets/icons/favicon.png" type="image/png">
@@ -17,11 +17,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=202610250700">
+<link rel="stylesheet" href="../style.css?v=202610271200">
 <link rel="stylesheet" href="../effects.css?v=202610201330">
 <link rel="stylesheet" href="../gatekeeper.css?v=202610250600">
 <link rel="stylesheet" href="../app-page.css?v=202610250700">
-<link rel="stylesheet" href="page.css?v=202610261800">
+<link rel="stylesheet" href="page.css?v=202610271200">
 </head>
 <body class="app-page" data-app="viewtube">
 <div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
@@ -43,6 +43,7 @@
       <option value="pt">🇧🇷 Português</option>
       <option value="en">🇺🇸 English</option>
       <option value="es">🇪🇸 Español</option>
+      <option value="ru">🇷🇺 Русский</option>
     </select>
     </div>
     <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
@@ -55,38 +56,94 @@
   <section class="wu-hero container">
     <a class="ap-back" href="../#viewtube">← Todos os apps</a>
     <img src="../assets/icons/viewtube.png?v=202610251300" alt="" class="ap-icon" width="112" height="112">
-    <p class="eyebrow">Seu YouTube, sem distrações</p>
+    <p class="eyebrow">YouTube e YouTube Music, num app só</p>
     <h1>View<span>Tube</span></h1>
-    <p class="lead">O YouTube e o YouTube Music num app nativo e leve para o Mac. Troque de modo sem perder a música, com letras sincronizadas, um player limpo e sem anúncios.</p>
+    <p class="lead">O YouTube e o YouTube Music num app nativo para o Mac. Acelere qualquer vídeo ou música até 3×, acompanhe a letra sincronizada até na tela cheia e troque de modo sem perder a faixa. Sem anúncios.</p>
     <div class="app-cta">
       <a class="btn btn-primary" data-download="viewtube" href="#">Baixar ViewTube</a>
       <a class="btn btn-link" data-source="viewtube" href="#">Código fonte</a>
     </div>
     <p class="req"><span data-version="viewtube" data-no-i18n></span> macOS 14 Sonoma ou mais novo · Apple Silicon e Intel · Gratuito</p>
 
-    <div class="wu-stage">
-      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/viewtube/youtube-watch.jpg?v=202610261800" alt="ViewTube no modo YouTube com o Big Buck Bunny, o cartão de controles sob o vídeo e as recomendações fixas à direita" width="1280" height="772"></button></figure>
-      <figure class="wu-float wu-float-compact"><button class="shot" type="button"><img src="../assets/shots/viewtube/music-narrow.jpg?v=202610261800" alt="ViewTube no modo Music numa janela estreita, com a capa e o mesmo cartão de controles" width="640" height="566"></button></figure>
+    <div class="wu-stage vt-stage">
+      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/viewtube/immersive.jpg?v=202610281200" alt="Tela cheia imersiva do modo Music: a capa, o título e a letra sincronizada sobre a capa desfocada" width="1080" height="959"></button></figure>
+      <figure class="wu-float vt-float-speed"><button class="shot" type="button"><img src="../assets/shots/viewtube/speed-3x.jpg?v=202610281200" alt="Big Buck Bunny tocando a 3×, com o botão 3× na barra da janela" width="1080" height="645"></button></figure>
+      <figure class="wu-float vt-float-mini"><button class="shot" type="button"><img src="../assets/shots/viewtube/miniplayer.jpg?v=202610281200" alt="Mini player da barra de menus com a capa, o progresso e os controles" width="350" height="285"></button></figure>
     </div>
 
     <div class="wu-stats">
-      <div><b>2</b><span>modos, a mesma faixa</span></div>
-      <div><b>1</b><span>player para os dois</span></div>
+      <div><b>0,25–3×</b><span>de velocidade, em 10 passos</span></div>
+      <div><b>2</b><span>fontes de letra sincronizada</span></div>
       <div><b>−14 LUFS</b><span>de intensidade nos dois modos</span></div>
-      <div><b>0</b><span>anúncios, com o bloqueio ligado</span></div>
+      <div><b>8</b><span>tipos de trecho para pular</span></div>
     </div>
   </section>
 
-  <!-- A IDEIA -->
+  <!-- VELOCIDADE -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Acelerador de vídeo e música</p>
+        <h2>Escolha a velocidade uma vez. Vale para tudo.</h2>
+        <p>O YouTube volta a 1× a cada vídeo novo, e o player dele para em 2×. No ViewTube a velocidade fica: escolha no botão da barra e ela vale para todo vídeo e toda música que tocar depois, até 3×.</p>
+        <ul class="wu-list">
+          <li><b>Dez passos</b> de 0,25× a 3×, no botão da barra ou nos Ajustes.</li>
+          <li><b>Uma velocidade por modo</b>: vídeos do YouTube numa, músicas do Music noutra.</li>
+          <li><b>Voz no tom certo</b>: acelerada, a voz não fica aguda.</li>
+          <li><b>Do seu jeito</b>: mudou a velocidade no menu do próprio YouTube? O app adota a nova e a mantém nos próximos vídeos.</li>
+          <li><b>A letra acompanha</b>: a letra sincronizada troca de linha no ritmo da velocidade.</li>
+          <li><b>Por atalho</b>: <code>viewtube://speed/2</code> nos Atalhos do macOS ou no Raycast.</li>
+        </ul>
+        <p class="vt-note">Transmissões ao vivo e anúncios ficam na velocidade normal.</p>
+      </div>
+      <div class="wu-media vt-speed">
+        <figure><button class="shot" type="button"><img src="../assets/shots/viewtube/speed-3x.jpg?v=202610281200" alt="Big Buck Bunny tocando a 3× no modo teatro" loading="lazy" width="1080" height="645"></button></figure>
+        <div class="vt-pills" aria-hidden="true">
+          <img src="../assets/shots/viewtube/tb-1x.jpg?v=202610281200" alt="" loading="lazy" width="120" height="41">
+          <img src="../assets/shots/viewtube/tb-2x.jpg?v=202610281200" alt="" loading="lazy" width="120" height="41">
+          <img src="../assets/shots/viewtube/tb-3x.jpg?v=202610281200" alt="" loading="lazy" width="120" height="41">
+        </div>
+        <p class="wu-cap">O botão da barra mostra a velocidade do modo atual.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LETRAS -->
+  <section class="section container wu-chapter">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Letras sincronizadas</p>
+        <h2>Cante junto, linha por linha.</h2>
+        <p>No modo Music a letra fica numa coluna ao lado da capa e acende a linha que está tocando. Ela vem primeiro do próprio YouTube Music e, se faltar, do LRCLIB, um acervo aberto de letras.</p>
+        <ul class="wu-list">
+          <li><b>Só da mesma versão</b>: a letra sincronizada só entra se a duração bater com a da faixa. De outra versão, como um clipe com introdução, aparece só o texto, sem destaque fora de hora.</li>
+          <li><b>Ajuste fino por música</b>: adiante ou atrase a letra em passos de 0,25 s. O ajuste fica guardado para aquela música.</li>
+          <li><b>Linhas que cabem</b>: uma linha longa demais diminui a fonte só naquela música, sem cortar.</li>
+          <li><b>No teatro e na janela estreita</b>: a letra vira um bloco embaixo do player, no mesmo estilo.</li>
+        </ul>
+      </div>
+      <div class="wu-media vt-lyrics">
+        <figure class="vt-lyrics-cover"><button class="shot" type="button"><img src="../assets/shots/viewtube/music-cover.jpg?v=202610281200" alt="Modo Music com a capa e o cartão de controles" loading="lazy" width="730" height="570"></button></figure>
+        <figure class="vt-lyrics-col"><button class="shot" type="button"><img src="../assets/shots/viewtube/lyrics-column.jpg?v=202610281200" alt="Coluna da letra com a linha atual acesa" loading="lazy" width="335" height="640"></button></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMERSIVA -->
   <section class="section container wu-chapter">
     <div class="section-head">
-      <p class="wu-kicker">Por que existe</p>
-      <h2>Feito para quem ouve e assiste o dia todo.</h2>
-      <p>O YouTube e o YouTube Music são o mesmo catálogo em duas abas que não conversam. Você ouve uma música no Music, quer ver o clipe e precisa procurar de novo no YouTube, perdendo o ponto em que estava.</p>
-      <p>O ViewTube junta os dois num app só. Um clique no seletor leva o que está tocando para o outro modo, no mesmo segundo, tocando ou pausado. As duas páginas ficam vivas o tempo todo, então a troca é instantânea.</p>
+      <p class="wu-kicker">Tela cheia imersiva</p>
+      <h2>Só a capa, a letra e a música.</h2>
+      <p>Com a opção “Retrato na tela cheia” ligada, o botão de tela cheia do Music abre uma tela própria: a capa grande, o título, o artista e a letra sincronizada, sobre a própria capa desfocada, que desliza devagar ao fundo.</p>
     </div>
-    <div class="vt-switch">
-      <figure><button class="shot" type="button"><img src="../assets/shots/viewtube/crop-switch.jpg?v=202610261800" alt="Seletor YouTube e Music no topo da janela" loading="lazy" width="520" height="41"></button><figcaption>O seletor no topo da janela, ou ⇧⌘M.</figcaption></figure>
+    <figure class="vt-immersive"><button class="shot" type="button"><img src="../assets/shots/viewtube/immersive.jpg?v=202610281200" alt="Tela cheia imersiva com a linha atual da letra acesa" loading="lazy" width="1080" height="959"></button></figure>
+    <div class="vt-imm-notes">
+      <figure><button class="shot" type="button"><img src="../assets/shots/viewtube/immersive-player.jpg?v=202610281200" alt="Pílula de vidro com progresso, controles, avaliação e volume" loading="lazy" width="660" height="124"></button></figure>
+      <ul class="wu-list">
+        <li><b>Player de vidro</b> com progresso, Música | Vídeo, aleatório, repetir, avaliação e volume. Some depois de 3 s sem mexer o mouse, junto com o cursor.</li>
+        <li><b>Clique na capa</b> para tocar ou pausar. Esc sai.</li>
+        <li><b>Sem letra</b>, a capa cresce e fica no centro.</li>
+      </ul>
     </div>
   </section>
 
@@ -95,7 +152,10 @@
     <div class="section-head">
       <p class="wu-kicker">Troca de modo na mesma faixa</p>
       <h2>Do vídeo para a música e de volta.</h2>
-      <p>Do vídeo para a música e de volta no mesmo segundo, com o player cheio ou recolhido, pelo seletor ou com ⇧⌘M.</p>
+      <p>O YouTube e o YouTube Music são o mesmo catálogo em duas abas que não conversam. No ViewTube, um clique no seletor leva o que está tocando para o outro modo, no mesmo segundo, tocando ou pausado. As duas páginas ficam vivas o tempo todo, então a troca é instantânea.</p>
+    </div>
+    <div class="vt-switch">
+      <figure><button class="shot" type="button"><img src="../assets/shots/viewtube/crop-switch.jpg?v=202610261800" alt="Seletor YouTube e Music no topo da janela" loading="lazy" width="520" height="41"></button><figcaption>O seletor no topo da janela, ou ⇧⌘M.</figcaption></figure>
     </div>
     <div class="wu-tabset">
       <div class="wu-tabs" role="tablist" aria-label="Modos">
@@ -117,9 +177,10 @@
         <h2>Os mesmos controles nos dois modos.</h2>
         <p>O mesmo cartão de controles no YouTube e no Music: opções à esquerda, reprodução no meio e volume à direita. Volume, intensidade do som e qualidade valem para os dois modos.</p>
         <ul class="wu-list">
-          <li><b>Progresso fino</b> que engrossa ao passar o mouse, com o trecho carregado e o tempo sob o cursor.</li>
           <li><b>Mesma intensidade</b>: o app leva as duas páginas a −14 LUFS, e uma troca de modo não muda o volume.</li>
-          <li><b>Qualidade máxima</b> já no começo de cada faixa, sem recarregar.</li>
+          <li><b>Qualidade escolhida</b> já no começo de cada faixa, de 360p a 4K ou a máxima disponível, sem recarregar.</li>
+          <li><b>Música | Vídeo</b> no Music: a capa com a versão de áudio ou o clipe, num toque.</li>
+          <li><b>Progresso fino</b> que engrossa ao passar o mouse, com o trecho carregado e o tempo sob o cursor.</li>
         </ul>
       </div>
       <div class="wu-media bc-rows">
@@ -129,19 +190,46 @@
     </div>
   </section>
 
-  <!-- MUSIC -->
+  <!-- BARRA DE MENUS -->
   <section class="section container wu-chapter">
     <div class="wu-split reverse">
       <div class="wu-copy">
-        <p class="wu-kicker">YouTube Music</p>
-        <h2>Início do Music com o seu gosto.</h2>
-        <p>Mais ouvidas, sucessos dos seus artistas e sugestões, com categorias discretas e sem playlists empurradas.</p>
+        <p class="wu-kicker">Na barra de menus</p>
+        <h2>A música à mão, com a janela fechada.</h2>
+        <p>Enquanto toca, o item da barra de menus mostra barras de som animadas e o começo do nome da música. Um clique abre o mini player logo abaixo dele.</p>
         <ul class="wu-list">
-          <li><b>Letras sincronizadas</b>: primeiro as letras do próprio YouTube Music, com o LRCLIB de reserva. A linha atual acende, e um ajuste fino acerta o tempo de cada música.</li>
-          <li><b>Modo capa e tela cheia em retrato</b>: a capa do álbum no lugar do vídeo e, na tela cheia, a capa e a letra sobre um fundo desfocado em movimento.</li>
+          <li><b>Capa com o selo do modo</b>: clique para abrir o app no modo atual.</li>
+          <li><b>Progresso que dá para arrastar</b>, aleatório, anterior, tocar, próxima e repetir.</li>
+          <li><b>Gostei e não gostei</b>, volume do app e abrir no navegador.</li>
+          <li><b>Continua tocando</b> com a janela fechada, e as teclas de mídia e a Central de Controle comandam o app.</li>
         </ul>
       </div>
-      <div class="wu-media"><figure style="max-width:520px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/viewtube/music-narrow.jpg?v=202610261800" alt="Modo Music com a capa no lugar do vídeo" loading="lazy" width="640" height="566"></button></figure></div>
+      <div class="wu-media"><figure class="vt-mini"><button class="shot" type="button"><img src="../assets/shots/viewtube/miniplayer.jpg?v=202610281200" alt="Mini player da barra de menus" loading="lazy" width="350" height="285"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- AJUSTES -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Ajustes</p>
+      <h2>Cada opção diz o que faz.</h2>
+      <p>Sete abas, e cada opção com uma linha explicando o que muda. O que vale para os dois modos fica em Geral; a velocidade e o que é só do Music, nas abas de cada modo.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Ajustes">
+        <button type="button" role="tab" id="t-s-general" aria-controls="p-s-general">Geral</button>
+        <button type="button" role="tab" id="t-s-youtube" aria-controls="p-s-youtube">YouTube</button>
+        <button type="button" role="tab" id="t-s-music" aria-controls="p-s-music">Music</button>
+        <button type="button" role="tab" id="t-s-blocking" aria-controls="p-s-blocking">Bloqueios</button>
+        <button type="button" role="tab" id="t-s-browser" aria-controls="p-s-browser">Navegador</button>
+        <button type="button" role="tab" id="t-s-about" aria-controls="p-s-about">Sobre</button>
+      </div>
+      <div class="wu-panel vt-set" role="tabpanel" id="p-s-general" aria-labelledby="t-s-general"><figure><button class="shot" type="button"><img src="../assets/shots/viewtube/settings-general.jpg?v=202610281200" alt="Ajustes, aba Geral" loading="lazy" width="566" height="841"></button></figure><p class="vt-set-text">Abrir no último modo usado e retomar no mesmo ponto, barra compacta ou maior, continuar tocando com a janela fechada, mini player na barra de menus, qualidade do vídeo, teatro, retrato na tela cheia e interface limpa.</p></div>
+      <div class="wu-panel vt-set" role="tabpanel" id="p-s-youtube" aria-labelledby="t-s-youtube" hidden><figure><button class="shot" type="button"><img src="../assets/shots/viewtube/settings-youtube.jpg?v=202610281200" alt="Ajustes, aba YouTube, com a velocidade em 2×" loading="lazy" width="566" height="290"></button></figure><p class="vt-set-text">A velocidade de todo vídeo no modo YouTube, de 0,25× a 3×.</p></div>
+      <div class="wu-panel vt-set" role="tabpanel" id="p-s-music" aria-labelledby="t-s-music" hidden><figure><button class="shot" type="button"><img src="../assets/shots/viewtube/settings-music.jpg?v=202610281200" alt="Ajustes, aba Music" loading="lazy" width="566" height="561"></button></figure><p class="vt-set-text">A velocidade das músicas, o início personalizado (suas mais ouvidas, sucessos dos seus artistas e sugestões, só músicas), o modo Música, as letras sincronizadas e pular trechos sem música nos clipes.</p></div>
+      <div class="wu-panel vt-set" role="tabpanel" id="p-s-blocking" aria-labelledby="t-s-blocking" hidden><figure><button class="shot" type="button"><img src="../assets/shots/viewtube/settings-blocking.jpg?v=202610281200" alt="Ajustes, aba Bloqueios, com as categorias do SponsorBlock" loading="lazy" width="566" height="590"></button></figure><p class="vt-set-text">Bloquear e pular anúncios e escolher quais trechos o SponsorBlock pula: patrocínio, autopromoção, pedido de inscrição, introdução, encerramento, prévia, enrolação e trechos sem música. A consulta envia só um prefixo do código do vídeo.</p></div>
+      <div class="wu-panel vt-set" role="tabpanel" id="p-s-browser" aria-labelledby="t-s-browser" hidden><figure><button class="shot" type="button"><img src="../assets/shots/viewtube/settings-browser.jpg?v=202610281200" alt="Ajustes, aba Navegador, com o favorito para mandar vídeos ao app" loading="lazy" width="566" height="502"></button></figure><p class="vt-set-text">⇧⌘O abre o vídeo no navegador no mesmo ponto, e um favorito faz o caminho de volta: pausa no navegador e continua no ViewTube.</p></div>
+      <div class="wu-panel vt-set" role="tabpanel" id="p-s-about" aria-labelledby="t-s-about" hidden><figure><button class="shot" type="button"><img src="../assets/shots/viewtube/settings-about.jpg?v=202610281200" alt="Ajustes, aba Sobre" loading="lazy" width="566" height="563"></button></figure><p class="vt-set-text">Versão, licença, créditos e atualizações dentro do app.</p></div>
     </div>
   </section>
 
@@ -149,11 +237,11 @@
   <section class="section container">
     <div class="section-head"><h2>E mais um pouco</h2></div>
     <div class="wu-more vt-more">
-      <article class="card"><h3>Na barra de menus</h3><p>Barras de som animadas enquanto toca, o nome da música e um mini player com progresso, controles, volume e avaliação.</p></article>
-      <article class="card"><h3>Sua conta, nativa</h3><p>Entre pelo app ou use a sessão do seu navegador, troque de conta (inclusive contas de marca) e ajuste idioma, local e modo restrito.</p></article>
+      <article class="card"><h3>Sem anúncios</h3><p>Os anúncios saem antes de carregar, os rastreadores de anúncio são bloqueados e o SponsorBlock pula patrocínios e enrolação.</p></article>
       <article class="card"><h3>Navegador e app juntos</h3><p>Abra no navegador no ponto em que está, mande um vídeo do navegador para o app com um favorito ou cole um link copiado.</p></article>
-      <article class="card"><h3>Sem anúncios</h3><p>Bloqueio de anúncios e SponsorBlock para pular patrocínios, sem promoções na tela.</p></article>
-      <article class="card"><h3>Teclado e mídia</h3><p>Teclas de mídia, Central de Controle, atalhos para tudo e controle por URL para Atalhos e Raycast.</p></article>
+      <article class="card"><h3>Sua conta, nativa</h3><p>Entre pelo app ou use a sessão do seu navegador, troque de conta (inclusive contas de marca) e ajuste idioma, local e modo restrito.</p></article>
+      <article class="card"><h3>Teclado e mídia</h3><p>⇧⌘M troca de modo, ⌥⌘P toca ou pausa, ⌥⌘← → mudam de faixa, ⌘L busca ou abre um link, ⌥⌘T mantém a janela na frente.</p></article>
+      <article class="card"><h3>Controle por URL</h3><p>Tocar, pausar, próxima, anterior, trocar de modo, mudar a velocidade e abrir no navegador pelos Atalhos, pelo Raycast ou por scripts.</p></article>
       <article class="card"><h3>Nada recarrega</h3><p>Uma página viva para cada modo: início, busca e vídeos abrem pela navegação dos próprios sites.</p></article>
     </div>
   </section>
@@ -183,8 +271,9 @@
       <div><dt>Processador</dt><dd>Apple Silicon e Intel</dd></div>
       <div><dt>Licença</dt><dd>GPL-3.0, código aberto</dd></div>
       <div><dt>Preço</dt><dd>Gratuito, sem anúncios e sem rastreamento</dd></div>
-      <div><dt>Aviso</dt><dd>Não é afiliado ao Google nem ao YouTube. Os menus e ajustes do app estão em português; os sites seguem o idioma da conta.</dd></div>
-      <div><dt>Créditos das capturas</dt><dd>Big Buck Bunny e Cosmos Laundromat: Blender Foundation, CC BY. Áudio: gravação da Musopen.</dd></div>
+      <div><dt>Idioma</dt><dd>Menus do app em português; a janela de Ajustes também em inglês. Os sites seguem o idioma da conta.</dd></div>
+      <div><dt>Aviso</dt><dd>Não é afiliado ao Google nem ao YouTube.</dd></div>
+      <div><dt>Créditos das capturas</dt><dd>Big Buck Bunny e Cosmos Laundromat: Blender Foundation, CC BY. Música: “It’s a Long Way to Tipperary”, John McCormack, gravação de 1914, com letra de 1912 (domínio público). Áudio da janela estreita: gravação da Musopen. Capturas feitas sem conta e sem som.</dd></div>
     </dl>
   </section>
 </main>
@@ -226,13 +315,13 @@
   </div>
 </footer>
 
-<script src="../apps.js?v=202610261400"></script>
+<script src="../apps.js?v=202610271200"></script>
 <script src="../install-command.js?v=202610250700"></script>
-<script src="../script.js?v=202610250700"></script>
-<script src="../i18n-strings.js?v=202610251400"></script>
-<script src="strings.js?v=202610261800"></script>
-<script src="page.js?v=202610261800"></script>
-<script src="../i18n.js?v=202610242100"></script>
+<script src="../script.js?v=202610271200"></script>
+<script src="../i18n-strings.js?v=202610271200"></script>
+<script src="strings.js?v=202610271200"></script>
+<script src="page.js?v=202610271200"></script>
+<script src="../i18n.js?v=202610271200"></script>
 <script src="../effects.js?v=202610201330"></script>
 </body>
 </html>

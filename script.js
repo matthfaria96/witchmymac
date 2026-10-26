@@ -99,3 +99,37 @@ applyAppLinks();
 setupMenu();
 setupLightbox();
 setupReveal();
+
+// Home: só as 5 primeiras seções de app aparecem; "Ver mais apps" abre o resto.
+// Um link para um app escondido (dock, cartões, URL com #app) abre a lista antes de rolar até ele.
+function setupMoreApps() {
+  const features = document.querySelector('.features');
+  const more = features && features.querySelector('.more-apps');
+  const button = features && features.querySelector('.more-btn');
+  if (!more || !button) return;
+  features.classList.add('collapsed');
+  const expand = () => {
+    if (!features.classList.contains('collapsed')) return;
+    features.classList.remove('collapsed');
+    features.classList.add('expanding');
+    button.setAttribute('aria-expanded', 'true');
+  };
+  button.addEventListener('click', () => {
+    expand();
+    const first = more.querySelector('.feature-row');
+    if (first) first.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  const hidden = (id) => { const el = id && document.getElementById(id); return el && more.contains(el) ? el : null; };
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href^="#"]');
+    const target = link && hidden(link.getAttribute('href').slice(1));
+    if (!target) return;
+    expand();
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, '', link.getAttribute('href'));
+  });
+  const fromUrl = hidden(location.hash.slice(1));
+  if (fromUrl) { expand(); requestAnimationFrame(() => fromUrl.scrollIntoView({ block: 'start' })); }
+}
+setupMoreApps();
