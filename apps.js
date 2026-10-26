@@ -6,7 +6,7 @@
 window.WITCH_APPS = Object.freeze({
   macdash:      Object.freeze({ repo: 'MacDash',       tag: 'macdash-1.1.1', file: 'MacDash-1.1.1.dmg',      published: true, app: 'MacDash.app' }),
   viewtube:     Object.freeze({ repo: 'viewtube-mac',  tag: 'v1.0.6',        file: 'ViewTube-1.0.6.dmg',     published: true, app: 'ViewTube.app' }),
-  bettercraft:  Object.freeze({ repo: 'bettercraft-launcher', tag: 'v0.6.3', file: 'BetterCraftLauncher-0.6.3.dmg', published: true, app: 'BetterCraft Launcher.app' }),
+  bettercraft:  Object.freeze({ repo: 'bettercraft-launcher', tag: 'v0.6.4', file: 'BetterCraftLauncher-0.6.4.dmg', published: true, app: 'BetterCraft Launcher.app' }),
   hyperimage:   Object.freeze({ repo: 'hyperimage-converter', tag: 'v1.0.1', file: 'HyperImage-1.0.1.dmg', published: true, app: 'HyperImage Converter.app' }),
   hypervideo:   Object.freeze({ repo: 'hypervideo-converter', tag: 'v1.0.1', file: 'HyperVideo-1.0.1.dmg', published: true, app: 'HyperVideo Converter.app' }),
   neorar:       Object.freeze({ repo: 'Neorar',        tag: 'v1.1.1',        file: 'Neorar-1.1.1.dmg',       published: true, app: 'Neorar.app' }),

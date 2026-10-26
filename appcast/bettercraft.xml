@@ -6,18 +6,19 @@
     <description>Atualizações do BetterCraft Launcher</description>
     <language>pt-BR</language>
     <item>
-      <title>BetterCraft Launcher 0.6.3</title>
-      <pubDate>Sun, 25 Oct 2026 12:48:40 +0000</pubDate>
-      <sparkle:version>0.6.3</sparkle:version>
-      <sparkle:shortVersionString>0.6.3</sparkle:shortVersionString>
+      <title>BetterCraft Launcher 0.6.4</title>
+      <pubDate>Mon, 26 Oct 2026 06:46:19 +0000</pubDate>
+      <sparkle:version>0.6.4</sparkle:version>
+      <sparkle:shortVersionString>0.6.4</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li>Atualizações do próprio launcher dentro do app: <b>Verificar atualizações do launcher…</b> no ícone da barra de menus. O launcher também verifica sozinho uma vez por dia e pergunta antes de instalar.</li>
-<li>Quem está numa versão anterior precisa instalar esta versão à mão uma única vez; as próximas chegam pelo próprio app.</li>
+<li>Ícones redesenhados: um aviso abaixo de "Which icons?" mostra o andamento e quantos apps mudaram, com o botão "Check again".</li>
+<li>Depois de aplicar os ícones, o cache de ícones do macOS é limpo e o Dock é reiniciado, então Finder, Launchpad e Dock mostram os novos na hora.</li>
+<li>Apps instalados ou atualizados já recebem o ícone redesenhado; apps ainda sem ele aparecem como "Pending".</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/bettercraft-launcher/releases/download/v0.6.3/BetterCraftLauncher-0.6.3.dmg" length="48553389" type="application/octet-stream" sparkle:edSignature="C4ZcJvnsy2l28sc5vS/ggHicfd2/ZYXJlxXvRfMJK75ZFJcxxy5EAoByaV7hrA5KC6VYOHDJmjt0m7aotVf/BQ=="/>
+      <enclosure url="https://github.com/matthfaria96/bettercraft-launcher/releases/download/v0.6.4/BetterCraftLauncher-0.6.4.dmg" length="48596310" type="application/octet-stream" sparkle:edSignature="pPa58qez7KgqvR7Rz2Vy4RCQHOigHpNXzozwM8PV7IebivJxnaTWTl5Hn1dMeVLfoyvoK+PFJauqxz+rb3iwBw=="/>
     </item>
   </channel>
 </rss>
