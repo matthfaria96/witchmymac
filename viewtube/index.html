@@ -6,10 +6,10 @@
 <title>ViewTube · YouTube e YouTube Music num app só para Mac</title>
 <meta name="description" content="ViewTube junta o YouTube e o YouTube Music num app nativo e leve para o Mac: troca de modo sem perder a música, letras sincronizadas, player limpo e sem anúncios. Gratuito.">
 <meta property="og:title" content="ViewTube · witchmymac">
-<meta property="og:description" content="O YouTube e o YouTube Music num app só para Mac, gratuito e sem anúncios.">
+<meta property="og:description" content="YouTube e YouTube Music num app nativo para Mac: troca de modo na mesma faixa, letras sincronizadas e sem anúncios. Gratuito.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://witchmymac.com/viewtube/">
-<meta property="og:image" content="https://witchmymac.com/assets/shots/viewtube-youtube.jpg">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/viewtube/youtube-watch.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0a14">
 <link rel="icon" href="../assets/icons/favicon.png" type="image/png">
@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="../effects.css?v=202610201330">
 <link rel="stylesheet" href="../gatekeeper.css?v=202610250600">
 <link rel="stylesheet" href="../app-page.css?v=202610250700">
+<link rel="stylesheet" href="page.css?v=202610261800">
 </head>
 <body class="app-page" data-app="viewtube">
 <div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
@@ -51,78 +52,109 @@
 
 <main id="top">
   <!-- TOPO -->
-  <section class="ap-hero container">
-    <div class="ap-hero-text">
-      <a class="ap-back" href="../#viewtube">← Todos os apps</a>
-      <img src="../assets/icons/viewtube.png?v=202610251300" alt="" class="ap-icon" width="112" height="112">
-      <p class="eyebrow">Seu YouTube, sem distrações</p>
-      <h1>ViewTube</h1>
-      <p class="lead">O YouTube e o YouTube Music num app nativo e leve para o Mac. Troque de modo sem perder a música, com letras sincronizadas, um player limpo e sem anúncios.</p>
-      <div class="app-cta">
-        <a class="btn btn-primary" data-download="viewtube" href="#">Baixar ViewTube</a>
-        <a class="btn btn-link" data-source="viewtube" href="#">Código fonte</a>
-      </div>
-      <p class="req"><span data-version="viewtube" data-no-i18n></span> macOS 14 Sonoma ou mais novo · Apple Silicon e Intel · Gratuito</p>
-      <div class="ap-oneliner">
-        <p>Ou instale com uma linha no Terminal:</p>
-        <div class="term" data-app="viewtube" data-mode="install">
-          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
-          <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
-          <div class="term-foot">
-            <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
-            <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
-          </div>
-        </div>
-      </div>
+  <section class="wu-hero container">
+    <a class="ap-back" href="../#viewtube">← Todos os apps</a>
+    <img src="../assets/icons/viewtube.png?v=202610251300" alt="" class="ap-icon" width="112" height="112">
+    <p class="eyebrow">Seu YouTube, sem distrações</p>
+    <h1>View<span>Tube</span></h1>
+    <p class="lead">O YouTube e o YouTube Music num app nativo e leve para o Mac. Troque de modo sem perder a música, com letras sincronizadas, um player limpo e sem anúncios.</p>
+    <div class="app-cta">
+      <a class="btn btn-primary" data-download="viewtube" href="#">Baixar ViewTube</a>
+      <a class="btn btn-link" data-source="viewtube" href="#">Código fonte</a>
     </div>
-    <div class="ap-hero-shot">
-      <button class="shot" type="button"><img src="../assets/shots/viewtube-youtube.jpg?v=202610242000" alt="ViewTube no modo YouTube com o Big Buck Bunny, o cartão de controles sob o vídeo e as recomendações fixas à direita" width="1280" height="800"></button>
+    <p class="req"><span data-version="viewtube" data-no-i18n></span> macOS 14 Sonoma ou mais novo · Apple Silicon e Intel · Gratuito</p>
+
+    <div class="wu-stage">
+      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/viewtube/youtube-watch.jpg?v=202610261800" alt="ViewTube no modo YouTube com o Big Buck Bunny, o cartão de controles sob o vídeo e as recomendações fixas à direita" width="1280" height="772"></button></figure>
+      <figure class="wu-float wu-float-compact"><button class="shot" type="button"><img src="../assets/shots/viewtube/music-narrow.jpg?v=202610261800" alt="ViewTube no modo Music numa janela estreita, com a capa e o mesmo cartão de controles" width="640" height="566"></button></figure>
+    </div>
+
+    <div class="wu-stats">
+      <div><b>2</b><span>modos, a mesma faixa</span></div>
+      <div><b>1</b><span>player para os dois</span></div>
+      <div><b>−14 LUFS</b><span>de intensidade nos dois modos</span></div>
+      <div><b>0</b><span>anúncios, com o bloqueio ligado</span></div>
     </div>
   </section>
 
   <!-- A IDEIA -->
-  <section class="section container narrow ap-idea">
-    <p class="eyebrow">Por que existe</p>
-    <h2>Feito para quem ouve e assiste o dia todo.</h2>
-    <p>O YouTube e o YouTube Music são o mesmo catálogo em duas abas que não conversam. Você ouve uma música no Music, quer ver o clipe e precisa procurar de novo no YouTube, perdendo o ponto em que estava.</p>
-    <p>O ViewTube junta os dois num app só. Um clique no seletor leva o que está tocando para o outro modo, no mesmo segundo, tocando ou pausado. As duas páginas ficam vivas o tempo todo, então a troca é instantânea.</p>
-    <p>Em volta disso, o app tira o que atrapalha: anúncios, promoções, cabeçalhos repetidos e botões que ninguém usa. Ficam o conteúdo, a sua conta do Google, as suas playlists e um player desenhado para o Mac.</p>
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Por que existe</p>
+      <h2>Feito para quem ouve e assiste o dia todo.</h2>
+      <p>O YouTube e o YouTube Music são o mesmo catálogo em duas abas que não conversam. Você ouve uma música no Music, quer ver o clipe e precisa procurar de novo no YouTube, perdendo o ponto em que estava.</p>
+      <p>O ViewTube junta os dois num app só. Um clique no seletor leva o que está tocando para o outro modo, no mesmo segundo, tocando ou pausado. As duas páginas ficam vivas o tempo todo, então a troca é instantânea.</p>
+    </div>
+    <div class="vt-switch">
+      <figure><button class="shot" type="button"><img src="../assets/shots/viewtube/crop-switch.jpg?v=202610261800" alt="Seletor YouTube e Music no topo da janela" loading="lazy" width="520" height="41"></button><figcaption>O seletor no topo da janela, ou ⇧⌘M.</figcaption></figure>
+    </div>
   </section>
 
-  <!-- RECURSOS -->
-  <section class="section container">
+  <!-- MODOS -->
+  <section class="section container wu-chapter">
     <div class="section-head">
-      <h2>Tudo o que ele faz</h2>
-      <p>Do jeito que um app de Mac deveria ser.</p>
+      <p class="wu-kicker">Troca de modo na mesma faixa</p>
+      <h2>Do vídeo para a música e de volta.</h2>
+      <p>Do vídeo para a música e de volta no mesmo segundo, com o player cheio ou recolhido, pelo seletor ou com ⇧⌘M.</p>
     </div>
-    <div class="ap-features">
-      <article class="card"><h3>Troca de modo na mesma faixa</h3><p>Do vídeo para a música e de volta no mesmo segundo, com o player cheio ou recolhido, pelo seletor ou com ⇧⌘M.</p></article>
-      <article class="card"><h3>Um player para os dois</h3><p>O mesmo cartão de controles no YouTube e no Music: opções à esquerda, reprodução no meio e volume à direita. Volume, intensidade do som e qualidade valem para os dois modos.</p></article>
-      <article class="card"><h3>Início do Music com o seu gosto</h3><p>Mais ouvidas, sucessos dos seus artistas e sugestões, com categorias discretas e sem playlists empurradas.</p></article>
-      <article class="card"><h3>Letras sincronizadas</h3><p>Primeiro as letras do próprio YouTube Music, com o LRCLIB de reserva. A linha atual acende, e um ajuste fino acerta o tempo de cada música.</p></article>
-      <article class="card"><h3>Modo capa e tela cheia em retrato</h3><p>A capa do álbum no lugar do vídeo e, na tela cheia, a capa e a letra sobre um fundo desfocado em movimento.</p></article>
-      <article class="card"><h3>Página de vídeo organizada</h3><p>Recomendações fixas à direita e descrição, comentários e relacionados em abas sob o player.</p></article>
-      <article class="card"><h3>Feito para janela estreita</h3><p>Abaixo de 1024 px tudo se empilha: o player em cima, o "A seguir" num carrossel que dá para arrastar e as abas embaixo.</p></article>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Modos">
+        <button type="button" role="tab" id="t-yt" aria-controls="p-yt">YouTube</button>
+        <button type="button" role="tab" id="t-theater" aria-controls="p-theater">Teatro</button>
+        <button type="button" role="tab" id="t-narrow" aria-controls="p-narrow">Janela estreita</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-yt" aria-labelledby="t-yt"><figure><button class="shot" type="button"><img src="../assets/shots/viewtube/youtube-watch.jpg?v=202610261800" alt="Página do vídeo com as recomendações numa coluna fixa à direita" loading="lazy" width="1280" height="772"></button><figcaption class="wu-cap">Recomendações fixas à direita e descrição, comentários e relacionados em abas sob o player.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-theater" aria-labelledby="t-theater" hidden><figure><button class="shot" type="button"><img src="../assets/shots/viewtube/youtube-theater.jpg?v=202610261800" alt="Modo teatro: o vídeo ocupa a largura da janela" loading="lazy" width="1280" height="800"></button><figcaption class="wu-cap">Teatro: o vídeo na largura toda, com o mesmo cartão de controles embaixo.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-narrow" aria-labelledby="t-narrow" hidden><figure style="max-width:760px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/viewtube/youtube-narrow.jpg?v=202610261800" alt="Janela estreita: o player em cima, ocupando a largura" loading="lazy" width="900" height="712"></button><figcaption class="wu-cap">Abaixo de 1024 px tudo se empilha: o player em cima, o "A seguir" num carrossel que dá para arrastar e as abas embaixo.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <!-- PLAYER -->
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Um player para os dois</p>
+        <h2>Os mesmos controles nos dois modos.</h2>
+        <p>O mesmo cartão de controles no YouTube e no Music: opções à esquerda, reprodução no meio e volume à direita. Volume, intensidade do som e qualidade valem para os dois modos.</p>
+        <ul class="wu-list">
+          <li><b>Progresso fino</b> que engrossa ao passar o mouse, com o trecho carregado e o tempo sob o cursor.</li>
+          <li><b>Mesma intensidade</b>: o app leva as duas páginas a −14 LUFS, e uma troca de modo não muda o volume.</li>
+          <li><b>Qualidade máxima</b> já no começo de cada faixa, sem recarregar.</li>
+        </ul>
+      </div>
+      <div class="wu-media bc-rows">
+        <figure><button class="shot" type="button"><img src="../assets/shots/viewtube/crop-card.jpg?v=202610261800" alt="Cartão de controles no modo YouTube" loading="lazy" width="886" height="150"></button><figcaption>YouTube</figcaption></figure>
+        <figure><button class="shot" type="button"><img src="../assets/shots/viewtube/crop-music-card.jpg?v=202610261800" alt="Cartão de controles no modo Music, com o seletor Música e Vídeo" loading="lazy" width="640" height="150"></button><figcaption>Music</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="section container wu-chapter">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">YouTube Music</p>
+        <h2>Início do Music com o seu gosto.</h2>
+        <p>Mais ouvidas, sucessos dos seus artistas e sugestões, com categorias discretas e sem playlists empurradas.</p>
+        <ul class="wu-list">
+          <li><b>Letras sincronizadas</b>: primeiro as letras do próprio YouTube Music, com o LRCLIB de reserva. A linha atual acende, e um ajuste fino acerta o tempo de cada música.</li>
+          <li><b>Modo capa e tela cheia em retrato</b>: a capa do álbum no lugar do vídeo e, na tela cheia, a capa e a letra sobre um fundo desfocado em movimento.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure style="max-width:520px;margin:0 auto"><button class="shot" type="button"><img src="../assets/shots/viewtube/music-narrow.jpg?v=202610261800" alt="Modo Music com a capa no lugar do vídeo" loading="lazy" width="640" height="566"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- MAIS -->
+  <section class="section container">
+    <div class="section-head"><h2>E mais um pouco</h2></div>
+    <div class="wu-more vt-more">
       <article class="card"><h3>Na barra de menus</h3><p>Barras de som animadas enquanto toca, o nome da música e um mini player com progresso, controles, volume e avaliação.</p></article>
       <article class="card"><h3>Sua conta, nativa</h3><p>Entre pelo app ou use a sessão do seu navegador, troque de conta (inclusive contas de marca) e ajuste idioma, local e modo restrito.</p></article>
       <article class="card"><h3>Navegador e app juntos</h3><p>Abra no navegador no ponto em que está, mande um vídeo do navegador para o app com um favorito ou cole um link copiado.</p></article>
       <article class="card"><h3>Sem anúncios</h3><p>Bloqueio de anúncios e SponsorBlock para pular patrocínios, sem promoções na tela.</p></article>
       <article class="card"><h3>Teclado e mídia</h3><p>Teclas de mídia, Central de Controle, atalhos para tudo e controle por URL para Atalhos e Raycast.</p></article>
-    </div>
-  </section>
-
-  <!-- GALERIA -->
-  <section class="section container">
-    <div class="section-head"><h2>Por dentro</h2></div>
-    <div class="ap-gallery">
-      <figure>
-        <button class="shot" type="button"><img src="../assets/shots/viewtube-youtube.jpg?v=202610242000" alt="ViewTube no modo YouTube com o Big Buck Bunny, o cartão de controles sob o vídeo e as recomendações fixas à direita" loading="lazy" width="1280" height="800"></button>
-        <figcaption>Modo YouTube: o vídeo, o cartão de controles e as recomendações fixas à direita.</figcaption>
-      </figure>
-      <figure class="ap-portrait">
-        <button class="shot" type="button"><img src="../assets/shots/viewtube-music.jpg?v=202610242000" alt="ViewTube no modo Music numa janela estreita, com a capa do álbum em cima e a letra sincronizada embaixo" loading="lazy" width="640" height="1120"></button>
-        <figcaption>Modo Music numa janela estreita: a capa em cima e a letra sincronizada embaixo.</figcaption>
-      </figure>
+      <article class="card"><h3>Nada recarrega</h3><p>Uma página viva para cada modo: início, busca e vídeos abrem pela navegação dos próprios sites.</p></article>
     </div>
   </section>
 
@@ -133,13 +165,13 @@
       <p>O jeito mais rápido é uma linha no Terminal: ela baixa a versão mais nova, confere o arquivo e instala, sem aviso do macOS.</p>
     </div>
     <div class="term" data-app="viewtube" data-mode="install">
-      <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
-      <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
-      <div class="term-foot">
-        <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
-        <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
-      </div>
-    </div>
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+          <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+          <div class="term-foot">
+            <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+            <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+          </div>
+        </div>
     <p class="ap-install-alt">Prefere baixar o .dmg? Arraste o app para Aplicativos e libere na primeira vez, com um comando ou pelos Ajustes do Sistema. <a href="../#liberar">Ver o guia completo</a>.</p>
   </section>
 
@@ -151,7 +183,8 @@
       <div><dt>Processador</dt><dd>Apple Silicon e Intel</dd></div>
       <div><dt>Licença</dt><dd>GPL-3.0, código aberto</dd></div>
       <div><dt>Preço</dt><dd>Gratuito, sem anúncios e sem rastreamento</dd></div>
-      <div><dt>Aviso</dt><dd>Não é afiliado ao Google nem ao YouTube.</dd></div>
+      <div><dt>Aviso</dt><dd>Não é afiliado ao Google nem ao YouTube. Os menus e ajustes do app estão em português; os sites seguem o idioma da conta.</dd></div>
+      <div><dt>Créditos das capturas</dt><dd>Big Buck Bunny e Cosmos Laundromat: Blender Foundation, CC BY. Áudio: gravação da Musopen.</dd></div>
     </dl>
   </section>
 </main>
@@ -197,7 +230,8 @@
 <script src="../install-command.js?v=202610250700"></script>
 <script src="../script.js?v=202610250700"></script>
 <script src="../i18n-strings.js?v=202610251400"></script>
-<script src="strings.js?v=202610250700"></script>
+<script src="strings.js?v=202610261800"></script>
+<script src="page.js?v=202610261800"></script>
 <script src="../i18n.js?v=202610242100"></script>
 <script src="../effects.js?v=202610201330"></script>
 </body>

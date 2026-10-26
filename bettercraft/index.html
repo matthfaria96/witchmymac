@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BetterCraft Launcher · O launcher dos apps Craft, sem ruído</title>
+<meta name="description" content="BetterCraft Launcher instala, atualiza e abre os 13 apps do Craft App Suite numa lista limpa, e troca os ícones deles no Finder, no Launchpad e no Dock com um clique. Gratuito e de código aberto.">
+<meta property="og:title" content="BetterCraft Launcher · witchmymac">
+<meta property="og:description" content="O launcher dos apps Craft, sem ruído: instala, atualiza e troca os ícones com um clique. Gratuito.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://witchmymac.com/bettercraft/">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/bettercraft/redesign-dark.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="../assets/icons/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=202610250700">
+<link rel="stylesheet" href="../effects.css?v=202610201330">
+<link rel="stylesheet" href="../gatekeeper.css?v=202610250600">
+<link rel="stylesheet" href="../app-page.css?v=202610250700">
+<link rel="stylesheet" href="page.css?v=202610261800">
+</head>
+<body class="app-page" data-app="bettercraft">
+<div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../" aria-label="witchmymac">
+      <img src="../assets/icons/logo-128.png" alt="" width="36" height="36">
+      <span>witch<b>my</b>mac</span>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a href="../#apps">Apps</a>
+      <a href="#instalar">Como Instalar?</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <div class="lang-picker">
+    <span class="lang-flag" aria-hidden="true">🇧🇷</span>
+    <select class="lang-select" aria-label="Idioma">
+      <option value="pt">🇧🇷 Português</option>
+      <option value="en">🇺🇸 English</option>
+      <option value="es">🇪🇸 Español</option>
+    </select>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></g></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- TOPO -->
+  <section class="wu-hero container">
+    <a class="ap-back" href="../#bettercraft">← Todos os apps</a>
+    <img src="../assets/icons/bettercraft.png?v=202610251300" alt="" class="ap-icon" width="112" height="112">
+    <p class="eyebrow">Seus apps Craft, sem ruído</p>
+    <h1>BetterCraft <span>Launcher</span></h1>
+    <p class="lead">O launcher do Craft App Suite repensado: uma linha por app, com versão, um botão e nada sobrando. Instala, atualiza e abre os 13 apps Craft, e com um clique troca os ícones deles no Finder, no Launchpad e no Dock pelos ícones redesenhados.</p>
+    <div class="app-cta">
+      <a class="btn btn-primary" data-download="bettercraft" href="#">Baixar BetterCraft</a>
+      <a class="btn btn-link" data-source="bettercraft" href="#">Código fonte</a>
+    </div>
+    <p class="req"><span data-version="bettercraft" data-no-i18n></span> macOS 11 Big Sur ou mais novo · Apple Silicon e Intel · Gratuito</p>
+
+    <div class="wu-stage">
+      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/bettercraft/redesign-dark.jpg?v=202610261800" alt="BetterCraft Launcher no tema escuro: os apps instalados com os ícones redesenhados, duas atualizações e um download em andamento" width="1120" height="900"></button></figure>
+      <figure class="wu-float wu-float-compact"><button class="shot" type="button"><img src="../assets/shots/bettercraft/narrow-dark.jpg?v=202610261800" alt="BetterCraft Launcher numa janela estreita, com os apps numa coluna só" width="740" height="900"></button></figure>
+    </div>
+
+    <div class="wu-stats">
+      <div><b>13</b><span>apps do Craft App Suite</span></div>
+      <div><b>1</b><span>clique para trocar os ícones</span></div>
+      <div><b>100%</b><span>Rust nativo, sem Electron</span></div>
+      <div><b>0</b><span>anúncios ou rastreamento</span></div>
+    </div>
+  </section>
+
+  <!-- ÍCONES -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Ícones</p>
+      <h2>Ícones novos onde você olha.</h2>
+      <p>"Quais ícones usar?" fica na barra do launcher. Redesign veste cada app Craft instalado com o ícone BetterCraft no Finder, no Launchpad e no Dock, até o do app que já está aberto. Originais Craft devolve os ícones dos próprios apps. Os nomes não mudam.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Ícones">
+        <button type="button" role="tab" id="t-redesign" aria-controls="p-redesign">Redesign</button>
+        <button type="button" role="tab" id="t-originals" aria-controls="p-originals">Originais Craft</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-redesign" aria-labelledby="t-redesign"><figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/redesign-dark.jpg?v=202610261800" alt="Lista de apps com Redesign escolhido: cada linha tem o selo REDESIGN" loading="lazy" width="1120" height="900"></button><figcaption class="wu-cap">Redesign: cada app instalado mostra o selo verde REDESIGN.</figcaption></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-originals" aria-labelledby="t-originals" hidden><figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/originals-dark.jpg?v=202610261800" alt="Lista de apps com Originais Craft escolhido: cada linha tem o selo ORIGINAL" loading="lazy" width="1120" height="900"></button><figcaption class="wu-cap">Originais Craft: os ícones de sempre, com o selo vermelho ORIGINAL.</figcaption></figure></div>
+    </div>
+
+    <div class="bc-icons" role="list">
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/photocraft-craft.png" alt="Ícone original do PhotoCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/photocraft-new.png" alt="Ícone redesenhado do PhotoCraft" loading="lazy" width="128" height="128"><b data-no-i18n>PhotoCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/vectorcraft-craft.png" alt="Ícone original do VectorCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/vectorcraft-new.png" alt="Ícone redesenhado do VectorCraft" loading="lazy" width="128" height="128"><b data-no-i18n>VectorCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/filmcraft-craft.png" alt="Ícone original do FilmCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/filmcraft-new.png" alt="Ícone redesenhado do FilmCraft" loading="lazy" width="128" height="128"><b data-no-i18n>FilmCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/lightcraft-craft.png" alt="Ícone original do LightCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/lightcraft-new.png" alt="Ícone redesenhado do LightCraft" loading="lazy" width="128" height="128"><b data-no-i18n>LightCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/pdfcraft-craft.png" alt="Ícone original do PdfCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/pdfcraft-new.png" alt="Ícone redesenhado do PdfCraft" loading="lazy" width="128" height="128"><b data-no-i18n>PdfCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/effectcraft-craft.png" alt="Ícone original do EffectCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/effectcraft-new.png" alt="Ícone redesenhado do EffectCraft" loading="lazy" width="128" height="128"><b data-no-i18n>EffectCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/designcraft-craft.png" alt="Ícone original do DesignCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/designcraft-new.png" alt="Ícone redesenhado do DesignCraft" loading="lazy" width="128" height="128"><b data-no-i18n>DesignCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/figcraft-craft.png" alt="Ícone original do FigCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/figcraft-new.png" alt="Ícone redesenhado do FigCraft" loading="lazy" width="128" height="128"><b data-no-i18n>FigCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/wordcraft-craft.png" alt="Ícone original do WordCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/wordcraft-new.png" alt="Ícone redesenhado do WordCraft" loading="lazy" width="128" height="128"><b data-no-i18n>WordCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/soundcraft-craft.png" alt="Ícone original do SoundCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/soundcraft-new.png" alt="Ícone redesenhado do SoundCraft" loading="lazy" width="128" height="128"><b data-no-i18n>SoundCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/deckcraft-craft.png" alt="Ícone original do DeckCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/deckcraft-new.png" alt="Ícone redesenhado do DeckCraft" loading="lazy" width="128" height="128"><b data-no-i18n>DeckCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/gridcraft-craft.png" alt="Ícone original do GridCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/gridcraft-new.png" alt="Ícone redesenhado do GridCraft" loading="lazy" width="128" height="128"><b data-no-i18n>GridCraft</b></div>
+      <div class="bc-icon" role="listitem"><img src="../assets/shots/bettercraft/icons/cadcraft-craft.png" alt="Ícone original do CADCraft" loading="lazy" width="128" height="128"><span aria-hidden="true">→</span><img src="../assets/shots/bettercraft/icons/cadcraft-new.png" alt="Ícone redesenhado do CADCraft" loading="lazy" width="128" height="128"><b data-no-i18n>CADCraft</b></div>
+    </div>
+    <p class="wu-cap">O ícone original de cada app e o ícone BetterCraft que ele ganha no Mac.</p>
+
+    <div class="wu-split wu-editor">
+      <div class="wu-copy">
+        <h2>Troca segura, ida e volta.</h2>
+        <p>O app continua sendo o mesmo app: mesmo nome de arquivo, mesma versão. Por isso o launcher segue encontrando e atualizando cada um normalmente.</p>
+        <ul class="wu-list">
+          <li><b>Os ícones originais ficam guardados</b> dentro do próprio app, e voltar nunca depende de baixar nada.</li>
+          <li><b>Assinatura refeita</b> no Mac depois da troca, mantendo as permissões do app.</li>
+          <li><b>Nada muda durante uma atualização</b>: a versão nova ganha o ícone segundos depois de instalada.</li>
+        </ul>
+      </div>
+      <div class="wu-media bc-rows">
+        <figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/crop-grid-redesign.jpg?v=202610261800" alt="Linha do GridCraft com o selo REDESIGN" loading="lazy" width="541" height="80"></button><figcaption>Redesign</figcaption></figure>
+        <figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/crop-grid-originals.jpg?v=202610261800" alt="Linha do GridCraft com o selo ORIGINAL" loading="lazy" width="541" height="80"></button><figcaption>Originais Craft</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATUALIZAÇÕES -->
+  <section class="section container wu-chapter">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Instalar e atualizar</p>
+        <h2>A versão certa, sempre em dia.</h2>
+        <p>O launcher acompanha as versões de cada app Craft e mostra numa linha só a versão instalada e a nova, em amarelo, com o botão de atualizar ao lado.</p>
+        <ul class="wu-list">
+          <li><b>Um clique para instalar</b>: o launcher escolhe o arquivo certo para o seu Mac e confere o SHA-256 antes de instalar.</li>
+          <li><b>Atualizar tudo</b> de uma vez, com o número de atualizações no botão.</li>
+          <li><b>Downloads com progresso</b>, que podem ser pausados e cancelados.</li>
+          <li><b>Aviso</b> quando um app instalado ganha versão nova e, se quiser, atualização automática.</li>
+        </ul>
+      </div>
+      <div class="wu-media bc-rows">
+        <figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/crop-photo-update.jpg?v=202610261800" alt="Linha do PhotoCraft: versão 0.9.2 com a 0.10.0 disponível e o botão Atualizar para 0.10.0" loading="lazy" width="541" height="80"></button><figcaption>Atualização disponível</figcaption></figure>
+        <figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/crop-download.jpg?v=202610261800" alt="Seção Não instalados: CADCraft com o botão Instalar e FilmCraft baixando, com barra de progresso, pausar e cancelar" loading="lazy" width="1081" height="82"></button><figcaption>Instalar e baixar</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISUAL -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Visual</p>
+      <h2>Escuro ou claro, como o seu Mac.</h2>
+      <p>Cantos retos, linhas finas e letras de máquina de escrever, no visual da ArtCraft. O tema segue o sistema ou fica fixo em escuro ou claro.</p>
+    </div>
+    <div class="wu-tabset">
+      <div class="wu-tabs" role="tablist" aria-label="Tema">
+        <button type="button" role="tab" id="t-dark" aria-controls="p-dark">Escuro</button>
+        <button type="button" role="tab" id="t-light" aria-controls="p-light">Claro</button>
+        <button type="button" role="tab" id="t-light-orig" aria-controls="p-light-orig">Claro, Originais Craft</button>
+      </div>
+      <div class="wu-panel" role="tabpanel" id="p-dark" aria-labelledby="t-dark"><figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/redesign-dark.jpg?v=202610261800" alt="Tema escuro" loading="lazy" width="1120" height="900"></button></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-light" aria-labelledby="t-light" hidden><figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/redesign-light.jpg?v=202610261800" alt="Tema claro com os ícones redesenhados" loading="lazy" width="1120" height="900"></button></figure></div>
+      <div class="wu-panel" role="tabpanel" id="p-light-orig" aria-labelledby="t-light-orig" hidden><figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/originals-light.jpg?v=202610261800" alt="Tema claro com os ícones originais" loading="lazy" width="1120" height="900"></button></figure></div>
+    </div>
+  </section>
+
+  <!-- AJUSTES -->
+  <section class="section container wu-chapter">
+    <div class="section-head">
+      <p class="wu-kicker">Ajustes</p>
+      <h2>Só o que importa.</h2>
+      <p>Atualizações, tema e o conjunto de ícones. O resto do launcher original, como páginas de apps, avisos e links sociais, ficou de fora.</p>
+    </div>
+    <div class="wu-settings bc-settings">
+      <figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/crop-settings.jpg?v=202610261800" alt="Ajustes no tema escuro: atualizações, aparência e ícones neste computador" loading="lazy" width="1004" height="500"></button><figcaption class="wu-cap">Escuro</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/bettercraft/crop-settings-light.jpg?v=202610261800" alt="Ajustes no tema claro" loading="lazy" width="1004" height="500"></button><figcaption class="wu-cap">Claro</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- MAIS -->
+  <section class="section container">
+    <div class="section-head"><h2>E mais um pouco</h2></div>
+    <div class="wu-more">
+      <article class="card"><h3>Na barra de menus</h3><p>Um ícone ao lado do relógio abre o launcher e procura atualizações dos apps e do próprio launcher.</p></article>
+      <article class="card"><h3>Atualiza a si mesmo</h3><p>As versões novas do BetterCraft chegam pelo witchmymac.com, com uma verificação por dia.</p></article>
+      <article class="card"><h3>Nativo e leve</h3><p>Escrito só em Rust, com interface nativa. Sem Electron e sem web view.</p></article>
+      <article class="card"><h3>Sempre em dia</h3><p>Acompanha o ArtCraft Launcher original e traz as novidades dele.</p></article>
+    </div>
+  </section>
+
+  <!-- INSTALAR -->
+  <section id="instalar" class="section container narrow ap-install">
+    <div class="section-head">
+      <h2>Instalar</h2>
+      <p>O jeito mais rápido é uma linha no Terminal: ela baixa a versão mais nova, confere o arquivo e instala, sem aviso do macOS.</p>
+    </div>
+    <div class="term" data-app="bettercraft" data-mode="install">
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+          <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+          <div class="term-foot">
+            <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+            <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+          </div>
+        </div>
+    <p class="ap-install-alt">Prefere baixar o .dmg? Arraste o app para Aplicativos e libere na primeira vez, com um comando ou pelos Ajustes do Sistema. <a href="../#liberar">Ver o guia completo</a>.</p>
+  </section>
+
+  <!-- FICHA -->
+  <section class="section container narrow">
+    <dl class="ap-facts">
+      <div><dt>Versão</dt><dd><span data-version="bettercraft" data-no-i18n>—</span> · <a data-releases="bettercraft" href="#">Novidades</a></dd></div>
+      <div><dt>Requer</dt><dd>macOS 11 Big Sur ou mais novo</dd></div>
+      <div><dt>Processador</dt><dd>Apple Silicon e Intel</dd></div>
+      <div><dt>Licença</dt><dd>MIT ou Apache-2.0, código aberto</dd></div>
+      <div><dt>Preço</dt><dd>Gratuito, sem anúncios e sem rastreamento</dd></div>
+      <div><dt>Aviso</dt><dd>Versão independente do ArtCraft Launcher (storytold/craft-launcher); os apps Craft são da ArtCraft.</dd></div>
+    </dl>
+  </section>
+</main>
+
+<aside class="dl-sheet" aria-live="polite" hidden>
+  <button type="button" class="dl-close" aria-label="Fechar">✕</button>
+  <p class="eyebrow">Download iniciado</p>
+  <p class="dl-app" data-no-i18n></p>
+  <ol class="dl-steps">
+    <li>Abra o .dmg e arraste o app para a pasta Aplicativos.</li>
+    <li>Copie o comando e cole no Terminal (⌘ Espaço, digite Terminal).</li>
+  </ol>
+  <div class="term">
+    <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+    <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+    <div class="term-foot">
+      <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+      <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+    </div>
+  </div>
+  <p class="dl-alt">Pronto: o app abre direto. <a href="../#liberar">Sem Terminal? Veja o passo a passo</a>.</p>
+</aside>
+
+<dialog class="lightbox" aria-label="Imagem ampliada">
+  <button class="lightbox-close" type="button" aria-label="Fechar">✕</button>
+  <img src="" alt="">
+</dialog>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand"><img src="../assets/icons/logo-128.png" alt="" width="28" height="28"><span>witch<b>my</b>mac</span></div>
+    <nav aria-label="Rodapé">
+      <a href="../#apps">Apps</a>
+      <a href="../#faq">FAQ</a>
+      <a href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:matth.faria96@gmail.com">Contato</a>
+    </nav>
+    <p>© <span id="year"></span> witchmymac. Apple, Mac e macOS são marcas da Apple Inc.</p>
+  </div>
+</footer>
+
+<script src="../apps.js?v=202610261400"></script>
+<script src="../install-command.js?v=202610250700"></script>
+<script src="../script.js?v=202610250700"></script>
+<script src="../i18n-strings.js?v=202610251400"></script>
+<script src="strings.js?v=202610261800"></script>
+<script src="page.js?v=202610261800"></script>
+<script src="../i18n.js?v=202610242100"></script>
+<script src="../effects.js?v=202610201330"></script>
+</body>
+</html>
