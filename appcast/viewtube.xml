@@ -6,18 +6,17 @@
     <description>Atualizações do ViewTube</description>
     <language>pt-BR</language>
     <item>
-      <title>ViewTube 1.0.8</title>
-      <pubDate>Mon, 26 Oct 2026 12:06:21 +0000</pubDate>
-      <sparkle:version>21</sparkle:version>
-      <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+      <title>ViewTube 1.0.9</title>
+      <pubDate>Mon, 26 Oct 2026 13:04:15 +0000</pubDate>
+      <sparkle:version>22</sparkle:version>
+      <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li><strong>Music com a barra nova do YouTube Music:</strong> o YouTube Music está testando uma barra de player nova com parte dos usuários. Com ela, a barra do site aparecia por baixo da página do player e o botão rosa de abrir/recolher sumia. Agora o app funciona igual com as duas barras: barra escondida, botão rosa no lugar, cartão de controles, próxima/anterior, aleatório, repetir, compartilhar, letra, velocidade e teclas de mídia.</li>
-<li><strong>Mini player da barra de menus:</strong> com a barra de menus cheia (o item do ViewTube escondido), o painel agora abre no canto de cima da tela principal, em vez de fora da tela.</li>
+<li>Corrigida a tela preta na tela cheia dos vídeos do YouTube (acontecia depois de abrir a tela cheia com o vídeo pausado, por exemplo ao retomar a sessão após uma atualização).</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/viewtube-mac/releases/download/v1.0.8/ViewTube-1.0.8.dmg" length="3876226" type="application/octet-stream" sparkle:edSignature="9RyrjlPZJt1l13XoIEce4VgBzcS6fltH7evtwCEpSu82lt/+Yf/fsI2ZXTtAB6kI0v3kvfgLAlPuYbQ4qaHABA=="/>
+      <enclosure url="https://github.com/matthfaria96/viewtube-mac/releases/download/v1.0.9/ViewTube-1.0.9.dmg" length="3875980" type="application/octet-stream" sparkle:edSignature="35GwENysgQt0yFo5Dj9fdAP2m/ztMaPjGz006Hi/MsdRof6bi5bjZioKAErG6NS1I35C2xbXtR1BC0E3Kw7wCw=="/>
     </item>
   </channel>
 </rss>
