@@ -272,13 +272,18 @@ html,body{overflow-x:hidden}
   .dock{grid-template-columns:repeat(6,auto);gap:16px 22px}
 }
 
-/* "Ver mais apps": as 5 primeiras seções aparecem; o resto abre pelo botão */
-.more-gate{display:none}
-.features.collapsed .more-apps{display:none}
-.features.collapsed .more-gate{display:flex;justify-content:center;position:relative;margin-top:-160px;padding-top:160px;
-  background:linear-gradient(to bottom,transparent,var(--bg) 70%);z-index:2}
-.more-gate .more-btn{gap:10px;padding:14px 30px;font-size:16px}
-.more-gate .more-btn::after{content:"";width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-3px) rotate(45deg)}
-.more-apps{display:flex;flex-direction:column;gap:96px}
-.features.expanding .more-apps{animation:moreIn .5s ease both}
-@keyframes moreIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+/* Cartões: subtítulo em 1 linha e descrição em até 3, com reticências */
+.card.app .tag{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card.app > p:not(.tag){display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+/* Prévia com desfoque: mostra parte da lista e o começo do próximo item, embaçado; "Ver mais" abre o resto */
+.peek{position:relative}
+.peek.collapsed{overflow:hidden;transition:max-height .6s ease}
+.peek.collapsed::after{content:"";position:absolute;left:-40px;right:-40px;bottom:0;height:var(--peek,200px);pointer-events:none;
+  backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 55%);mask-image:linear-gradient(to bottom,transparent,#000 55%);
+  background:linear-gradient(to bottom,transparent 0%,rgba(11,10,20,.55) 55%,var(--bg) 100%)}
+.peek-gate{display:flex;justify-content:center;margin-top:-28px;position:relative;z-index:3}
+.peek-gate[hidden]{display:none}
+.peek-gate .btn{gap:10px;padding:14px 30px;font-size:16px;background:rgba(20,18,34,.85);backdrop-filter:blur(10px)}
+.peek-gate .btn::after{content:"";width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-3px) rotate(45deg)}

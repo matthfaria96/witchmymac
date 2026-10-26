@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=202610271400">
+<link rel="stylesheet" href="style.css?v=202610261000">
 <link rel="stylesheet" href="effects.css?v=202610201330">
 <link rel="stylesheet" href="gatekeeper.css?v=202610250800">
 </head>
@@ -55,7 +55,7 @@
     <img src="assets/icons/logo.png" alt="witchmymac" class="hero-logo" width="220" height="220">
     <p class="eyebrow">Apps nativos para macOS · 100% gratuitos</p>
     <h1>Feitiços úteis<br><span class="grad">para o seu Mac.</span></h1>
-    <p class="lead">Doze apps nativos: um limpador para o Mac, o YouTube e o YouTube Music num app só, alternativas gratuitas ao Word, ao Excel e ao Photoshop, conversores de imagem e de vídeo com IA, um compactador de arquivos, um canivete suíço para a barra de menus, um bloco de notas, um player de música, um player de vídeo com cara de TV de tubo, um cliente de servidores e um cliente de bancos de dados. Sem assinatura, sem anúncios, sem rastreamento.</p>
+    <p class="lead">Ferramentas leves e bonitas que fazem o seu Mac trabalhar do seu jeito. Sem assinatura, sem anúncios, sem rastreamento. Baixe, arraste para Aplicativos e pronto.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#apps">Ver os apps</a>
       <a class="btn btn-ghost" href="#instalar">Como instalar</a>
@@ -88,7 +88,7 @@
       <h2>Os apps</h2>
       <p>Cada um substitui uma ferramenta paga. Todos são seus, de graça.</p>
     </div>
-    <div class="grid apps-grid">
+    <div class="grid apps-grid peek" data-show="6" data-peek="150">
       <a class="card app" data-app="macdash" href="macdash/">
         <img src="assets/icons/macdash.png?v=202610190240" alt="" class="app-icon">
         <h3>MacDash</h3>
@@ -177,7 +177,7 @@
   </section>
 
   <!-- APP DETAILS -->
-  <section class="section container features">
+  <section class="section container features peek" data-show="5" data-peek="320">
 
     <article class="feature-row" id="macdash" data-app="macdash">
       <div class="feature-text">
@@ -302,10 +302,6 @@
       </div>
     </article>
 
-    <div class="more-gate">
-      <button type="button" class="btn btn-ghost more-btn" aria-expanded="false">Ver mais 7 apps</button>
-    </div>
-    <div class="more-apps" id="more-apps">
     <article class="feature-row reverse" id="neorar" data-app="neorar">
       <div class="feature-text">
         <div class="app-title"><img src="assets/icons/neorar.png?v=202610190240" alt="" width="56" height="56"><div><p class="eyebrow">Seus arquivos compactados</p><h2>NeoRAR</h2></div></div>
@@ -480,8 +476,6 @@
         <button class="shot shot-sub narrow-shot" type="button"><img src="assets/shots/bunnygrid/crop-ai.jpg?v=202610271000" alt="Assistente de IA do BunnyGrid" loading="lazy" width="300" height="700"></button>
       </div>
     </article>
-
-    </div>
 
   </section>
 
@@ -750,8 +744,8 @@
 
 <script src="apps.js?v=202610271200"></script>
 <script src="install-command.js?v=202610250800"></script>
-<script src="script.js?v=202610271200"></script>
-<script src="i18n-strings.js?v=202610271200"></script>
+<script src="script.js?v=202610261030"></script>
+<script src="i18n-strings.js?v=202610261000"></script>
 <script src="i18n.js?v=202610271200"></script>
 <script src="effects.js?v=202610201330"></script>
 <script src="gatekeeper.js?v=202610242200"></script>
