@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Anime Localization Studio</title>
+    <link>https://witchmymac.com/appcast/animelocalizationstudio.xml</link>
+    <description>Atualizações do Anime Localization Studio</description>
+    <language>pt-BR</language>
+    <item>
+      <title>Anime Localization Studio 0.28.0</title>
+      <pubDate>Wed, 28 Oct 2026 05:56:50 +0000</pubDate>
+      <sparkle:version>30</sparkle:version>
+      <sparkle:shortVersionString>0.28.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Atualizações dentro do app: o Anime Localization Studio verifica sozinho uma vez por dia e pergunta antes de instalar (Verificar atualizações… no menu do app e em Ajustes › Sobre).</li>
+<li>Ajustes › Sobre com versão, licença, código-fonte e Licenças e créditos.</li>
+<li>Legendar: uma legenda editada por vez, com Traduzir (de uma legenda ou do áudio), Novo e Salvar (gravar no vídeo ou exportar).</li>
+<li>Formatação sem códigos (itálico, negrito, cores, tamanho), karaokê por sílaba com marcação no tempo, e posição da legenda arrastando no vídeo.</li>
+<li>A lista acompanha o vídeo ao avançar ou voltar; Espaço toca e pausa; ← → pulam 15 s.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/anime-localization-studio/releases/download/v0.28.0/AnimeLocalizationStudio-0.28.0.dmg" length="19187652" type="application/octet-stream" sparkle:edSignature="6GkDXHM6WKSmUQ6V+o2trszuPWm/THO3NIe5GaCMqxDkoVn/6h47oFIDoxOJxXjuRfXRUadLgPnjOWh5IA9eDg=="/>
+    </item>
+  </channel>
+</rss>
