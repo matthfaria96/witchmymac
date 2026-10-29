@@ -14,6 +14,7 @@ window.WITCH_APPS = Object.freeze({
   rubbishnotes: Object.freeze({ repo: 'rubbish-notes', tag: 'v1.1.2',        file: 'RubbishNotes-1.1.2.dmg', published: true, app: 'Rubbish Notes.app' }),
   wineup:       Object.freeze({ repo: 'wineup-player', tag: 'v1.1.1',      file: 'WineupPlayer-1.1.1.dmg', published: true, app: 'Wineup Player.app' }),
   santovideoplayer: Object.freeze({ repo: 'santo-video-player', tag: 'v2.0.1', file: 'SantoVideoPlayer-2.0.1.dmg', published: true, app: 'Santo Video Player.app' }),
+  animelocalizationstudio: Object.freeze({ repo: 'anime-localization-studio', tag: 'v0.29.0', file: 'AnimeLocalizationStudio-0.29.0.dmg', published: true, app: 'Anime Localization Studio.app' }),
   wormlink:     Object.freeze({ repo: 'Wormlink',      tag: 'v0.2.1',        file: 'Wormlink-0.2.1.dmg',     published: true, app: 'Wormlink.app' }),
   bunnygrid:    Object.freeze({ repo: 'BunnyGrid',     tag: 'v0.2.1',        file: 'BunnyGrid-0.2.1.dmg',    published: true, app: 'BunnyGrid.app' }),
 });

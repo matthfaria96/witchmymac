@@ -27,11 +27,12 @@ repo_for() {
     hypervideo) echo "hypervideo-converter" ;;
     hyperimage) echo "hyperimage-converter" ;;
     wineup) echo "wineup-player" ;;
+    animelocalizationstudio|als) echo "anime-localization-studio" ;;
     *) return 1 ;;
   esac
 }
 
-APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo hyperimage wineup"
+APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo hyperimage wineup animelocalizationstudio"
 
 say() { printf '\033[1;35m==>\033[0m %s\n' "$*"; }
 fail() { printf '\033[1;31mError:\033[0m %s\n' "$*" >&2; exit 1; }

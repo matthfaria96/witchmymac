@@ -6,6 +6,22 @@
     <description>Atualizações do Anime Localization Studio</description>
     <language>pt-BR</language>
     <item>
+      <title>Anime Localization Studio 0.29.0</title>
+      <pubDate>Wed, 28 Oct 2026 18:04:51 +0000</pubDate>
+      <sparkle:version>31</sparkle:version>
+      <sparkle:shortVersionString>0.29.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>English interface: the app follows your macOS language (English or Brazilian Portuguese). / Interface em inglês: o app segue o idioma do macOS (inglês ou português do Brasil).</li>
+<li>The default output language follows your system. / O idioma de saída padrão segue o do sistema.</li>
+<li>Translation prompts follow the output language. / As instruções de tradução seguem o idioma de saída.</li>
+<li>No horizontal scrollbar in the line list with a Beside subtitle. / A lista com Ao lado não mostra mais barra de rolagem horizontal.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/anime-localization-studio/releases/download/v0.29.0/AnimeLocalizationStudio-0.29.0.dmg" length="19273203" type="application/octet-stream" sparkle:edSignature="auQbs7nNWqAG1QMmDmYQ6FjBMQsThBB+xiAxp4DdZCwr+kF05O4xrD+cA+CPmy+gZkXGu1/ocahZrykD4VqaCw=="/>
+    </item>
+    <item>
       <title>Anime Localization Studio 0.28.0</title>
       <pubDate>Wed, 28 Oct 2026 05:56:50 +0000</pubDate>
       <sparkle:version>30</sparkle:version>
