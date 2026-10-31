@@ -6,6 +6,23 @@
     <description>Atualizações do Rubbish Notes</description>
     <language>pt-BR</language>
     <item>
+      <title>Rubbish Notes 1.2.0</title>
+      <pubDate>Sat, 31 Oct 2026 06:37:19 +0000</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li><b>Backup completo em .zip:</b> Arquivo › Exportar Backup… guarda todas as notas, sub-notas, blocos, imagens, status e ajustes. Em Importar Backup… você escolhe Substituir Tudo (fica igual ao backup; as notas atuais ficam guardadas numa pasta ao lado) ou Juntar às Minhas Notas.</li>
+<li><b>Arquivos Abertos:</b> .txt e .md abertos pelo Finder ou por Arquivo › Abrir… aparecem na barra lateral e são editados como texto simples na janela principal.</li>
+<li>Esses arquivos só são gravados quando você salva (⌘S) ou usa Salvar Como… (⇧⌘S), onde escolhe nome, pasta e formato (.txt ou .md). Alterações pendentes aparecem com uma bolinha laranja, e o app pergunta antes de perdê-las.</li>
+<li>O Rubbish Notes pode ser o app padrão também para arquivos .md (Ajustes › Geral).</li>
+<li><b>Status das notas agora é opcional</b> e vem desligado: ligue em Ajustes › Editor › Status das notas. Ligado, a bolinha aparece depois do nome da nota.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/rubbish-notes/releases/download/v1.2.0/RubbishNotes-1.2.0.dmg" length="10029049" type="application/octet-stream" sparkle:edSignature="3BXI64SmxpHsL5jCBar1Cm7qg7ceEzzRTuIfgjqsuwT5noh0UkGzSNsPo6J+a3xBRYvV/a6HnsWiJM//yiceAQ=="/>
+    </item>
+    <item>
       <title>Rubbish Notes 1.1.2</title>
       <pubDate>Mon, 26 Oct 2026 12:59:10 +0000</pubDate>
       <sparkle:version>7</sparkle:version>
