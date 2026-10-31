@@ -6,18 +6,18 @@
     <description>Atualizações do BunnyGrid</description>
     <language>pt-BR</language>
     <item>
-      <title>BunnyGrid 0.2.1</title>
-      <pubDate>Sun, 25 Oct 2026 12:35:09 +0000</pubDate>
-      <sparkle:version>144</sparkle:version>
-      <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+      <title>BunnyGrid 0.2.2</title>
+      <pubDate>Sat, 31 Oct 2026 14:14:58 +0000</pubDate>
+      <sparkle:version>145</sparkle:version>
+      <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li>Atualizações dentro do app: BunnyGrid › Verificar Atualizações… (Check for Updates…) e o botão em Ajustes › Sobre. O app também procura versões novas uma vez por dia e pergunta antes de instalar.</li>
-<li>Quem usa uma versão anterior precisa instalar esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+<li>Corrige o app não abrir em Macs novos ou recém-formatados (erro ao carregar o componente de atualizações).</li>
+<li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/BunnyGrid/releases/download/v0.2.1/BunnyGrid-0.2.1.dmg" length="29719977" type="application/octet-stream" sparkle:edSignature="L/hJxg1Bpo0m54n7K73szq0QTZCmaXrrqGMP0sRx1Am3oURU+5/NrJmYs/iSusbJdTMbhZ3ChP7xrsEdw0npBw=="/>
+      <enclosure url="https://github.com/matthfaria96/BunnyGrid/releases/download/v0.2.2/BunnyGrid-0.2.2.dmg" length="29720059" type="application/octet-stream" sparkle:edSignature="go3EnSn0oQiPOqjvz8g5J1Sb/ZaEfLt4bxP4ucI5JTbkThQnGnYXbXVS5/udnfZRNWe05V01iyQkbDGy9s29Bg=="/>
     </item>
   </channel>
 </rss>

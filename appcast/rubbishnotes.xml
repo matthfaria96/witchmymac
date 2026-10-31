@@ -6,49 +6,18 @@
     <description>Atualizações do Rubbish Notes</description>
     <language>pt-BR</language>
     <item>
-      <title>Rubbish Notes 1.2.0</title>
-      <pubDate>Sat, 31 Oct 2026 06:37:19 +0000</pubDate>
-      <sparkle:version>11</sparkle:version>
-      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+      <title>RubbishNotes 1.2.1</title>
+      <pubDate>Sat, 31 Oct 2026 14:14:57 +0000</pubDate>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li><b>Backup completo em .zip:</b> Arquivo › Exportar Backup… guarda todas as notas, sub-notas, blocos, imagens, status e ajustes. Em Importar Backup… você escolhe Substituir Tudo (fica igual ao backup; as notas atuais ficam guardadas numa pasta ao lado) ou Juntar às Minhas Notas.</li>
-<li><b>Arquivos Abertos:</b> .txt e .md abertos pelo Finder ou por Arquivo › Abrir… aparecem na barra lateral e são editados como texto simples na janela principal.</li>
-<li>Esses arquivos só são gravados quando você salva (⌘S) ou usa Salvar Como… (⇧⌘S), onde escolhe nome, pasta e formato (.txt ou .md). Alterações pendentes aparecem com uma bolinha laranja, e o app pergunta antes de perdê-las.</li>
-<li>O Rubbish Notes pode ser o app padrão também para arquivos .md (Ajustes › Geral).</li>
-<li><b>Status das notas agora é opcional</b> e vem desligado: ligue em Ajustes › Editor › Status das notas. Ligado, a bolinha aparece depois do nome da nota.</li>
+<li>Corrige o app não abrir em Macs novos ou recém-formatados (erro ao carregar o componente de atualizações).</li>
+<li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/rubbish-notes/releases/download/v1.2.0/RubbishNotes-1.2.0.dmg" length="10029049" type="application/octet-stream" sparkle:edSignature="3BXI64SmxpHsL5jCBar1Cm7qg7ceEzzRTuIfgjqsuwT5noh0UkGzSNsPo6J+a3xBRYvV/a6HnsWiJM//yiceAQ=="/>
-    </item>
-    <item>
-      <title>Rubbish Notes 1.1.2</title>
-      <pubDate>Mon, 26 Oct 2026 12:59:10 +0000</pubDate>
-      <sparkle:version>7</sparkle:version>
-      <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-<ul>
-<li>Blocos de anotação em tela maior: o novo botão ↖↘ no cabeçalho do bloco abre o bloco grande, por cima da nota, com tudo o que ele já fazia (editar, mudar o nome, copiar, exportar e apagar).</li>
-<li>Para fechar, use Esc, o botão ↘↖ ou clique fora do bloco.</li>
-</ul>
-      ]]></description>
-      <enclosure url="https://github.com/matthfaria96/rubbish-notes/releases/download/v1.1.2/RubbishNotes-1.1.2.dmg" length="9694806" type="application/octet-stream" sparkle:edSignature="00Qn6rgfNFBHkjLES+lZAoBhlmdJfD2IllKG309g09s0J20H25uLlsnI6Kx2hnsaqTcoQxlRXK1MeOzkHlszCA=="/>
-    </item>
-    <item>
-      <title>Rubbish Notes 1.1.1</title>
-      <pubDate>Sun, 25 Oct 2026 12:34:03 +0000</pubDate>
-      <sparkle:version>6</sparkle:version>
-      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-<ul>
-<li>Atualizações dentro do app: <b>Verificar Atualizações…</b> no menu Rubbish Notes e em Ajustes › Sobre. O app também verifica sozinho uma vez por dia e pergunta antes de instalar.</li>
-<li>Quem está numa versão anterior precisa instalar esta versão à mão uma única vez; as próximas chegam pelo próprio app.</li>
-</ul>
-      ]]></description>
-      <enclosure url="https://github.com/matthfaria96/rubbish-notes/releases/download/v1.1.1/RubbishNotes-1.1.1.dmg" length="9624050" type="application/octet-stream" sparkle:edSignature="ETM9pYHQixcmQMtiQZupY2HEqn2UWyTKZvFip8exE3GFG8Z0vv7KDjuZteRu5+s0b9FtBlBMPOYHkgawMwcnAQ=="/>
+      <enclosure url="https://github.com/matthfaria96/rubbish-notes/releases/download/v1.2.1/RubbishNotes-1.2.1.dmg" length="10029061" type="application/octet-stream" sparkle:edSignature="bjd9gf8yUN7ranpIRw/JWtk6wi+SaWg5c8iyrAjirC5dKOZ7bMl1KkPH7Ply8Nd4s7Z918kfmVSZqJUTnim0BA=="/>
     </item>
   </channel>
 </rss>

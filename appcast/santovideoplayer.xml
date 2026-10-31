@@ -6,18 +6,18 @@
     <description>Atualizações do Santo Video Player</description>
     <language>pt-BR</language>
     <item>
-      <title>Santo Video Player 2.0.1</title>
-      <pubDate>Sun, 25 Oct 2026 12:33:44 +0000</pubDate>
-      <sparkle:version>3</sparkle:version>
-      <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
+      <title>SantoVideoPlayer 2.0.2</title>
+      <pubDate>Sat, 31 Oct 2026 14:14:57 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>2.0.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li><strong>Atualizações dentro do app:</strong> novo item "Verificar Atualizações…" no menu Santo Video Player e na aba Sobre dos Ajustes. O app também verifica sozinho uma vez por dia e pergunta antes de instalar.</li>
-<li>Quem está numa versão anterior precisa instalar esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+<li>Corrige o app não abrir em Macs novos ou recém-formatados (erro ao carregar o componente de atualizações).</li>
+<li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/santo-video-player/releases/download/v2.0.1/SantoVideoPlayer-2.0.1.dmg" length="35001382" type="application/octet-stream" sparkle:edSignature="fo10uBwWUM2DOUEZ5SW7FwweD21+ZQY507eoNTx9qWDkph8yQFj/dr7SVDVfD2/JkVicI03kxs4hHYwjI2BUDw=="/>
+      <enclosure url="https://github.com/matthfaria96/santo-video-player/releases/download/v2.0.2/SantoVideoPlayer-2.0.2.dmg" length="35001392" type="application/octet-stream" sparkle:edSignature="AdbfhrW970LTXqmOsy67vkN4EeGTh3Zsu0ukB/mCwGBYWSgxAUh15nM/zsvOqeS7SNPPs+ZOG29cl6KmrD3mAg=="/>
     </item>
   </channel>
 </rss>

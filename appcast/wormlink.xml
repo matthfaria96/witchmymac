@@ -6,18 +6,18 @@
     <description>Atualizações do WormLink</description>
     <language>pt-BR</language>
     <item>
-      <title>Wormlink 0.2.1</title>
-      <pubDate>Sun, 25 Oct 2026 12:39:13 +0000</pubDate>
-      <sparkle:version>3</sparkle:version>
-      <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+      <title>Wormlink 0.2.2</title>
+      <pubDate>Sat, 31 Oct 2026 14:14:58 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li>Atualizações dentro do app: <b>Verificar Atualizações…</b> no menu Wormlink e em Ajustes › Sobre. O app também verifica sozinho uma vez por dia e pergunta antes de instalar.</li>
-<li>Quem está numa versão anterior precisa instalar esta versão à mão uma única vez; as próximas chegam pelo próprio app.</li>
+<li>Corrige o app não abrir em Macs novos ou recém-formatados (erro ao carregar o componente de atualizações).</li>
+<li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Wormlink/releases/download/v0.2.1/Wormlink-0.2.1.dmg" length="41144103" type="application/octet-stream" sparkle:edSignature="Z9zdHRWdkgOONEBsVDpE8vuAtpowVwPU3xCoJJlsLPDJi0K5lhSnc1DhWpvyeByXQ/JebqaCoq/qXxjCG6EdCg=="/>
+      <enclosure url="https://github.com/matthfaria96/Wormlink/releases/download/v0.2.2/Wormlink-0.2.2.dmg" length="41110815" type="application/octet-stream" sparkle:edSignature="l937BzVj2h1fxvJHD+UXgwnq3gZXMbUSicsyRowzWVPiCtu20m7v8ANCVoVKyQZzpOHui1ea97TyWnVpXi85Cw=="/>
     </item>
   </channel>
 </rss>

@@ -6,19 +6,18 @@
     <description>Atualizações do BetterCraft Launcher</description>
     <language>pt-BR</language>
     <item>
-      <title>BetterCraft Launcher 0.6.4</title>
-      <pubDate>Mon, 26 Oct 2026 06:46:19 +0000</pubDate>
-      <sparkle:version>0.6.4</sparkle:version>
-      <sparkle:shortVersionString>0.6.4</sparkle:shortVersionString>
+      <title>BetterCraftLauncher 0.6.5</title>
+      <pubDate>Sat, 31 Oct 2026 14:14:58 +0000</pubDate>
+      <sparkle:version>0.6.5</sparkle:version>
+      <sparkle:shortVersionString>0.6.5</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li>Ícones redesenhados: um aviso abaixo de "Which icons?" mostra o andamento e quantos apps mudaram, com o botão "Check again".</li>
-<li>Depois de aplicar os ícones, o cache de ícones do macOS é limpo e o Dock é reiniciado, então Finder, Launchpad e Dock mostram os novos na hora.</li>
-<li>Apps instalados ou atualizados já recebem o ícone redesenhado; apps ainda sem ele aparecem como "Pending".</li>
+<li>Corrige o app não abrir em Macs novos ou recém-formatados (erro ao carregar o componente de atualizações).</li>
+<li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/bettercraft-launcher/releases/download/v0.6.4/BetterCraftLauncher-0.6.4.dmg" length="48596310" type="application/octet-stream" sparkle:edSignature="pPa58qez7KgqvR7Rz2Vy4RCQHOigHpNXzozwM8PV7IebivJxnaTWTl5Hn1dMeVLfoyvoK+PFJauqxz+rb3iwBw=="/>
+      <enclosure url="https://github.com/matthfaria96/bettercraft-launcher/releases/download/v0.6.5/BetterCraftLauncher-0.6.5.dmg" length="48596035" type="application/octet-stream" sparkle:edSignature="sxoW2eCh9+QMYMeKcCJCSjzc6zlxOFesBnbkEoyVqfduoXbTf2+uNW1seK5wryoIWvg5l53SD3BcxhSYLngGDQ=="/>
     </item>
   </channel>
 </rss>

@@ -6,15 +6,18 @@
     <description>Atualizações do HyperImage Converter</description>
     <language>pt-BR</language>
     <item>
-      <title>HyperImage Converter 1.0.1</title>
-      <pubDate>Sun, 25 Oct 2026 12:41:18 +0000</pubDate>
-      <sparkle:version>3</sparkle:version>
-      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <title>HyperImage 1.0.2</title>
+      <pubDate>Sat, 31 Oct 2026 14:14:57 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<ul><li>Novo: Verificar Atualizações… no menu HyperImage Converter e na janela Sobre. O app procura novas versões uma vez por dia e instala com um clique.</li><li>Quem está na 1.0.0 precisa instalar esta versão uma vez à mão; as próximas chegam pelo próprio app.</li></ul>
+<ul>
+<li>Corrige o app não abrir em Macs novos ou recém-formatados (erro ao carregar o componente de atualizações).</li>
+<li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+</ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/hyperimage-converter/releases/download/v1.0.1/HyperImage-1.0.1.dmg" length="88403894" type="application/octet-stream" sparkle:edSignature="DD0gxEpUcMMIS6wWFOeeGRw3BkSz/JEsCBIB7JsdkNDUM3VrFu7gPVYytkt6f/3EPbJEOC23S2dJ7TnZ1ngWDQ=="/>
+      <enclosure url="https://github.com/matthfaria96/hyperimage-converter/releases/download/v1.0.2/HyperImage-1.0.2.dmg" length="88410178" type="application/octet-stream" sparkle:edSignature="aLE+POlxtnLPWYh6MY0A+0G6CpCZiH0YsGS5MOuSEYjYNs7GCFzW9htSJSnebgVLIrBG7TMQIIznNiCw8qICBg=="/>
     </item>
   </channel>
 </rss>
