@@ -6,18 +6,18 @@
     <description>Atualizações do BetterCraft Launcher</description>
     <language>pt-BR</language>
     <item>
-      <title>BetterCraftLauncher 0.6.5</title>
-      <pubDate>Sat, 31 Oct 2026 14:14:58 +0000</pubDate>
-      <sparkle:version>0.6.5</sparkle:version>
-      <sparkle:shortVersionString>0.6.5</sparkle:shortVersionString>
+      <title>BetterCraftLauncher 0.6.6</title>
+      <pubDate>Sat, 31 Oct 2026 23:43:28 +0000</pubDate>
+      <sparkle:version>0.6.6</sparkle:version>
+      <sparkle:shortVersionString>0.6.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li>Corrige o app não abrir em Macs novos ou recém-formatados (erro ao carregar o componente de atualizações).</li>
-<li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+<li>A tela não pisca mais: a conferência automática dos ícones agora roda sem mexer na janela.</li>
+<li>Traz as novidades do ArtCraft Launcher original até a versão 0.11.1.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/bettercraft-launcher/releases/download/v0.6.5/BetterCraftLauncher-0.6.5.dmg" length="48596035" type="application/octet-stream" sparkle:edSignature="sxoW2eCh9+QMYMeKcCJCSjzc6zlxOFesBnbkEoyVqfduoXbTf2+uNW1seK5wryoIWvg5l53SD3BcxhSYLngGDQ=="/>
+      <enclosure url="https://github.com/matthfaria96/bettercraft-launcher/releases/download/v0.6.6/BetterCraftLauncher-0.6.6.dmg" length="49794903" type="application/octet-stream" sparkle:edSignature="wT5MosjW3e+jEZsXZV3znmwSu2MFsSz6QKK/56Ii99U0gF4ggdib+ACibI6HmSVopk68EoXVcuB6ohD2RfFHAg=="/>
     </item>
   </channel>
 </rss>
