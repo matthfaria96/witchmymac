@@ -6,18 +6,18 @@
     <description>Atualizações do NeoRAR</description>
     <language>pt-BR</language>
     <item>
-      <title>Neorar 1.1.2</title>
-      <pubDate>Sat, 31 Oct 2026 14:14:56 +0000</pubDate>
-      <sparkle:version>4</sparkle:version>
-      <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+      <title>Neorar 1.1.3</title>
+      <pubDate>Mon, 02 Nov 2026 08:18:58 +0000</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.1.3</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
 <ul>
-<li>Corrige o app não abrir em Macs novos ou recém-formatados (erro ao carregar o componente de atualizações).</li>
-<li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
+<li>Corrige arquivos quebrados ao comprimir pelo botão direito do Finder: o Neorar fechava antes de terminar e o arquivo gerado não abria depois.</li>
+<li>Arquivos criados pelas versões anteriores desse jeito continuam inválidos: comprima de novo a partir dos originais.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Neorar/releases/download/v1.1.2/Neorar-1.1.2.dmg" length="6853056" type="application/octet-stream" sparkle:edSignature="S1vcIsGevt9mHnz71haxnKcmyyCd/ArguCMop5UJkT4Fc2HG1j9xRLEwztG/oQUlIdz4Cx5RqEK+BIsr6QTJAw=="/>
+      <enclosure url="https://github.com/matthfaria96/Neorar/releases/download/v1.1.3/Neorar-1.1.3.dmg" length="7969237" type="application/octet-stream" sparkle:edSignature="3nEiRrhPJKKhV0AbG0TSNTmRRRZ/id5VIHMfsTfMx9Fxlr/TCJKoPZ7AIm0Lxnyj6VDx0q0N2i2D9yjmu+XvDQ=="/>
     </item>
   </channel>
 </rss>
