@@ -817,4 +817,14 @@ window.WITCH_STRINGS = Object.freeze({
     'Espelho tutorial with the QR code to pair the Android over Wi-Fi',
     'Tutorial de Espelho con el código QR para emparejar el Android por Wi-Fi',
     'Обучение в Espelho: QR-код для подключения Android по Wi-Fi'],
+  // Página inicial: destaque e catálogo
+  'Prévia rápida': ['Quick look', 'Vista rápida', 'Быстрый просмотр'],
+  'Conhecer o app': ['See the app', 'Ver la app', 'Подробнее о программе'],
+  'Ver a página completa': ['See the full page', 'Ver la página completa', 'Открыть полную страницу'],
+  'Conhecer o Espelho': ['Meet Espelho', 'Conocer Espelho', 'Подробнее об Espelho'],
+  'A tela do iPhone, do iPad e do Android numa janela do Mac, com som. O Android você usa com o mouse e o teclado.': ['Your iPhone, iPad or Android screen in a window on the Mac, with sound. And you use the Android with the mouse and keyboard.', 'La pantalla del iPhone, del iPad y de Android en una ventana del Mac, con sonido. Y Android lo usas con el ratón y el teclado.', 'Экран iPhone, iPad и Android в окне Mac, со звуком. А Android можно управлять мышью и клавиатурой.'],
+  'macOS 26 Tahoe ou mais novo · Apple Silicon · Gratuito': ['macOS 26 Tahoe or later · Apple Silicon · Free', 'macOS 26 Tahoe o posterior · Apple Silicon · Gratis', 'macOS 26 Tahoe или новее · Apple Silicon · Бесплатно'],
+  'Dica: passe o mouse sobre um app e aperte': ['Tip: hover over an app and press', 'Consejo: pasa el ratón sobre una app y pulsa', 'Совет: наведите курсор на программу и нажмите'],
+  'espaço': ['space', 'espacio', 'пробел'],
+  'para a prévia rápida.': ['for a quick look.', 'para la vista rápida.', 'для быстрого просмотра.'],
 });

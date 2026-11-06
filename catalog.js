@@ -1,74 +1,83 @@
-// Catálogo da página inicial: filtro por categoria, busca e prévia rápida de cada app.
-// O conteúdo de cada prévia já está no HTML (div.app-detail dentro do cartão), traduzido pelo i18n.js;
-// ao abrir, o bloco é movido para o <dialog class="preview"> e volta para o cartão ao trocar ou fechar.
-// As capturas grandes só carregam quando a prévia abre (data-src -> src).
+// Página inicial: catálogo (categorias, busca), dock com ampliação e a prévia rápida.
+// O caminho principal é o cartão, que leva à página do app. A prévia é um extra do computador
+// (mouse e tela larga), no estilo do Quick Look do Mac: botão "Prévia" sobre a imagem, ou o mouse
+// sobre um cartão e a barra de espaço. Ela cresce a partir do cartão (transform/opacity, Web Animations)
+// e as capturas são pré-carregadas quando o mouse para sobre um cartão.
+// O conteúdo de cada prévia já está no HTML (div.app-detail dentro do cartão), traduzido pelo i18n.js.
 (() => {
   const section = document.querySelector('.catalog');
-  const dialog = document.querySelector('dialog.preview');
-  if (!section || !dialog) return;
-
+  if (!section) return;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const desktop = window.matchMedia('(min-width: 900px) and (hover: hover) and (pointer: fine)');
+
   const grid = section.querySelector('.cat-grid');
+  const chipBox = section.querySelector('.cat-chips');
   const chips = [...section.querySelectorAll('.cat-chip')];
   const input = section.querySelector('.cat-input');
   const empty = section.querySelector('.cat-empty');
-  const content = dialog.querySelector('.pv-content');
-  const scroller = dialog.querySelector('.pv-scroll');
-  const pos = dialog.querySelector('.pv-pos');
-  const prevBtn = dialog.querySelector('.pv-prev');
-  const nextBtn = dialog.querySelector('.pv-next');
+  const bar = section.querySelector('.cat-bar');
 
   const cards = [...grid.querySelectorAll('.app-card')].map((el) => ({
     el,
     key: el.dataset.app,
     cats: (el.dataset.cats || '').split(/\s+/).filter(Boolean),
     detail: el.querySelector('.app-detail'),
+    media: el.querySelector('.app-media'),
   }));
   const byKey = new Map(cards.map((c) => [c.key, c]));
   const state = { cat: 'all', query: '' };
 
-  // Busca sem acento e sem diferença de maiúsculas, no idioma que está na tela.
-  const fold = (text) => text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
+  // ---------- Filtro e busca ----------
+  const fold = (text) => (text || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
   const searchText = (card) => fold([
     card.el.querySelector('h3')?.textContent,
     card.el.querySelector('.tag')?.textContent,
     card.el.querySelector('.desc')?.textContent,
-    card.detail.querySelector('.eyebrow')?.textContent,
-    card.detail.querySelector('h2')?.textContent,
+    card.detail?.querySelector('.eyebrow')?.textContent,
   ].join(' '));
-  const matchesQuery = (card) => !state.query || searchText(card).includes(state.query);
+  const matches = (card) => !state.query || searchText(card).includes(state.query);
   const inCat = (card, cat) => cat === 'all' || card.cats.includes(cat);
   const visibleCards = () => cards.filter((c) => !c.el.hidden);
 
   function render(animate) {
     let shown = 0;
     cards.forEach((card) => {
-      const show = inCat(card, state.cat) && matchesQuery(card);
-      const wasHidden = card.el.hidden;
+      const show = inCat(card, state.cat) && matches(card);
       card.el.hidden = !show;
-      if (show) {
-        shown += 1;
-        if (animate && !reduceMotion && (wasHidden || animate === 'all')) {
-          card.el.classList.remove('enter');
-          void card.el.offsetWidth; // reinicia a animação
-          card.el.style.animationDelay = `${Math.min(shown - 1, 8) * 30}ms`;
-          card.el.classList.add('enter');
-        }
+      if (!show) return;
+      shown += 1;
+      if (animate && !reduceMotion) {
+        card.el.classList.remove('enter');
+        void card.el.offsetWidth;
+        card.el.style.animationDelay = `${Math.min(shown - 1, 8) * 35}ms`;
+        card.el.classList.add('enter');
       }
     });
-    // Contagem de cada categoria segue a busca atual.
     chips.forEach((chip) => {
-      const count = cards.filter((c) => inCat(c, chip.dataset.cat) && matchesQuery(c)).length;
-      chip.querySelector('.cat-count').textContent = String(count);
+      chip.querySelector('.cat-count').textContent = String(cards.filter((c) => inCat(c, chip.dataset.cat) && matches(c)).length);
     });
     empty.hidden = shown > 0;
+    requestAnimationFrame(moveIndicator);
   }
   grid.addEventListener('animationend', (event) => {
-    if (event.target.classList.contains('enter')) {
-      event.target.classList.remove('enter');
-      event.target.style.animationDelay = '';
-    }
+    const el = event.target;
+    if (el.classList.contains('enter')) { el.classList.remove('enter'); el.style.animationDelay = ''; }
+    if (el.classList.contains('is-target')) el.classList.remove('is-target');
   });
+
+  // Pílula que desliza até a categoria escolhida.
+  const indicator = document.createElement('span');
+  indicator.className = 'cat-indicator';
+  indicator.setAttribute('aria-hidden', 'true');
+  chipBox.prepend(indicator);
+  function moveIndicator() {
+    const chip = chips.find((c) => c.dataset.cat === state.cat);
+    if (!chip) return;
+    indicator.style.width = `${chip.offsetWidth}px`;
+    indicator.style.transform = `translateX(${chip.offsetLeft}px)`;
+  }
+  window.addEventListener('resize', moveIndicator);
+  document.fonts?.ready.then(moveIndicator);
 
   function selectCat(cat, focus) {
     state.cat = cat;
@@ -77,211 +86,323 @@
       chip.setAttribute('aria-selected', String(on));
       chip.tabIndex = on ? 0 : -1;
       if (on && focus) chip.focus();
-      if (on) chip.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: reduceMotion ? 'auto' : 'smooth' });
+      if (on && chipBox.scrollWidth > chipBox.clientWidth) {
+        chipBox.scrollTo({ left: chip.offsetLeft - 24, behavior: reduceMotion ? 'auto' : 'smooth' });
+      }
     });
-    render('all');
+    render(true);
+    // Com a barra presa no topo, volta ao começo da lista para mostrar o resultado.
+    if (bar.classList.contains('stuck')) {
+      const top = grid.getBoundingClientRect().top + window.scrollY - bar.offsetHeight - 64 - 12;
+      window.scrollTo({ top, behavior: reduceMotion ? 'auto' : 'smooth' });
+    }
   }
   chips.forEach((chip) => chip.addEventListener('click', () => selectCat(chip.dataset.cat)));
-  section.querySelector('.cat-chips').addEventListener('keydown', (event) => {
+  chipBox.addEventListener('keydown', (event) => {
     const index = chips.findIndex((c) => c.dataset.cat === state.cat);
-    let next = -1;
-    if (event.key === 'ArrowRight') next = (index + 1) % chips.length;
-    else if (event.key === 'ArrowLeft') next = (index - 1 + chips.length) % chips.length;
-    else if (event.key === 'Home') next = 0;
-    else if (event.key === 'End') next = chips.length - 1;
-    if (next < 0) return;
+    const next = { ArrowRight: index + 1, ArrowLeft: index - 1, Home: 0, End: chips.length - 1 }[event.key];
+    if (next === undefined) return;
     event.preventDefault();
-    selectCat(chips[next].dataset.cat, true);
+    selectCat(chips[(next + chips.length) % chips.length].dataset.cat, true);
   });
 
   let typing = 0;
   input.addEventListener('input', () => {
     clearTimeout(typing);
-    typing = setTimeout(() => {
-      state.query = fold(input.value);
-      render(true);
-    }, 80);
+    typing = setTimeout(() => { state.query = fold(input.value); render(true); }, 90);
   });
   input.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && input.value) { event.stopPropagation(); input.value = ''; state.query = ''; render(true); }
   });
   section.querySelector('.cat-reset')?.addEventListener('click', () => {
-    input.value = '';
-    state.query = '';
-    selectCat('all');
+    input.value = ''; state.query = ''; selectCat('all');
   });
 
-  // O i18n.js traduz alt, aria-label e title; o placeholder acompanha o aria-label.
-  // Ao trocar de idioma, a busca é refeita no texto novo.
+  // Placeholder no idioma da tela; a busca é refeita no texto novo.
   const syncLanguage = () => {
     input.placeholder = input.getAttribute('aria-label') || '';
     if (state.query) render(false);
+    requestAnimationFrame(moveIndicator);
   };
   new MutationObserver(syncLanguage).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
   syncLanguage();
 
-  // Miniatura que não existe (app novo antes de rodar tools/make-thumbs.sh): mostra o ícone no lugar.
+  // Barra presa: ganha o fundo de vidro só quando encosta no menu.
+  const sentinel = document.createElement('div');
+  bar.before(sentinel);
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => bar.classList.toggle('stuck', !entry.isIntersecting && entry.boundingClientRect.top < 80),
+      { rootMargin: '-65px 0px 0px 0px' }).observe(sentinel);
+  }
+
+  // Miniatura que ainda não existe: mostra o ícone no lugar.
   cards.forEach((card) => {
-    const img = card.el.querySelector('.app-shot img');
+    const img = card.media?.querySelector('.app-thumb');
     if (!img) return;
     const fallback = () => {
       if (img.dataset.fallback) return;
       img.dataset.fallback = '1';
-      img.closest('.app-shot').classList.add('no-shot');
+      card.media.classList.add('no-shot');
       img.src = card.el.querySelector('.app-icon').getAttribute('src');
     };
     img.addEventListener('error', fallback);
-    if (img.complete && img.getAttribute('src') && img.naturalWidth === 0) fallback();
   });
 
-  // ---------- Prévia ----------
+  // ---------- Dock: ampliação como no Mac ----------
+  const dock = document.querySelector('.dock');
+  if (dock && desktop.matches && !reduceMotion) {
+    const items = [...dock.querySelectorAll('.dock-item')];
+    let frame = 0;
+    let pointerX = 0;
+    const apply = () => {
+      frame = 0;
+      items.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        const d = Math.abs(pointerX - (rect.left + rect.width / 2));
+        const s = 1 + 0.42 * Math.max(0, 1 - d / 150) ** 2;
+        item.style.setProperty('--s', s.toFixed(3));
+      });
+    };
+    dock.addEventListener('pointerenter', () => dock.classList.add('magnify'));
+    dock.addEventListener('pointermove', (event) => { pointerX = event.clientX; if (!frame) frame = requestAnimationFrame(apply); });
+    dock.addEventListener('pointerleave', () => {
+      cancelAnimationFrame(frame); frame = 0;
+      items.forEach((item) => item.style.setProperty('--s', '1'));
+    });
+  }
+
+  // ---------- Links #<app>: chegam ao cartão e o destacam ----------
+  function reveal(key, smooth) {
+    const card = byKey.get(key);
+    if (!card) return false;
+    if (card.el.hidden) { input.value = ''; state.query = ''; selectCat('all'); }
+    card.el.scrollIntoView({ block: 'center', behavior: smooth && !reduceMotion ? 'smooth' : 'auto' });
+    card.el.classList.remove('is-target');
+    void card.el.offsetWidth;
+    card.el.classList.add('is-target');
+    return true;
+  }
+  window.addEventListener('hashchange', () => reveal(decodeURIComponent(location.hash.slice(1)), true));
+
+  render(false);
+  const initial = decodeURIComponent(location.hash.slice(1));
+  if (byKey.has(initial)) requestAnimationFrame(() => reveal(initial, false));
+
+  // ---------- Prévia rápida (só no computador) ----------
+  const dialog = document.querySelector('dialog.quicklook');
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+  const panel = dialog.querySelector('.ql-panel');
+  const content = dialog.querySelector('.ql-content');
+  const pos = dialog.querySelector('.ql-pos');
+  const prevBtn = dialog.querySelector('.ql-prev');
+  const nextBtn = dialog.querySelector('.ql-next');
+  const scrim = document.createElement('div');
+  scrim.className = 'ql-scrim';
+  dialog.prepend(scrim);
+  const lightbox = document.querySelector('dialog.lightbox');
+
   let current = null;
   let opener = null;
   let navList = [];
+  let busy = false;
+  const EASE = 'cubic-bezier(.2,.8,.2,1)';
 
-  function loadShots(card) {
-    card.detail.querySelectorAll('img[data-src]').forEach((img) => {
-      const shot = img.closest('.shot');
-      img.addEventListener('error', () => shot?.classList.add('broken'), { once: true });
+  // Capturas: data-src vira src na primeira vez (ou antes, ao parar o mouse sobre o cartão).
+  function warm(card, all) {
+    if (!card?.detail) return [];
+    const imgs = [...card.detail.querySelectorAll('.ql-thumbs img')];
+    (all ? imgs : imgs.slice(0, 1)).forEach((img) => {
+      if (!img.dataset.src) return;
+      img.addEventListener('error', () => img.closest('.shot')?.classList.add('broken'), { once: true });
       img.decoding = 'async';
       img.src = img.dataset.src;
       img.removeAttribute('data-src');
     });
+    return imgs;
+  }
+  const ready = (img, ms = 280) => Promise.race([
+    img.decode ? img.decode().catch(() => {}) : Promise.resolve(),
+    new Promise((resolve) => setTimeout(resolve, ms)),
+  ]);
+
+  // Palco: mostra a captura escolhida, com troca suave.
+  function setStage(card, index) {
+    const thumbs = [...card.detail.querySelectorAll('.ql-thumbs .shot:not(.broken)')];
+    const shot = thumbs[index] || thumbs[0];
+    if (!shot) return Promise.resolve();
+    const stage = card.detail.querySelector('.ql-stage');
+    thumbs.forEach((t) => t.setAttribute('aria-current', String(t === shot)));
+    const source = shot.querySelector('img');
+    const img = new Image();
+    img.decoding = 'async';
+    img.src = source.currentSrc || source.src;
+    img.alt = source.alt;
+    stage.dataset.index = String(thumbs.indexOf(shot));
+    return ready(img).then(() => {
+      const old = stage.querySelector('img');
+      stage.append(img);
+      if (old) { old.classList.add('leaving'); setTimeout(() => old.remove(), 300); }
+    });
   }
 
   function park(card) {
-    if (!card) return;
+    if (!card?.detail) return;
+    card.detail.classList.remove('in-next', 'in-prev', 'out');
     card.detail.hidden = true;
     card.el.append(card.detail);
   }
 
   function updateNav() {
     const index = navList.indexOf(current);
-    const many = navList.length > 1;
-    pos.textContent = many ? `${index + 1} / ${navList.length}` : '';
-    prevBtn.hidden = !many;
-    nextBtn.hidden = !many;
+    pos.textContent = navList.length > 1 ? `${index + 1} / ${navList.length}` : '';
+    prevBtn.hidden = nextBtn.hidden = navList.length < 2;
   }
 
-  function show(card, direction) {
-    if (current && current !== card) park(current);
+  async function show(card, direction) {
+    warm(card, true);
+    const first = card.detail.querySelector('.ql-thumbs img');
+    if (first) await ready(first);
+    const leaving = current && current !== card ? current : null;
     current = card;
-    loadShots(card);
+    panel.style.setProperty('--c', card.el.style.getPropertyValue('--c'));
     card.detail.hidden = false;
-    content.replaceChildren(card.detail);
-    dialog.dataset.app = card.key;
+    card.detail.classList.remove('in-next', 'in-prev', 'out');
+    if (leaving) {
+      leaving.detail.classList.add('out');
+      setTimeout(() => park(leaving), 200);
+    }
+    content.append(card.detail);
+    if (direction && !reduceMotion) {
+      void card.detail.offsetWidth;
+      card.detail.classList.add(direction > 0 ? 'in-next' : 'in-prev');
+    }
+    card.detail.querySelector('.ql-info').scrollTop = 0;
     const title = card.detail.querySelector('h2');
     if (title?.id) dialog.setAttribute('aria-labelledby', title.id);
-    scroller.scrollTop = 0;
-    card.detail.querySelector('.pv-gallery')?.scrollTo({ left: 0 });
-    content.classList.remove('swap-next', 'swap-prev');
-    if (direction && !reduceMotion) {
-      void content.offsetWidth;
-      content.classList.add(direction > 0 ? 'swap-next' : 'swap-prev');
-    }
     updateNav();
-    // Pré-carrega a primeira captura dos vizinhos para a troca ficar instantânea.
-    const index = navList.indexOf(card);
-    [navList[index + 1], navList[index - 1]].forEach((n) => {
-      const img = n?.detail.querySelector('img[data-src]');
-      if (img) { const pre = new Image(); pre.src = img.dataset.src; }
-    });
+    setStage(card, 0);
+    // Vizinhos já aquecidos: a troca seguinte é instantânea.
+    const i = navList.indexOf(card);
+    warm(navList[(i + 1) % navList.length]);
+    warm(navList[(i - 1 + navList.length) % navList.length]);
   }
 
-  function setHash(key) {
-    const url = location.pathname + location.search + (key ? `#${key}` : '');
-    if (location.hash !== (key ? `#${key}` : '')) history.replaceState(null, '', url);
+  // A janela cresce a partir da imagem do cartão (e volta para ela ao fechar).
+  function fromCardTransform(card) {
+    const from = (card.media && card.media.offsetParent ? card.media : card.el).getBoundingClientRect();
+    const to = panel.getBoundingClientRect();
+    const scale = Math.max(from.width / to.width, 0.2);
+    const dx = from.left + from.width / 2 - (to.left + to.width / 2 * scale);
+    const dy = from.top + from.height / 2 - (to.top + to.height / 2 * scale);
+    return `translate(${dx}px, ${dy}px) scale(${scale})`;
   }
 
-  function open(key, trigger) {
-    const card = byKey.get(key);
-    if (!card) return;
+  async function open(card, trigger) {
+    if (!desktop.matches || busy || !card?.detail) return;
+    busy = true;
     const visible = visibleCards();
     navList = visible.includes(card) ? visible : cards;
-    if (!dialog.open) {
-      opener = trigger || document.activeElement;
-      dialog.showModal();
+    opener = trigger || document.activeElement;
+    await show(card, 0);
+    dialog.showModal();
+    dialog.querySelector('.ql-close').focus({ preventScroll: true });
+    if (!reduceMotion) {
+      const start = fromCardTransform(card);
+      scrim.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 320, easing: 'ease-out' });
+      await panel.animate([
+        { transform: start, opacity: 0.4, borderRadius: '40px' },
+        { transform: 'none', opacity: 1, borderRadius: '28px' },
+      ], { duration: 460, easing: EASE }).finished.catch(() => {});
     }
-    show(card, 0);
-    setHash(key);
-    dialog.querySelector('.pv-close').focus({ preventScroll: true });
+    busy = false;
   }
 
-  function step(delta) {
-    if (!current || navList.length < 2) return;
-    const index = navList.indexOf(current);
-    const next = navList[(index + delta + navList.length) % navList.length];
-    show(next, delta);
-    setHash(next.key);
-  }
-
-  function close() {
-    if (!dialog.open) return;
+  async function close() {
+    if (!dialog.open || busy) return;
+    busy = true;
+    const card = current;
+    if (!reduceMotion && card) {
+      const end = fromCardTransform(card);
+      scrim.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 260, easing: 'ease-in', fill: 'forwards' });
+      await panel.animate([
+        { transform: 'none', opacity: 1 },
+        { transform: end, opacity: 0 },
+      ], { duration: 300, easing: 'cubic-bezier(.4,0,.8,.4)', fill: 'forwards' }).finished.catch(() => {});
+    }
     dialog.close();
+    panel.getAnimations().forEach((a) => a.cancel());
+    scrim.getAnimations().forEach((a) => a.cancel());
+    busy = false;
   }
+
   dialog.addEventListener('close', () => {
     park(current);
     current = null;
-    content.replaceChildren();
-    if (byKey.has(location.hash.slice(1))) setHash('');
-    if (opener && document.contains(opener) && typeof opener.focus === 'function') {
-      opener.focus({ preventScroll: true });
-    } else {
-      section.querySelector('.cat-grid')?.focus?.({ preventScroll: true });
-    }
+    if (opener && document.contains(opener)) opener.focus({ preventScroll: true });
     opener = null;
   });
+  dialog.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
 
+  function step(delta) {
+    if (!current || navList.length < 2 || busy) return;
+    const i = navList.indexOf(current);
+    show(navList[(i + delta + navList.length) % navList.length], delta);
+  }
   prevBtn.addEventListener('click', () => step(-1));
   nextBtn.addEventListener('click', () => step(1));
-  dialog.querySelector('.pv-close').addEventListener('click', close);
-  // Clique no fundo escuro fecha.
-  dialog.addEventListener('click', (event) => { if (event.target === dialog) close(); });
+  dialog.querySelector('.ql-close').addEventListener('click', close);
+  scrim.addEventListener('click', close);
   dialog.addEventListener('keydown', (event) => {
     if (event.target.closest('input, textarea, select')) return;
     if (event.key === 'ArrowRight') { event.preventDefault(); step(1); }
     else if (event.key === 'ArrowLeft') { event.preventDefault(); step(-1); }
+    else if (event.key === ' ' && !event.target.closest('a, button:not(.ql-close)')) { event.preventDefault(); close(); }
   });
-  // Baixar dentro da prévia: o download segue e a prévia fecha para mostrar o cartão com o próximo passo.
   content.addEventListener('click', (event) => {
-    const link = event.target.closest('[data-download]');
-    if (link && link.getAttribute('href')) setTimeout(close, 0);
-  });
-
-  // Cartão: clicar em qualquer parte que não seja link ou botão abre a prévia; "Prévia" também.
-  cards.forEach((card) => {
-    card.el.tabIndex = -1;
-    card.el.addEventListener('click', (event) => {
-      const control = event.target.closest('a, button');
-      if (control && !control.hasAttribute('data-preview')) return;
+    if (!current) return;
+    const shot = event.target.closest('.ql-thumbs .shot');
+    if (shot) {
       event.preventDefault();
-      open(card.key, control || card.el.querySelector('[data-preview]'));
-    });
-  });
-
-  // Links #<app> (dock, páginas dos apps com ../#<app>, links antigos) abrem a prévia.
-  const fromHash = () => {
-    const key = decodeURIComponent(location.hash.slice(1));
-    if (byKey.has(key)) {
-      if (!current || current.key !== key) open(key);
-    } else if (dialog.open && location.hash) {
-      close();
+      event.stopImmediatePropagation(); // não abre a ampliação: troca o palco
+      setStage(current, [...current.detail.querySelectorAll('.ql-thumbs .shot:not(.broken)')].indexOf(shot));
+      return;
     }
-  };
-  window.addEventListener('hashchange', fromHash);
-  document.addEventListener('click', (event) => {
-    const link = event.target.closest('a[href^="#"]');
-    if (!link) return;
-    const key = link.getAttribute('href').slice(1);
-    if (!byKey.has(key)) return;
-    event.preventDefault();
-    open(key, link);
-  });
+    const stageImg = event.target.closest('.ql-stage') && current.detail.querySelector('.ql-stage img:not(.leaving)');
+    if (stageImg && lightbox) {
+      const big = lightbox.querySelector('img');
+      big.src = stageImg.src;
+      big.alt = stageImg.alt;
+      lightbox.showModal();
+      return;
+    }
+    // Baixar: o download segue e a prévia fecha para mostrar o próximo passo.
+    if (event.target.closest('[data-download]')?.getAttribute('href')) setTimeout(close, 0);
+  }, true);
 
-  render(false);
-  const initial = decodeURIComponent(location.hash.slice(1));
-  if (byKey.has(initial)) {
-    section.scrollIntoView({ block: 'start' });
-    open(initial);
-  }
+  // Gatilhos: botão "Prévia" e barra de espaço com o mouse sobre um cartão.
+  let hovered = null;
+  let warmTimer = 0;
+  cards.forEach((card) => {
+    card.el.querySelector('[data-preview]')?.addEventListener('click', (event) => {
+      event.preventDefault();
+      open(card, event.currentTarget);
+    });
+    card.el.addEventListener('pointerenter', (event) => {
+      if (event.pointerType !== 'mouse') return;
+      hovered = card;
+      clearTimeout(warmTimer);
+      warmTimer = setTimeout(() => warm(card), 140);
+    });
+    card.el.addEventListener('pointerleave', () => { if (hovered === card) hovered = null; clearTimeout(warmTimer); });
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== ' ' || dialog.open || !desktop.matches || event.repeat) return;
+    if (event.target.closest('input, textarea, select, button, [contenteditable]')) return;
+    const focusedCard = event.target.closest?.('.app-card');
+    const card = focusedCard ? byKey.get(focusedCard.dataset.app) : hovered;
+    if (!card) return;
+    event.preventDefault();
+    open(card, focusedCard ? event.target : card.el.querySelector('.app-link'));
+  });
+  desktop.addEventListener?.('change', () => { if (!desktop.matches && dialog.open) dialog.close(); });
 })();
