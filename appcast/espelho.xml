@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Espelho</title>
+    <link>https://witchmymac.com/appcast/espelho.xml</link>
+    <description>Atualizações do Espelho</description>
+    <language>pt-BR</language>
+    <item>
+      <title>Espelho 1.2.0</title>
+      <pubDate>Fri, 06 Nov 2026 22:06:55 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Primeira versão pública: espelhe iPhone, iPad e Android no Mac, com som.</li>
+<li>Android pelo Wi-Fi (QR code) ou pelo cabo, com controle pelo mouse e teclado do Mac.</li>
+<li>Tudo vai dentro do app: não precisa de Homebrew. As próximas versões chegam por aqui.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/espelho/releases/download/v1.2.0/Espelho-1.2.0.dmg" length="37075862" type="application/octet-stream" sparkle:edSignature="ieV1JQwDKMZpFY9hr3lxSZKpSx69XjH9kRdstVbAfKdpsiE6f9j+7qythVBxDCZ/hi9mKznqRCuwJJYUvEzoCA=="/>
+    </item>
+  </channel>
+</rss>

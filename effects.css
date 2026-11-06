@@ -78,36 +78,10 @@ html{scroll-padding-top:84px}
   background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--c,#a855f7) 22%,transparent),transparent 70%)}
 .card:hover::after{opacity:1}
 .card:hover{transform:translateY(-6px)}
-.apps-grid .card.reveal:nth-child(3n+2){transition-delay:.08s}
-.apps-grid .card.reveal:nth-child(3n){transition-delay:.16s}
-.apps-grid .card.reveal.in:hover{transition-delay:0s}
 
-/* ---------- Fotos: expandem ao entrar na tela e o brilho de trás pulsa ---------- */
-.feature-row.reveal:not(.in) .shot{opacity:0}
-.feature-row.in .shot-main{animation:shotIn 1s var(--ease-out) .1s backwards}
-.feature-row.in .shot-sub{animation:shotSubIn 1.1s var(--ease-out) .35s backwards}
-.feature-row.in .shot img{animation:imgSettle 1.6s var(--ease-out) .1s backwards}
-@keyframes shotIn{from{opacity:0;transform:translateY(48px) scale(.92)}}
-@keyframes shotSubIn{from{opacity:0;transform:translate(36px,40px) scale(.9)}}
-@keyframes imgSettle{from{transform:scale(1.12)}}
-.shots::before{will-change:transform,opacity}
-.feature-row.live .shots::before{animation:glow 7s ease-in-out infinite alternate}
-@keyframes glow{from{opacity:.65;transform:scale(.94)}to{opacity:1;transform:scale(1.06)}}
+/* ---------- Fotos ---------- */
 .shot{transition:transform .5s var(--ease-spring),box-shadow .4s}
 .shot:hover{transform:translateY(-6px) scale(1.015)}
-
-/* textos das seções entram em cascata */
-.feature-row.reveal .feature-text > *{transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
-.feature-row.reveal:not(.in) .feature-text > *{opacity:0;transform:translateY(16px)}
-.feature-row.in .feature-text > :nth-child(2){transition-delay:.06s}
-.feature-row.in .feature-text > :nth-child(3){transition-delay:.12s}
-.feature-row.in .feature-text > :nth-child(4){transition-delay:.18s}
-.feature-row.in .feature-text > :nth-child(5){transition-delay:.24s}
-.feature-row.reveal{transform:none}
-
-/* preço "R$ 0" respira devagar */
-.feature-row.live .price strong{animation:breathe 4s ease-in-out infinite}
-@keyframes breathe{50%{transform:scale(1.05)}}
 
 /* ---------- FAQ e foto ampliada ---------- */
 .faq-item{transition:border-color .3s,background .3s}
@@ -125,10 +99,11 @@ html{scroll-padding-top:84px}
 .hero::before{content:"";position:absolute;left:50%;top:40px;width:340px;height:340px;margin-left:-170px;border-radius:50%;z-index:-1;
   background:radial-gradient(closest-side,rgba(168,85,247,.45),transparent);opacity:.6;pointer-events:none}
 .hero.live::before{animation:glow 5s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.65;transform:scale(.94)}to{opacity:1;transform:scale(1.06)}}
 
 /* Sem animação para quem pediu menos movimento no sistema */
 @media (prefers-reduced-motion:reduce){
-  .feature-row.reveal:not(.in) .shot,.feature-row.reveal:not(.in) .feature-text > *{opacity:1;transform:none}
+  .reveal{opacity:1;transform:none}
 }
 
 /* ---------- Seletor de idioma no desktop: lista própria que desce abaixo do botão ---------- */

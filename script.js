@@ -82,7 +82,8 @@ function setupLightbox() {
 }
 
 function setupReveal() {
-  const items = document.querySelectorAll('.card, .feature-row, .steps li, .faq-item, .section-head');
+  // Os cartões do catálogo da página inicial ficam de fora: eles aparecem e somem com os filtros.
+  const items = document.querySelectorAll('.card:not(.app-card), .steps li, .faq-item, .section-head, .cat-bar');
   if (!('IntersectionObserver' in window)) return;
   items.forEach((el) => el.classList.add('reveal'));
   const observer = new IntersectionObserver((entries) => {
@@ -99,61 +100,3 @@ applyAppLinks();
 setupMenu();
 setupLightbox();
 setupReveal();
-
-// Home: listas longas (cartões dos apps e seções) mostram os primeiros itens e o começo do próximo,
-// desfocado, com "Ver mais" embaixo. Um link para um item escondido abre a lista antes de rolar até ele.
-function setupPeek() {
-  document.querySelectorAll('.peek').forEach((box) => {
-    const show = Number(box.dataset.show) || 5;
-    const peek = Number(box.dataset.peek) || 200;
-    const items = [...box.children].filter((el) => el.matches('.card, .feature-row'));
-    if (items.length <= show) return;
-    const gate = document.createElement('div');
-    gate.className = 'peek-gate';
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'btn btn-ghost';
-    button.setAttribute('aria-expanded', 'false');
-    button.textContent = 'Ver mais apps';
-    gate.append(button);
-    box.after(gate);
-    box.style.setProperty('--peek', peek + 'px');
-    const fit = () => {
-      if (!box.classList.contains('collapsed')) return;
-      const next = items[show];
-      box.style.maxHeight = (next.getBoundingClientRect().top - box.getBoundingClientRect().top + peek) + 'px';
-    };
-    const expand = () => {
-      if (!box.classList.contains('collapsed')) return;
-      box.style.maxHeight = box.scrollHeight + 'px';
-      box.classList.remove('collapsed');
-      gate.hidden = true;
-      button.setAttribute('aria-expanded', 'true');
-      setTimeout(() => { box.style.maxHeight = ''; }, 650);
-    };
-    box.classList.add('collapsed');
-    fit();
-    window.addEventListener('resize', fit);
-    window.addEventListener('load', fit);
-    button.addEventListener('click', expand);
-    box.peekExpand = expand;
-    box.peekItems = items.slice(show);
-  });
-  const hiddenTarget = (id) => {
-    const el = id && document.getElementById(id);
-    const box = el && el.closest('.peek.collapsed');
-    return box ? { el, box } : null;
-  };
-  document.addEventListener('click', (event) => {
-    const link = event.target.closest('a[href^="#"]');
-    const hit = link && hiddenTarget(link.getAttribute('href').slice(1));
-    if (!hit) return;
-    event.preventDefault();
-    hit.box.peekExpand();
-    setTimeout(() => hit.el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
-    history.replaceState(null, '', link.getAttribute('href'));
-  });
-  const fromUrl = hiddenTarget(location.hash.slice(1));
-  if (fromUrl) { fromUrl.box.peekExpand(); setTimeout(() => fromUrl.el.scrollIntoView({ block: 'start' }), 50); }
-}
-setupPeek();

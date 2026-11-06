@@ -113,7 +113,9 @@
       button.dataset.app = key;
       button.title = appName(app);
       button.setAttribute('aria-label', appName(app));
-      const icon = Object.assign(document.createElement('img'), { src: `assets/icons/${key}.png`, alt: '', width: 44, height: 44, loading: 'lazy' });
+      const icon = Object.assign(document.createElement('img'), { src: `assets/icons/${key}.webp?v=202611061900`, alt: '', width: 44, height: 44, loading: 'lazy', decoding: 'async' });
+      // Sem o .webp (app novo antes de rodar tools/make-thumbs.sh), usa o .png.
+      icon.addEventListener('error', () => { icon.src = `assets/icons/${key}.png`; }, { once: true });
       button.append(icon);
       picker.append(button);
       return button;

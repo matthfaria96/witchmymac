@@ -26,20 +26,17 @@
     const links = [...document.querySelectorAll('.links a[href^="#"]')];
     const byId = new Map(links.map((a) => [a.getAttribute('href').slice(1), a]));
     const sections = [...byId.keys()].map((id) => document.getElementById(id)).filter(Boolean);
-    // As seções de cada app ficam sob "Apps".
-    const appRows = [...document.querySelectorAll('.feature-row[data-app]')];
     const observer = new IntersectionObserver((entries) => {
       entries.filter((e) => e.isIntersecting).forEach((entry) => {
-        const id = entry.target.dataset.app ? 'apps' : entry.target.id;
-        links.forEach((a) => a.classList.toggle('active', a === byId.get(id)));
+        links.forEach((a) => a.classList.toggle('active', a === byId.get(entry.target.id)));
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    [...sections, ...appRows].forEach((el) => observer.observe(el));
+    sections.forEach((el) => observer.observe(el));
   }
 
   // Liga .live só enquanto o elemento está na tela, para as animações em loop pararem fora dela.
   function setupLiveSections() {
-    const targets = document.querySelectorAll('.hero, .feature-row');
+    const targets = document.querySelectorAll('.hero');
     if (reduceMotion || !('IntersectionObserver' in window)) return;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e) => e.target.classList.toggle('live', e.isIntersecting));

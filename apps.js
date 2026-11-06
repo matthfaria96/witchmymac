@@ -17,4 +17,5 @@ window.WITCH_APPS = Object.freeze({
   animelocalizationstudio: Object.freeze({ repo: 'anime-localization-studio', tag: 'v0.29.0', file: 'AnimeLocalizationStudio-0.29.0.dmg', published: true, app: 'Anime Localization Studio.app' }),
   wormlink:     Object.freeze({ repo: 'Wormlink',      tag: 'v0.2.2',        file: 'Wormlink-0.2.2.dmg',     published: true, app: 'Wormlink.app' }),
   bunnygrid:    Object.freeze({ repo: 'BunnyGrid',     tag: 'v0.2.2',        file: 'BunnyGrid-0.2.2.dmg',    published: true, app: 'BunnyGrid.app' }),
+  espelho:      Object.freeze({ repo: 'espelho',       tag: 'v1.2.0',        file: 'Espelho-1.2.0.dmg',      published: true, app: 'Espelho.app' }),
 });

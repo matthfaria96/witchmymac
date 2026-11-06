@@ -344,10 +344,10 @@ window.WITCH_STRINGS = Object.freeze({
     'Solo si lo activas. Es opcional y usa tu propia clave de Claude o de OpenAI. Sin clave configurada, nada sale de tu Mac.',
     'Только если вы его включите. Он необязателен и использует ваш собственный ключ Claude или OpenAI. Без ключа ничего не покидает ваш Mac.'],
   'Por que alguns apps pedem macOS 26?': ['Why do some apps require macOS 26?', '¿Por qué algunas apps piden macOS 26?', 'Почему некоторым программам нужна macOS 26?'],
-  'O NeoRAR e o WormLink usam o Liquid Glass e outras APIs que só existem a partir do macOS 26 Tahoe. O Sirena e o Rubbish Notes se adaptam: no macOS 15 Sequoia eles trocam o Liquid Glass pelo visual translúcido clássico do sistema.': [
-    'NeoRAR and WormLink use Liquid Glass and other APIs that only exist starting with macOS 26 Tahoe. Sirena and Rubbish Notes adapt: on macOS 15 Sequoia they swap Liquid Glass for the system’s classic translucent look.',
-    'NeoRAR y WormLink usan Liquid Glass y otras APIs que solo existen a partir de macOS 26 Tahoe. Sirena y Rubbish Notes se adaptan: en macOS 15 Sequoia cambian Liquid Glass por el aspecto translúcido clásico del sistema.',
-    'NeoRAR и WormLink используют Liquid Glass и другие API, которые появились только в macOS 26 Tahoe. Sirena и Rubbish Notes подстраиваются: в macOS 15 Sequoia они заменяют Liquid Glass классическим полупрозрачным оформлением системы.'],
+  'O NeoRAR, o WormLink, o HyperImage e o Espelho usam o Liquid Glass e outras APIs que só existem a partir do macOS 26 Tahoe. O Sirena e o Rubbish Notes se adaptam: no macOS 15 Sequoia eles trocam o Liquid Glass pelo visual translúcido clássico do sistema.': [
+    'NeoRAR, WormLink, HyperImage and Espelho use Liquid Glass and other APIs that only exist starting with macOS 26 Tahoe. Sirena and Rubbish Notes adapt: on macOS 15 Sequoia they swap Liquid Glass for the system’s classic translucent look.',
+    'NeoRAR, WormLink, HyperImage y Espelho usan Liquid Glass y otras APIs que solo existen a partir de macOS 26 Tahoe. Sirena y Rubbish Notes se adaptan: en macOS 15 Sequoia cambian Liquid Glass por el aspecto translúcido clásico del sistema.',
+    'NeoRAR, WormLink, HyperImage и Espelho используют Liquid Glass и другие API, которые появились только в macOS 26 Tahoe. Sirena и Rubbish Notes подстраиваются: в macOS 15 Sequoia они заменяют Liquid Glass классическим полупрозрачным оформлением системы.'],
   'Encontrei um bug ou tenho uma ideia.': ['I found a bug or have an idea.', 'Encontré un error o tengo una idea.', 'Я нашёл ошибку или у меня есть идея.'],
   'Abra uma issue no GitHub do app ou mande um e-mail pelo link de contato no rodapé. Toda sugestão é bem-vinda.': [
     'Open an issue on the app’s GitHub or send an email through the contact link in the footer. Every suggestion is welcome.',
@@ -498,9 +498,9 @@ window.WITCH_STRINGS = Object.freeze({
   'Clique para copiar': ['Click to copy', 'Haz clic para copiar', 'Нажмите, чтобы скопировать'],
   // HyperVideo, HyperImage e Wineup
   'Letras sincronizadas': ['Synced lyrics', 'Letras sincronizadas', 'Синхронизированные тексты'],
-  "Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup e Anime Localization Studio: treze apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.": ["Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup and Anime Localization Studio: thirteen free, native macOS apps with no ads and no tracking.", "Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup y Anime Localization Studio: trece apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.", "Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup и Anime Localization Studio: тринадцать бесплатных нативных программ для macOS без рекламы и слежки."],
+  "Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup e Anime Localization Studio: catorze apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.": ["Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup and Anime Localization Studio: fourteen free, native macOS apps with no ads and no tracking.", "Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup y Anime Localization Studio: catorce apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.", "Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup и Anime Localization Studio: четырнадцать бесплатных нативных программ для macOS без рекламы и слежки."],
   'Doze apps nativos: um canivete suíço para a barra de menus, um limpador, um compactador de arquivos, um bloco de notas, um cliente de bancos de dados, um cliente de servidores, um launcher para os apps Craft, um player de vídeo com cara de TV de tubo, o YouTube com o YouTube Music num app só, conversores de vídeo e de imagens e um player de música. Sem assinatura, sem anúncios, sem rastreamento.': ['Twelve native apps: a Swiss army knife for the menu bar, a cleaner, an archive manager, a notepad, a database client, a server client, a launcher for the Craft apps, a video player that looks like a tube TV, YouTube with YouTube Music in a single app, video and image converters and a music player. No subscription, no ads, no tracking.', 'Doce apps nativas: una navaja suiza para la barra de menús, un limpiador, un compresor de archivos, un bloc de notas, un cliente de bases de datos, un cliente de servidores, un launcher para las apps Craft, un reproductor de video con aspecto de televisor de tubo, YouTube con YouTube Music en una sola app, conversores de video y de imágenes y un reproductor de música. Sin suscripción, sin anuncios, sin rastreo.', 'Двенадцать нативных программ: швейцарский нож для строки меню, чистильщик, архиватор, блокнот, клиент баз данных, клиент серверов, лаунчер для программ Craft, видеоплеер в образе лампового телевизора, YouTube вместе с YouTube Music в одной программе, конвертеры видео и изображений и музыкальный плеер. Без подписки, без рекламы, без слежки.'],
-  'Treze apps, zero custo. Escolha o seu.': ['Thirteen apps, zero cost. Pick yours.', 'Trece apps, cero costo. Elige la tuya.', 'Тринадцать программ, ноль затрат. Выбирайте.'],
+  'Catorze apps, zero custo. Escolha o seu.': ['Fourteen apps, zero cost. Pick yours.', 'Catorce apps, cero costo. Elige la tuya.', 'Четырнадцать программ, ноль затрат. Выбирайте.'],
   'Converta, comprima e amplie vídeos com IA': ['Convert, compress and upscale videos with AI', 'Convierte, comprime y amplía videos con IA', 'Конвертируйте, сжимайте и увеличивайте видео с ИИ'],
   'Conversor nativo no espírito do HandBrake, com codificação por hardware do Mac, compressão por tamanho e AI Upscale.': ['A native converter in the spirit of HandBrake, with the Mac’s hardware encoding, compression by size and AI Upscale.', 'Un conversor nativo con el espíritu de HandBrake, con codificación por hardware del Mac, compresión por tamaño y AI Upscale.', 'Нативный конвертер в духе HandBrake — с аппаратным кодированием Mac, сжатием до нужного размера и AI Upscale.'],
   'Conversor de vídeo': ['Video converter', 'Conversor de video', 'Конвертер видео'],
@@ -736,4 +736,85 @@ window.WITCH_STRINGS = Object.freeze({
   "macOS 27 ou mais novo · Apple Silicon": ["macOS 27 or later · Apple Silicon", "macOS 27 o posterior · Apple Silicon", "macOS 27 или новее · Apple Silicon"],
   "Anime Localization Studio editando a legenda em inglês de Sintel, com a fala desenhada sobre o vídeo": ["Anime Localization Studio editing the English subtitle of Sintel, with the line drawn on the video", "Anime Localization Studio editando el subtítulo en inglés de Sintel, con la línea dibujada sobre el video", "Anime Localization Studio редактирует английские субтитры «Синтел»; реплика отрисована поверх видео"],
   "Legenda em japonês editada ao lado da legenda em inglês": ["Japanese subtitle edited beside the English one", "Subtítulo en japonés editado al lado del inglés", "Японские субтитры редактируются рядом с английскими"],
+
+  // Catálogo da página inicial (catalog.js): categorias, busca e prévia rápida
+  'Categorias': ['Categories', 'Categorías', 'Категории'],
+  'Todos': ['All', 'Todas', 'Все'],
+  'Utilidades': ['Utilities', 'Utilidades', 'Утилиты'],
+  'Vídeo e música': ['Video and music', 'Video y música', 'Видео и музыка'],
+  'Arquivos e conversão': ['Files and conversion', 'Archivos y conversión', 'Файлы и конвертация'],
+  'Produtividade': ['Productivity', 'Productividad', 'Продуктивность'],
+  'Para desenvolvedores': ['For developers', 'Para desarrolladores', 'Для разработчиков'],
+  'Buscar apps': ['Search apps', 'Buscar apps', 'Поиск программ'],
+  'Nenhum app encontrado.': ['No apps found.', 'No se encontró ninguna app.', 'Ничего не найдено.'],
+  'Tente outra palavra ou outra categoria.': ['Try another word or another category.', 'Prueba otra palabra u otra categoría.', 'Попробуйте другое слово или другую категорию.'],
+  'Ver todos os apps': ['See all apps', 'Ver todas las apps', 'Показать все программы'],
+  'Baixar': ['Download', 'Descargar', 'Скачать'],
+  'Prévia': ['Preview', 'Vista previa', 'Обзор'],
+  'Página do app': ['App page', 'Página de la app', 'Страница программы'],
+  'Novo': ['New', 'Nuevo', 'Новое'],
+  'Prévia do app': ['App preview', 'Vista previa de la app', 'Обзор программы'],
+  'Capturas de tela': ['Screenshots', 'Capturas de pantalla', 'Снимки экрана'],
+  'App anterior': ['Previous app', 'App anterior', 'Предыдущая программа'],
+  'Próximo app': ['Next app', 'App siguiente', 'Следующая программа'],
+
+  // Espelho
+  'A tela do celular no Mac': ['Your phone’s screen on your Mac', 'La pantalla del móvil en el Mac', 'Экран телефона на Mac'],
+  'Espelhe iPhone, iPad e Android no Mac, com som, e use o Android com o mouse e o teclado.': [
+    'Mirror your iPhone, iPad and Android on your Mac, with sound, and use the Android with your mouse and keyboard.',
+    'Duplica el iPhone, el iPad y Android en el Mac, con sonido, y usa el Android con el ratón y el teclado.',
+    'Выводите экран iPhone, iPad и Android на Mac со звуком и управляйте Android мышью и клавиатурой.'],
+  'iPhone, iPad e Android no Mac': ['iPhone, iPad and Android on your Mac', 'iPhone, iPad y Android en el Mac', 'iPhone, iPad и Android на Mac'],
+  'Mostre a tela do celular ou do tablet numa janela do Mac. O iPhone e o iPad usam o Espelhar Tela da Central de Controle, sem instalar nada neles. O Android conecta pelo Wi-Fi com um QR code ou pelo cabo, e você usa o aparelho com o mouse e o teclado do Mac.': [
+    'Show your phone or tablet screen in a window on your Mac. iPhone and iPad use Screen Mirroring from Control Center, with nothing to install on them. Android connects over Wi-Fi with a QR code or by cable, and you use the device with your Mac’s mouse and keyboard.',
+    'Muestra la pantalla del móvil o de la tableta en una ventana del Mac. El iPhone y el iPad usan la Duplicación de pantalla del Centro de control, sin instalar nada en ellos. Android se conecta por Wi-Fi con un código QR o por cable, y usas el dispositivo con el ratón y el teclado del Mac.',
+    'Показывайте экран телефона или планшета в окне на Mac. iPhone и iPad используют «Повтор экрана» из Пункта управления — ничего устанавливать на них не нужно. Android подключается по Wi-Fi через QR-код или по кабелю, и вы управляете им мышью и клавиатурой Mac.'],
+  'Espelhar Tela de verdade': ['Real Screen Mirroring', 'Duplicación de pantalla de verdad', 'Настоящий повтор экрана'],
+  'O Mac aparece na lista do iPhone e do iPad, com imagem fluida e som sincronizado.': [
+    'Your Mac shows up in the iPhone and iPad list, with smooth video and synced sound.',
+    'El Mac aparece en la lista del iPhone y del iPad, con imagen fluida y sonido sincronizado.',
+    'Mac появляется в списке на iPhone и iPad: плавная картинка и синхронный звук.'],
+  'Android sem fio': ['Wireless Android', 'Android sin cables', 'Android без проводов'],
+  'Pareie uma vez lendo um QR code. Depois, o Espelho reconhece o aparelho sozinho.': [
+    'Pair once by scanning a QR code. After that, Espelho recognizes the device on its own.',
+    'Empareja una vez leyendo un código QR. Después, Espelho reconoce el dispositivo solo.',
+    'Один раз соедините устройства по QR-коду. Дальше Espelho узнаёт устройство сам.'],
+  'Controle pelo Mac': ['Control from your Mac', 'Control desde el Mac', 'Управление с Mac'],
+  'No Android, clique, role, digite e cole textos. O botão direito do mouse volta.': [
+    'On Android, click, scroll, type and paste text. The right mouse button goes back.',
+    'En Android, haz clic, desplázate, escribe y pega textos. El botón derecho del ratón vuelve atrás.',
+    'На Android можно нажимать, прокручивать, печатать и вставлять текст. Правая кнопка мыши — «Назад».'],
+  'Troca rápida': ['Quick switching', 'Cambio rápido', 'Быстрое переключение'],
+  'Passe do iPhone para o Android e de volta com um clique, sem configurar nada de novo.': [
+    'Go from iPhone to Android and back with one click, without setting anything up again.',
+    'Pasa del iPhone a Android y de vuelta con un clic, sin configurar nada de nuevo.',
+    'Переключайтесь с iPhone на Android и обратно одним щелчком, без повторной настройки.'],
+  'Tutorial passo a passo': ['Step-by-step tutorial', 'Tutorial paso a paso', 'Пошаговое обучение'],
+  'Animações mostram onde tocar em cada aparelho, com o caminho certo para Samsung, Xiaomi e Motorola.': [
+    'Animations show where to tap on each device, with the right path for Samsung, Xiaomi and Motorola.',
+    'Las animaciones muestran dónde tocar en cada dispositivo, con el camino correcto para Samsung, Xiaomi y Motorola.',
+    'Анимации показывают, куда нажимать на каждом устройстве, с правильным путём для Samsung, Xiaomi и Motorola.'],
+  'Do jeito do Mac': ['Made for the Mac', 'Al estilo del Mac', 'В стиле Mac'],
+  'Liquid Glass, ícone na barra de menus, capturas de tela, janela sempre no topo e abrir ao iniciar o Mac.': [
+    'Liquid Glass, a menu bar icon, screenshots, an always-on-top window and launch at login.',
+    'Liquid Glass, ícono en la barra de menús, capturas de pantalla, ventana siempre visible y abrir al iniciar el Mac.',
+    'Liquid Glass, значок в строке меню, снимки экрана, окно поверх всех и запуск при входе в систему.'],
+  'Baixar Espelho': ['Download Espelho', 'Descargar Espelho', 'Скачать Espelho'],
+  'macOS 26 Tahoe ou mais novo · Apple Silicon': ['macOS 26 Tahoe or later · Apple Silicon', 'macOS 26 Tahoe o posterior · Apple Silicon', 'macOS 26 Tahoe или новее · Apple Silicon'],
+  'Tela inicial do Espelho pronta para espelhar o iPhone ou o iPad, com os três passos': [
+    'Espelho’s home screen, ready to mirror an iPhone or iPad, with the three steps',
+    'Pantalla inicial de Espelho lista para duplicar el iPhone o el iPad, con los tres pasos',
+    'Главный экран Espelho, готовый к повтору экрана iPhone или iPad, с тремя шагами'],
+  'Aba Android do Espelho, com as opções de conectar pelo Wi-Fi ou pelo cabo USB': [
+    'Espelho’s Android tab, with the options to connect over Wi-Fi or by USB cable',
+    'Pestaña Android de Espelho, con las opciones de conectar por Wi-Fi o por cable USB',
+    'Вкладка Android в Espelho: подключение по Wi-Fi или по USB-кабелю'],
+  'Tutorial do Espelho mostrando o botão Espelhar Tela na Central de Controle do iPhone': [
+    'Espelho tutorial showing the Screen Mirroring button in the iPhone’s Control Center',
+    'Tutorial de Espelho que muestra el botón Duplicación de pantalla en el Centro de control del iPhone',
+    'Обучение в Espelho: кнопка «Повтор экрана» в Пункте управления iPhone'],
+  'Tutorial do Espelho com o QR code para parear o Android pelo Wi-Fi': [
+    'Espelho tutorial with the QR code to pair the Android over Wi-Fi',
+    'Tutorial de Espelho con el código QR para emparejar el Android por Wi-Fi',
+    'Обучение в Espelho: QR-код для подключения Android по Wi-Fi'],
 });
