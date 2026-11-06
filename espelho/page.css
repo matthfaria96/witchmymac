@@ -2,7 +2,7 @@
    palco do topo, abas de capturas, capítulos, galeria de skins, quadros da capa e barra de menus. */
 
 body[data-app=espelho]{--deep:#0c1e3d;--c:#38bdf8}
-body[data-app=espelho] .glow-a{background:#0c1e3d;opacity:.45}
+body[data-app=espelho] .glow-a{background:#4f46e5;opacity:.4}
 body[data-app=espelho] .glow-b{background:#38bdf8;opacity:.18}
 
 /* topo */
