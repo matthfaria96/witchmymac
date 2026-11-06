@@ -152,15 +152,23 @@
   });
 
   // ---------- Destaques: carrossel ----------
-  // A faixa rola com scroll-snap (o dedo e o trackpad funcionam nativamente). Passa sozinha: a barrinha do
-  // ponto ativo enche em 6,5 s (animação CSS) e, ao terminar, vai para o próximo. Mouse em cima, foco dentro,
-  // aba escondida ou carrossel fora da tela pausam a barrinha, e com ela o tempo.
+  // Faixa movida por transform: arrastar com o mouse ou o dedo (com inércia), deslizar de lado no
+  // trackpad, setas, pontos e ←/→. Volta infinita com cópias dos slides nas pontas, trocadas pelo
+  // original sem animação quando a faixa para. Passa sozinha: a barrinha do ponto ativo enche em 6,5 s
+  // e, ao terminar, avança; mouse em cima, foco, arrasto, aba escondida ou fora da tela pausam.
   const featured = document.querySelector('.featured');
   if (featured) {
+    const viewport = featured.querySelector('.feat-viewport');
     const track = featured.querySelector('.feat-track');
-    const slides = [...track.querySelectorAll('.spot')];
+    const originals = [...track.querySelectorAll('.spot')];
     const dots = [...featured.querySelectorAll('.feat-dot')];
-    let index = 0;
+    const n = originals.length;
+    const CLONES = 2;
+    let items = [];
+    let pos = 0;          // índice virtual: pode passar das pontas enquanto anima
+    let x = 0;
+    let step = 0;
+    let base = 0;
     const holds = new Set();
     const hold = (reason, on) => {
       if (on) holds.add(reason); else holds.delete(reason);
@@ -168,52 +176,181 @@
     };
     if (reduceMotion) featured.classList.add('static');
 
-    const mark = (i) => {
-      index = i;
-      dots.forEach((dot, n) => {
-        const on = n === i;
+    const makeClone = (el) => {
+      const c = el.cloneNode(true);
+      c.classList.add('clone');
+      c.classList.remove('is-active');
+      c.setAttribute('aria-hidden', 'true');
+      c.inert = true;
+      return c;
+    };
+    function build() {
+      track.querySelectorAll('.spot.clone').forEach((c) => c.remove());
+      track.prepend(...originals.slice(-CLONES).map(makeClone));
+      track.append(...originals.slice(0, CLONES).map(makeClone));
+      items = [...track.children];
+    }
+    function measure() {
+      step = items[1].offsetLeft - items[0].offsetLeft;
+      base = (viewport.clientWidth - items[0].offsetWidth) / 2;
+    }
+    const xFor = (p) => base - (p + CLONES) * step;
+    const real = () => ((pos % n) + n) % n;
+    function setX(value) { x = value; track.style.transform = `translate3d(${value}px,0,0)`; }
+    function jumpTo(p) {
+      // Sem animação (ao trocar uma cópia pelo original, ou ao medir de novo).
+      track.classList.add('jump');
+      pos = p;
+      paint();
+      void track.offsetWidth;
+      track.classList.remove('jump');
+    }
+    function paint() {
+      setX(xFor(pos));
+      const activeEl = items[pos + CLONES];
+      items.forEach((el) => el.classList.toggle('is-active', el === activeEl));
+      const r = real();
+      originals.forEach((el, i) => { el.inert = i !== r || activeEl !== el; });
+      dots.forEach((dot, i) => {
+        const on = i === r;
+        if (on && dot.getAttribute('aria-current') !== 'true') {
+          const bar = dot.firstElementChild;
+          bar.style.animation = 'none'; void bar.offsetWidth; bar.style.animation = '';
+        }
         dot.setAttribute('aria-current', String(on));
-        if (on) { const bar = dot.firstElementChild; bar.style.animation = 'none'; void bar.offsetWidth; bar.style.animation = ''; }
       });
-      slides.forEach((slide, n) => slide.toggleAttribute('inert', n !== i));
-    };
-    const go = (i) => {
-      const n = (i + slides.length) % slides.length;
-      track.scrollTo({ left: slides[n].offsetLeft - track.offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
-      mark(n);
-    };
-    featured.querySelector('.feat-prev').addEventListener('click', () => go(index - 1));
-    featured.querySelector('.feat-next').addEventListener('click', () => go(index + 1));
-    dots.forEach((dot, n) => dot.addEventListener('click', () => go(n)));
-    dots.forEach((dot) => dot.firstElementChild.addEventListener('animationend', () => {
-      if (dot.getAttribute('aria-current') === 'true') go(index + 1);
-    }));
-    // Rolagem pelo dedo ou trackpad: o slide mais visível vira o atual.
-    let settle = 0;
-    track.addEventListener('scroll', () => {
-      cancelAnimationFrame(settle);
-      settle = requestAnimationFrame(() => {
-        const i = Math.round(track.scrollLeft / (slides[0].offsetWidth + 20));
-        if (i !== index && slides[i]) mark(i);
+    }
+    function settle() {
+      if (pos < 0 || pos >= n) jumpTo(real());
+    }
+    track.addEventListener('transitionend', (event) => { if (event.target === track) settle(); });
+    function go(delta) {
+      settle();
+      pos = Math.max(-CLONES, Math.min(n - 1 + CLONES, pos + delta));
+      paint();
+      // A barrinha recomeça mesmo quando o ponto ativo não muda de lugar.
+      const bar = dots[real()].firstElementChild;
+      bar.style.animation = 'none'; void bar.offsetWidth; bar.style.animation = '';
+    }
+    function goTo(i) {
+      let delta = i - real();
+      if (delta > n / 2) delta -= n;
+      if (delta < -n / 2) delta += n;
+      if (delta) go(delta);
+    }
+
+    featured.querySelector('.feat-prev').addEventListener('click', () => go(-1));
+    featured.querySelector('.feat-next').addEventListener('click', () => go(1));
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => goTo(i));
+      dot.firstElementChild.addEventListener('animationend', () => {
+        if (dot.getAttribute('aria-current') === 'true' && holds.size === 0) go(1);
       });
-    }, { passive: true });
+    });
+
+    // Arrastar (mouse, caneta ou dedo). Decide o eixo nos primeiros pixels: vertical devolve a rolagem da página.
+    let drag = null;
+    let suppressClick = false;
+    viewport.addEventListener('pointerdown', (event) => {
+      if (event.button !== 0 || event.target.closest('.feat-arrow')) return;
+      // Agarrar no meio de uma animação: o arrasto parte de onde a faixa está na tela, sem salto.
+      const visual = new DOMMatrixReadOnly(getComputedStyle(track).transform).m41;
+      drag = { id: event.pointerId, x0: event.clientX, y0: event.clientY, start: visual, axis: null, samples: [[event.timeStamp, event.clientX]] };
+    });
+    viewport.addEventListener('pointermove', (event) => {
+      if (!drag || event.pointerId !== drag.id) return;
+      const dx = event.clientX - drag.x0;
+      const dy = event.clientY - drag.y0;
+      if (!drag.axis) {
+        if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
+        drag.axis = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+        if (drag.axis === 'y') { drag = null; return; }
+        viewport.setPointerCapture(event.pointerId);
+        featured.classList.add('dragging');
+        track.classList.add('jump');
+        // Se estava numa cópia da ponta, passa para o original equivalente mantendo o lugar na tela.
+        if (pos < 0 || pos >= n) {
+          const offset = drag.start - xFor(pos);
+          pos = real();
+          paint();
+          drag.start = xFor(pos) + offset;
+        }
+        hold('drag', true);
+      }
+      // Nas pontas reais nada acaba (é infinito), então o arrasto é 1:1.
+      setX(drag.start + dx);
+      drag.samples.push([event.timeStamp, event.clientX]);
+      if (drag.samples.length > 6) drag.samples.shift();
+    });
+    const endDrag = (event) => {
+      if (!drag || event.pointerId !== drag.id) return;
+      const d = drag;
+      drag = null;
+      if (d.axis !== 'x') return;
+      featured.classList.remove('dragging');
+      track.classList.remove('jump');
+      hold('drag', false);
+      suppressClick = true;
+      setTimeout(() => { suppressClick = false; }, 0);
+      const [t0, x0] = d.samples[0];
+      const [t1, x1] = d.samples[d.samples.length - 1];
+      const velocity = (x1 - x0) / Math.max(1, t1 - t0); // px/ms; negativo = puxou para a esquerda
+      const moved = x - xFor(pos);
+      let delta = Math.round(-moved / step);
+      if (delta === 0 && (Math.abs(velocity) > 0.35 || Math.abs(moved) > step * 0.12)) delta = (velocity || moved) < 0 ? 1 : -1;
+      go(Math.max(-2, Math.min(2, delta)));
+    };
+    viewport.addEventListener('pointerup', endDrag);
+    viewport.addEventListener('pointercancel', endDrag);
+    viewport.addEventListener('dragstart', (event) => event.preventDefault());
+    // Depois de arrastar, o clique que vem junto não abre links. Sem arrasto, clicar num vizinho vai até ele.
+    viewport.addEventListener('click', (event) => {
+      if (suppressClick) { event.preventDefault(); event.stopPropagation(); return; }
+      if (event.target.closest('.feat-arrow')) return;
+      const rect = items[pos + CLONES].getBoundingClientRect();
+      if (event.clientX < rect.left) { event.preventDefault(); go(-1); }
+      else if (event.clientX > rect.right) { event.preventDefault(); go(1); }
+    }, true);
+
+    // Trackpad: dois dedos para o lado trocam de slide (um por gesto).
+    let wheelSum = 0;
+    let wheelLock = 0;
+    let wheelIdle = 0;
+    viewport.addEventListener('wheel', (event) => {
+      if (Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return;
+      event.preventDefault();
+      clearTimeout(wheelIdle);
+      wheelIdle = setTimeout(() => { wheelSum = 0; wheelLock = 0; }, 180);
+      if (wheelLock) return;
+      wheelSum += event.deltaX;
+      if (Math.abs(wheelSum) > 30) { go(wheelSum > 0 ? 1 : -1); wheelLock = 1; }
+    }, { passive: false });
+
     featured.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') hold('hover', true); });
     featured.addEventListener('pointerleave', () => hold('hover', false));
-    featured.addEventListener('focusin', () => hold('focus', true));
+    featured.addEventListener('focusin', (e) => { if (e.target.matches(':focus-visible')) hold('focus', true); });
     featured.addEventListener('focusout', (e) => { if (!featured.contains(e.relatedTarget)) hold('focus', false); });
-    track.addEventListener('touchstart', () => hold('touch', true), { passive: true });
-    track.addEventListener('touchend', () => setTimeout(() => hold('touch', false), 1200), { passive: true });
     document.addEventListener('visibilitychange', () => hold('hidden', document.hidden));
     if ('IntersectionObserver' in window) {
-      new IntersectionObserver(([entry]) => hold('offscreen', !entry.isIntersecting), { threshold: 0.35 }).observe(track);
+      new IntersectionObserver(([entry]) => hold('offscreen', !entry.isIntersecting), { threshold: 0.35 }).observe(viewport);
     }
     featured.addEventListener('keydown', (event) => {
-      if (event.target.closest('input')) return;
-      if (event.key === 'ArrowRight') { event.preventDefault(); go(index + 1); }
-      if (event.key === 'ArrowLeft') { event.preventDefault(); go(index - 1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); go(1); }
+      if (event.key === 'ArrowLeft') { event.preventDefault(); go(-1); }
     });
-    window.addEventListener('resize', () => { track.scrollLeft = slides[index].offsetLeft - track.offsetLeft; });
-    mark(0);
+    let resizeFrame = 0;
+    window.addEventListener('resize', () => {
+      cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(() => { measure(); jumpTo(real()); });
+    });
+    // Troca de idioma: as cópias são refeitas a partir dos originais já traduzidos.
+    new MutationObserver(() => { build(); measure(); jumpTo(real()); })
+      .observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+
+    build();
+    measure();
+    jumpTo(0);
+    document.fonts?.ready.then(() => { measure(); jumpTo(real()); });
   }
 
   // ---------- Links #<app>: chegam ao cartão e o destacam ----------

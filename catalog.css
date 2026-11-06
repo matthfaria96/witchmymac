@@ -8,15 +8,32 @@
 .hero{padding:80px 0 24px}
 .hero-logo{width:180px;height:180px}
 
-/* ---------- Destaques: carrossel (rola com o dedo, passa sozinho, pausa com o mouse em cima) ---------- */
-.featured{padding:48px 0 0}
-.feat-head{display:flex;align-items:center;justify-content:space-between;margin:0 4px 18px}
+/* ---------- Destaques: carrossel ----------
+   Faixa movida por transform (arrastar com o mouse ou o dedo, trackpad de lado, setas, teclado).
+   O slide atual fica no centro; os vizinhos aparecem nas laterais, menores e apagados. */
+.featured{padding:48px 0 0;--peek:max(56px,calc((100vw - 1120px) / 2));--gap:24px}
+.feat-head{margin:0 4px 18px}
 .feat-head h2{font-size:15px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.feat-nav{display:flex;gap:8px}
-.feat-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;
-  border-radius:32px;outline:none}
-.feat-track::-webkit-scrollbar{display:none}
-.feat-dots{display:flex;justify-content:center;gap:8px;margin-top:20px}
+.feat-viewport{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow:hidden;touch-action:pan-y;cursor:grab;padding:10px 0 72px;margin-bottom:-44px}
+.featured.dragging .feat-viewport{cursor:grabbing}
+.featured.dragging .feat-track{user-select:none;-webkit-user-select:none}
+.feat-track{display:flex;gap:var(--gap);will-change:transform;transition:transform .7s cubic-bezier(.22,.82,.2,1)}
+.feat-track.jump,.feat-track.jump .spot{transition:none!important}
+.feat-track .spot{flex:0 0 calc(100vw - 2 * var(--peek));max-width:1120px;flex-basis:min(1120px,calc(100vw - 2 * var(--peek)))}
+.feat-track .spot{transition:transform .7s cubic-bezier(.22,.82,.2,1),opacity .7s,box-shadow .7s}
+.feat-track .spot:not(.is-active){transform:scale(.93);opacity:.38}
+.feat-track .spot.is-active{box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 34px 60px -34px #000,0 30px 60px -48px var(--c)}
+.feat-track img,.feat-track a{-webkit-user-drag:none;user-select:none}
+.feat-arrow{position:absolute;z-index:5;top:calc(50% - 12px);width:52px;height:52px;margin-top:-26px;display:grid;place-items:center;padding:0;border-radius:50%;
+  border:1px solid rgba(255,255,255,.18);background:rgba(16,14,28,.62);backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%);
+  color:#fff;cursor:pointer;box-shadow:0 12px 30px -10px #000;transition:transform .3s var(--ease),background .2s,opacity .3s}
+.feat-arrow svg{width:18px;height:18px}
+.feat-arrow:hover{background:rgba(40,36,62,.8);transform:scale(1.08)}
+.feat-arrow:active{transform:scale(.94)}
+.feat-arrow:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.feat-prev{left:calc(var(--peek) - 26px)}
+.feat-next{right:calc(var(--peek) - 26px)}
+.feat-dots{position:relative;display:flex;justify-content:center;gap:8px;margin-top:0}
 .feat-dot{position:relative;width:8px;height:8px;padding:0;border:0;border-radius:999px;overflow:hidden;cursor:pointer;
   background:rgba(255,255,255,.22);transition:width .45s var(--ease),background .3s}
 .feat-dot:hover{background:rgba(255,255,255,.4)}
@@ -27,8 +44,14 @@
 .featured.static .feat-dot[aria-current="true"] i{animation:none;transform:none}
 @keyframes featFill{to{transform:none}}
 .feat-dot:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@media (max-width:860px){
+  .featured{--peek:18px;--gap:12px}
+  .feat-arrow{display:none}
+  .feat-track .spot:not(.is-active){transform:scale(.95);opacity:.5}
+}
+@media (prefers-reduced-motion:reduce){ .feat-track,.feat-track .spot{transition:none} }
 
-.spot{position:relative;flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);align-items:center;gap:32px;
+.spot{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);align-items:center;gap:32px;
   padding:56px 0 56px 56px;border-radius:32px;overflow:hidden;isolation:isolate;
   background:
     radial-gradient(760px 420px at 88% 18%,color-mix(in srgb,var(--c) 30%,transparent),transparent 62%),

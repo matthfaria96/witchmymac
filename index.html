@@ -19,7 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=202611071400">
 <link rel="stylesheet" href="effects.css?v=202611071200">
-<link rel="stylesheet" href="catalog.css?v=202611071700">
+<link rel="stylesheet" href="catalog.css?v=202611071900">
 <link rel="stylesheet" href="gatekeeper.css?v=202611071600">
 </head>
 <body>
@@ -73,12 +73,11 @@
   <section class="featured container" aria-roledescription="carousel" aria-labelledby="feat-title">
     <div class="feat-head">
       <h2 id="feat-title">Destaques</h2>
-      <div class="feat-nav">
-        <button type="button" class="ql-nav-btn feat-prev" aria-label="Destaque anterior"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button type="button" class="ql-nav-btn feat-next" aria-label="Próximo destaque"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      </div>
     </div>
-    <div class="feat-track" tabindex="-1">
+    <div class="feat-viewport">
+      <button type="button" class="feat-arrow feat-prev" aria-label="Destaque anterior"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="feat-arrow feat-next" aria-label="Próximo destaque"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="feat-track">
       <article class="spot" data-app="espelho" style="--c:#38bdf8" aria-roledescription="slide" aria-label="Espelho">
         <div class="spot-text">
           <p class="spot-kicker"><span class="badge">Novo</span> iPhone, iPad e Android no Mac</p>
@@ -153,6 +152,7 @@
           <img class="spot-shot spot-shot-2" src="assets/shots/neorar/compress.jpg?v=202610271000" alt="" width="1060" height="680" decoding="async" loading="lazy">
         </a>
       </article>
+    </div>
     </div>
     <div class="feat-dots">
       <button type="button" class="feat-dot" aria-label="Espelho"><i></i></button>
@@ -1150,6 +1150,6 @@
 <script src="i18n.js?v=202610271200"></script>
 <script src="effects.js?v=202611071200"></script>
 <script src="gatekeeper.js?v=202610242200"></script>
-<script src="catalog.js?v=202611071700"></script>
+<script src="catalog.js?v=202611071900"></script>
 </body>
 </html>
