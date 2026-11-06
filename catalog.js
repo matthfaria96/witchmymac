@@ -1,4 +1,4 @@
-// Página inicial: catálogo (categorias, busca), dock com ampliação e a prévia rápida.
+// Página inicial: destaques (carrossel), catálogo (categorias, busca) e a prévia rápida.
 // O caminho principal é o cartão, que leva à página do app. A prévia é um extra do computador
 // (mouse e tela larga), no estilo do Quick Look do Mac: botão "Prévia" sobre a imagem, ou o mouse
 // sobre um cartão e a barra de espaço. Ela cresce a partir do cartão (transform/opacity, Web Animations)
@@ -127,13 +127,16 @@
   new MutationObserver(syncLanguage).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
   syncLanguage();
 
-  // Barra presa: ganha o fundo de vidro só quando encosta no menu.
-  const sentinel = document.createElement('div');
-  bar.before(sentinel);
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(([entry]) => bar.classList.toggle('stuck', !entry.isIntersecting && entry.boundingClientRect.top < 80),
-      { rootMargin: '-65px 0px 0px 0px' }).observe(sentinel);
-  }
+  // Barra presa: ganha o fundo de vidro só quando encosta no menu (conferido a cada quadro de rolagem).
+  let stuckFrame = 0;
+  const checkStuck = () => {
+    stuckFrame = 0;
+    const top = bar.getBoundingClientRect().top;
+    const sectionBottom = section.getBoundingClientRect().bottom;
+    bar.classList.toggle('stuck', top <= 65 && sectionBottom > 120);
+  };
+  window.addEventListener('scroll', () => { if (!stuckFrame) stuckFrame = requestAnimationFrame(checkStuck); }, { passive: true });
+  checkStuck();
 
   // Miniatura que ainda não existe: mostra o ícone no lugar.
   cards.forEach((card) => {
@@ -148,27 +151,69 @@
     img.addEventListener('error', fallback);
   });
 
-  // ---------- Dock: ampliação como no Mac ----------
-  const dock = document.querySelector('.dock');
-  if (dock && desktop.matches && !reduceMotion) {
-    const items = [...dock.querySelectorAll('.dock-item')];
-    let frame = 0;
-    let pointerX = 0;
-    const apply = () => {
-      frame = 0;
-      items.forEach((item) => {
-        const rect = item.getBoundingClientRect();
-        const d = Math.abs(pointerX - (rect.left + rect.width / 2));
-        const s = 1 + 0.42 * Math.max(0, 1 - d / 150) ** 2;
-        item.style.setProperty('--s', s.toFixed(3));
-      });
+  // ---------- Destaques: carrossel ----------
+  // A faixa rola com scroll-snap (o dedo e o trackpad funcionam nativamente). Passa sozinha: a barrinha do
+  // ponto ativo enche em 6,5 s (animação CSS) e, ao terminar, vai para o próximo. Mouse em cima, foco dentro,
+  // aba escondida ou carrossel fora da tela pausam a barrinha, e com ela o tempo.
+  const featured = document.querySelector('.featured');
+  if (featured) {
+    const track = featured.querySelector('.feat-track');
+    const slides = [...track.querySelectorAll('.spot')];
+    const dots = [...featured.querySelectorAll('.feat-dot')];
+    let index = 0;
+    const holds = new Set();
+    const hold = (reason, on) => {
+      if (on) holds.add(reason); else holds.delete(reason);
+      featured.classList.toggle('paused', holds.size > 0);
     };
-    dock.addEventListener('pointerenter', () => dock.classList.add('magnify'));
-    dock.addEventListener('pointermove', (event) => { pointerX = event.clientX; if (!frame) frame = requestAnimationFrame(apply); });
-    dock.addEventListener('pointerleave', () => {
-      cancelAnimationFrame(frame); frame = 0;
-      items.forEach((item) => item.style.setProperty('--s', '1'));
+    if (reduceMotion) featured.classList.add('static');
+
+    const mark = (i) => {
+      index = i;
+      dots.forEach((dot, n) => {
+        const on = n === i;
+        dot.setAttribute('aria-current', String(on));
+        if (on) { const bar = dot.firstElementChild; bar.style.animation = 'none'; void bar.offsetWidth; bar.style.animation = ''; }
+      });
+      slides.forEach((slide, n) => slide.toggleAttribute('inert', n !== i));
+    };
+    const go = (i) => {
+      const n = (i + slides.length) % slides.length;
+      track.scrollTo({ left: slides[n].offsetLeft - track.offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
+      mark(n);
+    };
+    featured.querySelector('.feat-prev').addEventListener('click', () => go(index - 1));
+    featured.querySelector('.feat-next').addEventListener('click', () => go(index + 1));
+    dots.forEach((dot, n) => dot.addEventListener('click', () => go(n)));
+    dots.forEach((dot) => dot.firstElementChild.addEventListener('animationend', () => {
+      if (dot.getAttribute('aria-current') === 'true') go(index + 1);
+    }));
+    // Rolagem pelo dedo ou trackpad: o slide mais visível vira o atual.
+    let settle = 0;
+    track.addEventListener('scroll', () => {
+      cancelAnimationFrame(settle);
+      settle = requestAnimationFrame(() => {
+        const i = Math.round(track.scrollLeft / (slides[0].offsetWidth + 20));
+        if (i !== index && slides[i]) mark(i);
+      });
+    }, { passive: true });
+    featured.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') hold('hover', true); });
+    featured.addEventListener('pointerleave', () => hold('hover', false));
+    featured.addEventListener('focusin', () => hold('focus', true));
+    featured.addEventListener('focusout', (e) => { if (!featured.contains(e.relatedTarget)) hold('focus', false); });
+    track.addEventListener('touchstart', () => hold('touch', true), { passive: true });
+    track.addEventListener('touchend', () => setTimeout(() => hold('touch', false), 1200), { passive: true });
+    document.addEventListener('visibilitychange', () => hold('hidden', document.hidden));
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => hold('offscreen', !entry.isIntersecting), { threshold: 0.35 }).observe(track);
+    }
+    featured.addEventListener('keydown', (event) => {
+      if (event.target.closest('input')) return;
+      if (event.key === 'ArrowRight') { event.preventDefault(); go(index + 1); }
+      if (event.key === 'ArrowLeft') { event.preventDefault(); go(index - 1); }
     });
+    window.addEventListener('resize', () => { track.scrollLeft = slides[index].offsetLeft - track.offsetLeft; });
+    mark(0);
   }
 
   // ---------- Links #<app>: chegam ao cartão e o destacam ----------

@@ -4,17 +4,31 @@
 
 :root{--ease:cubic-bezier(.2,.8,.2,1);--ease-spring:cubic-bezier(.32,1.25,.5,1)}
 
-/* ---------- Topo: mais compacto, dock com ampliação de verdade ---------- */
+/* ---------- Topo ---------- */
 .hero{padding:80px 0 24px}
 .hero-logo{width:180px;height:180px}
-.dock-item:hover .dock-icon,.dock-item:hover .dock-icon.icon-full{transform:none}
-.dock.magnify .dock-icon{transform:translateY(calc((var(--s,1) - 1) * -26px)) scale(var(--s,1));transition:transform .14s ease-out}
-.dock-icon{transform-origin:50% 100%}
-@media (max-width:860px){.dock{display:none!important}}
 
-/* ---------- Destaque ---------- */
-.spotlight{padding:40px 0 0}
-.spot{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);align-items:center;gap:32px;
+/* ---------- Destaques: carrossel (rola com o dedo, passa sozinho, pausa com o mouse em cima) ---------- */
+.featured{padding:48px 0 0}
+.feat-head{display:flex;align-items:center;justify-content:space-between;margin:0 4px 18px}
+.feat-head h2{font-size:15px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.feat-nav{display:flex;gap:8px}
+.feat-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;
+  border-radius:32px;outline:none}
+.feat-track::-webkit-scrollbar{display:none}
+.feat-dots{display:flex;justify-content:center;gap:8px;margin-top:20px}
+.feat-dot{position:relative;width:8px;height:8px;padding:0;border:0;border-radius:999px;overflow:hidden;cursor:pointer;
+  background:rgba(255,255,255,.22);transition:width .45s var(--ease),background .3s}
+.feat-dot:hover{background:rgba(255,255,255,.4)}
+.feat-dot[aria-current="true"]{width:40px;background:rgba(255,255,255,.18)}
+.feat-dot i{position:absolute;inset:0;border-radius:inherit;background:#fff;transform:scaleX(0);transform-origin:left}
+.feat-dot[aria-current="true"] i{animation:featFill 6.5s linear forwards}
+.featured.paused .feat-dot i{animation-play-state:paused}
+.featured.static .feat-dot[aria-current="true"] i{animation:none;transform:none}
+@keyframes featFill{to{transform:none}}
+.feat-dot:focus-visible{outline:2px solid #fff;outline-offset:3px}
+
+.spot{position:relative;flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);align-items:center;gap:32px;
   padding:56px 0 56px 56px;border-radius:32px;overflow:hidden;isolation:isolate;
   background:
     radial-gradient(760px 420px at 88% 18%,color-mix(in srgb,var(--c) 30%,transparent),transparent 62%),
@@ -25,7 +39,7 @@
   color:color-mix(in srgb,var(--c) 70%,#fff)}
 .spot-name{display:flex;align-items:center;gap:16px;margin-top:18px}
 .spot-name img{width:64px;height:64px;filter:drop-shadow(0 12px 24px #000a)}
-.spot-name h2{font-size:clamp(40px,5vw,60px);letter-spacing:-.04em;line-height:1}
+.spot-name h3{font-size:clamp(40px,5vw,60px);letter-spacing:-.04em;line-height:1}
 .spot-lead{margin-top:18px;max-width:460px;font-size:18px;line-height:1.55;color:#cfcae0}
 .spot-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 .spot-cta .btn-primary{background:linear-gradient(120deg,var(--c),#818cf8);box-shadow:0 12px 36px -12px color-mix(in srgb,var(--c) 80%,transparent)}

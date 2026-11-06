@@ -214,9 +214,17 @@
 .term.copied .term-copy svg{display:none}
 .faq-cmd{display:inline-block;max-width:100%;padding:6px 10px;border-radius:8px;background:#05040b;border:1px solid var(--border);font:13px/1.5 ui-monospace,"SF Mono",Menlo,monospace;color:#e9d5ff;overflow-wrap:anywhere;user-select:all}
 
-/* Cartão que aparece ao clicar em "Baixar" */
+/* Cartão que aparece ao clicar em "Instalar": a linha do Terminal; com "Baixar o .dmg", o comando que libera */
 .dl-sheet{position:fixed;right:20px;bottom:20px;z-index:60;width:min(440px,calc(100% - 32px));padding:22px;border:1px solid var(--border);border-radius:20px;background:rgba(18,15,32,.92);-webkit-backdrop-filter:blur(24px) saturate(1.5);backdrop-filter:blur(24px) saturate(1.5);box-shadow:0 30px 80px -20px #000;animation:dl-in .35s cubic-bezier(.2,.9,.3,1.2)}
 .dl-sheet[hidden]{display:none}
+.dl-sheet.pop{animation:dl-in .35s cubic-bezier(.2,.9,.3,1.2)}
+.dl-sheet[data-state="install"] .dl-for-dmg,.dl-sheet[data-state="dmg"] .dl-for-install{display:none}
+.dl-top{display:flex;align-items:center;gap:14px;margin:0 30px 14px 0}
+.dl-icon{width:48px;height:48px;flex:none;filter:drop-shadow(0 8px 16px #0009)}
+.dl-icon[src=""]{display:none}
+.dl-top .dl-app{margin:0}
+.dl-steps li::marker{color:var(--accent);font-weight:600}
+.dl-dmg{font-weight:600}
 .dl-sheet .eyebrow{margin-bottom:2px}
 .dl-app{font-size:20px;font-weight:700;letter-spacing:-.01em;margin-bottom:10px}
 .dl-steps{color:var(--muted);font-size:14px;padding-left:20px;display:grid;gap:4px;margin-bottom:14px}

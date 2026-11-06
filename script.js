@@ -83,7 +83,7 @@ function setupLightbox() {
 
 function setupReveal() {
   // Os cartões do catálogo da página inicial ficam de fora: eles aparecem e somem com os filtros.
-  const items = document.querySelectorAll('.card:not(.app-card), .steps li, .faq-item, .section-head, .cat-bar');
+  const items = document.querySelectorAll('.card:not(.app-card), .steps li, .faq-item, .section-head');
   if (!('IntersectionObserver' in window)) return;
   items.forEach((el) => el.classList.add('reveal'));
   const observer = new IntersectionObserver((entries) => {

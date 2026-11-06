@@ -2,7 +2,7 @@
 // - Pelo Terminal (padrão): uma linha roda o install.sh, que baixa do GitHub, confere e instala;
 // - Baixar + comando: depois de baixar o .dmg, um comando tira a quarentena só daquele app;
 // - Baixar + Ajustes: o guia visual (gatekeeper.js).
-// O site monta o comando certo para cada app, no guia e no cartão que aparece ao clicar em "Baixar".
+// O site monta o comando certo para cada app, no guia e no cartão que aparece ao clicar em "Instalar".
 (() => {
   const APPS = window.WITCH_APPS || {};
   const SITE = 'https://witchmymac.com';
@@ -139,27 +139,47 @@
     return pick;
   }
 
-  // Cartão do download: o .dmg já está vindo, então o próximo passo é liberar (comando xattr).
+  // Cartão de instalação: "Instalar" não baixa nada; mostra a linha do Terminal (install.sh), que baixa,
+  // confere e instala sem aviso do macOS. "Baixar o .dmg" baixa o arquivo de fato e o cartão passa ao
+  // passo seguinte: o comando que libera o app.
   function setupDownloadSheet(pickInGuide) {
     const sheet = document.querySelector('.dl-sheet');
     if (!sheet) return;
     const show = setupTerm(sheet.querySelector('.term'));
+    const dmg = sheet.querySelector('.dl-dmg');
+    const icon = sheet.querySelector('.dl-icon');
+    // Raiz do site, relativa à página (as páginas de app ficam uma pasta abaixo).
+    const base = (document.querySelector('link[rel="icon"]')?.getAttribute('href') || '').replace(/assets\/icons\/.*$/, '');
+    let current = null;
     const close = () => { sheet.hidden = true; };
+    const setState = (state) => {
+      sheet.dataset.state = state;
+      show(current.key, current.app, state === 'install' ? 'install' : 'unblock');
+    };
     sheet.querySelector('.dl-close').addEventListener('click', close);
-    sheet.querySelector('.dl-alt a')?.addEventListener('click', close);
-    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') close(); });
-    // O download segue normalmente; o cartão só aparece ao lado com o próximo passo.
-    document.querySelectorAll('[data-download]').forEach((link) => {
-      link.addEventListener('click', () => {
-        const key = link.dataset.download;
-        const app = APPS[key];
-        if (!app || !app.published || !app.app) return;
-        sheet.querySelector('.dl-app').textContent = appName(app);
-        show(key, app, 'unblock');
-        pickInGuide?.(key);
-        sheet.hidden = false;
-      });
+    sheet.querySelectorAll('.dl-for-dmg a').forEach((a) => a.addEventListener('click', close));
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !sheet.hidden) close(); });
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('[data-download]');
+      if (!link) return;
+      const key = link.dataset.download;
+      const app = APPS[key];
+      if (!app || !app.published || !app.app) return;
+      event.preventDefault();
+      current = { key, app };
+      sheet.querySelector('.dl-app').textContent = appName(app);
+      icon.src = `${base}assets/icons/${key}.webp?v=202611061900`;
+      icon.onerror = () => { icon.onerror = null; icon.src = `${base}assets/icons/${key}.png`; };
+      // script.js já trocou o href do botão pelo .dmg mais recente do GitHub.
+      dmg.href = link.href;
+      setState('install');
+      pickInGuide?.(key);
+      sheet.hidden = false;
+      sheet.classList.remove('pop');
+      void sheet.offsetWidth;
+      sheet.classList.add('pop');
     });
+    dmg.addEventListener('click', () => { if (current) setState('dmg'); });
   }
 
   // Páginas de app: janelas de Terminal fixas (`.term[data-app][data-mode]`), versão e link de novidades.
