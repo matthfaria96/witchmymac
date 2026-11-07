@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>ExcaliburForms</title>
+    <item>
+      <title>ExcaliburForms 1.0.0</title>
+      <pubDate>Sat, 07 Nov 2026 04:37:49 +0000</pubDate>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul><li>First release: infinite canvas for screenshots, highlighter text, sticky notes, arrows and drawings.</li><li>Many boards, layers panel, PNG/SVG export and in-app updates.</li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/ExcaliburForms/releases/download/v1.0.0/ExcaliburForms-1.0.0.dmg" length="20828917" type="application/octet-stream" sparkle:edSignature="n1/LOb0IHx2scqDejTRlPFOtcGG1HpX7eejV3vhHDXtQ16fFk5fWSptL02Deswg0/lsAgxMcqgrBHnroTZERDA=="/>
+    </item>
+  </channel>
+</rss>

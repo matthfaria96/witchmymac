@@ -18,4 +18,5 @@ window.WITCH_APPS = Object.freeze({
   wormlink:     Object.freeze({ repo: 'Wormlink',      tag: 'v0.2.2',        file: 'Wormlink-0.2.2.dmg',     published: true, app: 'Wormlink.app' }),
   bunnygrid:    Object.freeze({ repo: 'BunnyGrid',     tag: 'v0.2.2',        file: 'BunnyGrid-0.2.2.dmg',    published: true, app: 'BunnyGrid.app' }),
   espelho:      Object.freeze({ repo: 'espelho',       tag: 'v1.2.0',        file: 'Espelho-1.2.0.dmg',      published: true, app: 'Espelho.app' }),
+  excaliburforms: Object.freeze({ repo: 'ExcaliburForms', tag: 'v1.0.0',     file: 'ExcaliburForms-1.0.0.dmg', published: true, app: 'ExcaliburForms.app' }),
 });

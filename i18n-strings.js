@@ -498,9 +498,9 @@ window.WITCH_STRINGS = Object.freeze({
   'Clique para copiar': ['Click to copy', 'Haz clic para copiar', 'Нажмите, чтобы скопировать'],
   // HyperVideo, HyperImage e Wineup
   'Letras sincronizadas': ['Synced lyrics', 'Letras sincronizadas', 'Синхронизированные тексты'],
-  "Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup e Anime Localization Studio: catorze apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.": ["Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup and Anime Localization Studio: fourteen free, native macOS apps with no ads and no tracking.", "Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup y Anime Localization Studio: catorce apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.", "Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup и Anime Localization Studio: четырнадцать бесплатных нативных программ для macOS без рекламы и слежки."],
+  "ExcaliburForms, Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup e Anime Localization Studio: quinze apps nativos e gratuitos para macOS, sem anúncios e sem rastreamento.": ["ExcaliburForms, Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup and Anime Localization Studio: fifteen free, native macOS apps with no ads and no tracking.", "ExcaliburForms, Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup y Anime Localization Studio: quince apps nativas y gratuitas para macOS, sin anuncios y sin rastreo.", "ExcaliburForms, Espelho, Sirena, MacDash, NeoRAR, Rubbish Notes, BunnyGrid, WormLink, BetterCraft Launcher, Santo Video Player, ViewTube, HyperVideo, HyperImage, Wineup и Anime Localization Studio: пятнадцать бесплатных нативных программ для macOS без рекламы и слежки."],
   'Doze apps nativos: um canivete suíço para a barra de menus, um limpador, um compactador de arquivos, um bloco de notas, um cliente de bancos de dados, um cliente de servidores, um launcher para os apps Craft, um player de vídeo com cara de TV de tubo, o YouTube com o YouTube Music num app só, conversores de vídeo e de imagens e um player de música. Sem assinatura, sem anúncios, sem rastreamento.': ['Twelve native apps: a Swiss army knife for the menu bar, a cleaner, an archive manager, a notepad, a database client, a server client, a launcher for the Craft apps, a video player that looks like a tube TV, YouTube with YouTube Music in a single app, video and image converters and a music player. No subscription, no ads, no tracking.', 'Doce apps nativas: una navaja suiza para la barra de menús, un limpiador, un compresor de archivos, un bloc de notas, un cliente de bases de datos, un cliente de servidores, un launcher para las apps Craft, un reproductor de video con aspecto de televisor de tubo, YouTube con YouTube Music en una sola app, conversores de video y de imágenes y un reproductor de música. Sin suscripción, sin anuncios, sin rastreo.', 'Двенадцать нативных программ: швейцарский нож для строки меню, чистильщик, архиватор, блокнот, клиент баз данных, клиент серверов, лаунчер для программ Craft, видеоплеер в образе лампового телевизора, YouTube вместе с YouTube Music в одной программе, конвертеры видео и изображений и музыкальный плеер. Без подписки, без рекламы, без слежки.'],
-  'Catorze apps, zero custo. Escolha o seu.': ['Fourteen apps, zero cost. Pick yours.', 'Catorce apps, cero costo. Elige la tuya.', 'Четырнадцать программ, ноль затрат. Выбирайте.'],
+  'Quinze apps, zero custo. Escolha o seu.': ['Fifteen apps, zero cost. Pick yours.', 'Quince apps, cero costo. Elige la tuya.', 'Пятнадцать программ, ноль затрат. Выбирайте.'],
   'Converta, comprima e amplie vídeos com IA': ['Convert, compress and upscale videos with AI', 'Convierte, comprime y amplía videos con IA', 'Конвертируйте, сжимайте и увеличивайте видео с ИИ'],
   'Conversor nativo no espírito do HandBrake, com codificação por hardware do Mac, compressão por tamanho e AI Upscale.': ['A native converter in the spirit of HandBrake, with the Mac’s hardware encoding, compression by size and AI Upscale.', 'Un conversor nativo con el espíritu de HandBrake, con codificación por hardware del Mac, compresión por tamaño y AI Upscale.', 'Нативный конвертер в духе HandBrake — с аппаратным кодированием Mac, сжатием до нужного размера и AI Upscale.'],
   'Conversor de vídeo': ['Video converter', 'Conversor de video', 'Конвертер видео'],
@@ -758,6 +758,49 @@ window.WITCH_STRINGS = Object.freeze({
   'App anterior': ['Previous app', 'App anterior', 'Предыдущая программа'],
   'Próximo app': ['Next app', 'App siguiente', 'Следующая программа'],
 
+  // ExcaliburForms
+  'Quadro infinito para referências': ['An infinite canvas for references', 'Un lienzo infinito para referencias', 'Бесконечная доска для референсов'],
+  'Junte screenshots num quadro infinito e anote por cima com marca-texto, notas adesivas, setas e desenho livre.': [
+    'Gather screenshots on an infinite canvas and annotate them with highlighter, sticky notes, arrows and freehand drawing.',
+    'Reúne capturas en un lienzo infinito y anota encima con marcador, notas adhesivas, flechas y dibujo a mano alzada.',
+    'Собирайте скриншоты на бесконечной доске и подписывайте их маркером, стикерами, стрелками и рисунками от руки.'],
+  'Screenshots e anotações num quadro infinito': ['Screenshots and notes on an infinite canvas', 'Capturas y anotaciones en un lienzo infinito', 'Скриншоты и заметки на бесконечной доске'],
+  'Um quadro infinito para juntar screenshots e anotar por cima com texto, marca-texto, notas adesivas, setas, formas e desenho livre, em cores vivas. Vários quadros, salvos sozinhos no seu Mac. Feito sobre o Excalidraw, o editor de código aberto.': [
+    'An infinite canvas to gather screenshots and annotate on top with text, highlighter, sticky notes, arrows, shapes and freehand drawing, in vivid colors. Multiple boards, saved automatically on your Mac. Built on Excalidraw, the open-source editor.',
+    'Un lienzo infinito para reunir capturas y anotar encima con texto, marcador, notas adhesivas, flechas, formas y dibujo a mano alzada, en colores vivos. Varios tableros, guardados solos en tu Mac. Hecho sobre Excalidraw, el editor de código abierto.',
+    'Бесконечная доска, чтобы собирать скриншоты и делать пометки поверх: текст, маркер, стикеры, стрелки, фигуры и рисунки от руки — в ярких цветах. Несколько досок, всё сохраняется само на вашем Mac. Основано на Excalidraw — редакторе с открытым исходным кодом.'],
+  'Texto já grifado': ['Highlighted by default', 'Texto ya resaltado', 'Текст сразу с маркером'],
+  'Todo texto nasce com marca-texto neon, com opção "sem fundo". O texto se ajusta para continuar legível.': [
+    'Every text starts with a neon highlight, with a “no background” option. The text adjusts to stay readable.',
+    'Todo texto nace con marcador neón, con la opción «sin fondo». El texto se ajusta para seguir siendo legible.',
+    'Любой текст сразу получает неоновый маркер, есть вариант «без фона». Цвет текста подстраивается, чтобы оставаться читаемым.'],
+  'Notas adesivas': ['Sticky notes', 'Notas adhesivas', 'Стикеры'],
+  'Cinco cores vivas, texto preto e a data no canto.': ['Five vivid colors, black text and the date in the corner.', 'Cinco colores vivos, texto negro y la fecha en la esquina.', 'Пять ярких цветов, чёрный текст и дата в углу.'],
+  'Imagens': ['Images', 'Imágenes', 'Изображения'],
+  'Cole, arraste ou insira screenshots, e mova, redimensione e recorte no próprio quadro.': [
+    'Paste, drag or insert screenshots, then move, resize and crop them right on the board.',
+    'Pega, arrastra o inserta capturas, y muévelas, redimensiónalas y recórtalas en el propio tablero.',
+    'Вставляйте, перетаскивайте или добавляйте скриншоты, а затем перемещайте, меняйте размер и обрезайте их прямо на доске.'],
+  'Camadas': ['Layers', 'Capas', 'Слои'],
+  'Veja cada elemento, selecione, mude a ordem, bloqueie ou apague.': ['See every element, select it, reorder, lock or delete it.', 'Ve cada elemento, selecciónalo, cambia el orden, bloquéalo o bórralo.', 'Видны все элементы: выбирайте, меняйте порядок, блокируйте или удаляйте.'],
+  'Vários quadros': ['Multiple boards', 'Varios tableros', 'Несколько досок'],
+  'Criar, renomear, duplicar e excluir. Tudo salvo sozinho no seu Mac, sem conta e sem nuvem.': [
+    'Create, rename, duplicate and delete. Everything saved automatically on your Mac, with no account and no cloud.',
+    'Crear, renombrar, duplicar y eliminar. Todo se guarda solo en tu Mac, sin cuenta y sin nube.',
+    'Создание, переименование, дублирование и удаление. Всё сохраняется само на вашем Mac — без аккаунта и облака.'],
+  'Exportar': ['Export', 'Exportar', 'Экспорт'],
+  'PNG ou SVG do quadro, da seleção ou da área visível, e ⌘⇧C para copiar a imagem.': [
+    'PNG or SVG of the board, the selection or the visible area, and ⌘⇧C to copy the image.',
+    'PNG o SVG del tablero, de la selección o del área visible, y ⌘⇧C para copiar la imagen.',
+    'PNG или SVG всей доски, выделения или видимой области и ⌘⇧C, чтобы скопировать изображение.'],
+  'Quadro do ExcaliburForms com screenshots, textos com marca-texto, um círculo à mão, uma seta e notas adesivas': [
+    'ExcaliburForms board with screenshots, highlighted text, a hand-drawn circle, an arrow and sticky notes',
+    'Tablero de ExcaliburForms con capturas, textos con marcador, un círculo a mano, una flecha y notas adhesivas',
+    'Доска ExcaliburForms со скриншотами, текстом с маркером, кругом от руки, стрелкой и стикерами'],
+  'Painel Camadas do ExcaliburForms com todos os elementos do quadro': ['ExcaliburForms Layers panel with every element on the board', 'Panel Capas de ExcaliburForms con todos los elementos del tablero', 'Панель «Слои» в ExcaliburForms со всеми элементами доски'],
+  'Quadro kanban com notas adesivas no tema escuro do ExcaliburForms': ['Kanban board with sticky notes in ExcaliburForms’ dark theme', 'Tablero kanban con notas adhesivas en el tema oscuro de ExcaliburForms', 'Канбан-доска со стикерами в тёмной теме ExcaliburForms'],
+  'Screenshot selecionada no ExcaliburForms, com o botão Recortar no inspetor': ['Screenshot selected in ExcaliburForms, with the Crop button in the inspector', 'Captura seleccionada en ExcaliburForms, con el botón Recortar en el inspector', 'Выбранный скриншот в ExcaliburForms и кнопка «Обрезать» в инспекторе'],
+  'macOS 14 Sonoma ou mais novo · Apple Silicon': ['macOS 14 Sonoma or later · Apple Silicon', 'macOS 14 Sonoma o posterior · Apple Silicon', 'macOS 14 Sonoma или новее · Apple Silicon'],
   // Espelho
   'A tela do celular no Mac': ['Your phone’s screen on your Mac', 'La pantalla del móvil en el Mac', 'Экран телефона на Mac'],
   'Espelhe iPhone, iPad e Android no Mac, com som, e use o Android com o mouse e o teclado.': [
