@@ -6,6 +6,20 @@
     <description>Atualizações do Espelho</description>
     <language>pt-BR</language>
     <item>
+      <title>Espelho 1.3.0</title>
+      <pubDate>Sat, 07 Nov 2026 05:05:48 +0000</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>English interface: the app follows your Mac's language (English, Spanish or Portuguese), and Settings › Language switches it. / Interface em inglês: o app segue o idioma do Mac (inglês, espanhol ou português), e Ajustes › Idioma troca.</li>
+<li>Tutorials use the phone menu names exactly as iPhone and Android show them in each language. / Os tutoriais usam os nomes dos menus exatamente como o iPhone e o Android mostram em cada idioma.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/espelho/releases/download/v1.3.0/Espelho-1.3.0.dmg" length="37259107" type="application/octet-stream" sparkle:edSignature="9e3pBJdtjsWKM5USN3WXJpGzOw7+GQ8a3QPjg/YkbHWd9ec4YpIXWttgIaRTEvnBd6PVqczR0Ky2pZapgy/rDw=="/>
+    </item>
+    <item>
       <title>Espelho 1.2.0</title>
       <pubDate>Fri, 06 Nov 2026 22:06:55 +0000</pubDate>
       <sparkle:version>4</sparkle:version>

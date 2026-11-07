@@ -65,6 +65,7 @@ window.WITCH_STRINGS = Object.freeze({
   "iPhone e iPad com Espelhar Tela; Android 11 ou mais novo pelo Wi-Fi, ou qualquer Android pelo cabo": ["iPhone and iPad with Screen Mirroring; Android 11 or later over Wi‑Fi, or any Android by cable", "iPhone y iPad con Duplicar pantalla; Android 11 o posterior por Wi‑Fi, o cualquier Android por cable", "iPhone и iPad с «Повтором экрана»; Android 11 и новее по Wi‑Fi или любой Android по кабелю"],
   "Idioma": ["Language", "Idioma", "Язык"],
   "Português": ["Portuguese", "Portugués", "Португальский"],
+  "Inglês, português e espanhol, seguindo o idioma do Mac (dá para trocar nos Ajustes)": ["English, Portuguese and Spanish, following the Mac’s language (you can change it in Settings)", "Inglés, portugués y español, según el idioma del Mac (se puede cambiar en Ajustes)", "Английский, португальский и испанский — по языку Mac (можно сменить в настройках)"],
   "Aviso": ["Note", "Aviso", "Примечание"],
   "Usa o UxPlay (GPL-3.0) e o scrcpy (Apache 2.0). Não é afiliado à Apple nem ao Google.": ["Uses UxPlay (GPL-3.0) and scrcpy (Apache 2.0). Not affiliated with Apple or Google.", "Usa UxPlay (GPL-3.0) y scrcpy (Apache 2.0). No está afiliado a Apple ni a Google.", "Использует UxPlay (GPL-3.0) и scrcpy (Apache 2.0). Не связан с Apple или Google."],
   "Download iniciado": ["Download started", "Descarga iniciada", "Загрузка началась"],
