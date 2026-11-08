@@ -6,6 +6,27 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.6.0</title>
+      <pubDate>Sun, 08 Nov 2026 15:49:15 +0000</pubDate>
+      <sparkle:version>118</sparkle:version>
+      <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.6.0</h2>
+<ul>
+  <li><b>Ocultar tudo ao minimizar:</b> o botão amarelo, o ⌘M e o clique no app da frente no Dock escondem todas as janelas de uma vez, sem a animação uma por uma. Elas voltam juntas pelo Dock ou pelo ⌘ Tab. Quem preferir escolhe "Como o macOS" na aba Dock.</li>
+  <li><b>Histórico com prévias no menu:</b> imagens, cores, links e arquivos aparecem com uma miniatura, com prévia maior ao parar o ponteiro, busca, arrastar e ⌥-clique para colar.</li>
+  <li><b>Escurecer outras telas:</b> com dois ou mais monitores, os que você não está usando escurecem e voltam quando o ponteiro chega lá.</li>
+  <li><b>Cor do app em uso:</b> o menu, o ⌘ Tab e as prévias do Dock ganham um toque da cor do app da frente (opcional, em Geral).</li>
+  <li><b>Aparelhos conectados:</b> teclado, mouse e fones Bluetooth com a bateria, no menu.</li>
+  <li><b>Abas Janelas e Dock reorganizadas</b> por assunto, com desenhos que mostram o que cada opção faz.</li>
+  <li><b>Saída de emergência:</b> ⌃⌥⇧⌘⎋ fecha o Sirena de qualquer app, se algo parar de responder.</li>
+  <li>Correções: o clique no Dock funciona com apps abertos em quarentena (como o WhatsApp) e com a prévia aberta, e o Sirena sempre fecha quando você pede para sair.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.0/Sirena-0.6.0.dmg" length="29912834" type="application/octet-stream" sparkle:edSignature="L+LmRi0rI6TnOGXVFWe3RcfWrkgg3hLaftbKQyfaQx9z+s3jQmXqr0KvC/ov5rufWDQCqv6AB/FgQZLbGofWCA=="/>
+    </item>
+    <item>
       <title>Sirena 0.5.3</title>
       <pubDate>Sun, 25 Oct 2026 03:27:56 +0000</pubDate>
       <sparkle:version>116</sparkle:version>
