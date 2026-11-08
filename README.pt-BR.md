@@ -42,6 +42,7 @@
 
 | | App | O que faz | Requer | Repositório |
 |:---:|---|---|---|---|
+| <img src="assets/icons/winapps.png" width="64" alt="WinApps"> | **[WinApps](#winapps)** | Programas do Windows como apps do Mac de verdade: ícone próprio no Dock, menus na barra do macOS, sem máquina virtual | macOS 14+ | [matthfaria96/winapps](https://github.com/matthfaria96/winapps) |
 | <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Utilidades na barra de menus: histórico de cópias, captura de texto, mixer de som por app, Ilha Dinâmica no notch e mais | macOS 15+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
 | <img src="assets/icons/macdash.png" width="64" alt="MacDash"> | **[MacDash](#macdash)** | Limpeza e manutenção sem medo: nada é removido sem a sua aprovação | macOS 13+ | [matthfaria96/MacDash](https://github.com/matthfaria96/MacDash) |
 | <img src="assets/icons/neorar.png" width="64" alt="NeoRAR"> | **[NeoRAR](#neorar)** | Gerenciador de arquivos compactados no estilo do WinRAR: RAR, ZIP, 7Z, TAR, ISO e outros | macOS 26+ | [matthfaria96/Neorar](https://github.com/matthfaria96/Neorar) |
@@ -50,8 +51,29 @@
 | <img src="assets/icons/wormlink.png" width="64" alt="WormLink"> | **[WormLink](#wormlink)** | Cliente de arquivos remotos em dois painéis: SFTP, FTP, S3, SMB, WebDAV e nuvens | macOS 26+ | [matthfaria96/Wormlink](https://github.com/matthfaria96/Wormlink) |
 | <img src="assets/icons/bettercraft.png" width="64" alt="BetterCraft Launcher"> | **[BetterCraft Launcher](#bettercraft-launcher)** | O launcher dos apps Craft repensado: sem ruído visual, direto ao ponto e com ícones redesenhados | macOS 11+ | [matthfaria96/bettercraft-launcher](https://github.com/matthfaria96/bettercraft-launcher) |
 
-Todos rodam em Macs com Apple Silicon e Intel. O download de cada um é o `.dmg` do release mais
+Todos rodam em Macs com Apple Silicon e Intel, menos o WinApps (só Apple Silicon). O download de cada um é o `.dmg` do release mais
 recente no GitHub; o BetterCraft Launcher se instala a partir do código fonte.
+
+---
+
+### <img src="assets/icons/winapps.png" width="36" align="top" alt=""> WinApps
+
+**Programas do Windows, como apps do Mac.** Rode `.exe` e `.msi` sem máquina virtual. Cada
+programa vira um app do Mac de verdade, com um motor de compatibilidade atualizado e correções
+que os concorrentes não têm.
+
+🪟 Ícone próprio no Dock · 📋 Menus na barra do macOS · 🖱️ Arraste para instalar · ✅ Lista de compatibilidade ·
+🗂️ Arquivos Mac ↔ Windows · 🎮 Direct3D 10/11 pelo Metal · 🌐 WebView2
+
+- **Apps de verdade.** Cada programa aparece em Aplicativos, no Launchpad e no Spotlight, com um ícone só no Dock e o próprio nome no ⌘ Tab.
+- **Janelas e menus do Mac.** Os menus do programa vão para a barra do macOS, e barras de título próprias ganham os botões do Mac.
+- **Tudo pronto.** Fontes, Visual C++, DirectX, .NET Framework 4.8 e WebView2 já vêm instalados; o Power BI Desktop funciona.
+
+<p align="center">
+  <img src="assets/shots/winapps/library-dark.jpg" alt="Biblioteca do WinApps com os programas instalados e os selos de compatibilidade" width="860">
+</p>
+
+<p align="center"><a href="https://github.com/matthfaria96/winapps/releases/latest"><b>Baixar WinApps</b></a> · <a href="https://github.com/matthfaria96/winapps">Código fonte</a> · macOS 14 Sonoma ou mais novo · Apple Silicon</p>
 
 ---
 
@@ -233,6 +255,7 @@ xattr -dr com.apple.quarantine /Applications/Sirena.app
 
 | App | macOS mínimo | Processador |
 |---|---|---|
+| WinApps | 14 Sonoma | Apple Silicon |
 | Sirena | 15 Sequoia | Apple Silicon e Intel |
 | MacDash | 13 Ventura | Apple Silicon e Intel |
 | NeoRAR | 26 Tahoe | Apple Silicon e Intel |

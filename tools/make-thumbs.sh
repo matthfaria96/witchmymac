@@ -37,6 +37,7 @@ SHOTS=(
   "wormlink:assets/shots/wormlink/main.jpg"
   "bunnygrid:assets/shots/bunnygrid/table-dark.jpg"
   "espelho:assets/shots/espelho/home.jpg"
+  "winapps:assets/shots/winapps/library-dark.jpg"
 )
 
 mkdir -p assets/thumbs
