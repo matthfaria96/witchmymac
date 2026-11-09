@@ -6,6 +6,23 @@
     <description>Atualizações do MacDash</description>
     <language>pt-BR</language>
     <item>
+      <title>MacDash 1.2.0</title>
+      <pubDate>Mon, 09 Nov 2026 03:08:55 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Nova tela Disco Externo: move pastas grandes (modelos de IA, simuladores, Downloads, projetos) para um SSD externo em APFS e deixa um link no lugar, então os apps continuam encontrando tudo. Cada pasta pode ser trazida de volta com um interruptor.</li>
+<li>Cada cópia é conferida arquivo por arquivo antes de o original ser apagado. Se algo for interrompido, o app conclui ou desfaz a operação na próxima abertura.</li>
+<li>Se o disco desconectar, o app avisa e corrige os links quando ele voltar, mesmo com outro nome.</li>
+<li>O Acesso Total ao Disco é pedido uma vez só, na tela Disco Externo, em vez de o macOS pedir pasta por pasta. O aviso que aparecia em todas as telas foi removido.</li>
+<li>O tour inicial agora mostra o Disco Externo e o Antivírus.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.2.0/MacDash-1.2.0.dmg" length="14539551" type="application/octet-stream" sparkle:edSignature="BlR2XHNb7iAmxQnGbqYPF9ReqI5AVH46pzOkCdZ6bC/Emyb+citkMjEFtM2ZJjj00KY4xQpTo1sjjIGIDKnHCQ=="/>
+    </item>
+    <item>
       <title>MacDash 1.1.1</title>
       <pubDate>Sun, 25 Oct 2026 12:43:16 +0000</pubDate>
       <sparkle:version>3</sparkle:version>
