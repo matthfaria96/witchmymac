@@ -42,6 +42,7 @@
 
 | | App | What it does | Requires | Repository |
 |:---:|---|---|---|---|
+| <img src="assets/icons/aitracker.png" width="64" alt="Aitracker"> | **[Aitracker](#aitracker)** | The limits and credits of all your AI accounts in the menu bar, even several from the same company | macOS 14+ | [matthfaria96/Aitracker](https://github.com/matthfaria96/Aitracker) |
 | <img src="assets/icons/winapps.png" width="64" alt="WinApps"> | **[WinApps](#winapps)** | Windows programs as real Mac apps: own Dock icon, menus in the macOS menu bar, no virtual machine | macOS 14+ | [matthfaria96/winapps](https://github.com/matthfaria96/winapps) |
 | <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Menu bar utilities: clipboard history, text capture, per-app sound mixer, a Dynamic Island in the notch and more | macOS 15+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
 | <img src="assets/icons/macdash.png" width="64" alt="MacDash"> | **[MacDash](#macdash)** | Fearless cleanup and maintenance: nothing is removed without your approval | macOS 13+ | [matthfaria96/MacDash](https://github.com/matthfaria96/MacDash) |
@@ -53,6 +54,22 @@
 
 All of them run on Apple Silicon and Intel Macs, except WinApps (Apple Silicon only). Each download is the `.dmg` from the app's latest
 GitHub release.
+
+---
+
+### <img src="assets/icons/aitracker.png" width="36" align="top" alt=""> Aitracker
+
+**How much of each AI account you've used, at a glance.** Limits and credits for Claude, ChatGPT Codex, Kimi Code, DeepSeek, Meshy and Tripo in the menu bar. Checking them costs no tokens and no credits.
+
+- **Every account side by side.** One fill bar per account, or just an icon.
+- **Sign in with your own browser.** Vivaldi, Chrome, Brave, Edge, Arc, Opera or Firefox, with no embedded window.
+- **Several accounts.** Even from the same company, each under its own e-mail.
+
+<p align="center">
+  <img src="assets/shots/aitracker/panel-dark.jpg" alt="Aitracker's menu bar panel with several AI accounts" width="860">
+</p>
+
+<p align="center"><a href="https://github.com/matthfaria96/Aitracker/releases/latest"><b>Download Aitracker</b></a> · <a href="https://github.com/matthfaria96/Aitracker">Source code</a> · macOS 14 Sonoma or later · Apple Silicon and Intel</p>
 
 ---
 
@@ -255,6 +272,7 @@ xattr -dr com.apple.quarantine /Applications/Sirena.app
 
 | App | Minimum macOS | Processor |
 |---|---|---|
+| Aitracker | 14 Sonoma | Apple Silicon and Intel |
 | WinApps | 14 Sonoma | Apple Silicon |
 | Sirena | 15 Sequoia | Apple Silicon and Intel |
 | MacDash | 13 Ventura | Apple Silicon and Intel |

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Aitracker</title>
+    <item>
+      <title>Aitracker 1.0.0</title>
+      <pubDate>Mon, 09 Nov 2026 06:19:17 +0000</pubDate>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>First release of Aitracker: the limits and credits of all your AI accounts in the menu bar.</li>
+<li>Sign in with your own browser and track several accounts, even from the same company.</li>
+<li>Claude, ChatGPT (Codex), Kimi Code, DeepSeek, Meshy and Tripo.</li>
+<li>14 languages, following your system by default.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Aitracker/releases/download/v1.0.0/Aitracker-1.0.0.dmg" length="10030281" type="application/octet-stream" sparkle:edSignature="dlu/+UwPeQFaDre7UTAGoP5apr9RVb1qzvFVLIIAMmqzWgdp/YgmCXvz3P0pd/TEcL1waQnR237MYp3zg6gVDw=="/>
+    </item>
+  </channel>
+</rss>

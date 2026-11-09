@@ -38,6 +38,7 @@ SHOTS=(
   "bunnygrid:assets/shots/bunnygrid/table-dark.jpg"
   "espelho:assets/shots/espelho/home.jpg"
   "winapps:assets/shots/winapps/library-dark.jpg"
+  "aitracker:assets/shots/aitracker/panel-dark.jpg"
 )
 
 mkdir -p assets/thumbs
