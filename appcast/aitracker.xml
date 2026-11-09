@@ -3,6 +3,21 @@
   <channel>
     <title>Aitracker</title>
     <item>
+      <title>Aitracker 1.0.1</title>
+      <pubDate>Mon, 09 Nov 2026 11:07:47 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Fixed: adding another Claude account no longer disconnects the previous one. Each new login now uses its own separate browser window. Accounts added in 1.0.0 may need to be reconnected once.</li>
+<li>Fixed: an account whose session ended now shows Reconnect instead of outdated numbers.</li>
+<li>Fixed: a leftover profile linked to Claude Code could spend tokens on every refresh.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Aitracker/releases/download/v1.0.1/Aitracker-1.0.1.dmg" length="10061217" type="application/octet-stream" sparkle:edSignature="/VJCYDRccne1JWh81yXq03WwonCgIpXblCDhCDHyVbVSvSfzFsBR2W4MfRRCnojnNCxS2J1RVJz4Ef8j9z+sCw=="/>
+    </item>
+    <item>
       <title>Aitracker 1.0.0</title>
       <pubDate>Mon, 09 Nov 2026 06:19:17 +0000</pubDate>
       <sparkle:version>1</sparkle:version>
