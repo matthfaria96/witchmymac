@@ -6,6 +6,24 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.6.1</title>
+      <pubDate>Mon, 09 Nov 2026 15:24:35 +0000</pubDate>
+      <sparkle:version>119</sparkle:version>
+      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.6.1</h2>
+<ul>
+  <li><b>Manter a tela ligada:</b> a tela não apaga mais sozinha com o modo ligado. E "Indefinidamente" continua ligado depois de fechar o app, atualizar ou reiniciar o Mac, até você desligar.</li>
+  <li><b>Prévias da Dock:</b> se a Dock demorar a responder, por exemplo ao acordar o Mac, as prévias voltam sozinhas, sem precisar reabrir o Sirena.</li>
+  <li><b>Cliques e atalhos:</b> as funções que dependem de capturar cliques e teclas voltam sozinhas depois de um travamento, em vez de ficarem desligadas até reabrir o app.</li>
+  <li><b>Em segundo plano:</b> o macOS não reduz mais o ritmo do Sirena quando ele está sem janelas abertas.</li>
+  <li>Correções: o clique na Dock volta a ocultar o app com a prévia aberta, apps Electron não reaparecem depois de minimizados, e o botão amarelo e o ⌘M ocultam de verdade no modo "Ocultar tudo".</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.1/Sirena-0.6.1.dmg" length="29920408" type="application/octet-stream" sparkle:edSignature="sDDrqK0VrUS4MgBIUTVDWV3LyQn9KPpkiyjR7u0LQP9uatNR3EG7vGek9WP/pFyV3Owb3CLBn2xZP77OT8KVDQ=="/>
+    </item>
+    <item>
       <title>Sirena 0.6.0</title>
       <pubDate>Sun, 08 Nov 2026 15:49:15 +0000</pubDate>
       <sparkle:version>118</sparkle:version>
