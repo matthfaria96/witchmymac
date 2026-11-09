@@ -17,7 +17,7 @@ window.WITCH_APPS = Object.freeze({
   animelocalizationstudio: Object.freeze({ repo: 'anime-localization-studio', tag: 'v0.29.0', file: 'AnimeLocalizationStudio-0.29.0.dmg', published: true, app: 'Anime Localization Studio.app' }),
   wormlink:     Object.freeze({ repo: 'Wormlink',      tag: 'v0.2.2',        file: 'Wormlink-0.2.2.dmg',     published: true, app: 'Wormlink.app' }),
   bunnygrid:    Object.freeze({ repo: 'BunnyGrid',     tag: 'v0.2.2',        file: 'BunnyGrid-0.2.2.dmg',    published: true, app: 'BunnyGrid.app' }),
-  espelho:      Object.freeze({ repo: 'espelho',       tag: 'v1.3.0',        file: 'Espelho-1.3.0.dmg',      published: true, app: 'Espelho.app' }),
+  espelho:      Object.freeze({ repo: 'espelho',       tag: 'v1.3.1',        file: 'Espelho-1.3.1.dmg',      published: true, app: 'Espelho.app' }),
   aitracker:    Object.freeze({ repo: 'Aitracker',     tag: 'v1.0.1',        file: 'Aitracker-1.0.1.dmg',    published: true, app: 'Aitracker.app' }),
   winapps:      Object.freeze({ repo: 'winapps',       tag: 'v2.0.0',        file: 'WinApps-2.0.0.dmg',      published: true, app: 'WinApps.app' }),
   excaliburforms: Object.freeze({ repo: 'ExcaliburForms', tag: 'v1.0.0',     file: 'ExcaliburForms-1.0.0.dmg', published: true, app: 'ExcaliburForms.app' }),

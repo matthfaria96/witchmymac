@@ -6,6 +6,19 @@
     <description>Atualizações do Espelho</description>
     <language>pt-BR</language>
     <item>
+      <title>Espelho 1.3.1</title>
+      <pubDate>Mon, 09 Nov 2026 15:59:30 +0000</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>1.3.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Android over Wi-Fi: scanning the QR code now connects, using macOS's Bonjour to find the phone. / Android pelo Wi-Fi: escanear o QR code agora conecta, usando o Bonjour do macOS para encontrar o celular.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/espelho/releases/download/v1.3.1/Espelho-1.3.1.dmg" length="37277789" type="application/octet-stream" sparkle:edSignature="p1Clep6cijCFVzensr235vkFj7Qn2ZdBVqfTuxYdods+DTt+HeAj4C43sjeELRVkqx72nPrJdnLjFRvJzzNYAQ=="/>
+    </item>
+    <item>
       <title>Espelho 1.3.0</title>
       <pubDate>Sat, 07 Nov 2026 05:05:48 +0000</pubDate>
       <sparkle:version>5</sparkle:version>
