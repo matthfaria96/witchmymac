@@ -6,6 +6,26 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.6.2</title>
+      <pubDate>Fri, 13 Nov 2026 23:46:49 +0000</pubDate>
+      <sparkle:version>120</sparkle:version>
+      <sparkle:shortVersionString>0.6.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.6.2</h2>
+<ul>
+  <li><b>Layouts no topo da tela:</b> arraste uma janela até o meio do topo do monitor e escolha onde ela fica. O Snap Assist preenche o resto com as outras janelas abertas, inclusive as minimizadas, as de apps ocultos e as de outros monitores.</li>
+  <li><b>⌃⌥0:</b> abre os layouts para a janela da frente, sem arrastar. Setas escolhem, Return encaixa.</li>
+  <li><b>Grupos de janelas:</b> janelas encaixadas juntas ganham uma linha discreta com uma alça entre elas. Arraste para redimensionar as duas; clique para trocar o app, inverter os lados, mudar o layout ou desvincular.</li>
+  <li><b>Ir para um caminho:</b> um botão no menu onde você cola o caminho de uma pasta ou arquivo e o Finder abre direto. Aceita ~/, aspas, caminhos do Terminal e file://.</li>
+  <li><b>Menu mais limpo:</b> os botões de ligar Janela, Ícones, Prateleira e Ilha saíram do menu (dá para trazer de volta em Geral). E o menu agora fecha com um clique em qualquer lugar fora dele.</li>
+  <li><b>Dock:</b> novo modo "Tudo junto pelo Dock": o clique no app da frente esconde todas as janelas de uma vez e o próximo traz todas de volta.</li>
+  <li>Correções: o botão verde e o amarelo voltam a funcionar no macOS 27, e uma instalação por DMG que falha não deixa mais uma cópia escondida em Aplicativos.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.2/Sirena-0.6.2.dmg" length="30746488" type="application/octet-stream" sparkle:edSignature="h4P9OjfslLhIZRs56YzNv2bmvSIUBHKaIHFT9b1IV2fR5r+1KC8NLElkC/HVMYF0lwZrJhIKBquIOWLBDTx7Bg=="/>
+    </item>
+    <item>
       <title>Sirena 0.6.1</title>
       <pubDate>Mon, 09 Nov 2026 15:24:35 +0000</pubDate>
       <sparkle:version>119</sparkle:version>
