@@ -6,6 +6,21 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.6.4</title>
+      <pubDate>Sat, 14 Nov 2026 07:13:35 +0000</pubDate>
+      <sparkle:version>122</sparkle:version>
+      <sparkle:shortVersionString>0.6.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.6.4</h2>
+<ul>
+  <li><b>Prévias do Dock:</b> parar o ponteiro sobre uma prévia não abre mais a janela sozinha (e não fecha as prévias). Quem quiser esse comportamento liga de novo nos ajustes do Dock.</li>
+  <li><b>⌘ Tab:</b> o botão de fechar janela é o mesmo das prévias do Dock.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.4/Sirena-0.6.4.dmg" length="30914220" type="application/octet-stream" sparkle:edSignature="NZwbrA3m+dXE8xlW083Rq2aTr5YXO5BSp2gWn7Glk1TqjGQcMlytYDhfX47kkeazZJV08d/KwGzj9FvgKge9Ag=="/>
+    </item>
+    <item>
       <title>Sirena 0.6.3</title>
       <pubDate>Sat, 14 Nov 2026 03:41:41 +0000</pubDate>
       <sparkle:version>121</sparkle:version>
