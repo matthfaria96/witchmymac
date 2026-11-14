@@ -76,6 +76,10 @@
 .spot-shot-2{z-index:0;right:-12%;top:7%;width:58%;opacity:.5;transform:scale(.96)}
 .spot:hover .spot-shot:first-child{transform:translateY(-52%) scale(1.01)}
 .spot:hover .spot-shot-2{transform:translate(-10px,-4px) scale(.96);opacity:.7}
+/* app sem capturas no destaque: o ícone grande, com o brilho da cor do app */
+.spot-shot.spot-solo{left:50%;top:50%;width:min(64%,360px);border-radius:0;box-shadow:none;transform:translate(-50%,-50%);
+  filter:drop-shadow(0 34px 50px #000b) drop-shadow(0 0 70px color-mix(in srgb,var(--c) 45%,transparent))}
+.spot:hover .spot-shot.spot-solo{transform:translate(-50%,-52%) scale(1.02)}
 @media (max-width:860px){
   .spot{grid-template-columns:1fr;padding:32px 24px 0;gap:8px;border-radius:26px}
   .spot-lead{font-size:16.5px}
@@ -83,6 +87,7 @@
   .spot-shot:first-child{left:8%;top:auto;bottom:-14%;width:84%;transform:none}
   .spot-shot-2{display:none}
   .spot:hover .spot-shot:first-child{transform:none}
+  .spot-shot.spot-solo,.spot:hover .spot-shot.spot-solo{left:50%;top:50%;bottom:auto;width:min(58%,300px);transform:translate(-50%,-50%)}
 }
 
 /* ---------- Barra de categorias (fica presa sob o menu ao rolar) ---------- */

@@ -32,11 +32,12 @@ repo_for() {
     excaliburforms|excalibur) echo "ExcaliburForms" ;;
     winapps) echo "winapps" ;;
     aitracker) echo "Aitracker" ;;
+    instamac) echo "instamac" ;;
     *) return 1 ;;
   esac
 }
 
-APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo hyperimage wineup animelocalizationstudio espelho excaliburforms winapps aitracker"
+APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo hyperimage wineup animelocalizationstudio espelho excaliburforms winapps aitracker instamac"
 
 say() { printf '\033[1;35m==>\033[0m %s\n' "$*"; }
 fail() { printf '\033[1;31mError:\033[0m %s\n' "$*" >&2; exit 1; }
@@ -91,15 +92,18 @@ if [ -z "${WITCH_DEST:-}" ] && [ ! -w "$DEST" ]; then
 fi
 mkdir -p "$DEST"
 
-if [ -n "$BUNDLE_ID" ] && [ -z "${WITCH_DEST:-}" ] && pgrep -f "$DEST/$NAME/Contents/MacOS/" >/dev/null 2>&1; then
+if [ -n "$BUNDLE_ID" ] && [ -z "${WITCH_DEST:-}" ] && pgrep -f "$DEST/$NAME/Contents/" >/dev/null 2>&1; then
   say "Quitting the running ${NAME}…"
   osascript -e "tell application id \"$BUNDLE_ID\" to quit" >/dev/null 2>&1 || true
-  for _ in 1 2 3 4 5 6 7 8 9 10; do pgrep -f "$DEST/$NAME/Contents/MacOS/" >/dev/null 2>&1 || break; sleep 0.5; done
+  for _ in 1 2 3 4 5 6 7 8 9 10; do pgrep -f "$DEST/$NAME/Contents/" >/dev/null 2>&1 || break; sleep 0.5; done
 fi
 
 say "Installing $NAME to ${DEST}…"
+# Some apps keep read-only folders inside the bundle (Instamac's 0555 lib cache): make the old
+# copy writable first, or rm stops halfway. --hfsCompression keeps the DMG's APFS compression.
+[ -e "$DEST/$NAME" ] && chmod -R u+w "$DEST/$NAME" 2>/dev/null || true
 rm -rf "$DEST/$NAME"
-ditto "$SOURCE" "$DEST/$NAME"
+ditto --hfsCompression "$SOURCE" "$DEST/$NAME"
 xattr -dr com.apple.quarantine "$DEST/$NAME" 2>/dev/null || true
 
 say "Done: $DEST/$NAME"

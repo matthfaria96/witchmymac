@@ -1,0 +1,63 @@
+/* Página do Instamac. Sem capturas de tela (o app mostra posts e dados de outras pessoas):
+   topo, números, capítulos em texto, cartões e ficha. Usa app-page.css (instalação, ficha). */
+
+body[data-app=instamac]{--deep:#2a0f24;--c:#e8336e}
+body[data-app=instamac] .glow-a{background:#e8336e;opacity:.3}
+body[data-app=instamac] .glow-b{background:#18c8e5;opacity:.16}
+
+/* topo */
+.wu-hero{text-align:center;padding:56px 0 8px}
+.wu-hero .ap-back{display:inline-block;margin-bottom:28px}
+.wu-hero .ap-icon{margin:0 auto 18px;filter:drop-shadow(0 18px 36px #000a) drop-shadow(0 0 40px #e8336e40)}
+.wu-hero .eyebrow{color:var(--c)}
+.wu-hero h1{font-size:clamp(48px,7.5vw,92px);letter-spacing:-.045em;line-height:.95;font-weight:800}
+.wu-hero h1 span{background:linear-gradient(110deg,#fde4ee 0%,#e8336e 45%,#18c8e5 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wu-hero .lead{max-width:700px}
+.wu-hero .app-cta{justify-content:center;margin-top:30px}
+.wu-hero .btn-primary{background:linear-gradient(120deg,#e8336e,#7c3aed);box-shadow:0 10px 34px -10px #e8336ecc}
+.wu-hero .req{margin-top:14px;font-size:13px;color:var(--muted)}
+.wu-hero .req [data-version]:not(:empty)::before{content:"v"}
+.wu-hero .req [data-version]:not(:empty)::after{content:" · "}
+
+/* números */
+.wu-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:56px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--border)}
+.wu-stats div{background:rgba(16,14,28,.8);padding:22px 18px;text-align:center}
+.wu-stats b{display:block;font-size:30px;letter-spacing:-.03em;background:linear-gradient(120deg,#fde4ee,#e8336e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wu-stats span{font-size:14px;color:var(--muted)}
+
+/* capítulos */
+.wu-chapter .section-head{max-width:760px;margin-inline:auto}
+.wu-kicker{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--c);margin-bottom:14px}
+.wu-copy h2{margin-bottom:18px}
+.wu-copy > p{color:#d6d3e6;font-size:17px;line-height:1.7}
+.wu-list{list-style:none;margin-top:22px;display:grid;gap:12px}
+.wu-list li{position:relative;padding-left:26px;color:var(--muted);font-size:15px;line-height:1.55}
+.wu-list li::before{content:"";position:absolute;left:4px;top:8px;width:9px;height:9px;border-radius:3px;background:linear-gradient(135deg,#fde4ee,#e8336e);box-shadow:0 0 12px #e8336e88}
+.wu-list b{color:var(--text);font-weight:600}
+
+/* postar e janela, lado a lado */
+.im-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.im-duo .wu-copy{position:relative;overflow:hidden;padding:36px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface)}
+.im-duo .wu-copy::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.2;background:radial-gradient(420px 220px at 0 -10%,#e8336e,transparent 70%)}
+.im-duo .wu-copy + .wu-copy::before{background:radial-gradient(420px 220px at 100% -10%,#18c8e5,transparent 70%)}
+
+/* cartões */
+.wu-more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.wu-more .card{padding:22px}
+.wu-more .card::before{background:radial-gradient(300px 150px at 0 -20%,#e8336e 0,transparent 70%)}
+.wu-more h3{font-size:16px;margin-bottom:6px}
+.wu-more p{font-size:14px;color:var(--muted);line-height:1.5}
+
+/* aviso */
+.im-legal{max-width:620px;margin:22px auto 0;text-align:center;font-size:13px;line-height:1.6;color:var(--muted)}
+.ap-facts .im-notice{grid-column:1 / -1}
+
+@media (max-width:960px){
+  .im-duo{grid-template-columns:minmax(0,1fr)}
+  .wu-more{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .wu-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .wu-more{grid-template-columns:minmax(0,1fr)}
+  .im-duo .wu-copy{padding:26px 22px}
+}

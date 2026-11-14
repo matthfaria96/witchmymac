@@ -42,6 +42,7 @@
 
 | | App | What it does | Requires | Repository |
 |:---:|---|---|---|---|
+| <img src="assets/icons/instamac.png" width="64" alt="Instamac"> | **[Instamac](#instamac)** | Instagram as a Mac app: its own Dock icon, window and Mac menus. Not an emulator, a virtual machine or the web version | macOS 26.4+ | [matthfaria96/instamac](https://github.com/matthfaria96/instamac) |
 | <img src="assets/icons/aitracker.png" width="64" alt="Aitracker"> | **[Aitracker](#aitracker)** | The limits and credits of all your AI accounts in the menu bar, even several from the same company | macOS 14+ | [matthfaria96/Aitracker](https://github.com/matthfaria96/Aitracker) |
 | <img src="assets/icons/winapps.png" width="64" alt="WinApps"> | **[WinApps](#winapps)** | Windows programs as real Mac apps: own Dock icon, menus in the macOS menu bar, no virtual machine | macOS 14+ | [matthfaria96/winapps](https://github.com/matthfaria96/winapps) |
 | <img src="assets/icons/sirena.png" width="64" alt="Sirena"> | **[Sirena](#sirena)** | Menu bar utilities: clipboard history, text capture, per-app sound mixer, a Dynamic Island in the notch and more | macOS 15+ | [matthfaria96/Sirena](https://github.com/matthfaria96/Sirena) |
@@ -52,8 +53,23 @@
 | <img src="assets/icons/wormlink.png" width="64" alt="WormLink"> | **[WormLink](#wormlink)** | Dual-pane remote file client: SFTP, FTP, S3, SMB, WebDAV and cloud drives | macOS 26+ | [matthfaria96/Wormlink](https://github.com/matthfaria96/Wormlink) |
 | <img src="assets/icons/bettercraft.png" width="64" alt="BetterCraft Launcher"> | **[BetterCraft Launcher](#bettercraft-launcher)** | The Craft apps launcher, rethought: no visual noise, straight to the point, with redesigned icons | macOS 11+ | [matthfaria96/bettercraft-launcher](https://github.com/matthfaria96/bettercraft-launcher) |
 
-All of them run on Apple Silicon and Intel Macs, except WinApps (Apple Silicon only). Each download is the `.dmg` from the app's latest
+All of them run on Apple Silicon and Intel Macs, except WinApps and Instamac (Apple Silicon only). Each download is the `.dmg` from the app's latest
 GitHub release.
+
+---
+
+### <img src="assets/icons/instamac.png" width="36" align="top" alt=""> Instamac
+
+**Instagram, as a Mac app.** Instagram's Android app running right on macOS: its own Dock icon, its own window and Mac menus. Not an emulator, a virtual machine or the web version. Instagram comes already installed inside: open it, sign in and the feed shows up in about 6 seconds.
+
+- **Feed, Reels, Stories, Direct and Explore.** With video and sound; scroll with the trackpad or the mouse wheel.
+- **Post with your Mac's photos.** From the File menu or by dragging into the window; paste into the caption; your Mac's camera works as Instagram's camera.
+- **Phone or tablet.** Two window modes in the View menu, a rotate button in the title bar and an automatic Interface Size for large monitors.
+- **macOS notifications** for likes, comments and messages.
+
+<p align="center"><a href="https://github.com/matthfaria96/instamac/releases/latest"><b>Download Instamac</b></a> · <a href="https://github.com/matthfaria96/instamac">Source code</a> · macOS 26.4 or later · Apple Silicon</p>
+
+> An independent personal project, not affiliated with Meta. Instagram is a trademark of Meta Platforms. You sign in with your own account; Instamac collects nothing.
 
 ---
 
@@ -272,6 +288,7 @@ xattr -dr com.apple.quarantine /Applications/Sirena.app
 
 | App | Minimum macOS | Processor |
 |---|---|---|
+| Instamac | 26 Tahoe | Apple Silicon |
 | Aitracker | 14 Sonoma | Apple Silicon and Intel |
 | WinApps | 14 Sonoma | Apple Silicon |
 | Sirena | 15 Sequoia | Apple Silicon and Intel |
