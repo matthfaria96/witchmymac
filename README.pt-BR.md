@@ -67,6 +67,10 @@ recente no GitHub; o BetterCraft Launcher se instala a partir do código fonte.
 - **Celular ou tablet.** Dois modos de janela no menu Visualizar, botão de girar na barra de título e Tamanho da Interface automático para monitores grandes.
 - **Notificações do macOS** de curtidas, comentários e mensagens.
 
+<p align="center">
+  <img src="assets/shots/instamac/hero.jpg" alt="Feed, Reels e Explorar do Instagram em três janelas do Instamac" width="860">
+</p>
+
 <p align="center"><a href="https://github.com/matthfaria96/instamac/releases/latest"><b>Baixar o Instamac</b></a> · <a href="https://github.com/matthfaria96/instamac">Código-fonte</a> · macOS 26.4 ou mais novo · Apple Silicon</p>
 
 > Projeto pessoal e independente, sem ligação com a Meta. Instagram é marca da Meta Platforms. Você entra com a sua própria conta; o Instamac não coleta nada.

@@ -39,8 +39,7 @@ SHOTS=(
   "espelho:assets/shots/espelho/home.jpg"
   "winapps:assets/shots/winapps/library-dark.jpg"
   "aitracker:assets/shots/aitracker/panel-dark.jpg"
-  # instamac: sem capturas (o app mostra posts de outras pessoas); assets/thumbs/instamac.webp é o
-  # ícone sobre um degradê, feito à parte, e não é gerado aqui.
+  "instamac:assets/shots/instamac/hero.jpg"
 )
 
 mkdir -p assets/thumbs

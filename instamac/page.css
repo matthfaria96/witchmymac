@@ -20,7 +20,7 @@ body[data-app=instamac] .glow-b{background:#18c8e5;opacity:.16}
 .wu-hero .req [data-version]:not(:empty)::after{content:" · "}
 
 /* números */
-.wu-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:56px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--border)}
+.wu-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:20px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--border)}
 .wu-stats div{background:rgba(16,14,28,.8);padding:22px 18px;text-align:center}
 .wu-stats b{display:block;font-size:30px;letter-spacing:-.03em;background:linear-gradient(120deg,#fde4ee,#e8336e);-webkit-background-clip:text;background-clip:text;color:transparent}
 .wu-stats span{font-size:14px;color:var(--muted)}
@@ -60,4 +60,25 @@ body[data-app=instamac] .glow-b{background:#18c8e5;opacity:.16}
   .wu-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .wu-more{grid-template-columns:minmax(0,1fr)}
   .im-duo .wu-copy{padding:26px 22px}
+}
+
+/* Capturas: destaque do topo, seções com foto e o modo Tablet (mesmos estilos das outras páginas) */
+.wu-stage{position:relative;margin:56px auto 0;max-width:1100px;padding:0 0 40px}
+.wu-stage::before{content:"";position:absolute;inset:-6% 4% 6%;z-index:-1;border-radius:50%;background:radial-gradient(closest-side,#e8336e55,transparent)}
+.wu-stage .shot{border-radius:14px;box-shadow:0 50px 120px -40px #000,0 0 0 1px #ffffff14}
+.wu-stage .wu-main{width:100%}
+.wu-split{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:center}
+.wu-split.reverse{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+.wu-split.reverse .wu-copy{order:2}
+.wu-media{position:relative;min-width:0;max-width:460px;margin-inline:auto}
+.wu-media::before{content:"";position:absolute;inset:-10%;z-index:-1;background:radial-gradient(closest-side,#e8336e33,transparent)}
+.wu-media .shot{width:100%;border-radius:14px;box-shadow:0 34px 80px -34px #000}
+figure{margin:0}
+.im-wide{max-width:1100px;margin:0 auto}
+.im-wide .shot{width:100%;border-radius:14px;box-shadow:0 40px 100px -40px #000,0 0 0 1px #ffffff14}
+.wu-cap{margin-top:12px;font-size:14px;color:var(--muted);text-align:center}
+@media (max-width:960px){
+  .wu-split,.wu-split.reverse{grid-template-columns:minmax(0,1fr);gap:32px}
+  .wu-split.reverse .wu-copy{order:0}
+  .wu-stage{padding:0 0 24px}
 }

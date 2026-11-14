@@ -67,6 +67,10 @@ GitHub release.
 - **Phone or tablet.** Two window modes in the View menu, a rotate button in the title bar and an automatic Interface Size for large monitors.
 - **macOS notifications** for likes, comments and messages.
 
+<p align="center">
+  <img src="assets/shots/instamac/hero.jpg" alt="Instagram's Feed, Reels and Explore in three Instamac windows" width="860">
+</p>
+
 <p align="center"><a href="https://github.com/matthfaria96/instamac/releases/latest"><b>Download Instamac</b></a> · <a href="https://github.com/matthfaria96/instamac">Source code</a> · macOS 26.4 or later · Apple Silicon</p>
 
 > An independent personal project, not affiliated with Meta. Instagram is a trademark of Meta Platforms. You sign in with your own account; Instamac collects nothing.
