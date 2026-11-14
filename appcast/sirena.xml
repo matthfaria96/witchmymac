@@ -6,6 +6,23 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.6.3</title>
+      <pubDate>Sat, 14 Nov 2026 03:41:41 +0000</pubDate>
+      <sparkle:version>121</sparkle:version>
+      <sparkle:shortVersionString>0.6.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.6.3</h2>
+<ul>
+  <li><b>Barra de endereço no Finder:</b> aperte ⌘L numa janela do Finder para ver o caminho da pasta, editar ou colar outro, e Return leva a mesma janela até lá. Tab completa os nomes das pastas. Também tem um botão na barra de ferramentas do Finder.</li>
+  <li><b>Ícones da barra de menus no menu do Sirena:</b> a setinha própria saiu. Agora "Ícones do menu" fica junto dos controladores: um clique oculta ou mostra cada app, o olho ao lado do nome mostra ou oculta todos e o ícone do Sirena mostra quantos estão ocultos. O clique direito no ícone também mostra ou oculta.</li>
+  <li><b>Menu com visual novo:</b> fundo translúcido, os botões de configurações, encerrar e o olho ao lado do nome, e cartões mais leves. O menu fecha ao clicar fora ou ao trocar de app.</li>
+  <li><b>Telas magnéticas mais discretas:</b> as linhas entre as janelas saíram; fica só a alça no meio, que cresce quando o ponteiro passa por ela. Ela não pisca mais ao clicar dentro das janelas e some na hora quando outro app vem para a frente.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.3/Sirena-0.6.3.dmg" length="30922501" type="application/octet-stream" sparkle:edSignature="KOZ2C8dDZ/a/fdgHa2Hh/B0yXFZ4W9OQLfEiAFB2OLGKZ/FnLNYZ3MMLCCeZPGJQhVuJpsyQKyDzIRqS1XX/AQ=="/>
+    </item>
+    <item>
       <title>Sirena 0.6.2</title>
       <pubDate>Fri, 13 Nov 2026 23:46:49 +0000</pubDate>
       <sparkle:version>120</sparkle:version>
