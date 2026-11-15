@@ -6,6 +6,22 @@
     <description>Atualizações do MacDash</description>
     <language>pt-BR</language>
     <item>
+      <title>MacDash 1.5.0</title>
+      <pubDate>Sun, 15 Nov 2026 04:55:55 +0000</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Saúde do Mac em Processos: uma frase diz se é para se preocupar, e cada disco, o backup, a memória e a temperatura ganham um veredito simples (Saudável, Atenção ou Em risco).</li>
+<li>O SSD interno mostra quanto de vida útil ainda resta; discos USB e pendrives são acompanhados pelos erros de leitura e gravação.</li>
+<li>Avisa quando não há backup no Time Machine e, com Acesso total ao disco, quando um disco externo ficou de fora.</li>
+<li>O botão dos ajustes do Time Machine agora abre o painel certo.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.5.0/MacDash-1.5.0.dmg" length="15954940" type="application/octet-stream" sparkle:edSignature="ID5efNA/AbKPYf+W6ykhhAPWCJ8YKMEDLvmpAlz55+2gn9ZoEK6coP/Lo43o37y7WYF3Q8PzEHf6cdHbcTrXAA=="/>
+    </item>
+    <item>
       <title>MacDash 1.4.0</title>
       <pubDate>Sat, 14 Nov 2026 03:45:37 +0000</pubDate>
       <sparkle:version>7</sparkle:version>
