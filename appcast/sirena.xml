@@ -6,6 +6,20 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.6.6</title>
+      <pubDate>Sun, 15 Nov 2026 04:41:10 +0000</pubDate>
+      <sparkle:version>124</sparkle:version>
+      <sparkle:shortVersionString>0.6.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.6.6</h2>
+<ul>
+  <li><b>Aparelhos conectados:</b> o botão que abre os ajustes de Bluetooth do macOS agora mostra o símbolo do Bluetooth no lugar da engrenagem.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.6/Sirena-0.6.6.dmg" length="30885023" type="application/octet-stream" sparkle:edSignature="M7x6dPgwKoYf9ixeI+ZwCPg1sVmcT72qSEPoRT21oEmn3NHa7u3I8yzk5P805EVc8bZUjGtzHdkwLgsOR//NCg=="/>
+    </item>
+    <item>
       <title>Sirena 0.6.5</title>
       <pubDate>Sun, 15 Nov 2026 04:29:48 +0000</pubDate>
       <sparkle:version>123</sparkle:version>
