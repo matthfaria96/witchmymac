@@ -758,6 +758,14 @@ window.WITCH_STRINGS = Object.freeze({
   'App anterior': ['Previous app', 'App anterior', 'Предыдущая программа'],
   'Próximo app': ['Next app', 'App siguiente', 'Следующая программа'],
 
+  // Kaveel's Book Studio
+  "Escreva e publique livros de terror na Amazon": ["Write and publish horror books on Amazon", "Escribe y publica libros de terror en Amazon", "Пишите и публикуйте книги ужасов на Amazon"],
+  "Acervo, leitor, análise de estilo e estúdio de escrita com IA opcional. Exporta EPUB, capa completa e metadados para a Amazon KDP. Mac e Windows.": ["Library, reader, style analysis and a writing studio with optional AI. Exports EPUB, the full cover and metadata for Amazon KDP. Mac and Windows.", "Biblioteca, lector, análisis de estilo y estudio de escritura con IA opcional. Exporta EPUB, la portada completa y los metadatos para Amazon KDP. Mac y Windows.", "Библиотека, читалка, анализ стиля и студия для письма с ИИ по желанию. Экспорт EPUB, полной обложки и метаданных для Amazon KDP. Mac и Windows."],
+  "Ver no GitHub": ["View on GitHub", "Ver en GitHub", "Открыть на GitHub"],
+  "Acervo com as capas dos livros": ["Library with the book covers", "Biblioteca con las portadas de los libros", "Библиотека с обложками книг"],
+  "Estúdio com a capa completa e o assistente": ["Studio with the full cover and the assistant", "Estudio con la portada completa y el asistente", "Студия с полной обложкой и ассистентом"],
+  "Estúdio para escrever livros de terror no estilo do autor e publicar na Amazon KDP. Tudo fica no seu computador.": ["A studio for writing horror books in the author's style and publishing them on Amazon KDP. Everything stays on your computer.", "Un estudio para escribir libros de terror con el estilo del autor y publicarlos en Amazon KDP. Todo se queda en tu ordenador.", "Студия, чтобы писать книги ужасов в стиле автора и публиковать их в Amazon KDP. Всё остаётся на вашем компьютере."],
+  "macOS (Apple Silicon) e Windows": ["macOS (Apple Silicon) and Windows", "macOS (Apple Silicon) y Windows", "macOS (Apple Silicon) и Windows"],
   // Instamac
   "O Instagram como app de Mac": ["Instagram as a Mac app", "Instagram como app del Mac", "Instagram как приложение для Mac"],
   "O app do Instagram rodando direto no Mac, com ícone no Dock e menus do Mac. Sem emulador, sem máquina virtual, sem navegador.": ["The Instagram app running right on your Mac, with its own Dock icon and Mac menus. No emulator, no virtual machine, no browser.", "La app de Instagram funcionando directamente en el Mac, con icono en el Dock y menús del Mac. Sin emulador, sin máquina virtual, sin navegador.", "Приложение Instagram прямо на Mac, со значком в Dock и меню Mac. Без эмулятора, виртуальной машины и браузера."],
