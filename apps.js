@@ -21,6 +21,6 @@ window.WITCH_APPS = Object.freeze({
   aitracker:    Object.freeze({ repo: 'Aitracker',     tag: 'v1.0.1',        file: 'Aitracker-1.0.1.dmg',    published: true, app: 'Aitracker.app' }),
   winapps:      Object.freeze({ repo: 'winapps',       tag: 'v2.0.0',        file: 'WinApps-2.0.0.dmg',      published: true, app: 'WinApps.app' }),
   excaliburforms: Object.freeze({ repo: 'ExcaliburForms', tag: 'v1.0.0',     file: 'ExcaliburForms-1.0.0.dmg', published: true, app: 'ExcaliburForms.app' }),
-  kaveelsbook:  Object.freeze({ repo: 'kaveels-book-studio', tag: 'v0.1.1', file: 'KaveelsBookStudio-mac.dmg', published: true, app: "Kaveel's Book Studio.app" }),
+  kaveelsbook:  Object.freeze({ repo: 'kaveels-book-studio', tag: 'v0.1.2', file: 'KaveelsBookStudio-mac.dmg', published: true, app: "Kaveel's Book Studio.app" }),
   instamac:     Object.freeze({ repo: 'instamac',      tag: 'v1.0.0',        file: 'Instamac-1.0.0.dmg',     published: true, app: 'Instamac.app' }),
 });
