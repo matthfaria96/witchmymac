@@ -6,6 +6,23 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.7.1</title>
+      <pubDate>Thu, 19 Nov 2026 23:45:32 +0000</pubDate>
+      <sparkle:version>126</sparkle:version>
+      <sparkle:shortVersionString>0.7.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.7.1</h2>
+<h3>Melhorias</h3>
+<ul>
+  <li><b>Geral reúne tudo:</b> Ajustes do Mac saiu da barra lateral. Geral agora tem três abas: Sirena (permissões e ajustes do próprio Sirena), Permissões dos apps e Ajustes do Sistema.</li>
+  <li><b>Arrastar de qualquer lugar:</b> ⌥ passa a ser a tecla padrão. A seção mostra de relance o que cada botão faz: arrastar com o esquerdo move, com o direito redimensiona, clique duplo ocupa a tela. O redimensionamento sempre puxa o canto mais perto do ponteiro (a opção "Sempre pelo canto inferior direito" saiu).</li>
+  <li><b>Layouts no topo da tela:</b> o aviso que aparece ao arrastar uma janela fica dentro da barra de menus, e o painel desce de lá, cobrindo menos as janelas. Em telas com notch, os dois continuam logo abaixo da barra.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.7.1/Sirena-0.7.1.dmg" length="31799579" type="application/octet-stream" sparkle:edSignature="3jElXMYYVviIDNjep/eQlyoT6Q57CZePy/YcO1h9uzI1XMExe3/xN9PtO+kBtYvGk+nWCzhy661HDVDXa1YgDw=="/>
+    </item>
+    <item>
       <title>Sirena 0.7.0</title>
       <pubDate>Thu, 19 Nov 2026 17:55:06 +0000</pubDate>
       <sparkle:version>125</sparkle:version>
