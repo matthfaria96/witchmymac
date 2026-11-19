@@ -33,11 +33,12 @@ repo_for() {
     winapps) echo "winapps" ;;
     aitracker) echo "Aitracker" ;;
     instamac) echo "instamac" ;;
+    veocode) echo "Veocode" ;;
     *) return 1 ;;
   esac
 }
 
-APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo hyperimage wineup animelocalizationstudio espelho excaliburforms winapps aitracker instamac"
+APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo hyperimage wineup animelocalizationstudio espelho excaliburforms winapps aitracker instamac veocode"
 
 say() { printf '\033[1;35m==>\033[0m %s\n' "$*"; }
 fail() { printf '\033[1;31mError:\033[0m %s\n' "$*" >&2; exit 1; }

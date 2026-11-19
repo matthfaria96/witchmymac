@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veocode · Veja e controle o que as IAs fazem no seu Mac</title>
+<meta name="description" content="Veocode junta num app só os seus projetos, as suas contas de IA (Claude, DeepSeek, OpenAI e Ollama) e tudo o que os agentes deixam no Mac: caches, instalações, containers e servidores esquecidos. Gratuito e de código aberto.">
+<meta property="og:title" content="Veocode · witchmymac">
+<meta property="og:description" content="Veja e controle o que as IAs fazem no seu Mac. Gratuito.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://witchmymac.com/veocode/">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/veocode/projects.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="../assets/icons/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=202611090600">
+<link rel="stylesheet" href="../effects.css?v=202611061900">
+<link rel="stylesheet" href="../gatekeeper.css?v=202611071600">
+<link rel="stylesheet" href="../app-page.css?v=202611090600">
+<link rel="stylesheet" href="page.css?v=202611190600">
+</head>
+<body class="app-page" data-app="veocode">
+<div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../" aria-label="witchmymac">
+      <img src="../assets/icons/logo-128.png" alt="" width="36" height="36">
+      <span>witch<b>my</b>mac</span>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a href="../#apps">Apps</a>
+      <a href="#instalar">Como Instalar?</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <div class="lang-picker">
+    <span class="lang-flag" aria-hidden="true">🇧🇷</span>
+    <select class="lang-select" aria-label="Idioma">
+      <option value="pt">🇧🇷 Português</option>
+      <option value="en">🇺🇸 English</option>
+      <option value="es">🇪🇸 Español</option>
+      <option value="ru">🇷🇺 Русский</option>
+    </select>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></g></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wu-hero container">
+    <a class="ap-back" href="../#veocode">← Todos os apps</a>
+    <img src="../assets/icons/veocode.png?v=202611190600" alt="" class="ap-icon" width="112" height="112">
+    <p class="eyebrow">Para quem programa com IA</p>
+    <h1>Veo<span>code</span></h1>
+    <p class="lead">Veja e controle o que as IAs fazem no seu Mac. Os seus projetos, as suas contas de IA e tudo o que os agentes deixam para trás, numa janela só. Gratuito e de código aberto.</p>
+    <div class="app-cta">
+      <a class="btn btn-primary" data-download="veocode" href="#">Instalar no Mac</a>
+      <a class="btn btn-link" data-source="veocode" href="#">Código fonte</a>
+    </div>
+    <p class="req"><span data-version="veocode" data-no-i18n></span> macOS 13 ou mais novo · Apple Silicon e Intel · Gratuito</p>
+    <div class="wu-stage">
+      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/veocode/projects.jpg?v=202611190600" alt="Um projeto com o agente trabalhando: a árvore de arquivos acende a cada arquivo lido ou editado" width="1400" height="875"></button></figure>
+    </div>
+    <div class="wu-stats">
+      <div><b>4</b><span>tipos de IA: Claude, DeepSeek, OpenAI e Ollama</span></div>
+      <div><b>5</b><span>ferramentas de VM e container vigiadas</span></div>
+      <div><b>0</b><span>arquivos apagados de vez: tudo vai para a Lixeira</span></div>
+      <div><b>100%</b><span>no seu Mac, sem conta e sem servidor</span></div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head"><p class="wu-kicker">O problema</p><h2>Agentes de IA são ótimos. E são uma caixa-preta.</h2></div>
+    <div class="wu-more">
+      <article class="card"><h3>Quem está fazendo o quê?</h3><p>O Claude aberto em três terminais, dois editores e no app. Qual está trabalhando, qual espera a sua aprovação, e com qual conta?</p></article>
+      <article class="card"><h3>O que ficou para trás?</h3><p>Pacotes instalados no computador todo, modelos baixados, containers ligados e servidores ocupando portas depois que a sessão fechou.</p></article>
+      <article class="card"><h3>Quanto pesa?</h3><p>Caches, históricos e ambientes que crescem até dezenas de GB, e extras que gastam tokens em toda conversa sem ninguém lembrar que estão lá.</p></article>
+    </div>
+  </section>
+
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Projetos</p>
+        <h2>Veja a IA trabalhando.</h2>
+        <p>Cada projeto é uma pasta de verdade, com árvore de arquivos, editor, Git e terminais. Cada passo do agente aparece na árvore, com um cursor na cor da conta: o que ele leu, buscou, editou ou rodou.</p>
+        <ul class="wu-list">
+          <li><b>Chat dentro do app</b>: Claude Code, DeepSeek, APIs compatíveis com OpenAI ou Ollama, na pasta do projeto.</li>
+          <li><b>Nível de acesso de verdade</b>: Leitura, Sugerir, Editar ou Total, gravado nas regras do próprio Claude Code.</li>
+          <li><b>Pedidos de permissão</b> viram cartões com Permitir e Recusar.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/projects.jpg?v=202611190600" alt="Projeto com o agente lendo arquivos e a lista de passos" loading="lazy" width="1400" height="875"></button></figure></div>
+    </div>
+  </section>
+
+  <section class="section container wu-chapter">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Espaço e memória</p>
+        <h2>Tudo o que as IAs deixaram no Mac.</h2>
+        <p>O Veocode mede o que os agentes guardam e instalam e mostra o que dá para liberar, com um clique e sempre para a Lixeira.</p>
+        <ul class="wu-list">
+          <li><b>Claude no computador</b>: sessões, ambientes e versões, separados por tipo.</li>
+          <li><b>Instalado pelas IAs</b>: o que o Claude Code instalou com brew, npm, pip e cargo, lido dos históricos.</li>
+          <li><b>IAs locais, VMs e containers</b>: Ollama, LM Studio, Docker, Lima, UTM, Parallels e VirtualBox.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/space.jpg?v=202611190600" alt="Espaço e memória: o que as IAs deixaram no disco" loading="lazy" width="1400" height="875"></button></figure></div>
+    </div>
+  </section>
+
+  <section class="section container wu-chapter">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Portas abertas</p>
+        <h2>Servidores esquecidos, encontrados.</h2>
+        <p>Um <code>npm run dev</code> que continuou rodando depois que o agente fechou segura a porta e gasta memória. O Veocode acha esses restos, mostra a pasta e a porta, abre no navegador ou fecha, junto com os processos ligados a ele.</p>
+        <ul class="wu-list">
+          <li><b>Só o que é seu</b>: apps e serviços do sistema nunca entram na lista.</li>
+          <li><b>Sempre com confirmação</b> antes de fechar.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/ports.jpg?v=202611190600" alt="Portas abertas com um servidor que sobrou de uma sessão fechada" loading="lazy" width="1400" height="875"></button></figure></div>
+    </div>
+  </section>
+
+  <section class="section container wu-chapter">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Extras do Claude</p>
+        <h2>Skills, plugins e MCP, num lugar só.</h2>
+        <p>Cada receita, atalho, ajudante, plugin e conexão MCP de todas as contas e projetos: onde vale, se está ligado, quanto pesa e quantos tokens ocupa em toda conversa.</p>
+        <ul class="wu-list">
+          <li><b>Ligar, desligar e tirar</b> pelo próprio Claude Code, com confirmação.</li>
+          <li><b>Chaves protegidas</b>: das conexões aparecem só os nomes das variáveis, nunca os valores.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/extras.jpg?v=202611190600" alt="Extras do Claude: receitas, atalhos, ajudantes e conexões" loading="lazy" width="1400" height="875"></button></figure></div>
+    </div>
+  </section>
+
+  <section class="section container wu-chapter">
+    <div class="section-head"><p class="wu-kicker">Contas e chat livre</p><h2>Todas as suas IAs, lado a lado.</h2><p>Várias contas do Claude, cada uma com os limites do plano e o uso do dia, mais DeepSeek, APIs compatíveis com OpenAI e modelos locais. E um chat fora de qualquer projeto, que pode só conversar ou ler (só ler) a sua pasta pessoal.</p></div>
+    <div class="wu-pair" style="max-width:1100px;margin:0 auto">
+      <figure><button class="shot" type="button"><img src="../assets/shots/veocode/accounts.jpg?v=202611190600" alt="Contas e IAs com os limites de cada plano" loading="lazy" width="1400" height="875"></button><figcaption>Contas e IAs</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/veocode/chat.jpg?v=202611190600" alt="Chat livre com a escolha da IA na caixa de mensagem" loading="lazy" width="1400" height="875"></button><figcaption>Chat livre</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head"><p class="wu-kicker">Privacidade</p><h2>Ele só olha. Quem decide é você.</h2></div>
+    <div class="wu-more">
+      <article class="card"><h3>Tudo no seu Mac</h3><p>Sem conta, sem servidor e sem rastreamento. O seu código só vai para a IA com que você escolher conversar.</p></article>
+      <article class="card"><h3>Lê, não se mete</h3><p>O Veocode lê os históricos que o Claude Code já grava. Agentes abertos no Terminal ou no editor aparecem também.</p></article>
+      <article class="card"><h3>Nada sumido de vez</h3><p>Limpezas vão para a Lixeira, remover pacotes só mostra o comando e chaves de API ficam no Chaveiro do macOS.</p></article>
+    </div>
+  </section>
+
+  <section id="instalar" class="section container narrow ap-install">
+    <div class="section-head">
+      <h2>Instalar</h2>
+      <p>O jeito mais rápido é uma linha no Terminal: ela baixa a versão mais nova, confere o arquivo e instala, sem aviso do macOS.</p>
+    </div>
+    <div class="term" data-app="veocode" data-mode="install">
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+          <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+          <div class="term-foot">
+            <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+            <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+          </div>
+        </div>
+    <p class="ap-install-alt">Para conversar com uma IA, o Veocode usa o que você já tem: o Claude Code com a sua conta, uma chave da DeepSeek ou de uma API compatível com OpenAI, ou o Ollama.</p>
+  </section>
+  <section class="section container narrow">
+    <dl class="ap-facts">
+      <div><dt>Versão</dt><dd><span data-version="veocode" data-no-i18n>—</span> · <a data-releases="veocode" href="#">Novidades</a></dd></div>
+      <div><dt>Requer</dt><dd>macOS 13 ou mais novo</dd></div>
+      <div><dt>Processador</dt><dd>Apple Silicon e Intel</dd></div>
+      <div><dt>Idioma</dt><dd>Português (Brasil)</dd></div>
+      <div><dt>Licença</dt><dd>MIT, código aberto</dd></div>
+      <div><dt>Preço</dt><dd>Gratuito, sem anúncios e sem rastreamento</dd></div>
+      <div><dt>Aviso</dt><dd>Não é afiliado à Anthropic, à OpenAI, à DeepSeek nem ao Ollama.</dd></div>
+    </dl>
+  </section>
+</main>
+
+<aside class="dl-sheet" aria-live="polite" data-state="install" hidden>
+  <button type="button" class="dl-close" aria-label="Fechar">✕</button>
+  <div class="dl-top">
+    <img class="dl-icon" src="" alt="" width="48" height="48">
+    <div>
+      <p class="eyebrow dl-for-install">Instalar pelo Terminal</p>
+      <p class="eyebrow dl-for-dmg">Download iniciado</p>
+      <p class="dl-app" data-no-i18n></p>
+    </div>
+  </div>
+  <ol class="dl-steps dl-for-install">
+    <li>Copie o comando.</li>
+    <li>Abra o Terminal (⌘ Espaço, digite Terminal), cole e aperte Enter.</li>
+    <li>Pronto: o app abre sozinho, sem aviso do macOS.</li>
+  </ol>
+  <ol class="dl-steps dl-for-dmg">
+    <li>Abra o .dmg e arraste o app para a pasta Aplicativos.</li>
+    <li>Copie o comando e cole no Terminal (⌘ Espaço, digite Terminal).</li>
+  </ol>
+  <div class="term">
+    <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+    <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+    <div class="term-foot">
+      <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+      <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+    </div>
+  </div>
+  <p class="dl-alt dl-for-install">Prefere o arquivo? <a class="dl-dmg" href="#">Baixar o .dmg</a></p>
+  <p class="dl-alt dl-for-dmg">Pronto: o app abre direto. <a href="../#liberar">Sem Terminal? Veja o passo a passo</a>.</p>
+</aside>
+
+<dialog class="lightbox" aria-label="Imagem ampliada">
+  <button class="lightbox-close" type="button" aria-label="Fechar">✕</button>
+  <img src="" alt="">
+</dialog>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand"><img src="../assets/icons/logo-128.png" alt="" width="28" height="28"><span>witch<b>my</b>mac</span></div>
+    <nav aria-label="Rodapé">
+      <a href="../#apps">Apps</a>
+      <a href="../#faq">FAQ</a>
+      <a href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:matth.faria96@gmail.com">Contato</a>
+    </nav>
+    <p>© <span id="year"></span> witchmymac. Apple, Mac e macOS são marcas da Apple Inc.</p>
+  </div>
+</footer>
+
+<script src="../apps.js?v=202611190600"></script>
+<script src="../install-command.js?v=202611071600"></script>
+<script src="../script.js?v=202611071700"></script>
+<script src="../i18n-strings.js?v=202611190600"></script>
+<script src="strings.js?v=202611190600"></script>
+<script src="page.js?v=202610271200"></script>
+<script src="../i18n.js?v=202610271200"></script>
+<script src="../effects.js?v=202611061900"></script>
+</body>
+</html>
