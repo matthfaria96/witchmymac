@@ -1,0 +1,79 @@
+/* Página do Garimpalo: vitrine em dourado (a cor do ícone). Usa app-page.css (topo, ficha) e acrescenta
+   palco do topo, números, capítulos, galeria de temas do catálogo e cartões. */
+
+body[data-app=garimpalo]{--deep:#1a1305;--c:#f2b33d}
+body[data-app=garimpalo] .glow-a{background:#c98a12;opacity:.32}
+body[data-app=garimpalo] .glow-b{background:#f2b33d;opacity:.14}
+
+/* topo */
+.wu-hero{text-align:center;padding:56px 0 8px}
+.wu-hero .ap-back{display:inline-block;margin-bottom:28px}
+.wu-hero .ap-icon{margin:0 auto 18px}
+.wu-hero .eyebrow{color:var(--c)}
+.wu-hero h1{font-size:clamp(48px,7.5vw,92px);letter-spacing:-.045em;line-height:.95;font-weight:800}
+.wu-hero h1 span{background:linear-gradient(110deg,#fff4d6 0%,#f2b33d 50%,#e8762b 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wu-hero .lead{max-width:700px}
+.wu-hero .app-cta{justify-content:center;margin-top:30px;flex-wrap:wrap}
+.wu-hero .btn-primary{background:linear-gradient(120deg,#f2b33d,#e8762b);color:#1a1305;box-shadow:0 10px 34px -10px #f2b33dcc}
+.wu-hero .req{margin-top:14px;font-size:13px;color:var(--muted)}
+.wu-hero .req [data-version]:not(:empty)::before{content:"v"}
+.wu-hero .req [data-version]:not(:empty)::after{content:" · "}
+
+/* palco */
+.wu-stage{position:relative;margin:56px auto 0;max-width:1100px;padding:0 0 40px}
+.wu-stage::before{content:"";position:absolute;inset:-6% 4% 6%;z-index:-1;border-radius:50%;
+  background:radial-gradient(closest-side,#f2b33d40,#1a130533 55%,transparent);filter:blur(30px)}
+.wu-stage .shot{border-radius:14px;box-shadow:0 50px 120px -40px #000,0 0 0 1px #ffffff14}
+.wu-stage .wu-main{width:100%}
+
+/* números */
+.wu-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:20px;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--border)}
+.wu-stats div{background:rgba(22,18,10,.8);padding:22px 18px;text-align:center}
+.wu-stats b{display:block;font-size:30px;letter-spacing:-.03em;background:linear-gradient(120deg,#fff4d6,#f2b33d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wu-stats span{font-size:14px;color:var(--muted)}
+
+/* capítulos */
+.wu-chapter .section-head{max-width:760px;margin-inline:auto}
+.wu-kicker{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--c);margin-bottom:14px}
+.wu-split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center}
+.wu-split.reverse{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.wu-split.reverse .wu-copy{order:2}
+.wu-copy h2{margin-bottom:18px}
+.wu-copy > p{color:#e2ddd0;font-size:17px;line-height:1.7}
+.wu-list{list-style:none;margin-top:22px;display:grid;gap:12px}
+.wu-list li{position:relative;padding-left:26px;color:var(--muted);font-size:15px;line-height:1.55}
+.wu-list li::before{content:"";position:absolute;left:4px;top:8px;width:9px;height:9px;border-radius:3px;background:linear-gradient(135deg,#fff4d6,#f2b33d);box-shadow:0 0 12px #f2b33d88}
+.wu-list b{color:var(--text);font-weight:600}
+.wu-media{position:relative;min-width:0}
+.wu-media::before{content:"";position:absolute;inset:-10%;z-index:-1;background:radial-gradient(closest-side,#f2b33d1f,transparent)}
+.wu-media .shot{width:100%;box-shadow:0 34px 80px -34px #000}
+figure{margin:0}
+
+/* temas do catálogo: imagens em pé, como no celular */
+.gm-themes{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
+.gm-themes figure{transition:transform .25s}
+.gm-themes figure:hover{transform:translateY(-6px)}
+.gm-themes .shot{width:100%;border-radius:12px;box-shadow:0 26px 60px -26px #000,0 0 0 1px #ffffff14}
+.gm-themes figcaption{margin-top:10px;font-size:14px;font-weight:600;text-align:center}
+.gm-themes figcaption span{display:block;font-weight:400;font-size:13px;color:var(--muted)}
+.gm-note{margin-top:22px;text-align:center;font-size:15px;color:var(--muted)}
+
+/* cartões */
+.wu-more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.wu-more .card{padding:22px}
+.wu-more .card::before{background:radial-gradient(300px 150px at 0 -20%,#f2b33d 0,transparent 70%)}
+.wu-more h3{font-size:16px;margin-bottom:6px}
+.wu-more p{font-size:14px;color:var(--muted);line-height:1.5}
+
+@media (max-width:960px){
+  .wu-split,.wu-split.reverse{grid-template-columns:minmax(0,1fr);gap:32px}
+  .wu-split.reverse .wu-copy{order:0}
+  .gm-themes{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .wu-stage{padding:0 0 24px}
+}
+@media (max-width:760px){.wu-more{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){
+  .wu-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gm-themes{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+}
+@media (prefers-reduced-motion:reduce){.gm-themes figure{transition:none}}
