@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ManhwaFy · Transforme mangá em manhwa colorido</title>
+<meta name="description" content="ManhwaFy transforma páginas de mangá preto e branco em manhwa colorido de rolagem vertical: monta os quadros como webtoon, a IA pinta por cima do traço original e as falas voltam para os balões. Gratuito e de código aberto.">
+<meta property="og:title" content="ManhwaFy · witchmymac">
+<meta property="og:description" content="Transforme mangá em manhwa colorido, sem mudar o desenho do autor. Gratuito.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://witchmymac.com/manhwafy/">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/manhwafy/antes-depois.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="../assets/icons/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=202611090600">
+<link rel="stylesheet" href="../effects.css?v=202611061900">
+<link rel="stylesheet" href="../gatekeeper.css?v=202611071600">
+<link rel="stylesheet" href="../app-page.css?v=202611090600">
+<link rel="stylesheet" href="page.css?v=202611190700">
+</head>
+<body class="app-page" data-app="manhwafy">
+<div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../" aria-label="witchmymac">
+      <img src="../assets/icons/logo-128.png" alt="" width="36" height="36">
+      <span>witch<b>my</b>mac</span>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a href="../#apps">Apps</a>
+      <a href="#instalar">Como Instalar?</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <div class="lang-picker">
+    <span class="lang-flag" aria-hidden="true">🇧🇷</span>
+    <select class="lang-select" aria-label="Idioma">
+      <option value="pt">🇧🇷 Português</option>
+      <option value="en">🇺🇸 English</option>
+      <option value="es">🇪🇸 Español</option>
+      <option value="ru">🇷🇺 Русский</option>
+    </select>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></g></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wu-hero container">
+    <a class="ap-back" href="../#manhwafy">← Todos os apps</a>
+    <img src="../assets/icons/manhwafy.png?v=202611190700" alt="" class="ap-icon" width="112" height="112">
+    <p class="eyebrow">Para quem lê e adapta mangá</p>
+    <h1>Manhwa<span>Fy</span></h1>
+    <p class="lead">Transforme páginas de mangá preto e branco em manhwa colorido de rolagem vertical. O app monta os quadros como webtoon, a IA pinta por cima do traço original e as falas voltam para os balões. O desenho continua o do autor.</p>
+    <div class="app-cta">
+      <a class="btn btn-primary" data-download="manhwafy" href="#">Instalar no Mac</a>
+      <a class="btn btn-link" data-source="manhwafy" href="#">Código fonte</a>
+    </div>
+    <p class="req"><span data-version="manhwafy" data-no-i18n></span> macOS 12 ou mais novo · Apple Silicon e Intel · Beta gratuito</p>
+    <div class="mf-compare" style="--pos:50%">
+      <img src="../assets/shots/manhwafy/antes.jpg?v=202611190700" alt="Quadro do mangá em preto e branco" width="420" height="719">
+      <img class="mf-after" src="../assets/shots/manhwafy/depois.jpg?v=202611190700" alt="O mesmo quadro colorido pelo ManhwaFy, com o traço original" width="420" height="719">
+      <span class="mf-tag l">Mangá</span><span class="mf-tag r">ManhwaFy</span>
+      <span class="mf-handle" aria-hidden="true"></span>
+      <input type="range" min="0" max="100" value="50" aria-label="Arraste para comparar o antes e o depois">
+    </div>
+    <p class="mf-cap">Arraste para comparar. Um quadro de Bleach (vol. 13), em baixa resolução: o traço é o original, a IA só pôs a cor. Custo da página inteira: US$ 0,29.</p>
+    <div class="wu-stats">
+      <div><b>100%</b><span>do traço original fica por cima da cor</span></div>
+      <div><b>~US$ 0,03</b><span>por quadro com a IA mais barata</span></div>
+      <div><b>7</b><span>opções de IA: OpenAI e fal.ai</span></div>
+      <div><b>0</b><span>cobranças sem você ver o preço antes</span></div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head"><p class="wu-kicker">Como funciona</p><h2>Do mangá ao webtoon em cinco passos.</h2></div>
+    <div class="wu-more wu-steps">
+      <article class="card"><h3><span>1</span>Trazer as páginas</h3><p>Imagens ou PDF. Scan com duas páginas lado a lado vira duas, na ordem do mangá.</p></article>
+      <article class="card"><h3><span>2</span>Marcação</h3><p>O app acha quadros, balões e textos (fala, pensamento, grito, narração, som) no seu Mac, de graça. Tudo dá para corrigir à mão.</p></article>
+      <article class="card"><h3><span>3</span>Montagem na vertical</h3><p>Um quadro embaixo do outro, na ordem de leitura, com uma prévia em preto e branco já com as falas. Grátis.</p></article>
+      <article class="card"><h3><span>4</span>Cor</h3><p>A IA pinta cada quadro e o app põe o traço original por cima. As letras são apagadas antes e escritas de novo nos balões.</p></article>
+      <article class="card"><h3><span>5</span>Aprovar e baixar</h3><p>Páginas aprovadas viram referência de cor das próximas. Baixe em tiras PNG ou um PSD por página, em camadas.</p></article>
+      <article class="card"><h3><span>✓</span>Você no controle</h3><p>Nada pago começa sem você ver o preço e clicar. Chaves no Chaveiro do macOS, projetos numa pasta sua.</p></article>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="wu-split">
+      <div class="wu-copy">
+        <p class="wu-kicker">Fidelidade</p>
+        <h2>A IA pinta. O desenho continua do autor.</h2>
+        <p>Em vez de redesenhar a cena, o ManhwaFy pede só a cor e depois devolve as linhas do mangá por cima, onde a IA concordou com elas. Personagens, enquadramento, falas e ordem são os do original.</p>
+        <ul class="wu-list">
+          <li><b>Cores fixas por personagem</b>: a bíblia da obra guarda cabelo, olhos e roupa de cada um.</li>
+          <li><b>Referência entre quadros</b>: quadros e páginas já aprovados entram no pedido para a cor não mudar.</li>
+          <li><b>Balões no lugar</b>: as falas voltam para o balão original, com o rabicho do mangá.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/manhwafy/antes-depois.jpg?v=202611190700" alt="O quadro original ao lado do quadro colorido" loading="lazy" width="856" height="719"></button></figure></div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Quem pinta</p>
+        <h2>Escolha a IA e quanto quer gastar.</h2>
+        <p>Por projeto, você escolhe entre o GPT Image da OpenAI (qualidade baixa, média ou alta) e os modelos do fal.ai, com o preço de cada um na tela.</p>
+        <ul class="wu-list">
+          <li><b>Baixa</b> custa perto da metade e costuma bastar, porque o traço do original volta por cima.</li>
+          <li><b>Gastos na tela</b>: quanto cada projeto já gastou, por IA, e o crédito que sobra.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/manhwafy/ajustes.jpg?v=202611190700" alt="Ajustes: idioma, quem pinta, qualidade e chaves" loading="lazy" width="1400" height="706"></button></figure></div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head"><p class="wu-kicker">Preços</p><h2>Quanto custa cada quadro.</h2><p>O app é gratuito. A cor é paga direto à OpenAI ou ao fal.ai, com a sua chave. Uma página típica tem de 5 a 7 quadros.</p></div>
+    <div class="mf-wrap"><table class="mf-table">
+      <thead><tr><th>IA</th><th>Por quadro</th><th>Situação</th></tr></thead>
+      <tbody>
+        <tr><td>OpenAI GPT Image · baixa</td><td>~US$ 0,035</td><td>para economizar</td></tr>
+        <tr><td>OpenAI GPT Image · média</td><td>~US$ 0,05–0,07</td><td>testada: página de 6 quadros por US$ 0,29</td></tr>
+        <tr><td>OpenAI GPT Image · alta</td><td>~US$ 0,18</td><td>versão final</td></tr>
+        <tr><td>fal.ai Qwen Image Edit Plus</td><td>US$ 0,03</td><td><small>ainda não testada</small></td></tr>
+        <tr><td>fal.ai Seedream 5.0 Lite</td><td>US$ 0,035</td><td><small>ainda não testada</small></td></tr>
+        <tr><td>fal.ai FLUX.2 Edit</td><td>US$ 0,036</td><td><small>ainda não testada</small></td></tr>
+        <tr><td>fal.ai Nano Banana</td><td>US$ 0,04</td><td><small>ainda não testada</small></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head"><p class="wu-kicker">Onde está</p><h2>Beta: o fluxo inteiro funciona.</h2><p>Estimativa de quão perto está do objetivo: abrir um volume e sair com um manhwa fiel e legível, com pouca correção à mão.</p></div>
+    <div class="mf-meter"><b>~60%</b><div class="bar"><i></i></div></div>
+    <div class="mf-wrap"><table class="mf-table">
+      <tbody>
+        <tr><td><i class="mf-dot mf-ok"></i>Importar, separar páginas duplas, montar na vertical, exportar</td><td>pronto</td><td></td></tr>
+        <tr><td><i class="mf-dot mf-bom"></i>Achar quadros</td><td>bom</td><td><small>quadro que sangra com céu claro sai em pedaços</small></td></tr>
+        <tr><td><i class="mf-dot mf-bom"></i>Colorir por cima do traço</td><td>promissor</td><td><small>testado pago em 1 página; faltam páginas seguidas</small></td></tr>
+        <tr><td><i class="mf-dot mf-medio"></i>Ler os textos</td><td>médio</td><td><small>letra à mão, texto vertical e sons se corrigem na marcação</small></td></tr>
+        <tr><td><i class="mf-dot mf-fraco"></i>Rabicho dos balões</td><td>fraco</td><td><small>só em balão fechado; o resto se marca à mão</small></td></tr>
+        <tr><td><i class="mf-dot mf-off"></i>Cor igual entre muitas páginas</td><td>a medir</td><td><small>bíblia e páginas aprovadas servem de referência</small></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head"><p class="wu-kicker">Privacidade</p><h2>As suas páginas ficam no seu Mac.</h2></div>
+    <div class="wu-more">
+      <article class="card"><h3>Grátis até a cor</h3><p>Importar, achar quadros, ler textos e montar a prévia roda no seu Mac, sem internet e sem custo.</p></article>
+      <article class="card"><h3>Só o quadro sai</h3><p>Na hora de colorir, só o quadro (sem as letras) vai para a IA que você escolheu.</p></article>
+      <article class="card"><h3>Sem conta</h3><p>Sem cadastro e sem servidor nosso. As chaves ficam no Chaveiro do macOS.</p></article>
+    </div>
+  </section>
+
+  <section id="instalar" class="section container narrow ap-install">
+    <div class="section-head">
+      <h2>Instalar</h2>
+      <p>O jeito mais rápido é uma linha no Terminal: ela baixa a versão mais nova, confere o arquivo e instala, sem aviso do macOS.</p>
+    </div>
+    <div class="term" data-app="manhwafy" data-mode="install">
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+          <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+          <div class="term-foot">
+            <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+            <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+          </div>
+        </div>
+    <p class="ap-install-alt">Na primeira vez o app instala o motor (Python, OpenCV), o que leva cerca de um minuto com internet. Se pedir, instale as ferramentas da Apple com <code>xcode-select --install</code>. Para abrir PDF: <code>brew install poppler</code>.</p>
+  </section>
+  <section class="section container narrow">
+    <dl class="ap-facts">
+      <div><dt>Versão</dt><dd><span data-version="manhwafy" data-no-i18n>—</span> · <a data-releases="manhwafy" href="#">Novidades</a></dd></div>
+      <div><dt>Requer</dt><dd>macOS 12 ou mais novo, Python 3</dd></div>
+      <div><dt>Processador</dt><dd>Apple Silicon e Intel</dd></div>
+      <div><dt>Idioma</dt><dd>Português e inglês</dd></div>
+      <div><dt>Licença</dt><dd>MIT, código aberto</dd></div>
+      <div><dt>Preço</dt><dd>App gratuito; a cor é paga à IA escolhida, com a sua chave</dd></div>
+      <div><dt>Aviso</dt><dd>Use com obras que você tem direito de adaptar. Não é afiliado à OpenAI, ao fal.ai nem à Anthropic.</dd></div>
+    </dl>
+  </section>
+</main>
+<aside class="dl-sheet" aria-live="polite" data-state="install" hidden>
+  <button type="button" class="dl-close" aria-label="Fechar">✕</button>
+  <div class="dl-top">
+    <img class="dl-icon" src="" alt="" width="48" height="48">
+    <div>
+      <p class="eyebrow dl-for-install">Instalar pelo Terminal</p>
+      <p class="eyebrow dl-for-dmg">Download iniciado</p>
+      <p class="dl-app" data-no-i18n></p>
+    </div>
+  </div>
+  <ol class="dl-steps dl-for-install">
+    <li>Copie o comando.</li>
+    <li>Abra o Terminal (⌘ Espaço, digite Terminal), cole e aperte Enter.</li>
+    <li>Pronto: o app abre sozinho, sem aviso do macOS.</li>
+  </ol>
+  <ol class="dl-steps dl-for-dmg">
+    <li>Abra o .dmg e arraste o app para a pasta Aplicativos.</li>
+    <li>Copie o comando e cole no Terminal (⌘ Espaço, digite Terminal).</li>
+  </ol>
+  <div class="term">
+    <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>Terminal</span></div>
+    <div class="term-body"><code class="term-cmd" data-no-i18n></code></div>
+    <div class="term-foot">
+      <span class="term-hint">Cole no Terminal e aperte Enter ↩</span>
+      <button type="button" class="term-copy"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 5V3.8A1.8 1.8 0 0 0 9.2 2H3.8A1.8 1.8 0 0 0 2 3.8v5.4A1.8 1.8 0 0 0 3.8 11H5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cmd-idle">Copiar comando</span><span class="cmd-done">Copiado!</span></button>
+    </div>
+  </div>
+  <p class="dl-alt dl-for-install">Prefere o arquivo? <a class="dl-dmg" href="#">Baixar o .dmg</a></p>
+  <p class="dl-alt dl-for-dmg">Pronto: o app abre direto. <a href="../#liberar">Sem Terminal? Veja o passo a passo</a>.</p>
+</aside>
+
+<dialog class="lightbox" aria-label="Imagem ampliada">
+  <button class="lightbox-close" type="button" aria-label="Fechar">✕</button>
+  <img src="" alt="">
+</dialog>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand"><img src="../assets/icons/logo-128.png" alt="" width="28" height="28"><span>witch<b>my</b>mac</span></div>
+    <nav aria-label="Rodapé">
+      <a href="../#apps">Apps</a>
+      <a href="../#faq">FAQ</a>
+      <a href="https://github.com/matthfaria96" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:matth.faria96@gmail.com">Contato</a>
+    </nav>
+    <p>© <span id="year"></span> witchmymac. Apple, Mac e macOS são marcas da Apple Inc.</p>
+  </div>
+</footer>
+
+<script src="../apps.js?v=202611190700"></script>
+<script src="../install-command.js?v=202611071600"></script>
+<script src="../script.js?v=202611071700"></script>
+<script src="../i18n-strings.js?v=202611190700"></script>
+<script src="strings.js?v=202611190700"></script>
+<script src="page.js?v=202611190700"></script>
+<script src="../i18n.js?v=202610271200"></script>
+<script src="../effects.js?v=202611061900"></script>
+</body>
+</html>

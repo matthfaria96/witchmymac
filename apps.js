@@ -23,5 +23,6 @@ window.WITCH_APPS = Object.freeze({
   excaliburforms: Object.freeze({ repo: 'ExcaliburForms', tag: 'v1.0.0',     file: 'ExcaliburForms-1.0.0.dmg', published: true, app: 'ExcaliburForms.app' }),
   kaveelsbook:  Object.freeze({ repo: 'kaveels-book-studio', tag: 'v0.1.2', file: 'KaveelsBookStudio-mac.dmg', published: true, app: "Kaveel's Book Studio.app" }),
   veocode:      Object.freeze({ repo: 'Veocode',       tag: 'v0.1.1',        file: 'Veocode-0.1.1.dmg',      published: true, app: 'Veocode.app' }),
+  manhwafy:     Object.freeze({ repo: 'ManhwaFy',      tag: 'v0.1.0',        file: 'ManhwaFy-0.1.0.dmg',     published: true, app: 'ManhwaFy.app' }),
   instamac:     Object.freeze({ repo: 'instamac',      tag: 'v1.0.0',        file: 'Instamac-1.0.0.dmg',     published: true, app: 'Instamac.app' }),
 });
