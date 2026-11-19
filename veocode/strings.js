@@ -79,7 +79,7 @@ window.WITCH_STRINGS = Object.freeze({
   "Processador": ["Processor", "Procesador", "Процессор"],
   "Apple Silicon e Intel": ["Apple Silicon and Intel", "Apple Silicon e Intel", "Apple Silicon и Intel"],
   "Idioma": ["Language", "Idioma", "Язык"],
-  "Português (Brasil)": ["Portuguese (Brazil)", "Portugués (Brasil)", "Португальский (Бразилия)"],
+  "Português e inglês": ["Portuguese and English", "Portugués e inglés", "Португальский и английский"],
   "Licença": ["License", "Licencia", "Лицензия"],
   "MIT, código aberto": ["MIT, open source", "MIT, código abierto", "MIT, открытый исходный код"],
   "Preço": ["Price", "Precio", "Цена"],
