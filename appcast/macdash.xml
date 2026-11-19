@@ -6,6 +6,22 @@
     <description>Atualizações do MacDash</description>
     <language>pt-BR</language>
     <item>
+      <title>MacDash 1.6.0</title>
+      <pubDate>Thu, 19 Nov 2026 22:41:44 +0000</pubDate>
+      <sparkle:version>13</sparkle:version>
+      <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Cuidado inteligente com dois modos: o Essencial (lixo do sistema, caches, Lixeira e Mail) é rápido, seguro e sempre o modo inicial; a Completa soma arquivos grandes, restos de apps, apps sem uso e dados de desenvolvedor.</li>
+<li>Nova tela inicial: cada área com seu ícone e uma explicação, e embaixo só os dois modos.</li>
+<li>Processos mais leve (cerca de um terço da CPU de antes), com o cartão Seu Mac e cores próprias para CPU, memória, temperatura e atividade.</li>
+<li>O Assistente também olha a saúde dos discos e o backup. Pergunte ao Assistente (macOS 26 ou mais recente) abre numa janela própria e não guarda nada.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.6.0/MacDash-1.6.0.dmg" length="16237725" type="application/octet-stream" sparkle:edSignature="oYV8RWMniA9uzQ6CZJVbqxf8PcnENhAoK/nuV78MSXoflv6JY8Ld544As1hlyOJdSzVYKJJ0NuWQl/e5ZBTEBQ=="/>
+    </item>
+    <item>
       <title>MacDash 1.5.0</title>
       <pubDate>Sun, 15 Nov 2026 04:55:55 +0000</pubDate>
       <sparkle:version>8</sparkle:version>
