@@ -6,6 +6,30 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.7.0</title>
+      <pubDate>Thu, 19 Nov 2026 17:55:06 +0000</pubDate>
+      <sparkle:version>125</sparkle:version>
+      <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.7.0</h2>
+<h3>Novidades</h3>
+<ul>
+  <li><b>Prateleira com imagens da web:</b> uma imagem arrastada do navegador (Google, Safari, Chrome), do Fotos ou do Mail vira um arquivo de verdade na prateleira, no tamanho original quando a página aponta para ele. Depois ela pode ser arrastada para qualquer editor, chat de IA ou envio. WebP, AVIF, HEIC, BMP e TIFF viram JPG ou PNG (dá para desligar). Enquanto a imagem chega, aparece um cartão carregando.</li>
+  <li><b>Arrastar janelas de qualquer lugar:</b> segure uma tecla e arraste em qualquer ponto da janela para movê-la; com o botão direito, redimensiona. Tem um guia animado no (i). Fica em Janela e Dock › Janelas.</li>
+  <li><b>Dock em um monitor:</b> o Dock fica no monitor escolhido (ou no principal) e não pula para outro quando o ponteiro chega na borda. Junto, em Janela e Dock › Dock: espaços entre os apps, as opções do Dock do macOS e uma cópia de segurança do Dock.</li>
+  <li><b>Monitores:</b> nova aba em Janela e Dock com apps que abrem sempre no monitor escolhido, e o monitor principal, a resolução e a taxa de atualização de cada um (uma resolução nova volta sozinha em 15 s se você não confirmar).</li>
+  <li><b>Ajustes do Mac:</b> nova página na barra lateral, acima de Geral, com atalhos para as permissões dos apps (em duas colunas) e para os painéis dos Ajustes do Sistema (em outra aba).</li>
+</ul>
+<h3>Melhorias</h3>
+<ul>
+  <li><b>Layouts no topo da tela:</b> o painel que aparece ao arrastar uma janela para o topo fica logo abaixo da barra de menus e ocupa menos espaço.</li>
+  <li><b>Menos repetição:</b> um só aviso de Acessibilidade por aba, um só ajuste de ponteiro nas capturas (em Captura de Tela, vale para o Sirena e para ⇧⌘3, ⇧⌘4 e ⇧⌘5) e textos mais curtos no Dock.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.7.0/Sirena-0.7.0.dmg" length="31782958" type="application/octet-stream" sparkle:edSignature="Dkkrf10AXiQ0jVR/rDkI8Or8MhPkonLmTcOAzMuMuUnz82KjhAo1j9fg9ohwX6LlbNOlfqa0RQ1YH6mVShy6Dg=="/>
+    </item>
+    <item>
       <title>Sirena 0.6.6</title>
       <pubDate>Sun, 15 Nov 2026 04:41:10 +0000</pubDate>
       <sparkle:version>124</sparkle:version>
