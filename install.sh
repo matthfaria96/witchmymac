@@ -95,6 +95,13 @@ if [ -z "${WITCH_DEST:-}" ] && [ ! -w "$DEST" ]; then
 fi
 mkdir -p "$DEST"
 
+# Copy the new app out of the .dmg before touching the installed one: if the copy fails
+# (the .dmg gets unmounted, disk full…) the old app stays where it was.
+STAGE="$TMP/stage"
+mkdir -p "$STAGE"
+ditto --hfsCompression "$SOURCE" "$STAGE/$NAME" || fail "couldn't copy $NAME out of the .dmg; nothing was changed."
+[ -f "$STAGE/$NAME/Contents/Info.plist" ] || fail "the copied $NAME looks incomplete; nothing was changed."
+
 if [ -n "$BUNDLE_ID" ] && [ -z "${WITCH_DEST:-}" ] && pgrep -f "$DEST/$NAME/Contents/" >/dev/null 2>&1; then
   say "Quitting the running ${NAME}…"
   osascript -e "tell application id \"$BUNDLE_ID\" to quit" >/dev/null 2>&1 || true
@@ -106,7 +113,7 @@ say "Installing $NAME to ${DEST}…"
 # copy writable first, or rm stops halfway. --hfsCompression keeps the DMG's APFS compression.
 [ -e "$DEST/$NAME" ] && chmod -R u+w "$DEST/$NAME" 2>/dev/null || true
 rm -rf "$DEST/$NAME"
-ditto --hfsCompression "$SOURCE" "$DEST/$NAME"
+mv "$STAGE/$NAME" "$DEST/$NAME" 2>/dev/null || ditto --hfsCompression "$STAGE/$NAME" "$DEST/$NAME" || fail "couldn't put $NAME in $DEST. Download it from https://witchmymac.com instead."
 xattr -dr com.apple.quarantine "$DEST/$NAME" 2>/dev/null || true
 
 say "Done: $DEST/$NAME"
