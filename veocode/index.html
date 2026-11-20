@@ -9,7 +9,7 @@
 <meta property="og:description" content="Veja e controle o que as IAs fazem no seu Mac. Gratuito.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://witchmymac.com/veocode/">
-<meta property="og:image" content="https://witchmymac.com/assets/shots/veocode/projects.jpg">
+<meta property="og:image" content="https://witchmymac.com/assets/shots/veocode/map.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0a14">
 <link rel="icon" href="../assets/icons/favicon.png" type="image/png">
@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="../effects.css?v=202611061900">
 <link rel="stylesheet" href="../gatekeeper.css?v=202611071600">
 <link rel="stylesheet" href="../app-page.css?v=202611090600">
-<link rel="stylesheet" href="page.css?v=202611190600">
+<link rel="stylesheet" href="page.css?v=202611201500">
 </head>
 <body class="app-page" data-app="veocode">
 <div class="bg" aria-hidden="true"><div class="stars"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
@@ -54,7 +54,7 @@
 <main id="top">
   <section class="wu-hero container">
     <a class="ap-back" href="../#veocode">← Todos os apps</a>
-    <img src="../assets/icons/veocode.png?v=202611190600" alt="" class="ap-icon" width="112" height="112">
+    <img src="../assets/icons/veocode.png?v=202611201500" alt="" class="ap-icon" width="112" height="112">
     <p class="eyebrow">Para quem programa com IA</p>
     <h1>Veo<span>code</span></h1>
     <p class="lead">Veja e controle o que as IAs fazem no seu Mac. Os seus projetos, as suas contas de IA e tudo o que os agentes deixam para trás, numa janela só. Gratuito e de código aberto.</p>
@@ -64,7 +64,7 @@
     </div>
     <p class="req"><span data-version="veocode" data-no-i18n></span> macOS 13 ou mais novo · Apple Silicon e Intel · Gratuito</p>
     <div class="wu-stage">
-      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/veocode/projects.jpg?v=202611190600" alt="Um projeto com o agente trabalhando: a árvore de arquivos acende a cada arquivo lido ou editado" width="1400" height="875"></button></figure>
+      <figure class="wu-main"><button class="shot" type="button"><img src="../assets/shots/veocode/projects.jpg?v=202611201500" alt="Um projeto no modo IA com o agente trabalhando: a lista de tarefas, o passo ao vivo com o botão Parar e o app rodando no navegador" width="1400" height="875"></button></figure>
     </div>
     <div class="wu-stats">
       <div><b>4</b><span>tipos de IA: Claude, DeepSeek, OpenAI e Ollama</span></div>
@@ -88,19 +88,36 @@
       <div class="wu-copy">
         <p class="wu-kicker">Projetos</p>
         <h2>Veja a IA trabalhando.</h2>
-        <p>Cada projeto é uma pasta de verdade, com árvore de arquivos, editor, Git e terminais. Cada passo do agente aparece na árvore, com um cursor na cor da conta: o que ele leu, buscou, editou ou rodou.</p>
+        <p>Cada projeto é uma pasta de verdade, em dois modos. No modo IA, as conversas do projeto, o chat e, ao lado, o app rodando no navegador, os comandos e os subagentes. No modo Código, árvore de arquivos, editor, Git com o antes e depois lado a lado, terminal e o mapa do projeto.</p>
         <ul class="wu-list">
           <li><b>Chat dentro do app</b>: Claude Code, DeepSeek, APIs compatíveis com OpenAI ou Ollama, na pasta do projeto.</li>
+          <li><b>Parar de verdade</b>: o botão Parar interrompe a IA e tudo o que ela abriu, até conversas rodando fora do Veocode, no Terminal ou no editor.</li>
+          <li><b>Grupos e nuvem</b>: junte as conversas por assunto e veja as sessões do Claude Code na nuvem ao lado das locais.</li>
           <li><b>Nível de acesso de verdade</b>: Leitura, Sugerir, Editar ou Total, gravado nas regras do próprio Claude Code.</li>
-          <li><b>Pedidos de permissão</b> viram cartões com Permitir e Recusar.</li>
         </ul>
       </div>
-      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/projects.jpg?v=202611190600" alt="Projeto com o agente lendo arquivos e a lista de passos" loading="lazy" width="1400" height="875"></button></figure></div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/code.jpg?v=202611201500" alt="Modo Código: árvore de arquivos, editor e o painel do Git com os commits num gráfico" loading="lazy" width="1400" height="875"></button></figure></div>
     </div>
   </section>
 
   <section class="section container wu-chapter">
     <div class="wu-split reverse">
+      <div class="wu-copy">
+        <p class="wu-kicker">Mapa do projeto</p>
+        <h2>O projeto inteiro, num mapa.</h2>
+        <p>Um grafo do projeto, como o do Obsidian: cada área do código é uma nuvem colorida, cada arquivo um ponto e as linhas mostram quem usa quem. E ao vivo: o que a IA está mexendo pulsa no mapa, e o que mudou sem commit ganha um anel.</p>
+        <ul class="wu-list">
+          <li><b>Do código ou pela IA</b>: o Veocode lê os imports em segundos, ou a IA do projeto desenha um mapa de ideias, com telas, serviços e dados.</li>
+          <li><b>Um arquivo só</b>: tudo fica em <code>.veocode/map.json</code>, com poucos KB. O visualizador já vem no app.</li>
+          <li><b>Clique e veja</b>: o que cada arquivo usa e quem usa ele. Dois cliques abrem o arquivo.</li>
+        </ul>
+      </div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/map.jpg?v=202611201500" alt="Mapa do projeto: as áreas do código em nuvens coloridas, os arquivos como pontos e as ligações entre eles" loading="lazy" width="1400" height="875"></button></figure></div>
+    </div>
+  </section>
+
+  <section class="section container wu-chapter">
+    <div class="wu-split">
       <div class="wu-copy">
         <p class="wu-kicker">Espaço e memória</p>
         <h2>Tudo o que as IAs deixaram no Mac.</h2>
@@ -111,12 +128,12 @@
           <li><b>IAs locais, VMs e containers</b>: Ollama, LM Studio, Docker, Lima, UTM, Parallels e VirtualBox.</li>
         </ul>
       </div>
-      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/space.jpg?v=202611190600" alt="Espaço e memória: o que as IAs deixaram no disco" loading="lazy" width="1400" height="875"></button></figure></div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/space.jpg?v=202611201500" alt="Espaço e memória: o que as IAs deixaram no disco" loading="lazy" width="1400" height="875"></button></figure></div>
     </div>
   </section>
 
   <section class="section container wu-chapter">
-    <div class="wu-split">
+    <div class="wu-split reverse">
       <div class="wu-copy">
         <p class="wu-kicker">Portas abertas</p>
         <h2>Servidores esquecidos, encontrados.</h2>
@@ -126,12 +143,12 @@
           <li><b>Sempre com confirmação</b> antes de fechar.</li>
         </ul>
       </div>
-      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/ports.jpg?v=202611190600" alt="Portas abertas com um servidor que sobrou de uma sessão fechada" loading="lazy" width="1400" height="875"></button></figure></div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/ports.jpg?v=202611201500" alt="Portas abertas com um servidor que sobrou de uma sessão fechada" loading="lazy" width="1400" height="875"></button></figure></div>
     </div>
   </section>
 
   <section class="section container wu-chapter">
-    <div class="wu-split reverse">
+    <div class="wu-split">
       <div class="wu-copy">
         <p class="wu-kicker">Extras do Claude</p>
         <h2>Skills, plugins e MCP, num lugar só.</h2>
@@ -141,15 +158,15 @@
           <li><b>Chaves protegidas</b>: das conexões aparecem só os nomes das variáveis, nunca os valores.</li>
         </ul>
       </div>
-      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/extras.jpg?v=202611190600" alt="Extras do Claude: receitas, atalhos, ajudantes e conexões" loading="lazy" width="1400" height="875"></button></figure></div>
+      <div class="wu-media"><figure><button class="shot" type="button"><img src="../assets/shots/veocode/extras.jpg?v=202611201500" alt="Extras do Claude: receitas, atalhos, ajudantes e conexões" loading="lazy" width="1400" height="875"></button></figure></div>
     </div>
   </section>
 
   <section class="section container wu-chapter">
     <div class="section-head"><p class="wu-kicker">Contas e chat livre</p><h2>Todas as suas IAs, lado a lado.</h2><p>Várias contas do Claude, cada uma com os limites do plano e o uso do dia, mais DeepSeek, APIs compatíveis com OpenAI e modelos locais. E um chat fora de qualquer projeto, que pode só conversar ou ler (só ler) a sua pasta pessoal.</p></div>
     <div class="wu-pair" style="max-width:1100px;margin:0 auto">
-      <figure><button class="shot" type="button"><img src="../assets/shots/veocode/accounts.jpg?v=202611190600" alt="Contas e IAs com os limites de cada plano" loading="lazy" width="1400" height="875"></button><figcaption>Contas e IAs</figcaption></figure>
-      <figure><button class="shot" type="button"><img src="../assets/shots/veocode/chat.jpg?v=202611190600" alt="Chat livre com a escolha da IA na caixa de mensagem" loading="lazy" width="1400" height="875"></button><figcaption>Chat livre</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/veocode/accounts.jpg?v=202611201500" alt="Contas e IAs com os limites de cada plano" loading="lazy" width="1400" height="875"></button><figcaption>Contas e IAs</figcaption></figure>
+      <figure><button class="shot" type="button"><img src="../assets/shots/veocode/chat.jpg?v=202611201500" alt="Chat livre com a escolha da IA na caixa de mensagem" loading="lazy" width="1400" height="875"></button><figcaption>Chat livre</figcaption></figure>
     </div>
   </section>
 
@@ -239,11 +256,11 @@
   </div>
 </footer>
 
-<script src="../apps.js?v=202611190600"></script>
+<script src="../apps.js?v=202611201500"></script>
 <script src="../install-command.js?v=202611071600"></script>
 <script src="../script.js?v=202611071700"></script>
-<script src="../i18n-strings.js?v=202611190600"></script>
-<script src="strings.js?v=202611190600"></script>
+<script src="../i18n-strings.js?v=202611201500"></script>
+<script src="strings.js?v=202611201500"></script>
 <script src="page.js?v=202610271200"></script>
 <script src="../i18n.js?v=202610271200"></script>
 <script src="../effects.js?v=202611061900"></script>
