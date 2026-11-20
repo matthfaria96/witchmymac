@@ -19,7 +19,7 @@ window.WITCH_APPS = Object.freeze({
   rubbishnotes: Object.freeze({ repo: 'rubbish-notes', tag: 'v1.2.1',        file: 'RubbishNotes-1.2.1.dmg', published: true, app: 'Rubbish Notes.app' }),
   excaliburforms: Object.freeze({ repo: 'ExcaliburForms', tag: 'v1.0.0',     file: 'ExcaliburForms-1.0.0.dmg', published: true, app: 'ExcaliburForms.app' }),
   wineup:       Object.freeze({ repo: 'wineup-player', tag: 'v1.1.1',      file: 'WineupPlayer-1.1.1.dmg', published: true, app: 'Wineup Player.app' }),
-  veocode:      Object.freeze({ repo: 'Veocode',       tag: 'v0.4.0',        file: 'Veocode-0.4.0.dmg',      published: true, app: 'Veocode.app' }),
+  veocode:      Object.freeze({ repo: 'Veocode',       tag: 'v0.4.1',        file: 'Veocode-0.4.1.dmg',      published: true, app: 'Veocode.app' }),
   kaveelsbook:  Object.freeze({ repo: 'kaveels-book-studio', tag: 'v0.1.2', file: 'KaveelsBookStudio-mac.dmg', published: true, app: "Kaveel's Book Studio.app" }),
   santovideoplayer: Object.freeze({ repo: 'santo-video-player', tag: 'v2.0.2', file: 'SantoVideoPlayer-2.0.2.dmg', published: true, app: 'Santo Video Player.app' }),
   manhwafy:     Object.freeze({ repo: 'ManhwaFy',      tag: 'v0.1.0',        file: 'ManhwaFy-0.1.0.dmg',     published: true, app: 'ManhwaFy.app' }),
