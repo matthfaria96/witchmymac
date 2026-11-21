@@ -6,6 +6,29 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.8.0</title>
+      <pubDate>Sat, 21 Nov 2026 06:38:03 +0000</pubDate>
+      <sparkle:version>127</sparkle:version>
+      <sparkle:shortVersionString>0.8.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.8.0</h2>
+<h3>Novidades</h3>
+<ul>
+  <li><b>Nova Captura de Tela:</b> ⇧⌘4 (ou a tecla da câmera dos teclados Logitech, ou Print Screen) congela a tela como está, menus abertos inclusive. Arraste para escolher uma área, ou clique numa janela ou na mesa para pegá-la inteira. Depois dá para mover, redimensionar pelas alças ou ajustar com as setas, com uma lupa para mirar.</li>
+  <li><b>Marcações ao lado da seleção:</b> caneta, linha, seta, retângulo, elipse, marca-texto, texto, pixelar (para esconder dados) e passos numerados, com cor, espessura e desfazer. Embaixo ficam copiar, salvar, gravar e fechar; Return ou clique duplo faz a ação que você escolher.</li>
+  <li><b>Régua:</b> sempre reta (horizontal, vertical ou 45°), com 1 pixel de espessura, marcas a cada 10 pt e o tamanho em pontos. Uma guia tracejada atravessa a seleção inteira para conferir alinhamentos.</li>
+  <li><b>Gravar área ou janela:</b> pelo botão vermelho da barra. Uma janela é acompanhada mesmo se mudar de lugar ou ficar coberta, e um botão sob a área mostra o tempo e para a gravação. O aviso no fim diz em que pasta o arquivo ficou.</li>
+</ul>
+<h3>Melhorias</h3>
+<ul>
+  <li><b>Uma tela só:</b> Capturar no menu ⚡ abre direto a seleção, e a página Captura de Tela juntou tudo, com sugestões de atalho (tecla da câmera ou ⇧⌘4, Print Screen, ⇧⌘5, ⇧⌘2). Enquanto o Sirena está aberto, ele fica com o atalho do macOS que você escolheu e o devolve ao sair.</li>
+  <li><b>Arrastar de qualquer lugar durante gravações:</b> mover, redimensionar e os cliques no Dock voltam a funcionar enquanto a tela é gravada ou compartilhada (Meet, QuickTime, Zoom).</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.8.0/Sirena-0.8.0.dmg" length="32096633" type="application/octet-stream" sparkle:edSignature="EpZWp4RcM40Y1rkOexEph4joNPkOZUOWRl5u4B/cQWVcEw1yDKy9uGfNhoTfpr7j2vPcKMId3zv4hFd3n/OpDQ=="/>
+    </item>
+    <item>
       <title>Sirena 0.7.1</title>
       <pubDate>Thu, 19 Nov 2026 23:45:32 +0000</pubDate>
       <sparkle:version>126</sparkle:version>

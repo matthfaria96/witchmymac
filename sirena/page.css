@@ -131,7 +131,7 @@ figure{margin:0}
 @media (prefers-reduced-motion:reduce){.wu-panel{animation:none}.wu-skin{transition:none}}
 
 /* Sirena: os painéis do menu da barra de menus lado a lado */
-.wu-panels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;align-items:start;max-width:1040px;margin:0 auto}
+.wu-panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start;max-width:790px;margin:0 auto}
 .wu-panels figure .shot{width:100%;border-radius:14px;box-shadow:0 34px 80px -34px #000}
 .wu-panels figcaption{margin-top:10px;font-size:14px;color:var(--muted);text-align:center}
 .wu-banner{max-width:900px;margin:0 auto 40px}
