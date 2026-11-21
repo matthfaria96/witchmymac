@@ -6,6 +6,27 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.8.1</title>
+      <pubDate>Sat, 21 Nov 2026 15:52:22 +0000</pubDate>
+      <sparkle:version>128</sparkle:version>
+      <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.8.1</h2>
+<h3>Correções</h3>
+<ul>
+  <li><b>Botões da Captura de Tela:</b> ao pegar uma janela com um clique (ou a tela inteira), as barras ficam perto do Dock, e os cliques nelas podiam ser tratados como cliques no Dock. Agora desenhar, medir, copiar, salvar e gravar respondem sempre. Clicar fora de uma seleção também volta a pegar na hora a janela que está embaixo.</li>
+</ul>
+<h3>Melhorias</h3>
+<ul>
+  <li><b>Régua em pixels:</b> mede em pixels da tela ("240 px", "170 × 170 px" na diagonal), com uma marca a cada 10 px, e tem cor própria, magenta, separada da cor das marcações.</li>
+  <li><b>Tela inteira:</b> clique na mesa ou aperte ⌘A para pegar a tela toda. Quando a seleção ocupa a tela (ou é uma janela maximizada), as ferramentas e as ações viram uma faixa só, centralizada embaixo, acima do Dock. ⌘R grava a tela inteira.</li>
+  <li><b>Onde o arquivo ficou:</b> depois de salvar uma captura ou terminar uma gravação, aparece um cartão no canto da tela onde você capturou, com a prévia (dá para arrastar para outro app), a pasta, o nome do arquivo e os botões Mostrar no Finder e Abrir. Ele fica 8 segundos, e mais enquanto o mouse estiver em cima.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.8.1/Sirena-0.8.1.dmg" length="32161016" type="application/octet-stream" sparkle:edSignature="HoHiLHVT4HRUU9AJ65zl6xAaPmAuOAa+667UnYh94xpqzmJDX8cTifdr17D+oku0zO8UA8ufgxPlnWrRpDEACA=="/>
+    </item>
+    <item>
       <title>Sirena 0.8.0</title>
       <pubDate>Sat, 21 Nov 2026 06:38:03 +0000</pubDate>
       <sparkle:version>127</sparkle:version>
