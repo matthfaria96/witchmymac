@@ -6,6 +6,20 @@
     <description>Atualizações do Espelho</description>
     <language>pt-BR</language>
     <item>
+      <title>Espelho 1.4.0</title>
+      <pubDate>Sun, 22 Nov 2026 15:53:02 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li>Rotate the picture: a new button in the mirror controls (or ⌘R) turns the screen 90° to the left, like a phone on its side; press it again to bring it back upright. Works with iPhone, iPad and Android, and the window follows the new shape. / Girar a imagem: um botão novo nos controles (ou ⌘R) gira a tela 90° para a esquerda, como um celular deitado; de novo volta à posição original. Funciona com iPhone, iPad e Android, e a janela acompanha o novo formato.</li>
+<li>On Android, taps, drags and scrolling follow the rotated picture, and screenshots come out rotated as you see them. / No Android, toques, arrastes e rolagem acompanham a imagem girada, e as capturas saem giradas como aparecem no Mac.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/espelho-v1.4.0/Espelho-1.4.0.dmg" length="37283602" type="application/octet-stream" sparkle:edSignature="KDrLgGm7hi4l9dqh4QI++aMrhAx1Xd12qIp327YebLM+VOJ8JV/3dj2Se5XNevcYa4mGnIKm+oEiZjnvsVVjAg=="/>
+    </item>
+    <item>
       <title>Espelho 1.3.1</title>
       <pubDate>Mon, 09 Nov 2026 15:59:30 +0000</pubDate>
       <sparkle:version>6</sparkle:version>

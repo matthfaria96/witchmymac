@@ -5,7 +5,7 @@
 // "app" é o nome do .app dentro do .dmg: o site monta com ele o comando que libera o app no Terminal.
 window.WITCH_APPS = Object.freeze({
   macdash:      Object.freeze({ repo: 'MacDash',       tag: 'macdash-1.6.0', file: 'MacDash-1.6.0.dmg',      published: true, app: 'MacDash.app' }),
-  espelho:      Object.freeze({ repo: 'espelho',       tag: 'v1.3.1',        file: 'Espelho-1.3.1.dmg',      published: true, app: 'Espelho.app' }),
+  espelho:      Object.freeze({ repo: 'espelho',       tag: 'v1.4.0',        file: 'Espelho-1.4.0.dmg',      published: true, app: 'Espelho.app' }),
   winapps:      Object.freeze({ repo: 'winapps',       tag: 'v2.0.0',        file: 'WinApps-2.0.0.dmg',      published: true, app: 'WinApps.app' }),
   viewtube:     Object.freeze({ repo: 'viewtube-mac',  tag: 'v1.0.9',        file: 'ViewTube-1.0.9.dmg',     published: true, app: 'ViewTube.app' }),
   garimpalo:    Object.freeze({ repo: 'garimpalo',     tag: 'v0.2.0',        file: 'Garimpalo_0.2.0_universal.dmg', published: true, app: 'Garimpalo.app' }),
