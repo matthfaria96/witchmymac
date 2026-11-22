@@ -35,6 +35,31 @@ async function latestDmgUrl(key) {
   return dmg.browser_download_url;
 }
 
+// Windows no release mais recente que tenha: o instalador (.exe, ou .msi se não houver .exe) ou,
+// com portable, o .zip. Um release só de Mac não esconde o último de Windows.
+async function latestWindowsUrl(key, portable) {
+  const pick = (assets) => (portable
+    ? assets.find((a) => /windows.*\.zip$/i.test(a.name))
+    : assets.find((a) => a.name.endsWith('.exe')) || assets.find((a) => a.name.endsWith('.msi')));
+  for (const release of await allReleases()) {
+    if (!release.tag_name.startsWith(`${key}-v`)) continue;
+    const file = pick(release.assets || []);
+    if (file) return file.browser_download_url;
+  }
+  throw new Error(`Nada de Windows para ${key}`);
+}
+
+// Links data-win="<chave>" (instalador) e data-win-zip="<chave>" (portátil): o href do HTML é
+// o reserva, trocado pelo arquivo do release mais novo.
+function updateWindowsLinks() {
+  document.querySelectorAll('[data-win], [data-win-zip]').forEach((link) => {
+    const portable = 'winZip' in link.dataset;
+    latestWindowsUrl(portable ? link.dataset.winZip : link.dataset.win, portable)
+      .then((url) => { link.href = url; })
+      .catch(() => { /* mantém o link do HTML */ });
+  });
+}
+
 function updateToLatestReleases() {
   document.querySelectorAll('[data-download]').forEach((link) => {
     const key = link.dataset.download;
@@ -57,6 +82,7 @@ function applyAppLinks() {
     }
   });
   updateToLatestReleases();
+  updateWindowsLinks();
   // O código-fonte dos apps é privado: os links "código-fonte" saem da página.
   document.querySelectorAll('[data-source]').forEach((link) => link.remove());
 }
