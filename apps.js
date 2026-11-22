@@ -25,5 +25,5 @@ window.WITCH_APPS = Object.freeze({
   manhwafy:     Object.freeze({ repo: 'ManhwaFy',      tag: 'v0.1.0',        file: 'ManhwaFy-0.1.0.dmg',     published: true, app: 'ManhwaFy.app' }),
   animelocalizationstudio: Object.freeze({ repo: 'anime-localization-studio', tag: 'v0.29.0', file: 'AnimeLocalizationStudio-0.29.0.dmg', published: true, app: 'Anime Localization Studio.app' }),
   wormlink:     Object.freeze({ repo: 'Wormlink',      tag: 'v0.2.2',        file: 'Wormlink-0.2.2.dmg',     published: true, app: 'Wormlink.app' }),
-  bunnygrid:    Object.freeze({ repo: 'BunnyGrid',     tag: 'v0.2.2',        file: 'BunnyGrid-0.2.2.dmg',    published: true, app: 'BunnyGrid.app' }),
+  bunnygrid:    Object.freeze({ repo: 'BunnyGrid',     tag: 'v0.4.0',        file: 'BunnyGrid-0.4.0.dmg',    published: true, app: 'BunnyGrid.app' }),
 });
