@@ -16,7 +16,7 @@
 <li>Corrigida a tela preta na tela cheia dos vídeos do YouTube (acontecia depois de abrir a tela cheia com o vídeo pausado, por exemplo ao retomar a sessão após uma atualização).</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/viewtube-mac/releases/download/v1.0.9/ViewTube-1.0.9.dmg" length="3875980" type="application/octet-stream" sparkle:edSignature="35GwENysgQt0yFo5Dj9fdAP2m/ztMaPjGz006Hi/MsdRof6bi5bjZioKAErG6NS1I35C2xbXtR1BC0E3Kw7wCw=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/viewtube-v1.0.9/ViewTube-1.0.9.dmg" length="3875980" type="application/octet-stream" sparkle:edSignature="35GwENysgQt0yFo5Dj9fdAP2m/ztMaPjGz006Hi/MsdRof6bi5bjZioKAErG6NS1I35C2xbXtR1BC0E3Kw7wCw=="/>
     </item>
   </channel>
 </rss>

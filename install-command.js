@@ -195,7 +195,7 @@
     document.querySelectorAll('[data-releases]').forEach((link) => {
       const app = APPS[link.dataset.releases];
       if (!app) return;
-      link.href = `https://github.com/matthfaria96/${app.repo}/releases`;
+      link.href = `https://github.com/matthfaria96/witchmymac-release/releases?q=${encodeURIComponent(`${link.dataset.releases}-v`)}&expanded=true`;
       link.target = '_blank';
       link.rel = 'noopener';
     });

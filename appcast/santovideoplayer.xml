@@ -17,7 +17,7 @@
 <li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/santo-video-player/releases/download/v2.0.2/SantoVideoPlayer-2.0.2.dmg" length="35001392" type="application/octet-stream" sparkle:edSignature="AdbfhrW970LTXqmOsy67vkN4EeGTh3Zsu0ukB/mCwGBYWSgxAUh15nM/zsvOqeS7SNPPs+ZOG29cl6KmrD3mAg=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/santovideoplayer-v2.0.2/SantoVideoPlayer-2.0.2.dmg" length="35001392" type="application/octet-stream" sparkle:edSignature="AdbfhrW970LTXqmOsy67vkN4EeGTh3Zsu0ukB/mCwGBYWSgxAUh15nM/zsvOqeS7SNPPs+ZOG29cl6KmrD3mAg=="/>
     </item>
   </channel>
 </rss>

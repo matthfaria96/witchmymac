@@ -17,7 +17,7 @@
 <li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/rubbish-notes/releases/download/v1.2.1/RubbishNotes-1.2.1.dmg" length="10029061" type="application/octet-stream" sparkle:edSignature="bjd9gf8yUN7ranpIRw/JWtk6wi+SaWg5c8iyrAjirC5dKOZ7bMl1KkPH7Ply8Nd4s7Z918kfmVSZqJUTnim0BA=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/rubbishnotes-v1.2.1/RubbishNotes-1.2.1.dmg" length="10029061" type="application/octet-stream" sparkle:edSignature="bjd9gf8yUN7ranpIRw/JWtk6wi+SaWg5c8iyrAjirC5dKOZ7bMl1KkPH7Ply8Nd4s7Z918kfmVSZqJUTnim0BA=="/>
     </item>
   </channel>
 </rss>

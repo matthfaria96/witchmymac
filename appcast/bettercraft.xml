@@ -17,7 +17,7 @@
 <li>Traz as novidades do ArtCraft Launcher original até a versão 0.11.1.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/bettercraft-launcher/releases/download/v0.6.6/BetterCraftLauncher-0.6.6.dmg" length="49794903" type="application/octet-stream" sparkle:edSignature="wT5MosjW3e+jEZsXZV3znmwSu2MFsSz6QKK/56Ii99U0gF4ggdib+ACibI6HmSVopk68EoXVcuB6ohD2RfFHAg=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/bettercraft-v0.6.6/BetterCraftLauncher-0.6.6.dmg" length="49794903" type="application/octet-stream" sparkle:edSignature="wT5MosjW3e+jEZsXZV3znmwSu2MFsSz6QKK/56Ii99U0gF4ggdib+ACibI6HmSVopk68EoXVcuB6ohD2RfFHAg=="/>
     </item>
   </channel>
 </rss>

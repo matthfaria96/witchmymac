@@ -17,7 +17,7 @@
 <li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/BunnyGrid/releases/download/v0.2.2/BunnyGrid-0.2.2.dmg" length="29720059" type="application/octet-stream" sparkle:edSignature="go3EnSn0oQiPOqjvz8g5J1Sb/ZaEfLt4bxP4ucI5JTbkThQnGnYXbXVS5/udnfZRNWe05V01iyQkbDGy9s29Bg=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/bunnygrid-v0.2.2/BunnyGrid-0.2.2.dmg" length="29720059" type="application/octet-stream" sparkle:edSignature="go3EnSn0oQiPOqjvz8g5J1Sb/ZaEfLt4bxP4ucI5JTbkThQnGnYXbXVS5/udnfZRNWe05V01iyQkbDGy9s29Bg=="/>
     </item>
   </channel>
 </rss>

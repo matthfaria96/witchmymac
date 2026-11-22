@@ -15,7 +15,7 @@
 <li>Fixed: a leftover profile linked to Claude Code could spend tokens on every refresh.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Aitracker/releases/download/v1.0.1/Aitracker-1.0.1.dmg" length="10061217" type="application/octet-stream" sparkle:edSignature="/VJCYDRccne1JWh81yXq03WwonCgIpXblCDhCDHyVbVSvSfzFsBR2W4MfRRCnojnNCxS2J1RVJz4Ef8j9z+sCw=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/aitracker-v1.0.1/Aitracker-1.0.1.dmg" length="10061217" type="application/octet-stream" sparkle:edSignature="/VJCYDRccne1JWh81yXq03WwonCgIpXblCDhCDHyVbVSvSfzFsBR2W4MfRRCnojnNCxS2J1RVJz4Ef8j9z+sCw=="/>
     </item>
     <item>
       <title>Aitracker 1.0.0</title>
@@ -31,7 +31,7 @@
 <li>14 languages, following your system by default.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Aitracker/releases/download/v1.0.0/Aitracker-1.0.0.dmg" length="10030281" type="application/octet-stream" sparkle:edSignature="dlu/+UwPeQFaDre7UTAGoP5apr9RVb1qzvFVLIIAMmqzWgdp/YgmCXvz3P0pd/TEcL1waQnR237MYp3zg6gVDw=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/aitracker-v1.0.0/Aitracker-1.0.0.dmg" length="10030281" type="application/octet-stream" sparkle:edSignature="dlu/+UwPeQFaDre7UTAGoP5apr9RVb1qzvFVLIIAMmqzWgdp/YgmCXvz3P0pd/TEcL1waQnR237MYp3zg6gVDw=="/>
     </item>
   </channel>
 </rss>

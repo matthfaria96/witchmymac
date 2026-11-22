@@ -19,7 +19,7 @@
 <li>O Assistente também olha a saúde dos discos e o backup. Pergunte ao Assistente (macOS 26 ou mais recente) abre numa janela própria e não guarda nada.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.6.0/MacDash-1.6.0.dmg" length="16237725" type="application/octet-stream" sparkle:edSignature="oYV8RWMniA9uzQ6CZJVbqxf8PcnENhAoK/nuV78MSXoflv6JY8Ld544As1hlyOJdSzVYKJJ0NuWQl/e5ZBTEBQ=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/macdash-v1.6.0/MacDash-1.6.0.dmg" length="16237725" type="application/octet-stream" sparkle:edSignature="oYV8RWMniA9uzQ6CZJVbqxf8PcnENhAoK/nuV78MSXoflv6JY8Ld544As1hlyOJdSzVYKJJ0NuWQl/e5ZBTEBQ=="/>
     </item>
     <item>
       <title>MacDash 1.5.0</title>
@@ -35,7 +35,7 @@
 <li>O botão dos ajustes do Time Machine agora abre o painel certo.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.5.0/MacDash-1.5.0.dmg" length="15954940" type="application/octet-stream" sparkle:edSignature="ID5efNA/AbKPYf+W6ykhhAPWCJ8YKMEDLvmpAlz55+2gn9ZoEK6coP/Lo43o37y7WYF3Q8PzEHf6cdHbcTrXAA=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/macdash-v1.5.0/MacDash-1.5.0.dmg" length="15954940" type="application/octet-stream" sparkle:edSignature="ID5efNA/AbKPYf+W6ykhhAPWCJ8YKMEDLvmpAlz55+2gn9ZoEK6coP/Lo43o37y7WYF3Q8PzEHf6cdHbcTrXAA=="/>
     </item>
     <item>
       <title>MacDash 1.4.0</title>
@@ -51,7 +51,7 @@
 <li>O Antivírus aparece nas recomendações quando há ameaças para revisar ou a última verificação é antiga.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.4.0/MacDash-1.4.0.dmg" length="15728092" type="application/octet-stream" sparkle:edSignature="FFrpz9fcmGbVF0yR2ChTPeKhyw4QX7Cmqbi+W4gv2xoxhX9J/a/EeBiyzX7pbkwvfjUGsNNh6LnDKPh4aSx3Bg=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/macdash-v1.4.0/MacDash-1.4.0.dmg" length="15728092" type="application/octet-stream" sparkle:edSignature="FFrpz9fcmGbVF0yR2ChTPeKhyw4QX7Cmqbi+W4gv2xoxhX9J/a/EeBiyzX7pbkwvfjUGsNNh6LnDKPh4aSx3Bg=="/>
     </item>
     <item>
       <title>MacDash 1.3.0</title>
@@ -67,7 +67,7 @@
 <li>O "Encerrar e Reabrir" do Acesso Total ao Disco agora funciona, e o MacDash reabre na mesma tela.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.3.0/MacDash-1.3.0.dmg" length="15779250" type="application/octet-stream" sparkle:edSignature="h/B9sbWpDJYp9X1KL+2IZvN/wRsh91Nf4wJEVLNBI37jlraL0beihmhIQjM1ewkKxDVkVaBdeSzDUaJIIrSfAQ=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/macdash-v1.3.0/MacDash-1.3.0.dmg" length="15779250" type="application/octet-stream" sparkle:edSignature="h/B9sbWpDJYp9X1KL+2IZvN/wRsh91Nf4wJEVLNBI37jlraL0beihmhIQjM1ewkKxDVkVaBdeSzDUaJIIrSfAQ=="/>
     </item>
     <item>
       <title>MacDash 1.2.1</title>
@@ -81,7 +81,7 @@
 <li>O nome aparece como "Disco externo", no mesmo padrão das outras seções.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.2.1/MacDash-1.2.1.dmg" length="14539486" type="application/octet-stream" sparkle:edSignature="RUxxiJwvamxXPNo1Yeh88Ez+Fzs0uVhQRE6VuULBQnZWHDdyBvp5ADKlpu/Ne3xuncm9HQbTw7i/n5NI4q0cDw=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/macdash-v1.2.1/MacDash-1.2.1.dmg" length="14539486" type="application/octet-stream" sparkle:edSignature="RUxxiJwvamxXPNo1Yeh88Ez+Fzs0uVhQRE6VuULBQnZWHDdyBvp5ADKlpu/Ne3xuncm9HQbTw7i/n5NI4q0cDw=="/>
     </item>
     <item>
       <title>MacDash 1.2.0</title>
@@ -98,7 +98,7 @@
 <li>O tour inicial agora mostra o Disco Externo e o Antivírus.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.2.0/MacDash-1.2.0.dmg" length="14539551" type="application/octet-stream" sparkle:edSignature="BlR2XHNb7iAmxQnGbqYPF9ReqI5AVH46pzOkCdZ6bC/Emyb+citkMjEFtM2ZJjj00KY4xQpTo1sjjIGIDKnHCQ=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/macdash-v1.2.0/MacDash-1.2.0.dmg" length="14539551" type="application/octet-stream" sparkle:edSignature="BlR2XHNb7iAmxQnGbqYPF9ReqI5AVH46pzOkCdZ6bC/Emyb+citkMjEFtM2ZJjj00KY4xQpTo1sjjIGIDKnHCQ=="/>
     </item>
     <item>
       <title>MacDash 1.1.1</title>
@@ -112,7 +112,7 @@
 <li>Quem usa uma versão anterior precisa instalar esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/MacDash/releases/download/macdash-1.1.1/MacDash-1.1.1.dmg" length="13801648" type="application/octet-stream" sparkle:edSignature="82biucEAwqaSaLoAy97M3n91FzIxeNZJmZfEl2/ylzROAImolLQZ6YOPI6V3OdN43MO6MDx0M3Ytkk2y7fflBg=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/macdash-v1.1.1/MacDash-1.1.1.dmg" length="13801648" type="application/octet-stream" sparkle:edSignature="82biucEAwqaSaLoAy97M3n91FzIxeNZJmZfEl2/ylzROAImolLQZ6YOPI6V3OdN43MO6MDx0M3Ytkk2y7fflBg=="/>
     </item>
   </channel>
 </rss>

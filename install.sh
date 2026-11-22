@@ -3,44 +3,31 @@
 #
 #   curl -fsSL https://witchmymac.com/install.sh | bash -s <app>
 #
-# What it does: finds the latest release on github.com/matthfaria96/<repo>, downloads the .dmg,
-# checks its SHA-256 against the one GitHub publishes, copies the app to /Applications (quitting
-# the running copy first), and opens it. Files downloaded with curl don't get macOS's
-# "downloaded from the internet" mark, so the app opens without the Gatekeeper prompt.
+# What it does: finds the newest release tagged <app>-v<version> on
+# github.com/matthfaria96/witchmymac-release (a public repo that only holds the installers; the
+# apps' source code is private), downloads the .dmg, checks its SHA-256 against the one GitHub
+# publishes, copies the app to /Applications (quitting the running copy first), and opens it.
+# Files downloaded with curl don't get macOS's "downloaded from the internet" mark, so the app
+# opens without the Gatekeeper prompt.
 #
 # Testing: WITCH_DEST=<folder> installs somewhere else; WITCH_NO_OPEN=1 doesn't open the app.
 set -euo pipefail
 
 OWNER="matthfaria96"
+RELEASES_REPO="witchmymac-release"
 
-repo_for() {
+# The app's key (the prefix of its release tags), accepting a few short aliases.
+app_key() {
   case "$1" in
-    sirena) echo "Sirena" ;;
-    macdash) echo "MacDash" ;;
-    neorar) echo "Neorar" ;;
-    rubbishnotes|rubbish-notes) echo "rubbish-notes" ;;
-    bunnygrid) echo "BunnyGrid" ;;
-    wormlink) echo "Wormlink" ;;
-    bettercraft) echo "bettercraft-launcher" ;;
-    santovideoplayer|santo) echo "santo-video-player" ;;
-    viewtube) echo "viewtube-mac" ;;
-    hypervideo) echo "hypervideo-converter" ;;
-    hyperimage) echo "hyperimage-converter" ;;
-    wineup) echo "wineup-player" ;;
-    animelocalizationstudio|als) echo "anime-localization-studio" ;;
-    espelho) echo "espelho" ;;
-    excaliburforms|excalibur) echo "ExcaliburForms" ;;
-    winapps) echo "winapps" ;;
-    aitracker) echo "Aitracker" ;;
-    instamac) echo "instamac" ;;
-    veocode) echo "Veocode" ;;
-    manhwafy) echo "ManhwaFy" ;;
-    garimpalo) echo "garimpalo" ;;
-    *) return 1 ;;
+    rubbish-notes) echo "rubbishnotes" ;;
+    santo) echo "santovideoplayer" ;;
+    als) echo "animelocalizationstudio" ;;
+    excalibur) echo "excaliburforms" ;;
+    *) case " $APPS " in *" $1 "*) echo "$1" ;; *) return 1 ;; esac ;;
   esac
 }
 
-APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo hyperimage wineup animelocalizationstudio espelho excaliburforms winapps aitracker instamac veocode manhwafy garimpalo"
+APPS="sirena macdash neorar rubbishnotes bunnygrid wormlink bettercraft santovideoplayer viewtube hypervideo hyperimage wineup animelocalizationstudio espelho excaliburforms winapps aitracker instamac veocode manhwafy garimpalo kaveelsbook"
 
 say() { printf '\033[1;35m==>\033[0m %s\n' "$*"; }
 fail() { printf '\033[1;31mError:\033[0m %s\n' "$*" >&2; exit 1; }
@@ -51,7 +38,8 @@ if [ -z "$KEY" ]; then
   echo "Apps: $APPS"
   exit 1
 fi
-REPO="$(repo_for "$KEY")" || fail "unknown app \"$KEY\". Apps: $APPS"
+CANON="$(app_key "$KEY")" || fail "unknown app \"$KEY\". Apps: $APPS"
+KEY="$CANON"
 [ "$(uname -s)" = "Darwin" ] || fail "these apps are for macOS."
 
 TMP="$(mktemp -d)"
@@ -62,14 +50,24 @@ cleanup() {
 }
 trap cleanup EXIT
 
-say "Looking for the latest $REPO release…"
-RELEASE="$(curl -fsSL -H 'Accept: application/vnd.github+json' "https://api.github.com/repos/$OWNER/$REPO/releases/latest")" \
-  || fail "couldn't reach GitHub. Try again in a minute, or download from https://witchmymac.com"
-# The first .dmg asset and its digest (GitHub lists "digest" right before "browser_download_url").
-ASSET="$(printf '%s' "$RELEASE" | tr -d '\r' | grep -E '"(digest|browser_download_url)"' | grep -B1 -E '"browser_download_url": *"[^"]+\.dmg"' | head -2)"
-URL="$(printf '%s' "$ASSET" | sed -nE 's/.*"browser_download_url": *"([^"]+)".*/\1/p')"
-SHA="$(printf '%s' "$ASSET" | sed -nE 's/.*"digest": *"sha256:([0-9a-f]+)".*/\1/p')"
-[ -n "$URL" ] || fail "no .dmg found in the latest release of $REPO."
+say "Looking for the latest $KEY release…"
+# Releases come newest first. The first .dmg whose download URL sits under a "<key>-v…" tag is
+# the latest version of this app; GitHub lists the asset's "digest" right before its URL.
+URL=""; SHA=""
+for PAGE in 1 2 3 4 5; do
+  LIST="$(curl -fsSL -H 'Accept: application/vnd.github+json' \
+    "https://api.github.com/repos/$OWNER/$RELEASES_REPO/releases?per_page=100&page=$PAGE")" \
+    || fail "couldn't reach GitHub. Try again in a minute, or download from https://witchmymac.com"
+  LINES="$(printf '%s' "$LIST" | tr -d '\r' | grep -E '"(digest|browser_download_url)"' || true)"
+  [ -n "$LINES" ] || break
+  ASSET="$(printf '%s\n' "$LINES" | grep -m1 -B1 -E "\"browser_download_url\": *\"[^\"]+/download/$KEY-v[^/\"]+/[^\"]+\.dmg\"" || true)"
+  if [ -n "$ASSET" ]; then
+    URL="$(printf '%s\n' "$ASSET" | tail -1 | sed -nE 's/.*"browser_download_url": *"([^"]+)".*/\1/p')"
+    SHA="$(printf '%s\n' "$ASSET" | head -1 | sed -nE 's/.*"digest": *"sha256:([0-9a-f]+)".*/\1/p')"
+    break
+  fi
+done
+[ -n "$URL" ] || fail "no .dmg found for $KEY in github.com/$OWNER/$RELEASES_REPO."
 
 say "Downloading $(basename "$URL") …"
 curl -fL --progress-bar -o "$TMP/app.dmg" "$URL" || fail "download failed."

@@ -1,8 +1,12 @@
 const GITHUB_USER = 'matthfaria96';
+// Repositório público só com os instaladores (o código dos apps é privado).
+// Cada release tem a tag "<chave do app>-v<versão>", por exemplo "neorar-v1.1.3".
+const RELEASES_REPO = 'witchmymac-release';
 const APPS = window.WITCH_APPS || {};
 
-const repoUrl = (app) => `https://github.com/${GITHUB_USER}/${app.repo}`;
-const downloadUrl = (app) => `${repoUrl(app)}/releases/download/${app.tag}/${app.file}`;
+const versionOf = (app) => app.tag.replace(/^[^0-9]*/, '');
+const downloadUrl = (key, app) =>
+  `https://github.com/${GITHUB_USER}/${RELEASES_REPO}/releases/download/${key}-v${versionOf(app)}/${app.file}`;
 
 function markUnavailable(link, label) {
   link.textContent = label;
@@ -11,22 +15,32 @@ function markUnavailable(link, label) {
   link.removeAttribute('href');
 }
 
+// Uma chamada só à API do GitHub para todos os apps da página (vêm do mais novo ao mais antigo).
+let releasesPromise = null;
+function allReleases() {
+  releasesPromise ??= fetch(`https://api.github.com/repos/${GITHUB_USER}/${RELEASES_REPO}/releases?per_page=100`)
+    .then((res) => {
+      if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+      return res.json();
+    });
+  return releasesPromise;
+}
+
 // Troca o link fixo pelo .dmg do release mais recente. Se a API do GitHub
 // falhar (limite de requisições, offline), fica o link de apps.js.
-async function latestDmgUrl(app) {
-  const res = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${app.repo}/releases/latest`);
-  if (!res.ok) throw new Error(`GitHub API ${res.status} para ${app.repo}`);
-  const release = await res.json();
-  const dmg = (release.assets || []).find((asset) => asset.name.endsWith('.dmg'));
-  if (!dmg) throw new Error(`Release sem .dmg em ${app.repo}`);
+async function latestDmgUrl(key) {
+  const release = (await allReleases()).find((r) => r.tag_name.startsWith(`${key}-v`));
+  const dmg = (release?.assets || []).find((asset) => asset.name.endsWith('.dmg'));
+  if (!dmg) throw new Error(`Nenhum .dmg para ${key}`);
   return dmg.browser_download_url;
 }
 
 function updateToLatestReleases() {
   document.querySelectorAll('[data-download]').forEach((link) => {
-    const app = APPS[link.dataset.download];
+    const key = link.dataset.download;
+    const app = APPS[key];
     if (!app || !app.published) return;
-    latestDmgUrl(app)
+    latestDmgUrl(key)
       .then((url) => { link.href = url; })
       .catch(() => { /* mantém o link de apps.js */ });
   });
@@ -34,24 +48,17 @@ function updateToLatestReleases() {
 
 function applyAppLinks() {
   document.querySelectorAll('[data-download]').forEach((link) => {
-    const app = APPS[link.dataset.download];
+    const key = link.dataset.download;
+    const app = APPS[key];
     if (app && app.published) {
-      link.href = downloadUrl(app);
+      link.href = downloadUrl(key, app);
     } else {
       markUnavailable(link, 'Em breve');
     }
   });
   updateToLatestReleases();
-  document.querySelectorAll('[data-source]').forEach((link) => {
-    const app = APPS[link.dataset.source];
-    if (app && app.published) {
-      link.href = repoUrl(app);
-      link.target = '_blank';
-      link.rel = 'noopener';
-    } else {
-      link.remove();
-    }
-  });
+  // O código-fonte dos apps é privado: os links "código-fonte" saem da página.
+  document.querySelectorAll('[data-source]').forEach((link) => link.remove());
 }
 
 function setupMenu() {

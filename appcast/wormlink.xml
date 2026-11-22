@@ -17,7 +17,7 @@
 <li>Se a versão anterior não abria, instale esta uma vez à mão; as próximas chegam pelo próprio app.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Wormlink/releases/download/v0.2.2/Wormlink-0.2.2.dmg" length="41110815" type="application/octet-stream" sparkle:edSignature="l937BzVj2h1fxvJHD+UXgwnq3gZXMbUSicsyRowzWVPiCtu20m7v8ANCVoVKyQZzpOHui1ea97TyWnVpXi85Cw=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/wormlink-v0.2.2/Wormlink-0.2.2.dmg" length="41110815" type="application/octet-stream" sparkle:edSignature="l937BzVj2h1fxvJHD+UXgwnq3gZXMbUSicsyRowzWVPiCtu20m7v8ANCVoVKyQZzpOHui1ea97TyWnVpXi85Cw=="/>
     </item>
   </channel>
 </rss>

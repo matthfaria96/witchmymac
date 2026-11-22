@@ -24,7 +24,7 @@
   <li><b>Onde o arquivo ficou:</b> depois de salvar uma captura ou terminar uma gravação, aparece um cartão no canto da tela onde você capturou, com a prévia (dá para arrastar para outro app), a pasta, o nome do arquivo e os botões Mostrar no Finder e Abrir. Ele fica 8 segundos, e mais enquanto o mouse estiver em cima.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.8.1/Sirena-0.8.1.dmg" length="32161016" type="application/octet-stream" sparkle:edSignature="HoHiLHVT4HRUU9AJ65zl6xAaPmAuOAa+667UnYh94xpqzmJDX8cTifdr17D+oku0zO8UA8ufgxPlnWrRpDEACA=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.8.1/Sirena-0.8.1.dmg" length="32161016" type="application/octet-stream" sparkle:edSignature="HoHiLHVT4HRUU9AJ65zl6xAaPmAuOAa+667UnYh94xpqzmJDX8cTifdr17D+oku0zO8UA8ufgxPlnWrRpDEACA=="/>
     </item>
     <item>
       <title>Sirena 0.8.0</title>
@@ -47,7 +47,7 @@
   <li><b>Arrastar de qualquer lugar durante gravações:</b> mover, redimensionar e os cliques no Dock voltam a funcionar enquanto a tela é gravada ou compartilhada (Meet, QuickTime, Zoom).</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.8.0/Sirena-0.8.0.dmg" length="32096633" type="application/octet-stream" sparkle:edSignature="EpZWp4RcM40Y1rkOexEph4joNPkOZUOWRl5u4B/cQWVcEw1yDKy9uGfNhoTfpr7j2vPcKMId3zv4hFd3n/OpDQ=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.8.0/Sirena-0.8.0.dmg" length="32096633" type="application/octet-stream" sparkle:edSignature="EpZWp4RcM40Y1rkOexEph4joNPkOZUOWRl5u4B/cQWVcEw1yDKy9uGfNhoTfpr7j2vPcKMId3zv4hFd3n/OpDQ=="/>
     </item>
     <item>
       <title>Sirena 0.7.1</title>
@@ -64,7 +64,7 @@
   <li><b>Layouts no topo da tela:</b> o aviso que aparece ao arrastar uma janela fica dentro da barra de menus, e o painel desce de lá, cobrindo menos as janelas. Em telas com notch, os dois continuam logo abaixo da barra.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.7.1/Sirena-0.7.1.dmg" length="31799579" type="application/octet-stream" sparkle:edSignature="3jElXMYYVviIDNjep/eQlyoT6Q57CZePy/YcO1h9uzI1XMExe3/xN9PtO+kBtYvGk+nWCzhy661HDVDXa1YgDw=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.7.1/Sirena-0.7.1.dmg" length="31799579" type="application/octet-stream" sparkle:edSignature="3jElXMYYVviIDNjep/eQlyoT6Q57CZePy/YcO1h9uzI1XMExe3/xN9PtO+kBtYvGk+nWCzhy661HDVDXa1YgDw=="/>
     </item>
     <item>
       <title>Sirena 0.7.0</title>
@@ -88,7 +88,7 @@
   <li><b>Menos repetição:</b> um só aviso de Acessibilidade por aba, um só ajuste de ponteiro nas capturas (em Captura de Tela, vale para o Sirena e para ⇧⌘3, ⇧⌘4 e ⇧⌘5) e textos mais curtos no Dock.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.7.0/Sirena-0.7.0.dmg" length="31782958" type="application/octet-stream" sparkle:edSignature="Dkkrf10AXiQ0jVR/rDkI8Or8MhPkonLmTcOAzMuMuUnz82KjhAo1j9fg9ohwX6LlbNOlfqa0RQ1YH6mVShy6Dg=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.7.0/Sirena-0.7.0.dmg" length="31782958" type="application/octet-stream" sparkle:edSignature="Dkkrf10AXiQ0jVR/rDkI8Or8MhPkonLmTcOAzMuMuUnz82KjhAo1j9fg9ohwX6LlbNOlfqa0RQ1YH6mVShy6Dg=="/>
     </item>
     <item>
       <title>Sirena 0.6.6</title>
@@ -102,7 +102,7 @@
   <li><b>Aparelhos conectados:</b> o botão que abre os ajustes de Bluetooth do macOS agora mostra o símbolo do Bluetooth no lugar da engrenagem.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.6/Sirena-0.6.6.dmg" length="30885023" type="application/octet-stream" sparkle:edSignature="M7x6dPgwKoYf9ixeI+ZwCPg1sVmcT72qSEPoRT21oEmn3NHa7u3I8yzk5P805EVc8bZUjGtzHdkwLgsOR//NCg=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.6.6/Sirena-0.6.6.dmg" length="30885023" type="application/octet-stream" sparkle:edSignature="M7x6dPgwKoYf9ixeI+ZwCPg1sVmcT72qSEPoRT21oEmn3NHa7u3I8yzk5P805EVc8bZUjGtzHdkwLgsOR//NCg=="/>
     </item>
     <item>
       <title>Sirena 0.6.5</title>
@@ -117,7 +117,7 @@
   <li><b>Menu mais claro:</b> o olho que mostra ou oculta os ícones da barra de menus foi para "Ícones do menu", ao lado da engrenagem da seção. O botão que abre o Sirena virou uma janela, para não ser confundido com configurações.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.5/Sirena-0.6.5.dmg" length="30927570" type="application/octet-stream" sparkle:edSignature="aDN7JxTzbCZS4kpF5EP+fAODY2gaWNAiBGtXErVMBYpMkPyWqvSIuDkBW4C2u9CTcqOyg4za6G1M8B0NN2miBw=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.6.5/Sirena-0.6.5.dmg" length="30927570" type="application/octet-stream" sparkle:edSignature="aDN7JxTzbCZS4kpF5EP+fAODY2gaWNAiBGtXErVMBYpMkPyWqvSIuDkBW4C2u9CTcqOyg4za6G1M8B0NN2miBw=="/>
     </item>
     <item>
       <title>Sirena 0.6.4</title>
@@ -132,7 +132,7 @@
   <li><b>⌘ Tab:</b> o botão de fechar janela é o mesmo das prévias do Dock.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.4/Sirena-0.6.4.dmg" length="30914220" type="application/octet-stream" sparkle:edSignature="NZwbrA3m+dXE8xlW083Rq2aTr5YXO5BSp2gWn7Glk1TqjGQcMlytYDhfX47kkeazZJV08d/KwGzj9FvgKge9Ag=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.6.4/Sirena-0.6.4.dmg" length="30914220" type="application/octet-stream" sparkle:edSignature="NZwbrA3m+dXE8xlW083Rq2aTr5YXO5BSp2gWn7Glk1TqjGQcMlytYDhfX47kkeazZJV08d/KwGzj9FvgKge9Ag=="/>
     </item>
     <item>
       <title>Sirena 0.6.3</title>
@@ -149,7 +149,7 @@
   <li><b>Telas magnéticas mais discretas:</b> as linhas entre as janelas saíram; fica só a alça no meio, que cresce quando o ponteiro passa por ela. Ela não pisca mais ao clicar dentro das janelas e some na hora quando outro app vem para a frente.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.3/Sirena-0.6.3.dmg" length="30922501" type="application/octet-stream" sparkle:edSignature="KOZ2C8dDZ/a/fdgHa2Hh/B0yXFZ4W9OQLfEiAFB2OLGKZ/FnLNYZ3MMLCCeZPGJQhVuJpsyQKyDzIRqS1XX/AQ=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.6.3/Sirena-0.6.3.dmg" length="30922501" type="application/octet-stream" sparkle:edSignature="KOZ2C8dDZ/a/fdgHa2Hh/B0yXFZ4W9OQLfEiAFB2OLGKZ/FnLNYZ3MMLCCeZPGJQhVuJpsyQKyDzIRqS1XX/AQ=="/>
     </item>
     <item>
       <title>Sirena 0.6.2</title>
@@ -169,7 +169,7 @@
   <li>Correções: o botão verde e o amarelo voltam a funcionar no macOS 27, e uma instalação por DMG que falha não deixa mais uma cópia escondida em Aplicativos.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.2/Sirena-0.6.2.dmg" length="30746488" type="application/octet-stream" sparkle:edSignature="h4P9OjfslLhIZRs56YzNv2bmvSIUBHKaIHFT9b1IV2fR5r+1KC8NLElkC/HVMYF0lwZrJhIKBquIOWLBDTx7Bg=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.6.2/Sirena-0.6.2.dmg" length="30746488" type="application/octet-stream" sparkle:edSignature="h4P9OjfslLhIZRs56YzNv2bmvSIUBHKaIHFT9b1IV2fR5r+1KC8NLElkC/HVMYF0lwZrJhIKBquIOWLBDTx7Bg=="/>
     </item>
     <item>
       <title>Sirena 0.6.1</title>
@@ -187,7 +187,7 @@
   <li>Correções: o clique na Dock volta a ocultar o app com a prévia aberta, apps Electron não reaparecem depois de minimizados, e o botão amarelo e o ⌘M ocultam de verdade no modo "Ocultar tudo".</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.1/Sirena-0.6.1.dmg" length="29920408" type="application/octet-stream" sparkle:edSignature="sDDrqK0VrUS4MgBIUTVDWV3LyQn9KPpkiyjR7u0LQP9uatNR3EG7vGek9WP/pFyV3Owb3CLBn2xZP77OT8KVDQ=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.6.1/Sirena-0.6.1.dmg" length="29920408" type="application/octet-stream" sparkle:edSignature="sDDrqK0VrUS4MgBIUTVDWV3LyQn9KPpkiyjR7u0LQP9uatNR3EG7vGek9WP/pFyV3Owb3CLBn2xZP77OT8KVDQ=="/>
     </item>
     <item>
       <title>Sirena 0.6.0</title>
@@ -208,7 +208,7 @@
   <li>Correções: o clique no Dock funciona com apps abertos em quarentena (como o WhatsApp) e com a prévia aberta, e o Sirena sempre fecha quando você pede para sair.</li>
 </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.6.0/Sirena-0.6.0.dmg" length="29912834" type="application/octet-stream" sparkle:edSignature="L+LmRi0rI6TnOGXVFWe3RcfWrkgg3hLaftbKQyfaQx9z+s3jQmXqr0KvC/ov5rufWDQCqv6AB/FgQZLbGofWCA=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.6.0/Sirena-0.6.0.dmg" length="29912834" type="application/octet-stream" sparkle:edSignature="L+LmRi0rI6TnOGXVFWe3RcfWrkgg3hLaftbKQyfaQx9z+s3jQmXqr0KvC/ov5rufWDQCqv6AB/FgQZLbGofWCA=="/>
     </item>
     <item>
       <title>Sirena 0.5.3</title>
@@ -224,7 +224,7 @@
         <li>Sobre e Verificar Atualizações agora ficam numa aba própria.</li>
       </ul>
       ]]></description>
-      <enclosure url="https://github.com/matthfaria96/Sirena/releases/download/v0.5.3/Sirena-0.5.3.dmg" length="29259732" type="application/octet-stream" sparkle:edSignature="Crcwro0sJCYxvhL2IPU036L2y17ycLpjkSwVEW3n8Fa2Dun99xRegR+4ug9tKN2C7U0VKmfYlhUFoydvWRgiBw=="/>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.5.3/Sirena-0.5.3.dmg" length="29259732" type="application/octet-stream" sparkle:edSignature="Crcwro0sJCYxvhL2IPU036L2y17ycLpjkSwVEW3n8Fa2Dun99xRegR+4ug9tKN2C7U0VKmfYlhUFoydvWRgiBw=="/>
     </item>
   </channel>
 </rss>
