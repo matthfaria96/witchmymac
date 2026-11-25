@@ -15,7 +15,7 @@ window.WITCH_APPS = Object.freeze({
   hypervideo:   Object.freeze({ repo: 'hypervideo-converter', tag: 'v1.0.1', file: 'HyperVideo-1.0.1.dmg', published: true, app: 'HyperVideo Converter.app' }),
   bettercraft:  Object.freeze({ repo: 'bettercraft-launcher', tag: 'v0.6.6', file: 'BetterCraftLauncher-0.6.6.dmg', published: true, app: 'BetterCraft Launcher.app' }),
   aitracker:    Object.freeze({ repo: 'Aitracker',     tag: 'v1.0.1',        file: 'Aitracker-1.0.1.dmg',    published: true, app: 'Aitracker.app' }),
-  sirena:       Object.freeze({ repo: 'Sirena',        tag: 'v0.9.0',        file: 'Sirena-0.9.0.dmg',       published: true, app: 'Sirena.app' }),
+  sirena:       Object.freeze({ repo: 'Sirena',        tag: 'v0.9.1',        file: 'Sirena-0.9.1.dmg',       published: true, app: 'Sirena.app' }),
   rubbishnotes: Object.freeze({ repo: 'rubbish-notes', tag: 'v1.2.1',        file: 'RubbishNotes-1.2.1.dmg', published: true, app: 'Rubbish Notes.app' }),
   excaliburforms: Object.freeze({ repo: 'ExcaliburForms', tag: 'v1.0.0',     file: 'ExcaliburForms-1.0.0.dmg', published: true, app: 'ExcaliburForms.app' }),
   wineup:       Object.freeze({ repo: 'wineup-player', tag: 'v1.1.1',      file: 'WineupPlayer-1.1.1.dmg', published: true, app: 'Wineup Player.app' }),
