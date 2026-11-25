@@ -6,6 +6,27 @@
     <description>Atualizações do Sirena</description>
     <language>pt-BR</language>
     <item>
+      <title>Sirena 0.9.0</title>
+      <pubDate>Wed, 25 Nov 2026 03:07:23 +0000</pubDate>
+      <sparkle:version>129</sparkle:version>
+      <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Sirena 0.9.0</h2>
+<h3>Novidades</h3>
+<ul>
+  <li><b>Monitor de Apps:</b> clique com o botão direito no ícone do Sirena na barra de menus e escolha Monitor de Apps…. Cada app aparece com os seus ajudantes agrupados (expanda para ver cada processo), com CPU, GPU, memória, impacto energético, leitura e gravação no disco, rede e um gráfico do último minuto. No topo fica o Mac inteiro: CPU, GPU, memória com a pressão, disco (espaço livre, leitura e gravação) e rede (download e upload). Dá para ordenar, buscar, ver só os apps ou todos os processos, Encerrar, Forçar Encerramento (com confirmação) e Mostrar no Finder. Um app que não responde ganha um selo vermelho. Ele só mede enquanto a janela está aberta.</li>
+</ul>
+<h3>Correções</h3>
+<ul>
+  <li><b>Mouse e teclado travando:</b> com um app travado, clicar nele (no botão de fechar, no ícone do Dock) podia congelar o mouse e o teclado do Mac inteiro por alguns segundos. Agora o Sirena nunca espera mais que um instante por outro app, e um recurso que fica lento é pausado sozinho por 30 segundos em vez de segurar o Mac.</li>
+  <li><b>Ponteiro:</b> quando o Sirena move o ponteiro (Dock preso a um monitor, atalhos de janela, troca de Mesa), o mouse não fica mais parado por um instante.</li>
+  <li><b>Marcações da Captura de Tela e do Desenhar:</b> no macOS 27, uma marcação sem tamanho podia travar todas as seguintes. Agora cada ferramenta responde sempre.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/sirena-v0.9.0/Sirena-0.9.0.dmg" length="32611151" type="application/octet-stream" sparkle:edSignature="4M8WyPKSYDu2i5jTiNQYeSQdkmVA6mxTJBKxtd7YyuQexNc7rHrHOKGUIkt6mUeipklLy1ZNCYWAEeUEL0t2Ag=="/>
+    </item>
+    <item>
       <title>Sirena 0.8.1</title>
       <pubDate>Sat, 21 Nov 2026 15:52:22 +0000</pubDate>
       <sparkle:version>128</sparkle:version>
