@@ -6,6 +6,28 @@
     <description>Atualizações do ViewTube</description>
     <language>pt-BR</language>
     <item>
+      <title>ViewTube 2.0.0</title>
+      <pubDate>Wed, 25 Nov 2026 17:17:55 +0000</pubDate>
+      <sparkle:version>42</sparkle:version>
+      <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<p>ViewTube agora é 100% nativo.</p>
+<ul>
+<li><b>Sem site dentro.</b> As telas são SwiftUI, quem toca é o AVPlayer e o conteúdo vem da API do próprio YouTube: abre rápido, rola liso e usa bem menos memória.</li>
+<li><b>Playlists completas:</b> todas as suas playlists e inscrições no menu lateral, uma tela com todas as playlists, playlists longas carregadas até o fim, Tocar tudo e Aleatório.</li>
+<li><b>Salvar na playlist</b> a faixa que toca (ou numa nova), direto do player.</li>
+<li><b>Ajustes do player:</b> qualidade, velocidade, faixa de áudio dos vídeos dublados, legendas, timer, modo teatro e imagem sobre imagem (⌥⌘P).</li>
+<li><b>O mesmo player nos dois modos</b>, em qualquer tamanho de janela. Janela bem mais estreita: o menu vira atalhos e depois some.</li>
+<li><b>Tela cheia imersiva no Music</b> com a capa, a letra sincronizada e o player de vidro.</li>
+<li><b>Login pela página do Google</b>, dentro do app, sem avisos das Chaves. Adicione outra conta e troque entre elas.</li>
+<li>O login da 1.x continua valendo; os ajustes começam do zero, porque mudaram de formato.</li>
+<li>A velocidade vai até 2× (o player nativo não acelera o vídeo além disso).</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/viewtube-v2.0.0/ViewTube-2.0.0.dmg" length="5502199" type="application/octet-stream" sparkle:edSignature="oIQ7x+kdDX3NJX31wR1QxwqdMqd/P7YPcjH1rsuXGb6m0gHK2KvM7xm7HfBnaT/x1jz3R9jP46Ag9GiC6lqrDA=="/>
+    </item>
+    <item>
       <title>ViewTube 1.0.9</title>
       <pubDate>Mon, 26 Oct 2026 13:04:15 +0000</pubDate>
       <sparkle:version>22</sparkle:version>
