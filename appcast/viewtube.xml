@@ -6,6 +6,23 @@
     <description>Atualizações do ViewTube</description>
     <language>pt-BR</language>
     <item>
+      <title>ViewTube 2.1.0</title>
+      <pubDate>Thu, 26 Nov 2026 05:15:03 +0000</pubDate>
+      <sparkle:version>44</sparkle:version>
+      <sparkle:shortVersionString>2.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+<li><b>Menu ⋮ nos vídeos e músicas</b>, como no site: passe o mouse no cartão para tocar a seguir, pôr na fila, salvar em Assistir mais tarde ou numa playlist (ou criar uma), abrir o canal, abrir no navegador e copiar o link.</li>
+<li><b>Prévia ao passar o mouse:</b> com o mouse parado na miniatura, o vídeo começa ali mesmo, sem som. Clicar continua do ponto da prévia. Dá para desligar em Ajustes → YouTube.</li>
+<li><b>Puxar para atualizar:</b> no topo de qualquer tela, clique e arraste para baixo (ou puxe com o trackpad) e solte para recarregar.</li>
+<li><b>O YouTube vê o app como o site no computador</b>, não como celular, e o que você assiste entra no histórico da conta como no site.</li>
+<li>Pular trechos e pausar não travam mais o vídeo: ele se recupera sozinho no mesmo ponto quando o stream falha ou demora.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/matthfaria96/witchmymac-release/releases/download/viewtube-v2.1.0/ViewTube-2.1.0.dmg" length="5961462" type="application/octet-stream" sparkle:edSignature="otOWIkOGsW2Ba/J0wvsBtAbZ+BgIhgOMEU95fHqU7P+TxkYDi0IjE3iiFGZhi5r2ivpt8K6SRKTCkR6qFHbfCg=="/>
+    </item>
+    <item>
       <title>ViewTube 2.0.0</title>
       <pubDate>Wed, 25 Nov 2026 17:17:55 +0000</pubDate>
       <sparkle:version>42</sparkle:version>
