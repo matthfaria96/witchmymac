@@ -8,7 +8,7 @@ window.WITCH_APPS = Object.freeze({
   espelho:      Object.freeze({ repo: 'espelho',       tag: 'v1.4.0',        file: 'Espelho-1.4.0.dmg',      published: true, app: 'Espelho.app' }),
   winapps:      Object.freeze({ repo: 'winapps',       tag: 'v2.0.0',        file: 'WinApps-2.0.0.dmg',      published: true, app: 'WinApps.app' }),
   viewtube:     Object.freeze({ repo: 'viewtube-mac',  tag: 'v2.1.0',        file: 'ViewTube-2.1.0.dmg',     published: true, app: 'ViewTube.app' }),
-  garimpalo:    Object.freeze({ repo: 'garimpalo',     tag: 'v0.2.0',        file: 'Garimpalo_0.2.0_universal.dmg', published: true, app: 'Garimpalo.app' }),
+  garimpalo:    Object.freeze({ repo: 'garimpalo',     tag: 'v0.3.0',        file: 'Garimpalo_0.3.0_universal.dmg', published: true, app: 'Garimpalo.app' }),
   instamac:     Object.freeze({ repo: 'instamac',      tag: 'v1.0.0',        file: 'Instamac-1.0.0.dmg',     published: true, app: 'Instamac.app' }),
   neorar:       Object.freeze({ repo: 'Neorar',        tag: 'v1.1.3',        file: 'Neorar-1.1.3.dmg',       published: true, app: 'Neorar.app' }),
   hyperimage:   Object.freeze({ repo: 'hyperimage-converter', tag: 'v1.0.2', file: 'HyperImage-1.0.2.dmg', published: true, app: 'HyperImage Converter.app' }),
